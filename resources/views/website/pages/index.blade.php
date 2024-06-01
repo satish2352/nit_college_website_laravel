@@ -39,14 +39,8 @@
 
         <div class="col-md-8">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                @php
-                    // Filter the active sliders
-                    $activeSliders = array_filter($data_output, function($slider) {
-                        return $slider['is_active'] == 1;
-                    });
-                @endphp
-            
-                @if(count($activeSliders) > 0)
+
+                @if(count($data_output) > 0)
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         @foreach($activeSliders as $index => $slider)
@@ -82,13 +76,14 @@
                         <div class="item active">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h1 style="padding-top: 2000px;">No data found</h1>
+                                    <h1>No data found</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
                 @endif
             </div>
+            
 
 <br>
 	<div class="alert alert-danger alert-dismissible" role="alert" style="background-color:pink;margin-left:10px;">
