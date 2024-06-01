@@ -37,53 +37,29 @@
 	 </div>
         </div>
 
-        <div class="col-md-8">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                @if(count($data_output) > 0)
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        @foreach($activeSliders as $index => $slider)
-                            <li data-target="#myCarousel" data-slide-to="{{ $index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
-                        @endforeach
-                    </ol>
-            
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        @foreach($activeSliders as $index => $slider)
-                            <div class="item {{ $loop->first ? 'active' : '' }}">
-                                <img src="{{ asset('public/assets/images/slider_img/' . $slider['fld_slider_image']) }}" width="100%" alt="{{ $slider['fld_slider_title'] }}">
-                                <div class="carousel-caption">
-                                    <h3>{{ $slider['fld_slider_title'] }}</h3>
-                                    <p>{{ $slider['fld_slider_subtitle'] }}</p>
+            <div class="col-md-8">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+                    @if(isset($data_output) && count($data_output) > 0)
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            @foreach($activeSliders as $index => $slider)
+                                <li data-target="#myCarousel" data-slide-to="{{ $index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
+                            @endforeach
+                        </ol>
+                
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            @foreach($activeSliders as $index => $slider)
+                                <div class="item {{ $loop->first ? 'active' : '' }}">
+                                    <img src="{{ asset('public/assets/images/slider_img/' . $slider['fld_slider_image']) }}" width="100%" alt="{{ $slider['fld_slider_title'] }}">
+                                    <div class="carousel-caption">
+                                        <h3>{{ $slider['fld_slider_title'] }}</h3>
+                                        <p>{{ $slider['fld_slider_subtitle'] }}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        @endforeach
-                    </div>
-            
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                @else
-                    <!-- No data found message -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>No data found</h1>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
-                    </div>
-                @endif
-            </div>
-            
 
 <br>
 	<div class="alert alert-danger alert-dismissible" role="alert" style="background-color:pink;margin-left:10px;">
