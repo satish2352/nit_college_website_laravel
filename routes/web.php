@@ -1,0 +1,53 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', ['as' => '/', 'uses' => 'App\Http\Controllers\Website\IndexController@index']);
+
+Route::get('/polytechnic-president', ['as' => 'polytechnic-president', 'uses' => 'App\Http\Controllers\Website\AboutUs\AboutUsController@getPolytechnicPresident']);
+
+Route::get('/polytechnic-campus', ['as' => 'polytechnic-campus', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicCampus']);
+Route::get('/polytechnic-hostel', ['as' => 'polytechnic-hostel', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicHostel']);
+Route::get('/polytechnic-library', ['as' => 'polytechnic-library', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicLibrary']);
+Route::get('/polytechnic-transportation', ['as' => 'polytechnic-transportation', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicTransportation']);
+Route::get('/polytechnic-other', ['as' => 'polytechnic-other', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicOther']);
+
+Route::get('/polytechnic-rules', ['as' => 'polytechnic-rules', 'uses' => 'App\Http\Controllers\Website\Academics\AcademicsController@getPolytechnicRules']);
+
+Route::get('/contact-us', ['as' => 'contact-us', 'uses' => 'App\Http\Controllers\Website\ContactUs\ContactUsController@getContactUs']);
+Route::post('/add-contact-us', ['as' => 'add-contact-us', 'uses' => 'App\Http\Controllers\Website\ContactUs\ContactUsController@addContactUs']);
+
+Route::get('/aluminiregister', ['as' => 'aluminiregister', 'uses' => 'App\Http\Controllers\Website\AluminiRegister\AluminiRegisterController@getAluminiRegister']);
+Route::post('/add-aluminiregister', ['as' => 'add-aluminiregister', 'uses' => 'App\Http\Controllers\Website\AluminiRegister\AluminiRegisterController@addAluminiRegister']);
+
+Route::get('/polytechnic-gallery', ['as' => 'polytechnic-gallery', 'uses' => 'App\Http\Controllers\Website\Gallery\GalleryController@getGallery']);
+
+Route::get('/polytechnic-principals', ['as' => 'polytechnic-principals', 'uses' => 'App\Http\Controllers\Website\AboutUs\AboutUsController@getPolytechnicPrincipals']);
+Route::get('/mission-and-vision', ['as' => 'mission-and-vision', 'uses' => 'App\Http\Controllers\Website\AboutUs\AboutUsController@getPolytechnicMissionVision']);
+Route::get('/about-governingbody', ['as' => 'about-governingbody', 'uses' => 'App\Http\Controllers\Website\AboutUs\AboutUsController@getPolytechnicAboutGoverningbody']);
+Route::get('/about-futureplans', ['as' => 'about-futureplans', 'uses' => 'App\Http\Controllers\Website\AboutUs\AboutUsController@getPolytechnicAboutFutureplans']);
+
+Route::get('/polytechnic-co-curricular/{id}', ['as' => 'polytechnic-co-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCoCurricular']);
+
+// Route::get('/polytechnic-co-curricular', ['as' => 'polytechnic-co-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCoCurricular']);
+Route::get('/polytechnic-cultural-desk', ['as' => 'polytechnic-cultural-desk', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCulturalDesk']);
+Route::get('/polytechnic-curricular', ['as' => 'polytechnic-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCurricular']);
+Route::get('/polytechnic-extra-curricular', ['as' => 'polytechnic-extra-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicExtraCurricular']);
+
+
+Route::get('/department-profile/{id}', ['as' => 'department-profile', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getProfile']);
+Route::get('/department-vision-mission/{id}', ['as' => 'department-vision-mission', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getDepartVisionMission']);
+Route::get('/department-curriculum/{id}', ['as' => 'department-curriculum', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getCurriculum']);
+Route::get('/department-faculty/{id}', ['as' => 'department-faculty', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getFaculty']);
+Route::get('/department-syllabus/{id}', ['as' => 'department-syllabus', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getSyllabus']);
+
+Route::get('/department-time-table/{id}', ['as' => 'department-time-table', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getTimeTable']);
+Route::get('/department-mentor/{id}', ['as' => 'department-mentor', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getMentor']);
+Route::get('/department-achievements-awards/{id}', ['as' => 'department-achievements-awards', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getAchievementsAwards']);
+Route::get('/department-activities-events/{id}', ['as' => 'department-activities-events', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getActivitiesEvents']);
+Route::get('/department-students-association/{id}', ['as' => 'department-students-association', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getStudentsAssociation']);
+Route::get('/department-plan/{id}', ['as' => 'department-plan', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getPlan']);
