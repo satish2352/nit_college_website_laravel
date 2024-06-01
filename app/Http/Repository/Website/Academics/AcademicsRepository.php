@@ -4,7 +4,7 @@ namespace App\Http\Repository\Website\Academics;
 use Illuminate\Database\QueryException;
 use DB;
 use Illuminate\Support\Carbon;
-use Session;
+// use Session;
 use App\Models\ {
     TblAcademicsDetails,
     Academics

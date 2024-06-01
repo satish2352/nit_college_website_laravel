@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Website\ContactUs;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Services\Website\ContactUs\ContactUsServices;
-use Session;
+// use Session;
 use Validator;
 use Config;
 
