@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Website\AboutUs;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-// use App\Http\Services\Website\AboutUs\AboutUsServices;
+use App\Http\Services\Website\AboutUs\AboutUsServices;
 use Session;
 class AboutUsController extends Controller
 {
@@ -13,7 +13,7 @@ class AboutUsController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
-        // $this->service = new AboutUsServices();  
+        $this->service = new AboutUsServices();  
     }
 
     public function getPolytechnicPresident()
@@ -52,7 +52,8 @@ class AboutUsController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
-            return view('website.pages.aboutus.polytechnic-about-governingbody', compact('menu', 'menuDepartment'));
+            $data_output = $this->service->getPolytechnicAboutGoverningbody();
+            return view('website.pages.aboutus.polytechnic-about-governingbody', compact('data_output','menu', 'menuDepartment'));
         } catch (\Exception $e) {
             return $e;
         }

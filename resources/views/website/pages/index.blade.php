@@ -39,30 +39,39 @@
 
         <div class="col-md-8">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                {{-- @if(isset($data_output) && !empty($data_output))
-
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        @foreach($activeSliders as $index => $slider)
-                            <li data-target="#myCarousel" data-slide-to="{{ $index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
-                        @endforeach
-                    </ol>
-            
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        @foreach($activeSliders as $index => $slider)
-                            <div class="item {{ $loop->first ? 'active' : '' }}">
-                                <img src="{{ asset('public/assets/images/slider_img/' . $slider['fld_slider_image']) }}" width="100%" alt="{{ $slider['fld_slider_title'] }}">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    @forelse($data_output as $index => $slider)
+                        <li data-target="#myCarousel" data-slide-to="{{ $index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
+                    @empty
+                        <!-- No indicators needed when there's no data -->
+                    @endforelse
+                </ol>
+        
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    @forelse($data_output as $index => $slider)
+                        <div class="item {{ $loop->first ? 'active' : '' }}">
+                            <img src="{{ asset('public/assets/images/slider_img/' . $slider['fld_slider_image']) }}" width="100%" alt="{{ $slider['fld_slider_title'] }}">
+                            <div class="carousel-caption">
+                                <h3>{{ $slider['fld_slider_title'] }}</h3>
+                                <p>{{ $slider['fld_slider_subtitle'] }}</p>
+                            </div>
+                        </div>
+                    @empty
+                        <!-- No data found message -->
+                        <div class="item active">
+                            <div class="container">
                                 <div class="carousel-caption">
-                                    <h3>{{ $slider['fld_slider_title'] }}</h3>
-                                    <p>{{ $slider['fld_slider_subtitle'] }}</p>
+                                    <h1>No data found</h1>
                                 </div>
                             </div>
-                        @endforeach
-                    </div>
-            
-                    <!-- Left and right controls -->
+                        </div>
+                    @endforelse
+                </div>
+        
+                <!-- Left and right controls -->
+                @if(!empty($data_output))
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -71,23 +80,13 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                @else
-                    <!-- No data found message -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>No data found</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endif --}}
+                @endif
             </div>
-            
+        
             <!-- Other content -->
-            
+        
         </div>
+        
 
 <br>
 	<div class="alert alert-danger alert-dismissible" role="alert" style="background-color:pink;margin-left:10px;">

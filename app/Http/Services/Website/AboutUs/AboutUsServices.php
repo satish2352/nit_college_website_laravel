@@ -19,13 +19,18 @@ class AboutUsServices
     {
         $this->repo = new AboutUsRepository();
     }
-    public function index()
+
+
+    public function getPolytechnicAboutGoverningbody()
     {
         try {
-            return $this->repo->index();
+            $dataOutputCategory = $this->repo->getPolytechnicAboutGoverningbody();
+            return $dataOutputCategory; // This will never be executed due to dd()
         } catch (\Exception $e) {
             return $e;
         }
-    } 
+    }
+
+   
 
 }

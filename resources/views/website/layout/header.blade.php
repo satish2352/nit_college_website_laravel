@@ -109,7 +109,7 @@ AOS.init({
 
 <div class="collapse navbar-collapse" style="height:20px;">
 <ul class="nav navbar-nav" style="width:100%k; display:block; ">
-  <li><a href="https://nitnasik.com" ><b>Home Page</b></a></li>
+  <li><a href="{{ route('/') }}" ><b>Home Page</b></a></li>
 <li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>About Us</b><span class="caret"></span></a>
 <ul class="dropdown-menu">
