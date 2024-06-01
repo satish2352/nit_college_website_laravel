@@ -152,6 +152,32 @@
     <p align="center"><strong>Designation</strong></p>
     </td>
     </tr>
+
+    @if (isset($error))
+    <div class="alert alert-danger">
+        {{ $error }}
+    </div>
+@else
+    @if (!$data_output)
+        <div class="alert alert-info">
+            Data not found
+        </div>
+    @else
+        @if ($data_output->is_active == 0)
+            <div class="alert alert-info">
+                Data not found
+            </div>
+        @else
+        <div class="item">
+       
+            <div class="carousel-caption">
+                <img src="../images/events/<?php echo $data_output['fld_gallery_photo'];?>" class="img-responsive" ><br> 
+                 <td><center>{{ $data_output->imageTitle }}</center></td>
+            </div>
+        </div>
+        @endif
+    @endif
+@endif
     
     <?php 
                                     $count=0; 
