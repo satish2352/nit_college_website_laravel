@@ -40,7 +40,7 @@
         <div class="col-md-8">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-                @if(isset($data_output) && !empty($data_output))
+                {{-- @if(isset($data_output) && !empty($data_output))
 
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                     </div>
-                @endif
+                @endif --}}
             </div>
             
             <!-- Other content -->
