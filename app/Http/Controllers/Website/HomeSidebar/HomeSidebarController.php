@@ -1,0 +1,161 @@
+<?php
+
+namespace App\Http\Controllers\Website\HomeSidebar;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Services\Website\HomeSidebar\HomeSidebarServices;
+use Session;
+class HomeSidebarController extends Controller
+{
+    // public static $event_repository;
+    public function __construct()
+    {
+        $this->menu = getMenuItemsActivities();
+        $this->menuDepartment = getMenuItemsDepartment();
+        $this->service = new HomeSidebarServices();  
+    }
+
+    
+    public function getMandataryDisclosure()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getMandataryDisclosure();
+            return view('website.pages.home-sidebar.polytechnic-mandatary', compact('data_output','menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    } 
+   
+    public function getAICTEExtension()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getAICTEExtension();
+            return view('website.pages.home-sidebar.polytechnic-aicte', compact('data_output','menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }  
+    
+    public function getMSBTE()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getMSBTE();
+            return view('website.pages.home-sidebar.polytechnic-affiliation', compact('data_output','menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    } 
+    public function getPolytechnicAffiliationCertificates()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getPolytechnicAffiliationCertificates();
+            return view('website.pages.home-sidebar.polytechnic-affiliation_certificates', compact('data_output','menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    } 
+    public function getServiceRule()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getServiceRule();
+            return view('website.pages.home-sidebar.polytechnic-affiliation_certificates', compact('data_output','menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+
+
+    public function getAntiRagging()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getAntiRagging();
+            return view('website.pages.home-sidebar.polytechnic-anti-ragging', compact('data_output', 'menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            return view('website.pages.home-sidebar.polytechnic-anti-ragging', [
+                'error' => $e->getMessage(),
+                'menu' => $this->menu,
+                'menuDepartment' => $this->menuDepartment
+            ]);
+        }
+    }
+    
+    // public function getAntiRagging()
+    // {
+    //     try {
+    //         $menu = $this->menu;
+    //         $menuDepartment = $this->menuDepartment;
+    //         $data_output = $this->service->getAntiRagging();
+    //         return view('website.pages.home-sidebar.polytechnic-anti-ragging', compact('data_output','menu', 'menuDepartment'));
+    //     } catch (\Exception $e) {
+    //         return $e;
+    //     }
+    // }
+    public function getInternalComplaint()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getInternalComplaint();
+            
+            return view('website.pages.home-sidebar.polytechnic-internal-complaint', compact('data_output', 'menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            // Log the exception
+            \Log::error('Error in Controller getInternalComplaint: ' . $e->getMessage());
+            return view('website.pages.home-sidebar.polytechnic-internal-complaint', [
+                'error' => $e->getMessage(),
+                'menu' => $this->menu,
+                'menuDepartment' => $this->menuDepartment
+            ]);
+        }
+    }
+    
+    public function getAboutSCST()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $data_output = $this->service->getAboutSCST();
+    
+            return view('website.pages.home-sidebar.polytechnic-scst', compact('data_output', 'menu', 'menuDepartment'));
+        } catch (\Exception $e) {
+            \Log::error('Error in Controller getAboutSCST: ' . $e->getMessage());
+            return view('website.pages.home-sidebar.polytechnic-scst', [
+                'error' => $e->getMessage(),
+                'menu' => $this->menu,
+                'menuDepartment' => $this->menuDepartment
+            ]);
+        }
+    }
+    
+    public function getAcademicCalendar()
+{
+    try {
+        $menu = $this->menu;
+        $menuDepartment = $this->menuDepartment;
+        $data_output = $this->service->getAcademicCalendar();
+
+        // Ensure $data_output is an instance of AcademicCalendar
+        if($data_output instanceof AcademicCalendar) {
+            return view('website.pages.home-sidebar.polytechnic-calendar', compact('data_output','menu', 'menuDepartment'));
+        } else {
+            return view('website.pages.home-sidebar.polytechnic-calendar', compact('menu', 'menuDepartment'))->with('error', 'No data found.');
+        }
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
+
+}

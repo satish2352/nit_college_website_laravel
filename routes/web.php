@@ -51,3 +51,16 @@ Route::get('/department-achievements-awards/{id}', ['as' => 'department-achievem
 Route::get('/department-activities-events/{id}', ['as' => 'department-activities-events', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getActivitiesEvents']);
 Route::get('/department-students-association/{id}', ['as' => 'department-students-association', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getStudentsAssociation']);
 Route::get('/department-plan/{id}', ['as' => 'department-plan', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getPlan']);
+
+Route::get('/polytechnic-mandatary', ['as' => 'polytechnic-mandatary', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getMandataryDisclosure']);
+Route::get('/polytechnic-aicte-extension', ['as' => 'polytechnic-aicte-extension', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAICTEExtension']);
+Route::get('/polytechnic-affiliation', ['as' => 'polytechnic-affiliation', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getMSBTE']);
+Route::get('/polytechnic-affiliation_certificates', ['as' => 'polytechnic-affiliation_certificates', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getPolytechnicAffiliationCertificates']);
+Route::get('/polytechnic-servicerules', ['as' => 'polytechnic-servicerules', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getServiceRule']);
+
+
+Route::get('/polytechnic-anti-ragging', ['as' => 'polytechnic-anti-ragging', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAntiRagging']);
+Route::get('/polytechnic-internal-complaint', ['as' => 'polytechnic-internal-complaint', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getInternalComplaint']);
+Route::get('/polytechnic-about-scst', ['as' => 'polytechnic-about-scst', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAboutSCST']);
+// Route::get('/polytechnic-academic-calendar', ['as' => 'polytechnic-academic-calendar', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAcademicCalendar']);
+

@@ -70,8 +70,15 @@ AOS.init({
 						});
 			</script><div class="container-fluid" id="iwtHeaderTopNav">
 <div class="container">
-<div class="col-sm-5"><a href="https://nitnasik.com/index.php">Institute Address : Cannol Road,Behind Hydro-division(MERI),Nashik</a></div>
-<div class="col-sm-7 text-right">Email : info@nitnasik.com | Contact Number : 9595952100&nbsp;9822208687&nbsp;9552551056&nbsp;9552551064</div>
+<div class="col-sm-5"><a href="{{ route('/') }}">Institute Address : Cannol Road,Behind Hydro-division(MERI),Nashik</a></div>
+<div class="col-sm-7 text-right">
+    Email: <a href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
+    Contact Number:
+    <a href="tel:9595952100">9595952100</a>&nbsp;
+    <a href="tel:9822208687">9822208687</a>&nbsp;
+    <a href="tel:9552551056">9552551056</a>&nbsp;
+    <a href="tel:9552551064">9552551064</a>
+</div>
 </div>
 </div><div class="container-fluid" id="iwtHeader">
 <div class="container">

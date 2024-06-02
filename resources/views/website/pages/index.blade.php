@@ -10,27 +10,28 @@
 	   	<div class="list-group-item"><b>NIT POLYTECHNIC, NASHIK</b></div>
 	   	<a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्या</a>
 	   	
-        <a href="pages/polytechnic-about-governingbody-IOD.php" class="list-group-item active-rp-link">GOVERNING BODY</a>
-        <a href="pages/polytechnic-about-mandatary-IOD.php" class="list-group-item ">MANDATARY DISCLOSURE</a>
-	   	<a href="pages/polytechnic-about-aicte-IOD.php" class="list-group-item ">AICTE EOA</a>
-	  	<a href="pages/polytechnic-about-affiliation-IOD.php" class="list-group-item ">MSBTE AFFILIATION</a>
-	  	<a href="pages/polytechnic-about-certificates-IOD.php" class="list-group-item ">AFFILIATION CERTIFICATES</a>
-	  	<a href="pages/polytechnic-about-servicerules-IOD.php" class="list-group-item ">SERVICE RULES</a>
-	  	<a href="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item ">TRAINING AND PLACEMENT</a>
-	  	<a href="pages/polytechnic-about-antiragging-IOD.php" class="list-group-item ">ANTIRAGGING COMMITTEE</a>
-	  	<a href="pages/polytechnic-about-internalcomplaint-IOD.php" class="list-group-item ">INTERNAL COMPLAINT COMMITTEE</a>
-	  	<a href="pages/polytechnic-about-redressal-IOD.php" class="list-group-item ">GRIEVANCE REDRESSAL COMMITTEE</a>
-	  	<a href="pages/polytechnic-about-scst-IOD.php" class="list-group-item ">SC/ST CELL</a>
-	  	<a href="pages/polytechnic-about-calendar-IOD.php" class="list-group-item ">ACADEMIC CALENDAR</a>
+        <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">GOVERNING BODY</a>
+        <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item ">MANDATARY DISCLOSURE</a>
+	   	<a href="{{ route('polytechnic-aicte-extension') }}"  class="list-group-item ">AICTE EOA</a>
+	  	<a  href="{{ route('polytechnic-affiliation') }}"  class="list-group-item ">MSBTE AFFILIATION</a>
+	  	<a  href="{{ route('polytechnic-affiliation_certificates') }}"  class="list-group-item ">AFFILIATION CERTIFICATES</a>
+	  	{{-- <a href="{{ route('polytechnic-servicerules') }}" class="list-group-item ">SERVICE RULES</a> --}}
+	  	<a href  ="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item ">TRAINING AND PLACEMENT</a>
+	  	<a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item ">ANTIRAGGING COMMITTEE</a>
+	  	<a href="{{ route('polytechnic-internal-complaint') }}"  class="list-group-item ">INTERNAL COMPLAINT COMMITTEE</a>
+	  	<a class="list-group-item ">GRIEVANCE REDRESSAL COMMITTEE</a>
+	  	<a href="{{ route('polytechnic-about-scst') }}"  class="list-group-item ">SC/ST CELL</a>
+	  
+        {{-- <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">ACADEMIC CALENDAR</a> --}}
 	  	<a href="pages/polytechnic-about-regulatingauthority-IOD.php" class="list-group-item ">FEES REGULATING AUTHORITY</a>
 	  	<a href="pages/polytechnic-about-terms-IOD.php" class="list-group-item ">TERMS AND CONDITIONS</a>
 	  	<a href="pages/polytechnic-about-downloads-IOD.php" class="list-group-item ">STUDENT DOWNLOADS</a>
 	  	<a href="pages/polytechnic-about-downloadsstaff-IOD.php" class="list-group-item ">STAFF DOWNLOADS</a>
 	  	<a href="pages/polytechnic-about-scholarship-IOD.php" class="list-group-item ">STUDENT SCHOLARSHIP</a>
-	  	<a href="pages/polytechnic-about-events-IOD.php" class="list-group-item ">EVENTS</a>
+	  	{{-- <a href="pages/polytechnic-about-events-IOD.php" class="list-group-item ">EVENTS</a>
 	  	<a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm" class="list-group-item ">SBI COLLECT</a>
 	  	<a href="pages/polytechnic-about-media-IOD.php" class="list-group-item ">MEDIA NEWS</a>
-	  	<a href="pages/polytechnic-about-faq-IOD.php" class="list-group-item ">FAQ</a>
+	  	<a href="pages/polytechnic-about-faq-IOD.php" class="list-group-item ">FAQ</a> --}}
 	  	
 	  	  <div class="list-group-item"></div>
 	 </div>
@@ -85,10 +86,8 @@
         
             <!-- Other content -->
         
-        </div>
-        
-
-<br>
+       
+    
 	<div class="alert alert-danger alert-dismissible" role="alert" style="background-color:pink;margin-left:10px;">
   <button type="button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
   <strong><i class="fa fa-warning"></i><center><h4><b><span style="border:4px solid #612625;color:White;background-color:#612625">Latest News</span></b></h4></center></strong><p style="font-family: Times New Roman; font-size: 12pt;"><a href="pages/final web quotation advertisement .pdf" ><strong style="color:black">Procurement under AICTE Grant in Aid- SPDP-Skill and Personality Development Programme Centre for
@@ -120,7 +119,7 @@ SC/ST Students 1-7107561391-2020-21.</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 <hr style="border: 1px solid black">
 </div>
 </div>
-
+</div>
 <!--=============== iwtNewsArea ===============
 <div class="container-fluid" id="iwtNewsArea" >
 	<div class="fl news-img"><img src="visitors/hm/design/images/alarm-icon.png"  border="0"></div>
@@ -258,7 +257,7 @@ SC/ST Students 1-7107561391-2020-21.</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 }
     
 </style>               
-<div class="container padding-LR-0" style="margin-bottom:35px;"> 
+<div class="container-fluid padding-LR-0" style="margin-bottom:35px;"> 
     <div class="row">
         <div class="col-lg-12">
             <div class="well"> 
