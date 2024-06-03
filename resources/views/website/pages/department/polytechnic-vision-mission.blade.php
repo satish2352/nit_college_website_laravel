@@ -26,14 +26,7 @@
            
     <div>
     <!-- <h2>DEPARTMENT INFORMATION</h2> -->
-    <h2><strong>VISION :</strong></h2>
-                </div>
     
-                
-    
-    <div>
-       <h2><strong>MISSION :</strong></h2>
-    </div>
     
 
     @if (isset($error))
@@ -53,12 +46,19 @@
                 Data not found
             </div>
         @else
-            <div>
-                <h2 style="color:blue">{{ $data_output->Department }}</h2>
-            </div>
-            <div>
-                <p>{{ $data_output->department_mission }}</p>
-            </div>
+
+        <h2><strong>VISION :</strong></h2>
+        <h2 style="color:blue">{{ $data_output->department_vision }}</h2>
+                </div>
+    
+                
+    
+    <div>
+       <h2><strong>MISSION :</strong></h2>
+       <p>{{ $data_output->department_mission }}</p>
+    </div>
+
+           
 
             
         @endif

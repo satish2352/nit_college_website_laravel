@@ -9,27 +9,25 @@
     </div>
     
     </div>
-    </div><div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px" >
-    <div class="container"> 
-    <div class="row" style="padding:0px">
-    <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
+    </div>
+    <div class="container-fluid" style=" background:#fff; padding-top:20px; padding-bottom:20px" >
+    <div class="container" style="box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);padding-top:20px;"> 
+    <div class="row" style="padding:0px ">
+    <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
     <div class="row outer-white">
-            <div class="col-sm-12">
-                <!--<img src="../up-images/science%20profileimgFile579b0438715ef.jpg" alt="Applied Science Profile" class="img-responsive" style="margin:0 auto">-->
-            </div>        
+            <!-- <div class="col-sm-12">
+                <img src="../up-images/science%20profileimgFile579b0438715ef.jpg" alt="Applied Science Profile" class="img-responsive" style="margin:0 auto">
+            </div>         -->
     </div><!-- /.row --><div class="row outer-white">
-            <div class="col-sm-12">
-                <!--<div>-->
-                <!--    <h2>Profile</h2>-->
-                <!--</div><br>-->
-    
-                <div>
-                    <h4 style="color:blue"></h4>
+            <div class="col-lg-12 col-sm-12" >
+                <div class="card">
+                <div class="card-header">
+                <p><h4 style="color:black ;">Department Applied Science And Humanities</h4></p>
                 </div>
-                <p><b>Department Applied Science And Humanities</b></p>
-                <p>Today's engineers and scientists need a well formulated background in applied sciences and humanities in order to make well reasoned decisions involving human values implicit in technical careers and to excel in communication skills in the globally competitive world .The department of Applied science offers a variety of stimulating, specialized and revised subjects that investigate among the natural sciences, technology and humanities. The focus of applied science department is to provide in-depth knowledge of Physics, Chemistry, Mathematics and Communication skills that will form a firm foundation to build engineering and management careers in various disciplines.</p>
-                <p>Department provides an encouraging environment to develop the intellectual capacity, critical thinking, creativity & problem solving ability of the students. Department is taking more focused and multidimensional efforts to make foundation of the students as strong as possible.</p>
-                <p>They are closely associated with first year students for counseling admission work, curricular co and extracurricular activity etc. The department is associated with well `equipped Physics, Chemistry, Electrical laboratories</p>
+                <div class="card-body">
+                <li>Today's engineers and scientists need a well formulated background in applied sciences and humanities in order to make well reasoned decisions involving human values implicit in technical careers and to excel in communication skills in the globally competitive world .The department of Applied science offers a variety of stimulating, specialized and revised subjects that investigate among the natural sciences, technology and humanities. The focus of applied science department is to provide in-depth knowledge of Physics, Chemistry, Mathematics and Communication skills that will form a firm foundation to build engineering and management careers in various disciplines.</li>
+                <li>Department provides an encouraging environment to develop the intellectual capacity, critical thinking, creativity & problem solving ability of the students. Department is taking more focused and multidimensional efforts to make foundation of the students as strong as possible.</li>
+                <li>They are closely associated with first year students for counseling admission work, curricular co and extracurricular activity etc. The department is associated with well `equipped Physics, Chemistry, Electrical laboratories</li>
                 <p></p>
                 <p></p>
                 <div>   
@@ -52,28 +50,31 @@
                             </div>
                         @else
                             <div>
-                                <h2 style="color:blue">{{ $data_output->Department }}</h2>
+                                <h4 style="color:black">{{ $data_output->Department }}</h4>
                             </div>
                             <div>
                                 <p>{{ $data_output->department_description }}</p>
                             </div>
 
-                            <img src="../NIT/department/<?php echo $data_output['photo'];?>" height="400px" width="700px" ><br> 
+                            <img src="../NIT/department/<?php echo $data_output['photo'];?>" height="300px" width="700px" ><br> 
                         @endif
                     @endif
                 @endif
 
                           
     
-               <div>
+                 <div>
                     <h2></h2>
-                </div>
+                 </div>
     
-    <p></p>
-             </div>
-            </div>        
+                 <p></p>
+                </div>
+                </div>
+            </div>
+                </div>
+                        
     </div><!-- /.row --></div>
-    <div class="col-md-1 hidden-sm">&nbsp;</div>
+    <!-- <div class="col-md-1 hidden-sm">&nbsp;</div> -->
     <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
     <!-- <div
     style="margin-top: -40px;
@@ -85,41 +86,38 @@
     <i>Last updated on : 29-07-2016 12:52 PM</i>
     </div> -->
         <!--Right col-->
-        <div class="col-sm-12 right-col-fix">
-        <div>
-             <div class="list-group">
-          <div class="list-group-item">Humanities & Science</div>
+        <div class="  col-sm-12 right-col-fix">
+            <div>
+                <div class="list-group">
+            <div class="list-group-item">Humanities & Science</div>
+                        @if(isset($data_output) && isset($data_output['Department_id']))
+                        <a href="{{ route('department-profile', ['id' => $data_output['Department_id']]) }}" class="list-group-item ">PROFILE</a>
+                        <a href="{{ route('department-vision-mission', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Vision Mission</a>
+                        <a href="{{ route('department-curriculum', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">CURRICULUM</a>
+                        <a href="{{ route('department-faculty', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Faculty</a>
+                        <a href="{{ route('department-syllabus', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Syllabus</a>
 
+                        <a href="{{ route('department-time-table', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Time Table</a>
+                        <a href="{{ route('department-mentor', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">MENTOR</a>
+                        <a href="{{ route('department-achievements-awards', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">ACHIEVEMENTS AND AWARDS</a>
+                        <a href="{{ route('department-activities-events', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">ACTIVITIES AND EVENTS</a>
+                        <a href="{{ route('department-students-association', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
+                        <a href="{{ route('department-plan', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">PLAN</a>
 
-                  
-                    @if(isset($data_output) && isset($data_output['Department_id']))
-                    <a href="{{ route('department-profile', ['id' => $data_output['Department_id']]) }}" class="list-group-item ">PROFILE</a>
-                    <a href="{{ route('department-vision-mission', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Vision Mission</a>
-                    <a href="{{ route('department-curriculum', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">CURRICULUM</a>
-                    <a href="{{ route('department-faculty', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Faculty</a>
-                    <a href="{{ route('department-syllabus', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Syllabus</a>
+                        @else
+                <p>Vision Mission information is not available.</p>
+                    @endif
 
-                    <a href="{{ route('department-time-table', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">Time Table</a>
-                    <a href="{{ route('department-mentor', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">MENTOR</a>
-                    <a href="{{ route('department-achievements-awards', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">ACHIEVEMENTS AND AWARDS</a>
-                    <a href="{{ route('department-activities-events', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">ACTIVITIES AND EVENTS</a>
-                    <a href="{{ route('department-students-association', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
-                    <a href="{{ route('department-plan', ['id' => $data_output['Department_id']]) }}" class="list-group-item active-rp-link">PLAN</a>
-
-                    @else
-    <p>Vision Mission information is not available.</p>
-@endif
-
+                        
+                        <!--<a href="polytechnic-applied-science-gallery.php" class="list-group-item active-rp-link">Gallery</a>-->
                     
                     <!--<a href="polytechnic-applied-science-gallery.php" class="list-group-item active-rp-link">Gallery</a>-->
-                  
-                  <!--<a href="polytechnic-applied-science-gallery.php" class="list-group-item active-rp-link">Gallery</a>-->
-                  <!--<a href="polytechnic-applied-science-csa.php" class="list-group-item active-rp-link">CSA</a>-->
-              <div class="list-group-item"></div>
-         </div>
-              </div>
-        </div>
-    </div></div>
+                    <!--<a href="polytechnic-applied-science-csa.php" class="list-group-item active-rp-link">CSA</a>-->
+                <div class="list-group-item"></div>
+            </div>
+                </div>
+            </div>
+     </div></div>
     </div>
-    </div>
+    </div><br><br><br><br>
     @endsection

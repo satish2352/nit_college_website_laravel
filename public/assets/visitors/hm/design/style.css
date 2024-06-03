@@ -240,7 +240,7 @@ text-align: center; }
 
 .outer-white p {
   text-align: left;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 .outer-white b {
