@@ -8,37 +8,23 @@ use App\Models\ {
 };
 use Illuminate\Support\Facades\Storage;
 
-// function getMenuItemsActivities() {
+function getMenuItemsActivities() {
 
-//     $menu_data = array();
-//     $menu_data =  ActivitiesCategory::where('is_active', '=',true)
-//     ->where('is_delete', 0)
-//                         ->select( 
-//                             'activities.activities', 
-//                             'activities.id',
-//                         )
-//                         // ->get()
-//                         ->toArray();
+    $menu_data = array();
+    $menu_data =  ActivitiesCategory::where('is_active', '=',true)
+    ->where('is_delete', 0)
+                        ->select( 
+                            'activities.activities', 
+                            'activities.id',
+                        )
+                        ->get()
+                        ->toArray();
 
 
                       
-//     return $menu_data ;
+    return $menu_data ;
     
                 
-// }
-function getMenuItemsActivities() {
-    $menu_data = array();
-
-    // Assuming you have a model called ActivitiesCategory and a related model Activities
-    $menu_data = ActivitiesCategory::where('is_active', true)
-        ->where('is_delete', 0)
-        ->with(['activities' => function ($query) {
-            $query->select('activities.id', 'activities.activities');
-        }])
-        ->get()
-        ->toArray();
-
-    return $menu_data;
 }
 
 
@@ -55,7 +41,7 @@ function getMenuItemsActivities() {
 //                         ->get()
 //                         ->toArray();
 
-// }
+
                       
 //     return $menu_data_department ;
 function getMenuItemsDepartment() {
