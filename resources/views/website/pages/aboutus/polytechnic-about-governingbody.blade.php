@@ -201,7 +201,7 @@
                                                                         <center>{{ $data_output->fld_bm_name }}</center>
                                                                     </td>
                                                                     <td>
-                                                                        <center>{{ $data_output->Designation }}</center>
+                                                                        <center>{{ $data_output->Department }}</center>
                                                                     </td>
                                                                 </tr>
                                                             @endif
