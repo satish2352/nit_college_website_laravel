@@ -11,7 +11,7 @@
     </div>
 </div>
 <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px">
-    <div class="container">
+    <div class="container card-shadow">
         <div class="row" style="padding:0px">
             <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
                 <div class="row outer-white">
@@ -50,7 +50,7 @@
                                 @else
 
                                 <h2><strong>VISION :</strong></h2>
-                                <h2 style="color:blue">{{ $data_output->department_vision }}</h2>
+                                <p >{{ $data_output->department_vision }}</p>
                             </div>
 
 

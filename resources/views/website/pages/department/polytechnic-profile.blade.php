@@ -11,7 +11,7 @@
     </div>
     </div>
     <div class="container-fluid" style=" background:#fff; padding-top:20px; padding-bottom:20px" >
-    <div class="container" style="box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);padding-top:20px;"> 
+    <div class="container"> 
     <div class="row" style="padding:0px ">
     <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
     <div class="row outer-white">
