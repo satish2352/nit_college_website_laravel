@@ -117,12 +117,13 @@
     <div class="row">
     <div class="col-sm-12 contact">
     Contact&nbsp; 
-    <span style="background:url(visitors/layout_1/design/images/icon-phone-w.png)0px 15px no-repeat">9552551056&nbsp;9822208687
+    <span style="background:url(visitors/layout_1/design/images/icon-phone-w.png)0px 15px no-repeat"><a style="color: #fff" href="tel:9822208687">9822208687</a>&nbsp;
+        <a style="color: #fff;" href="tel:9552551056">9552551056</a>&nbsp;
     </span> 
     <!--<span style="background: url(visitors/layout_1/design/images/icon-fax-w.png) 0px 15px no-repeat">+91 2556 253992</span>-->
     <span style="background: url(visitors/layout_1/design/images/icon-mail-w.png) 0px 15px no-repeat"><a href="mailto:info@nitnasik.com" style="color: #fff;">info@nitnasik.com</a>  </span>
     
-    <span style="margin-bottom:-90px">&copy;2020 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed By <a href="https://sumagoinfotech.com/" target="_blank" style="color:white">Sumago Infotech <img src="up-images/slogo.png" alt=""  style="height:20px; width:20px;"></a>&nbsp;
+    <span style="margin-bottom:-90px">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed By <a href="https://sumagoinfotech.com/" target="_blank" style="color:white">Sumago Infotech <img src="{{ asset('public/assets/up-images/slogo.png') }}" alt=""  style="height:20px; width:20px;"></a>&nbsp;
         
         
     </span>

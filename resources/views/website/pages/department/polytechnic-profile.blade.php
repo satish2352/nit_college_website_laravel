@@ -32,6 +32,10 @@
                 <p></p>
                 <div>   
 
+            <div class="col-sm-12" style="padding:0;">
+                <h4 style="color:green"><strong>Welcome To Humanities & Science Engineering Department </strong></h4>
+                <!--<div class="pull-right"><img src="../up-images/applied-science-iconimgFile5686712b79a04.png" alt="" class="img-responsive"></div>-->
+            </div>
 
 
                     @if (isset($error))
@@ -55,8 +59,9 @@
                             <div>
                                 <p>{{ $data_output->department_description }}</p>
                             </div>
-
-                            <img src="../NIT/department/<?php echo $data_output['photo'];?>" height="300px" width="700px" ><br> 
+                            <img id="english"
+                                                src="{{ Config::get('DocumentConstant.DEPARTMENT_VIEW_PROFILE') }}{{ $data_output->photo }}"
+                                                class="img-fluid img-thumbnail" height="300px" width="700px">
                         @endif
                     @endif
                 @endif
