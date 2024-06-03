@@ -28,37 +28,22 @@ function getMenuItemsActivities() {
 }
 
 
-// function getMenuItemsDepartment() {
-
-//     $menu_data_department = array();
-//     $menu_data_department =  DepartmentCategory::where('is_active', '=',true)
-//     ->where('Department_delete', 0)
-//                         ->select( 
-//                             'department.Department', 
-//                             'department.id',
-//                         )
-//                         ->orderBy('department.id', 'desc')
-//                         ->get()
-//                         ->toArray();
-
-// }
-                      
-//     return $menu_data_department ;
 function getMenuItemsDepartment() {
-    $menu_data_department = DepartmentCategory::where('is_active', '=', true)
-        ->where('Department_delete', 0)
-        ->select('department.Department', 'department.id')
-        ->orderBy('department.id', 'desc')
-        ->get()
-        ->toArray();
 
-    // Reindex the array to start from 1
-    $reindexed_menu_data_department = [];
-    foreach ($menu_data_department as $key => $value) {
-        $reindexed_menu_data_department[$key + 1] = $value;
-    }
+    $menu_data_department = array();
+    $menu_data_department =  DepartmentCategory::where('is_active', '=',true)
+    ->where('Department_delete', 0)
+                        ->select( 
+                            'department.Department', 
+                            'department.id',
+                        )
+                        ->orderBy('department.id', 'desc')
+                        ->get()
+                        ->toArray();
 
-    return $reindexed_menu_data_department;
-}
 
+                      
+    return $menu_data_department ;
+    
                 
+}
