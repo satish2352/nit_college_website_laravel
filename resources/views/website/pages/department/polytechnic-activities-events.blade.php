@@ -649,23 +649,41 @@ color: rgb(255, 255, 255);">
 	<!--Right col-->
 	<div class="col-sm-12 right-col-fix">
 	<div>
-		  <div class="list-group">
-	  <div class="list-group-item">Civil Engineering</div>
-	  	  	  	<a href="polytechnic-civil-engineering-profile.php" class="list-group-item active-rp-link">PROFILE</a>
-              <a href="polytechnic-civil-engineering-vision-mission.php" class="list-group-item active-rp-link">MISSION & VISSION</a>
-              <a href="polytechnic-civil-engineering-pos_and_cos.php" class="list-group-item ">CURRICULUM</a>
-	  	  	  	<a href="polytechnic-civil-engineering-laboratories.php" class="list-group-item ">LABORATORIES</a>
-	  	  	  	
-	  	  	  	<a href="polytechnic-civil-engineering-faculty.php" class="list-group-item ">FACULTY</a>
-	  	  	  	<a href="polytechnic-civil-engineering-syllabus.php" class="list-group-item ">SYLLABUS</a>
-	  	  	  	<a href="polytechnic-civil-engineering-timetable.php" class="list-group-item ">TIME TABLE</a>
-	  	  	  	<a href="polytechnic-civil-engineering-academin_activity.php" class="list-group-item ">MENTOR</a>
-	  	  	  	<a href="polytechnic-civil-engineering-gallery.php" class="list-group-item ">ACHIEVEMENTS AND AWARDS</a>
-	  	  	  	<a href="polytechnic-civil-engineering-events.php" class="list-group-item ">ACTIVITIES AND EVENTS</a>
-	  	  	  	<a href="polytechnic-civil-engineering-cesa.php" class="list-group-item ">STUDENTS ASSOCIATION</a>
-	  	  	  	<a href="polytechnic-civil-engineering-plan.php" class="list-group-item ">PLAN</a>
-	  	  <div class="list-group-item"></div>
-	 </div>
+  <div class="list-group">
+                    <div class="list-group-item">Humanities & Science</div>
+                    @if(isset($data_output) && isset($data_output['Department_id']))
+                    <a href="{{ route('department-profile', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item ">PROFILE</a>
+                    <a href="{{ route('department-vision-mission', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Vision Mission</a>
+                    <a href="{{ route('department-curriculum', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">CURRICULUM</a>
+                    <a href="{{ route('department-faculty', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Faculty</a>
+                    <a href="{{ route('department-syllabus', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Syllabus</a>
+
+                    <a href="{{ route('department-time-table', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Time Table</a>
+                    <a href="{{ route('department-mentor', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">MENTOR</a>
+                    <a href="{{ route('department-achievements-awards', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">ACHIEVEMENTS AND AWARDS</a>
+                    <a href="{{ route('department-activities-events', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">ACTIVITIES AND EVENTS</a>
+                    <a href="{{ route('department-students-association', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
+                    <a href="{{ route('department-plan', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">PLAN</a>
+
+                    @else
+                    <p>Vision Mission information is not available.</p>
+                    @endif
+
+
+
+                    <div class="list-group-item"></div>
+                </div>
 	 
 	  	</div>
 	</div>

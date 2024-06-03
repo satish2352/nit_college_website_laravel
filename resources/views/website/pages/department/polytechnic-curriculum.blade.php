@@ -381,27 +381,41 @@
         <!--Right col-->
         <div class="col-sm-12 right-col-fix">
         
-         <div class="list-group">
-          <div class="list-group-item">Humanities & Science</div>
-                    <a href="polytechnic-applied-science-profile.php" class="list-group-item ">PROFILE</a>
-                    <a href="applied-vision-mission.php" class="list-group-item active-rp-link">MISSION & VISSION</a>
-                    <a href="polytechnic-applied-science-posandcos.php" class="list-group-item active-rp-link">CURRICULUM</a>
-                    <a href="polytechnic-applied-science-laboratories.php" class="list-group-item ">LABORATORIES</a>
-                    <a href="polytechnic-applied-science-faculty.php" class="list-group-item ">FACULTY</a>
-                    <a href="polytechnic-applied-science-syllabus.php" class="list-group-item ">SYLLABUS</a>
-                    <a href="polytechnic-applied-science-timetable.php" class="list-group-item ">TIME TABLE</a>
-                    <a href="polytechnic-applied-science-mentor.php" class="list-group-item ">MENTOR</a>
-                    <a href="polytechnic-applied-science-academic_activity.php" class="list-group-item active-rp-link">ACHIEVEMENTS AND AWARDS</a>
-                    <a href="polytechnic-applied-science-academic_event.php" class="list-group-item active-rp-link">ACTIVITIES AND EVENTS</a>
-                    <a href="polytechnic-applied-science-csa.php" class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
-                    <a href="polytechnic-applied-science-plan.php" class="list-group-item active-rp-link">PLAN</a>
-                    
-                    <!--<a href="polytechnic-applied-science-gallery.php" class="list-group-item active-rp-link">Gallery</a>-->
-                  
-                  <!--<a href="polytechnic-applied-science-gallery.php" class="list-group-item active-rp-link">Gallery</a>-->
-                  <!--<a href="polytechnic-applied-science-csa.php" class="list-group-item active-rp-link">CSA</a>-->
-              <div class="list-group-item"></div>
-         </div>	  	
+        <div class="list-group">
+                    <div class="list-group-item">Humanities & Science</div>
+                    @if(isset($data_output) && isset($data_output['Department_id']))
+                    <a href="{{ route('department-profile', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item ">PROFILE</a>
+                    <a href="{{ route('department-vision-mission', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Vision Mission</a>
+                    <a href="{{ route('department-curriculum', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">CURRICULUM</a>
+                    <a href="{{ route('department-faculty', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Faculty</a>
+                    <a href="{{ route('department-syllabus', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Syllabus</a>
+
+                    <a href="{{ route('department-time-table', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Time Table</a>
+                    <a href="{{ route('department-mentor', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">MENTOR</a>
+                    <a href="{{ route('department-achievements-awards', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">ACHIEVEMENTS AND AWARDS</a>
+                    <a href="{{ route('department-activities-events', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">ACTIVITIES AND EVENTS</a>
+                    <a href="{{ route('department-students-association', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
+                    <a href="{{ route('department-plan', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">PLAN</a>
+
+                    @else
+                    <p>Vision Mission information is not available.</p>
+                    @endif
+
+
+
+                    <div class="list-group-item"></div>
+                </div>	
         </div>
         </div>
         
