@@ -179,6 +179,10 @@ AOS.init({
 <ul class="dropdown-menu">
 
     @foreach ($menuDepartment as $menuItemDepartment)
+
+    <?php
+
+    ?>
     <li class="">
         <a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
     </li>
@@ -223,6 +227,8 @@ AOS.init({
 
 </ul>
 </li>
+
+
 <!--<li><a class="" href="pages/polytechnic-mechanical-engineering-library.php"><b>Library</b></a></li>-->
 <!--<li class="dropdown">-->
 <!--<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>T &amp; P CELL</b><span class="caret"></span></a>-->
