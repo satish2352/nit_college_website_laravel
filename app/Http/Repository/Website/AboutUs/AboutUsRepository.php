@@ -46,7 +46,8 @@ public function getPolytechnicAboutGoverningbody()
                 'department.Department',
                 'tbl_board_members.is_active'
             )
-            // ->where('tbl_board_members.is_active', 1) // Uncomment this to filter by active records
+            ->where('tbl_board_members.is_active', 1)
+            ->where('tbl_board_members.fld_delete', 0)
             ->orderBy('tbl_board_members.fld_bm_id', 'desc')
             ->get(); // Retrieve all matching records
 

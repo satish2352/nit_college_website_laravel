@@ -171,15 +171,16 @@
                                          
                                           
 
-                                           <h5 class="mt-2" style="color:#00ae97;"><strong>  Principal, <br>   Prof. Pankaj P. Bhirud,  M.E.(Design)</strong></h5>  
+                                           <h5 class="mt-2" style="color:#00ae97;"><strong>  Principal, <br>   Prof.Gopal Vadnere</strong></h5>  
                                   </div>
                                   <div class="col-lg-7 m-5">
                                     <h5 class="mt-2" style="color:#00ae97;"><strong> Dear Students,</strong></h5>     
                                     I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br>
-                                    Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
+
+                                   <p> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.</p>
                                     <br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
                                     <br>So be the part of NIT Family.<br>
-                                    &nbsp;&nbsp;<h5 style="color:blue"><strong>Prof. Manoj N.Burad,M.E.(VLSI)<br>Principal, Nasik Institute of Technology </strong></h5>
+                                 
                                     </p>
                                   </div>
                                 </div>   
