@@ -258,10 +258,10 @@ AOS.init({
 <li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Quick Links</b><span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li class=""><a href="https://msbte.org.in/">msbte.org</a></li>
-<li class=""><a href="https://www.aicte-india.org/">aicte-india.org</a></li>
-<li class=""><a href="http://www.dtemaharashtra.gov.in/index.html">dtemaharashtra.gov.in</a></li>
-<li class=""><a href="https://scholarships.gov.in/">scholarships.gov.in</a></li>
+<li class=""><a href="https://msbte.org.in/" target="_blank">msbte.org</a></li>
+<li class=""><a href="https://www.aicte-india.org/" target="_blank">aicte-india.org</a></li>
+<li class=""><a href="http://www.dtemaharashtra.gov.in/index.html" target="_blank">dtemaharashtra.gov.in</a></li>
+<li class=""><a href="https://scholarships.gov.in/" target="_blank">scholarships.gov.in</a></li>
 </ul>
 </li>
 

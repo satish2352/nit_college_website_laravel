@@ -37,13 +37,13 @@ class AboutUsRepository  {
 public function getPolytechnicAboutGoverningbody()
 {
     try {
-        $data_output = BoardMembers::join('department', 'department.id', '=', 'tbl_board_members.Designation_id')
+        $data_output = BoardMembers::join('designation', 'designation.id', '=', 'tbl_board_members.Designation_id')
             ->select(
                 'tbl_board_members.fld_bm_id',
-                'department.id as Department_id',
+                'designation.id as Designation_id',
                 'tbl_board_members.fld_bm_name', 
                 'tbl_board_members.gov_address', 
-                'department.Department',
+                'designation.Designation',
                 'tbl_board_members.is_active'
             )
             ->where('tbl_board_members.is_active', 1)

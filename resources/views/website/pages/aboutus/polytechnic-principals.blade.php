@@ -145,7 +145,7 @@
     <div class="container">
     
     <div class="col-sm-12" style="padding:0;">
-        <center><h2 style="color:green"><strong>Principal Desk </strong></h2></center>
+        {{-- <center><h2 style="color:green"><strong>Principal Desk </strong></h2></center> --}}
         <!-- <br> -->
         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">
         <!--<h2 style="color:blue"><strong>Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President, Nasik Institute of Technology </strong></h2>-->
@@ -154,12 +154,13 @@
     <div class="" style="background-color: #fff;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card-shadow">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="panel panel-primary product-type">
                             <div class="">
-                                <center><h3 class="panel-title" style="color:blue"><b>Principal Message</b></h3></center>
-                                {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
+                                <center><h2 style="color:green"><strong>Principal Desk </strong></h2></center>
+                                {{-- <center><h3 class="panel-title" style="color:blue"><b>Principal Message</b></h3></center> --}}
+            
                             </div>
 
                             <div class="col-12 col-lg-9 row mt-5 mb-5 president-msg">
@@ -177,7 +178,7 @@
                                     <h5 class="mt-2" style="color:#00ae97;"><strong> Dear Students,</strong></h5>     
                                     I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br>
 
-                                   <p> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.</p>
+                                   <p style="font-size: 15px;"> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.</p>
                                     <br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
                                     <br>So be the part of NIT Family.<br>
                                  

@@ -214,7 +214,7 @@
                                                             <p align="center"><strong>SR.NO</strong></p>
                                                         </td>
                                                         <td valign="top" width="10">
-                                                            <p align="center"><strong>Name and Address</strong></p>
+                                                            <p align="center"><strong>Name</strong></p>
                                                         </td>
                                                         <td valign="top" width="84">
                                                             <p align="center"><strong>Designation</strong></p>
@@ -244,7 +244,7 @@
                                                                             <center>{{ $data->fld_bm_name }}</center>
                                                                         </td>
                                                                         <td>
-                                                                            <center>{{ $data->Department }}</center>
+                                                                            <center>{{ $data->Designation }}</center>
                                                                         </td>
                                                                         <td>
                                                                             <center>{{ $data->gov_address }}</center>
