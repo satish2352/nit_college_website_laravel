@@ -11,7 +11,7 @@
     </div>
     </div>
     <div class="container-fluid" style=" background:#fff; padding-top:20px; padding-bottom:20px" >
-    <div class="container"> 
+    <div class="container card-shadow"> 
     <div class="row" style="padding:0px ">
     <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
     <div class="row outer-white">
@@ -21,15 +21,15 @@
     </div><!-- /.row --><div class="row outer-white">
             <div class="col-lg-12 col-sm-12" >
                 <div class="card">
-                <div class="card-header">
+                {{-- <div class="card-header">
                 <p><h4 style="color:black ;">Department Applied Science And Humanities</h4></p>
-                </div>
+                </div> --}}
                 <div class="card-body">
-                <li>Today's engineers and scientists need a well formulated background in applied sciences and humanities in order to make well reasoned decisions involving human values implicit in technical careers and to excel in communication skills in the globally competitive world .The department of Applied science offers a variety of stimulating, specialized and revised subjects that investigate among the natural sciences, technology and humanities. The focus of applied science department is to provide in-depth knowledge of Physics, Chemistry, Mathematics and Communication skills that will form a firm foundation to build engineering and management careers in various disciplines.</li>
+                {{-- <li>Today's engineers and scientists need a well formulated background in applied sciences and humanities in order to make well reasoned decisions involving human values implicit in technical careers and to excel in communication skills in the globally competitive world .The department of Applied science offers a variety of stimulating, specialized and revised subjects that investigate among the natural sciences, technology and humanities. The focus of applied science department is to provide in-depth knowledge of Physics, Chemistry, Mathematics and Communication skills that will form a firm foundation to build engineering and management careers in various disciplines.</li>
                 <li>Department provides an encouraging environment to develop the intellectual capacity, critical thinking, creativity & problem solving ability of the students. Department is taking more focused and multidimensional efforts to make foundation of the students as strong as possible.</li>
                 <li>They are closely associated with first year students for counseling admission work, curricular co and extracurricular activity etc. The department is associated with well `equipped Physics, Chemistry, Electrical laboratories</li>
                 <p></p>
-                <p></p>
+                <p></p> --}}
                 <div>   
 
             <div class="col-sm-12" style="padding:0;">

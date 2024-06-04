@@ -25,7 +25,7 @@
     }
     </style>
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-    <div class="container">
+    <div class="container" >
     
     <div class="col-sm-12" style="padding:0;">
         <h4 style="color:green"><strong>Download Syllabus Humanities And Science Engineering Here....</strong></h4>
@@ -34,7 +34,7 @@
     
     </div>
     </div><div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px" >
-    <div class="container">
+    <div class="container card-shadow" style="margin-bottom: 95px;">
         
         
     
@@ -174,7 +174,7 @@
                         class="list-group-item active-rp-link">PLAN</a>
 
                     @else
-                    <p>Vision Mission information is not available.</p>
+                    <p> Data not available.</p>
                     @endif
 
 

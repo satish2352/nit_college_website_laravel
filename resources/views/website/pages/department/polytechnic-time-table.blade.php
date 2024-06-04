@@ -34,7 +34,7 @@
     
     </div>
     </div><div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px" >
-    <div class="container">
+    <div class="container card-shadow" style="margin-bottom: 95px;">
         
     
     
@@ -161,7 +161,7 @@
                         class="list-group-item active-rp-link">PLAN</a>
 
                     @else
-                    <p>Vision Mission information is not available.</p>
+                    <p> Data not available.</p>
                     @endif
 
 
