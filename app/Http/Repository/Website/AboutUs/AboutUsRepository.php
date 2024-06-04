@@ -48,7 +48,7 @@ public function getPolytechnicAboutGoverningbody()
             )
             ->where('tbl_board_members.is_active', 1)
             ->where('tbl_board_members.fld_delete', 0)
-            ->orderBy('tbl_board_members.fld_bm_id', 'desc')
+            ->orderBy('tbl_board_members.fld_bm_id', 'asc')
             ->get(); // Retrieve all matching records
 
         return $data_output;
