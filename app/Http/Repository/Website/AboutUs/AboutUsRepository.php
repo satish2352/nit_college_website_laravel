@@ -21,6 +21,7 @@ class AboutUsRepository  {
                 'tbl_board_members.fld_bm_id',
                 'department.id as Department_id',
                 'tbl_board_members.fld_bm_name', 
+                'tbl_board_members.gov_address', 
                 'department.Department',
                 'tbl_board_members.is_active'
             )

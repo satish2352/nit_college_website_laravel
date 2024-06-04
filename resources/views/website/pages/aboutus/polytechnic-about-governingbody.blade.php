@@ -159,6 +159,10 @@
                                                         <td valign="top" width="84">
                                                             <p align="center"><strong>Designation</strong></p>
                                                         </td>
+                                                        <td valign="top" width="84">
+                                                            <p align="center"><strong>Address</strong></p>
+                                                        </td>
+                                                        
                                                     </tr>
 
                                                     @if (isset($error))
@@ -187,6 +191,10 @@
                                                                     <td>
                                                                         <center>{{ $data_output->Department }}</center>
                                                                     </td>
+                                                                    <td>
+                                                                        <center>{{ $data_output->gov_address }}</center>
+                                                                    </td>
+                                                                   
                                                                 </tr>
                                                             @endif
                                                         @endif
