@@ -9,7 +9,7 @@
     </div>
     <div class="container-fluid" style="padding-bottom:20px">
         <div class="container card-shadow">
-            @if (isset($data_output) && isset($data_output['Department_id']))
+          
                 <div class="row" style="padding:0px ">
                     <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
                         <div class="row outer-white">
@@ -67,7 +67,7 @@
                             <div>
                                 <div class="list-group">
                                     <div class="list-group-item">Humanities & Science</div>
-
+                                    @if (isset($data_output) && isset($data_output['Department_id']))
                                     <a href="{{ route('department-profile', ['id' => $data_output['Department_id']]) }}"
                                         class="list-group-item ">PROFILE</a>
                                     <a href="{{ route('department-vision-mission', ['id' => $data_output['Department_id']]) }}"
@@ -91,15 +91,16 @@
                                         class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
                                     <a href="{{ route('department-plan', ['id' => $data_output['Department_id']]) }}"
                                         class="list-group-item active-rp-link">PLAN</a>
+                                          @else
+                <p class="department-error">Data not available.</p>
+            @endif
                                     <div class="list-group-item"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            @else
-                <p class="department-error">Data not available.</p>
-            @endif
+          
         </div>
     </div><br><br><br><br>
 @endsection

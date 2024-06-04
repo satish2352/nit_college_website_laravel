@@ -251,8 +251,8 @@ color: rgb(255, 255, 255);">
                         class="list-group-item active-rp-link">Vision Mission</a>
                     <a href="{{ route('department-curriculum', ['id' => $data_output['Department_id']]) }}"
                         class="list-group-item active-rp-link">CURRICULUM</a>
-                    <a href="{{ route('department-faculty', ['id' => $data_output['Department_id']]) }}"
-                        class="list-group-item active-rp-link">Faculty</a>
+                    {{-- <a href="{{ route('department-faculty', ['id' => $data_output['Department_id']]) }}"
+                        class="list-group-item active-rp-link">Faculty</a> --}}
                     <a href="{{ route('department-syllabus', ['id' => $data_output['Department_id']]) }}"
                         class="list-group-item active-rp-link">Syllabus</a>
 
