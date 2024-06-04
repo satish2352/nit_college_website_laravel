@@ -53,12 +53,15 @@
                 <div class="carousel-inner" role="listbox">
                     @forelse($data_output as $index => $slider)
                         <div class="item {{ $loop->first ? 'active' : '' }}">
-                            <img src="{{ asset('public/assets/images/slider_img/' . $slider['fld_slider_image']) }}" width="100%" alt="{{ $slider['fld_slider_title'] }}">
+                            <img src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $slider['fld_slider_image'] }}"  width="100%" alt="{{ $slider['fld_slider_title'] }}">
+
+                            {{-- <img src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $data_output->fld_slider_image }}"  width="100%" alt="{{ $slider['fld_slider_title'] }}"> --}}
                             <div class="carousel-caption">
                                 <h3>{{ $slider['fld_slider_title'] }}</h3>
                                 <p>{{ $slider['fld_slider_subtitle'] }}</p>
                             </div>
                         </div>
+                        
                     @empty
                         <!-- No data found message -->
                         <div class="item active">

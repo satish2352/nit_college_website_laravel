@@ -9,6 +9,6 @@ return [
     'CURRICULUM_DOC_VIEW'	         => env("FILE_VIEW").'/documents/curriculum/', 
     'SYLLABUS_DOC_VIEW'	         => env("FILE_VIEW").'/documents/syllabus/', 
     'TIMETABLE_DOC_VIEW'	         => env("FILE_VIEW").'/documents/timetable/', 
-    
+    'SLIDER_VIEW'	         => env("FILE_VIEW").'/images/slider_img/', 
     
 ];
