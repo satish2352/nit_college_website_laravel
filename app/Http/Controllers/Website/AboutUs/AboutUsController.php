@@ -53,6 +53,7 @@ class AboutUsController extends Controller
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
             $data_output = $this->service->getPolytechnicAboutGoverningbody();
+           
             return view('website.pages.aboutus.polytechnic-about-governingbody', compact('data_output','menu', 'menuDepartment'));
         } catch (\Exception $e) {
             return $e;

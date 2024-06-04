@@ -25,7 +25,6 @@ class AboutUsServices
     {
         try {
             $dataOutputCategory = $this->repo->getPolytechnicAboutGoverningbody();
-
             // dd($dataOutputCategory);
             // die();
             return $dataOutputCategory; // This will never be executed due to dd()
