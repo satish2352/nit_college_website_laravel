@@ -177,7 +177,7 @@
                                                     {{ $error }}
                                                 </div>
                                             @else
-                                                @if ($data_output->isEmpty())
+                                                @if (!$data_output)
                                                     <div class="alert alert-info">
                                                         Data not found
                                                     </div>
