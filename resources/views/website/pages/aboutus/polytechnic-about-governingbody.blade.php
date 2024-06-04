@@ -229,11 +229,11 @@
                                                             {{ $error }}
                                                         </div>
                                                     @else
-                                                        @if ($data_output->isEmpty())
+                                                        {{-- @if ($data_output->isEmpty())
                                                             <div class="alert alert-info">
                                                                 Data not found
                                                             </div>
-                                                        @else
+                                                        @else --}}
                                                             @foreach ($data_output as $data)
                                                                 @if ($data->is_active)
                                                                     <tr>
