@@ -138,8 +138,8 @@
                                         <center>
                                             <h3 class="panel-title" style="color:blue"><b>Governing Body Members</b></h3>
                                         </center>
-                                        <span class="pull-right clickable"><i
-                                                class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
+                                        {{-- <span class="pull-right clickable"><i
+                                                class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                                     </div>
                                     <div class="panel-body">
                                         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->

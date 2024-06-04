@@ -164,29 +164,45 @@
                             <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
             
                                      <center>
-            <table class="table table-striped table-bordered"  id="customers">
-                            <thead>
-                                <tr>
-                                    
-                                    <th><center>Title</center></th>
-                                    <th class="td-actions"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @if($data_output)
-                                <td><center>{{ $data_output->title }}</center></td>
-                        
-                                <td class="td-actions">
-                                    <center>
-                                <a href="../images/aicte/<?php echo $data_output['file'];?>" class="btn btn-small btn-primary">
-                                        <i class="btn-icon-only icon-ok">Download</i>										
-                                    </a>
-                                </td>
-                            @else
-                                <p>No data found</p>
-                            @endif                            
-                            </tbody>
-                            </table> 
+                                        <table class="table table-striped table-bordered" id="customers">
+                                            <thead>
+                                                <tr>
+                                                    <th><center>Title</center></th>
+                                                    <th class="td-actions"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @if (isset($error))
+                                                <div class="alert alert-danger">
+                                                    {{ $error }}
+                                                </div>
+                                            @else
+                                                @if ($data_output->isEmpty())
+                                                    <div class="alert alert-info">
+                                                        Data not found
+                                                    </div>
+                                                @else
+                                                    @foreach ($data_output as $data)
+                                                        @if ($data->is_active == 1)
+                                                            <tr>
+                                                                <td><center>{{ $data->title }}</center></td>
+                                                                <td class="td-actions">
+                                                                    <center>
+                                                                        <a href="{{ Config::get('DocumentConstant.AICTE_VIEW') }}{{ $data->file }}"
+                                                                            target="_blank" class="btn btn-small btn-primary">
+                                                                            <i class="btn-icon-only icon-ok">Download</i>
+                                                                        </a>
+                                                                    </center>
+                                                                </td>
+                                                            </tr>
+                                                        @endif
+                                                    @endforeach
+                                                @endif
+                                            @endif
+                                            
+                                            </tbody>
+                                        </table>
+                                        
                    </center>
                             
                             </div>

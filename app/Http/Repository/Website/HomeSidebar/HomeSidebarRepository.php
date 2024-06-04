@@ -34,20 +34,32 @@ class HomeSidebarRepository  {
             return $e;
         }
     }
-
     public function getAICTEExtension(){
         try {
-
             $data_output = AICTE::where('fld_delete', '0')
-            // ->where('is_active', '1')
-            ->orderBy('aicte_id', 'desc')
-            ->first();
-                   
-                      return $data_output;
+                ->where('is_active', '1')
+                ->orderBy('aicte_id', 'desc')
+                ->get();
+                       
+            return $data_output;
         } catch (\Exception $e) {
             return $e;
         }
     }
+    
+    // public function getAICTEExtension(){
+    //     try {
+
+    //         $data_output = AICTE::where('fld_delete', '0')
+    //         ->where('is_active', '1')
+    //         ->orderBy('aicte_id', 'desc')
+    //         ->get();
+                   
+    //                   return $data_output;
+    //     } catch (\Exception $e) {
+    //         return $e;
+    //     }
+    // }
     public function getMSBTE(){
         try {
 

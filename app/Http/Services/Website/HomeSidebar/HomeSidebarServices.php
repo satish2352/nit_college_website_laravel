@@ -34,6 +34,8 @@ class HomeSidebarServices
     {
         try {
             $dataOutputCategory = $this->repo->getAICTEExtension();
+            // dd($dataOutputCategory);
+            // die();
             return $dataOutputCategory; // This will never be executed due to dd()
         } catch (\Exception $e) {
             return $e;
