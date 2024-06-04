@@ -11,7 +11,7 @@
     }
     .panel
     {
-        background-color: #fff;
+        background-color: #fff !important;
         border: 1px solid transparent;
         border-radius: 0;
         /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);*/
@@ -19,7 +19,7 @@
     }
     .product-type
     {
-        margin-top: 5px;
+        margin-top: 45px;
     }
     .product-size
     {
@@ -45,6 +45,8 @@
     {
         font-size: 22px;
         font-weight:400;
+        color:#00ae97;
+        /* background-color:#c70039; */
     }
     
     .panel_product_type
@@ -62,59 +64,83 @@
         font-weight: 400;
         color: black;
     }
-
+    /* .president-msg{
+        box-shadow: 0 0 15px #8D9AA8;
+        border-radius: 10px;
+    }
+    .president-msg p::first-letter{
+        color: #c70039;
+        font-size: xx-large;
+    } */
     
-    /* Styling for panel content */
-.panel_content {
-    /* margin: 20px; */
+    /* Styles for the president-msg section */
+.president-msg {
+    margin-top: 5rem; /* Adjust as needed */
+    margin-bottom: 5rem; /* Adjust as needed */
 }
 
-/* Centering the panel title */
-.panel-title {
-    margin-top: 0;
+/* Styles for the president image and text */
+.president-msg .col {
+    text-align: center;
 }
 
-/* Styling for principal's message */
-.panel-primary {
-    border-color: #337ab7;
+/* .president-msg img {
+    height: 400px;
+} */
+.president-msg img {
+    height: 250px;
+}
+.president-msg h5 {
+    color: #00ae97;
+    margin-top: 2rem;
+    font-weight: bold;
 }
 
-.panel-heading {
-    background-color: #337ab7;
-    color: white;
+.president-msg p {
+    font-size: 1.25rem; /* Adjust as needed */
+    text-align: justify;
 }
 
-.panel-body {
-    padding: 20px;
+/* Animation styles */
+[data-aos="fade-left"] {
+    /* Add your fade-left animation styles */
 }
 
-/* Styling for principal's name */
-.panel-body h5 {
-    margin-top: 20px;
+[data-aos="fade-right"] {
+    /* Add your fade-right animation styles */
 }
 
-/* Media query for responsiveness */
-@media only screen and (max-width: 768px) {
-    .panel-body {
-        font-size: 14px;
+.row1{   
+   margin-right: 0px;
+  margin-left: 0px;
+  width:1100px
+}
+
+/* @media (max-width: 991px) {
+    .president-msg img {
+        height: auto;
+        max-width: 100%;
     }
 }
 
+@media (max-width: 767px) {
+    .president-msg {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .president-msg h5 {
+        font-size: 1.5rem;
+    }
+    
+    .president-msg p {
+        font-size: 1rem;
+    }
+} */
+
+    
     </style>
-    <script>
-           $(document).on('click', '.panel-heading span.clickable', function(e){
-                var $this = $(this);
-                if(!$this.hasClass('panel-collapsed')) {
-                    $this.parents('.panel').find('.panel-body').slideUp();
-                    $this.addClass('panel-collapsed');
-                    $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass('glyphicon glyphicon-plus-sign');
-                } else {
-                    $this.parents('.panel').find('.panel-body').slideDown();
-                    $this.removeClass('panel-collapsed');
-                    $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass('glyphicon glyphicon-minus-sign');
-                }
-            })
-    </script>
+ 
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container">
     
@@ -125,29 +151,69 @@
         <!--<h2 style="color:blue"><strong>Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President, Nasik Institute of Technology </strong></h2>-->
     </div>
     
-    <div class="panel_content">
+    <div class="" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="panel panel-primary product-type">
-                            <div class="panel-heading">
+                            <div class="">
                                 <center><h3 class="panel-title" style="color:blue"><b>Principal Message</b></h3></center>
-                                <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
+                                {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                             </div>
-                            <div class="panel-body">
+
+                            <div class="col-12 col-lg-9 row mt-5 mb-5 president-msg">
+                                <div class="row1">
+                                  <div class="col-lg-5 col text-center m-5" data-aos="fade-left">
+                                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" height="400">
+                                           &nbsp;&nbsp;
+                                          
+                                         
+                                          
+
+                                           <h5 class="mt-2" style="color:#00ae97;"><strong>  Principal, <br>   Prof. Pankaj P. Bhirud,  M.E.(Design)</strong></h5>  
+                                  </div>
+                                  <div class="col-lg-7 m-5">
+                                    <h5 class="mt-2" style="color:#00ae97;"><strong> Dear Students,</strong></h5>     
+                                    I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br>
+                                    Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
+                                    <br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
+                                    <br>So be the part of NIT Family.<br>
+                                    &nbsp;&nbsp;<h5 style="color:blue"><strong>Prof. Manoj N.Burad,M.E.(VLSI)<br>Principal, Nasik Institute of Technology </strong></h5>
+                                    </p>
+                                  </div>
+                                </div>   
+                               </div>
+
+
+
+
+
+
+
+
+
+
+                            {{-- <div class="panel-body"> --}}
                             <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
-            
-                            <p align="Justify"> Dear Students,<br>
-                            I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br>
-                            Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
-                            <br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
-                            <br>So be the part of NIT Family.<br>
-                            &nbsp;&nbsp;<h5 style="color:blue"><strong>Prof. Manoj N.Burad,M.E.(VLSI)<br>Principal, Nasik Institute of Technology </strong></h5>
-                            </p>
+            {{-- <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" height="400">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p align="Justify"> Dear Students,<br>
+                        I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br>
+                        Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
+                        <br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
+                        <br>So be the part of NIT Family.<br>
+                        &nbsp;&nbsp;<h5 style="color:blue"><strong>Prof. Manoj N.Burad,M.E.(VLSI)<br>Principal, Nasik Institute of Technology </strong></h5>
+                        </p>
+                </div>
+            </div> --}}
+                            
                    
                             
-                            </div>
+                            {{-- </div> --}}
                         </div>
                     </div>
                 </div>
