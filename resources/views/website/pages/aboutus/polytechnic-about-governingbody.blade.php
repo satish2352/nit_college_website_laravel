@@ -145,68 +145,6 @@
                                         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
 
                                         <center>
-                                            {{-- <table style="width: 638px;" class="table table-responsive table-hover"
-                                                cellspacing="0" cellpadding="0">
-                                                <tbody>
-
-                                                    <tr>
-                                                        <td valign="top" width="85">
-                                                            <p align="center"><strong>SR.NO</strong></p>
-                                                        </td>
-                                                        <td valign="top" width="10">
-                                                            <p align="center"><strong>Name and Address</strong></p>
-                                                        </td>
-                                                        <td valign="top" width="84">
-                                                            <p align="center"><strong>Designation</strong></p>
-                                                        </td>
-                                                        <td valign="top" width="84">
-                                                            <p align="center"><strong>Address</strong></p>
-                                                        </td>
-                                                        
-                                                    </tr>
-
-                                                    @if (isset($error))
-                                                        <div class="alert alert-danger">
-                                                            {{ $error }}
-                                                        </div>
-                                                    @else
-                                                        @if (!$data_output)
-                                                            <div class="alert alert-info">
-                                                                Data not found
-                                                            </div>
-                                                        @else
-                                                            @if ($data_output->is_active == 0)
-                                                                <div class="alert alert-info">
-                                                                    Data not found
-                                                                </div>
-                                                            @else
-                                                                <tr>
-
-                                                                    <td>
-                                                                        <center>{{ $data_output->fld_bm_id }}</center>
-                                                                    </td>
-                                                                    <td>
-                                                                        <center>{{ $data_output->fld_bm_name }}</center>
-                                                                    </td>
-                                                                    <td>
-                                                                        <center>{{ $data_output->Department }}</center>
-                                                                    </td>
-                                                                    <td>
-                                                                        <center>{{ $data_output->gov_address }}</center>
-                                                                    </td>
-                                                                   
-                                                                </tr>
-                                                            @endif
-                                                        @endif
-                                                    @endif
-
-
-
-
-
-                                                </tbody>
-                                            </table> --}}
-
                                             <table style="width: 638px;" class="table table-responsive table-hover" cellspacing="0" cellpadding="0">
                                                 <tbody>
                                                     <tr>
@@ -229,11 +167,11 @@
                                                             {{ $error }}
                                                         </div>
                                                     @else
-                                                        {{-- @if ($data_output->isEmpty())
+                                                        @if (!$data_output )
                                                             <div class="alert alert-info">
                                                                 Data not found
                                                             </div>
-                                                        @else --}}
+                                                        @else
                                                             @foreach ($data_output as $data)
                                                                 @if ($data->is_active)
                                                                     <tr>
@@ -256,6 +194,8 @@
                                                     @endif
                                                 </tbody>
                                             </table>
+                                            
+                                            
                                             
                                         </center>
 

@@ -57,8 +57,8 @@
 
                             {{-- <img src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $data_output->fld_slider_image }}"  width="100%" alt="{{ $slider['fld_slider_title'] }}"> --}}
                             <div class="carousel-caption">
-                                <h3>{{ $slider['fld_slider_title'] }}</h3>
-                                <p>{{ $slider['fld_slider_subtitle'] }}</p>
+                                {{-- <h3>{{ $slider['fld_slider_title'] }}</h3>
+                                <p>{{ $slider['fld_slider_subtitle'] }}</p> --}}
                             </div>
                         </div>
                         
