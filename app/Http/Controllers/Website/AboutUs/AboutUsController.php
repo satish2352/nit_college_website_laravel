@@ -58,6 +58,7 @@ class AboutUsController extends Controller
             return $e;
         }
     } 
+    
     public function getPolytechnicAboutFutureplans()
     {
         try {
