@@ -32,11 +32,11 @@
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
         <div class="container">
 
-          
+
 
         </div>
     </div>
-    <div class="container-fluid" style="padding-top:40px; padding-bottom:40px">
+    <div class="container-fluid" style="padding-bottom:40px">
         <div class="container card-shadow" style="margin-bottom: 95px;">
             <div class="row" style="padding:0px">
                 <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
@@ -54,7 +54,7 @@
                                             <th>
                                                 <center>Semister</center>
                                             </th>
-                                            <th class="td-actions"></th>
+                                            <th class="td-actions">Download Syllabus</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -77,8 +77,8 @@
                                                     <tr>
 
                                                         <td>{{ $data_output->semister }}</td>
-                                                        <td> <a href="../images/curriculum/<?php $data_output['file']; ?>"
-                                                                class="btn btn-small btn-primary">
+                                                        <td> <a href="{{ Config::get('DocumentConstant.CURRICULUM_DOC_VIEW') }}{{ $data_output->file }}"
+                                                                target="_blank" class="btn btn-small btn-primary">
                                                                 <i class="btn-icon-only icon-ok">Download</i>
                                                             </a></td>
                                                     </tr>

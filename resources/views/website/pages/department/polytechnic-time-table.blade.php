@@ -26,24 +26,9 @@
     </style>
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container">
-    
-    <div class="col-sm-12" style="padding:0;">
-        <h4 style="color:green"><strong>Download Time Table Civil Engineering Here....</strong></h4>
-        <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
-    </div>
-    
     </div>
     </div><div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px" >
     <div class="container card-shadow" style="margin-bottom: 95px;">
-        
-    
-    
-      <!--<h3>Click On Download To Download Time Table For Civil Engineering</h3><a href="poly\on home page\downloads\timetable0078.pdf" ><h4>Download</h4><span></span></a><br>-->
-    
-    <!--<a href="poly\on home page\downloads\I-Scheme Second Semester-Civil Group[CE,CR,CS].pdf" >2.I-Scheme Second Semester-Civil Group[CE,CR,CS].<span></span></a>-->
-    
-     <!--<span>First Semister</span><a href="#" class="btn btn-info btn-md">Download</a>-->
-    
     <div class="row" style="padding:0px">
     <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
     <div class="row outer-white">
@@ -53,19 +38,19 @@
     
                 </div>
                 
-                
             <div> 
-    
-                
                     
-    
-    
-    
-    <!--<p><span style="background-color: #ffffff; font-size: medium; color: #ff6600; font-family: georgia,palatino;">2. Shri H.H.J.B. Polytechnic&nbsp; (Shift ) &nbsp; &nbsp; &nbsp;&nbsp; Institute Code &nbsp; &nbsp; 1104</span><strong><span style="background-color: #ffffff; font-size: large; color: #ff6600; font-family: georgia,palatino;"> &nbsp;</span></strong></p>-->            </div>
+   </div>
             </div>        
     </div><!-- /.row --><div class="row outer-white">
+
+       
+
             <div class="col-sm-12">
-                
+                <div class="col-sm-12" style="padding:0;">
+                    <h4 style="color:green"><strong>Download Time Table Here....</strong></h4>
+                    <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
+                </div>
                                    <table class="table table-striped table-bordered"  id="customers">
                             <thead>
                                 <tr>
@@ -95,8 +80,11 @@
                                       <tr>
                                        
                                             <td>{{ $data_output->semister }}</td>
-                                           <td>  <a href="../images/timetable/<?php $data_output['file'];?>" class="btn btn-small btn-primary">
-                                            <i class="btn-icon-only icon-ok">Download</i>										
+                                           <td>  <a href="{{ Config::get('DocumentConstant.TIMETABLE_DOC_VIEW') }}{{ $data_output->file }}"
+                                            target="_blank" class="btn btn-small btn-primary">
+                                            <i class="btn-icon-only icon-ok">Download</i>	
+                                            
+                                            
                                         </a></td> 
                                       </tr> 
                             

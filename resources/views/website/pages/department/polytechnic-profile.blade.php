@@ -19,23 +19,19 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div>
-                                            <div class="col-sm-12" style="padding:0;">
-                                                <h4 style="color:green"><strong>Welcome To Humanities & Science Engineering
-                                                        Department </strong></h4>
-                                            </div>
                                             @if (isset($error))
                                                 <div class="alert alert-danger">
                                                     {{ $error }}
                                                 </div>
                                             @else
                                                 @if (!$data_output)
-                                                    <div class="alert alert-info">
-                                                        Data not found
-                                                    </div>
+                                                <div>
+                                                    <p class="department-error">Data not available.</p>
+                                                </div>
                                                 @else
                                                     @if ($data_output->is_active == 0)
-                                                        <div class="alert alert-info">
-                                                            Data not found
+                                                        <div>
+                                                            <p class="department-error">Data not available.</p>
                                                         </div>
                                                     @else
                                                         <div>
