@@ -34,7 +34,6 @@ class ContactUsServices
         
         try {
             $add_role = $this->repo->addContactUs($request);
-            dd($add_role);
             if ($add_role) {
                 return ['status' => 'success', 'msg' => 'Project Added Successfully.'];
             } else {

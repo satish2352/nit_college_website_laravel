@@ -273,6 +273,7 @@ class DepartmentRepository  {
                 ->select(
                     'tbl_plan.fld_bm_id',
                     'department.id as department_id',
+                    'tbl_plan.edu_year', 
                     'tbl_plan.semister', 
                     'tbl_plan.plan_name', 
                     'tbl_plan.subject_name',

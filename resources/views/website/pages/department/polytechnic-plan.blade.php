@@ -87,8 +87,8 @@
                 <table class="table table-striped table-bordered"  id="customers">
                             <thead>
                                 <tr>
-                                    
                                     <th><center>Plan Name</center></th>
+                                    <th><center>Year</center></th>
                                     <th><center>Semister</center></th>
                                     <th><center>Name Of The Subject</center></th>
                                     <th><center>Download File</center></th>
@@ -115,6 +115,7 @@
                                     @else
                                       <tr>
                                         <td><center>{{ $data_output->plan_name }}</center></td>
+                                        <td><center>{{ $data_output->edu_year }}</center></td>
                                     <td><center>{{ $data_output->semister }}</center></td>
                                     <td><center>{{ $data_output->subject_name }}</center></td>
 

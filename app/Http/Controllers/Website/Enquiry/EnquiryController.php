@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Website\ContactUs;
+namespace App\Http\Controllers\Website\Enquiry;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Services\Website\ContactUs\ContactUsServices;
+use App\Http\Services\Website\Enquiry\EnquiryServices;
 // use Session;
 use Validator;
 use Config;
@@ -14,24 +14,24 @@ use Config;
 //     Index
 // };
 
-class ContactUsController extends Controller
+class EnquiryController extends Controller
 {
     // public static $event_repository;
     public function __construct()
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
-        $this->service = new ContactUsServices();  
+        $this->service = new EnquiryServices();  
     }
 
    
     
-    public function getContactUs()
+    public function getEnquiry()
     {
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
-            $contactusdata = $this->service->getContactUs();
+            $contactusdata = $this->service->getEnquiry();
             return view('website.pages.contactus.contact-us',compact('contactusdata','menu', 'menuDepartment'));
 
         } catch (\Exception $e) {
@@ -39,31 +39,31 @@ class ContactUsController extends Controller
         }
     } 
 
-    public function addContactUs(Request $request)
+    public function addEnquiry(Request $request)
     {
 
         try {
 
             $rules = [
-                'fld_contact_name' => 'required|max:255',
-                'fld_contact_subject' => 'required',
-                'fld_contact_email' => 'required|regex:/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z])+\.)+([a-zA-Z0-9]{2,4})+$/',
-                'fld_contact_number' =>  'required|regex:/^[0-9]{10}$/',
-                'fld_contact_message' => 'required',
+                // 'fld_contact_name' => 'required|max:255',
+                // 'fld_contact_subject' => 'required',
+                // 'fld_contact_email' => 'required|regex:/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z])+\.)+([a-zA-Z0-9]{2,4})+$/',
+                // 'fld_contact_number' =>  'required|regex:/^[0-9]{10}$/',
+                // 'fld_contact_message' => 'required',
             ];
             $messages = [
-                'fld_contact_name.required' => 'Please  enter title.',
-                'fld_contact_name.max' => 'Please  enter text length upto 255 character only.',
+                // 'fld_contact_name.required' => 'Please  enter title.',
+                // 'fld_contact_name.max' => 'Please  enter text length upto 255 character only.',
 
-                'fld_contact_subject.required' => 'Please  enter Subject.',
+                // 'fld_contact_subject.required' => 'Please  enter Subject.',
 
-                'fld_contact_email.required' => 'Please enter email.',
-                'fld_contact_email.regex' => 'Enter valid email.',
+                // 'fld_contact_email.required' => 'Please enter email.',
+                // 'fld_contact_email.regex' => 'Enter valid email.',
 
-                'fld_contact_number.required' => 'Please enter number.',
-                'fld_contact_number.regex' => 'Please enter only numbers with 10-digit.',
+                // 'fld_contact_number.required' => 'Please enter number.',
+                // 'fld_contact_number.regex' => 'Please enter only numbers with 10-digit.',
 
-                'fld_contact_message.required' => 'Please  enter Subject.',
+                // 'fld_contact_message.required' => 'Please  enter Subject.',
 
             ];
 
@@ -73,7 +73,7 @@ class ContactUsController extends Controller
                     ->withInput()
                     ->withErrors($validation);
             } else {
-                $add_role = $this->service->addContactUs($request);
+                $add_role = $this->service->addEnquiry($request);
                 if ($add_role) {
                     $msg = $add_role['msg'];
                     $status = $add_role['status'];
