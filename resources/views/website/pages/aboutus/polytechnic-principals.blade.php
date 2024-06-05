@@ -155,11 +155,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card-shadow">
+                    <center><h2 style="color:green"><strong>Principal Desk </strong></h2></center>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="panel panel-primary product-type">
                             <div class="">
-                                <center><h2 style="color:green"><strong>Principal Desk </strong></h2></center>
-                                {{-- <center><h3 class="panel-title" style="color:blue"><b>Principal Message</b></h3></center> --}}
+                              
+                                <center><h3 class="panel-title" style="color:blue"><b>Principal Message</b></h3></center>
             
                             </div>
 

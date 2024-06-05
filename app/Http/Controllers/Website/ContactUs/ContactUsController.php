@@ -32,7 +32,7 @@ class ContactUsController extends Controller
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
             $contactusdata = $this->service->getContactUs();
-            return view('website.pages.contactus.contact-us',compact('contactusdata', compact('menu', 'menuDepartment')));
+            return view('website.pages.contactus.contact-us',compact('contactusdata','menu', 'menuDepartment'));
 
         } catch (\Exception $e) {
             return $e;

@@ -64,3 +64,4 @@ Route::get('/polytechnic-internal-complaint', ['as' => 'polytechnic-internal-com
 Route::get('/polytechnic-about-scst', ['as' => 'polytechnic-about-scst', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAboutSCST']);
 // Route::get('/polytechnic-academic-calendar', ['as' => 'polytechnic-academic-calendar', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAcademicCalendar']);
 
+Route::get('/achievement', ['as' => 'achievement', 'uses' => 'App\Http\Controllers\Website\Achievement\AchievementController@getAchievement']);

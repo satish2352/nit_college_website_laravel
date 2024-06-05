@@ -38,7 +38,7 @@
                                                             <h4 style="color:black">{{ $data_output->Department }}</h4>
                                                         </div>
                                                         <div>
-                                                            <p>{{ $data_output->department_description }}</p>
+                                                            <p>{{ strip_tags($data_output->department_description) }}</p>
                                                         </div>
                                                         <img id="english"
                                                             src="{{ Config::get('DocumentConstant.DEPARTMENT_VIEW_PROFILE') }}{{ $data_output->photo }}"

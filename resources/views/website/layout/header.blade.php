@@ -121,8 +121,8 @@ AOS.init({
 <li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>About Us</b><span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li class=""><a href="{{ route('polytechnic-president') }}">President&#039;s Desk</a></li>
-<li class=""><a href="{{ route('polytechnic-principals') }}">Principal&#039;s Desk</a></li>
+<li class=""><a href="{{ route('polytechnic-president') }}">President Desk</a></li>
+<li class=""><a href="{{ route('polytechnic-principals') }}">Principal Desk</a></li>
 <li class=""><a href="{{ route('mission-and-vision') }}">Mission &amp; Vision</a></li>
 <li class=""><a href="{{ route('about-governingbody') }}">Governing Body</a></li>
 <li class=""><a href="{{ route('about-futureplans') }}">Future Plans</a></li>
@@ -203,7 +203,7 @@ AOS.init({
 </ul>
 </li>
 
-<li><a class="" href="pages/polytechnic-mechanical-engineering-achievement.php"><b>Achievements</b></a></li>
+<li><a class="" href="{{ route('achievement') }}"><b>Achievements</b></a></li>
 
 <li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Facilities</b><span class="caret"></span></a>

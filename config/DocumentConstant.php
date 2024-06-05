@@ -14,6 +14,7 @@ return [
     'SLIDER_VIEW'	         => env("FILE_VIEW").'/images/slider_img/', 
     'ACTIVITY_VIEW'	         => env("FILE_VIEW").'/images/activity/', 
     'GALLERY_VIEW'	         => env("FILE_VIEW").'/images/gallery/', 
+    'ACHIEVEMENT_VIEW'	         => env("FILE_VIEW").'/images/awards/', 
 
     
     
