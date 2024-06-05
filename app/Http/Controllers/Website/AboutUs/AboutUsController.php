@@ -49,6 +49,7 @@ class AboutUsController extends Controller
     } 
     public function getPolytechnicAboutGoverningbody()
     {
+        
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
