@@ -93,11 +93,11 @@ AOS.init({
 
 <center><p>
 <marquee>
-    @foreach ($data_output as $item)
+    {{-- @foreach ($data_output as $item)
     <p class="marquee_para px-2"><a href="{{ $item['marquee_text'] }}" target="_blank"
-        class="marquee-scroll"><?php echo $item['marquee_text']; ?></a></p>
+        class="marquee-scroll"><?php //echo $item['marquee_text']; ?></a></p>
 
-@endforeach
+@endforeach --}}
     
     
     
