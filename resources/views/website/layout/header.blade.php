@@ -92,7 +92,7 @@ AOS.init({
 <center ><h2 Style="color:blue" class="heading1">LATE ANNASAHEB PATIL POLYTECHNIC</h2></center>
 
 <center><p>
-<marquee>
+
 
     {{-- @foreach ($data_output as $item)
     <p class="marquee_para px-2"><a href="" target="_blank"
@@ -105,11 +105,10 @@ AOS.init({
     
 
     
-    
+<marquee>
     <b style="color:blue"><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2020-21</a>
-        {{-- &nbsp;&nbsp;&nbsp;<a href="https://nitnasik.com/specialchance.pdf" style="color:green">Click Here MSBTE Sepcial Chance For Summer Exam 2020</a></b>&nbsp;&nbsp;<b style="color:blue">Approved By</b> :
-<b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b style="color:blue">Affiliated To</b> : <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b> --}}
-
+      &nbsp;&nbsp;<b style="color:blue">Approved By</b> :
+<b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b style="color:blue">Affiliated To</b> : <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
 </marquee>
  <br>
 
