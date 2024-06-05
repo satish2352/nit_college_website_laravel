@@ -121,24 +121,57 @@ $('[data-toggle="tooltip"]').tooltip();
                         </tr>
                     </thead>
                     <tbody>
-                        <?php 
-                            $count=0; 
-                            $query="select s.*,dp.*,dd.* from tbl_staff s,designation dp,department dd where s.Designation_id=dp.Designation_id and s.Department_id=dd.Department_id and s.fld_delete='0' and dd.Department='Humanities And Science Department' ";
-                            $row=mysqli_query($connect,$query) or die(mysqli_error($connect));
-                            
-                            while($fetch=mysqli_fetch_array($row)) {
+                        @if (isset($error))
+                        <div class="alert alert-danger">
+                            {{ $error }}
+                        </div>
 
-                            extract($fetch);
+                        <php
+                        {{-- dd($data_output);
+                        die(); --}}
                         ?>
-                        <tr>
-                            <td><?php echo ++$count; ?></td>
-                            <td><?php echo $fetch['fld_staff_name'] ?></td>
-                            <td><?php echo $fetch['fld_staff_qualification'] ?></td>
-                            <td><?php echo $fetch['Designation'] ?></td>
-                            <td><img src="..images/staff/<?php echo $fetch['fld_staff_photo'] ?>" alt="" class="img-responsive" height="100" width="100"></td>
-                        </tr>
+                    @else
+                        @if (!$data_output)
+                        <div>
+                            <p class="department-error">Data not available.</p>
+                        </div>
+                        @else
+                            @if ($data_output->is_active == 0)
+                                <div>
+                                    <p class="department-error">Data not available.</p>
+                                </div>
+                            @else
+                            <td>
+                                    <h4 style="color:black">{{ $data_output->fld_staff_name }}</h4>
+                            </td>
+                            <td>>
+                                <p>{{ strip_tags($data_output->fld_staff_qualification) }}</p>
+                            </td>
+                            <td>>
+                                <p>{{ strip_tags($data_output->Department) }}</p>
+                            </td>
+                                <td>>
+                                    <p>{{ strip_tags($data_output->Designation) }}</p>
+                                </td>
+                                <td>>
+                                    <p>{{ strip_tags($data_output->fld_staff_experiance) }}</p>
+                                </td>
+                                {{-- <td>>
+                                    <p>{{ strip_tags($data_output->Designation) }}</p>
+                                </td> --}}
+                                <td>
+                                <img id="english"
+                                    src="{{ Config::get('DocumentConstant.STAFF_VIEW') }}{{ $data_output->photo }}"
+                                    class="img-fluid img-thumbnail" height="300px" width="700px">
+                                </td>
+                            @endif
+                        @endif
+                    @endif
+
+
+
+
                        
-                        <?php } ?>   
                         
                     </tbody>
                 </table>
@@ -147,99 +180,13 @@ $('[data-toggle="tooltip"]').tooltip();
 
     </div>
         
-<!--            <table width="200" class="table table-hover table-responsive" cellspacing="5" cellpadding="5">-->
-<!--  <tr>-->
-<!--    <th colspan="3" scope="col"> -->
-<!--      <h2><strong>Faculty</strong></h2></th>-->
-<!--    </tr>-->
-<!--  <tr>-->
-<!--    <td width="12%">1</td>-->
-<!--    <td width="50%">Name : Sandip  S. Gaikar<br>Designation-->
-<!-- : First Year Dean & Lecturer  <br> Area Of Specialization : Pure Mathematics <br>Higher Qualifiction : M.Sc.Mathematics  <br>Experience :  03 Years<br>Email ID-->
-<!-- :  Sandipgaikar1993@gmail.com-->
-<!-- <br> -->
-<!--</td>-->
-<!--    <td width="38%"><center><img src="../Akole_Poly/gaikar.jpg" width="177" height="177" /> </center></td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>2</td>-->
-<!--    <td width="50%">Name : Rahul S.Awari-->
-<!--<br>Designation : Leturer-->
-<!-- <br> Area Of Specialization : Chemistry -->
-<!--  <br>Higher Qualifiction : M.Sc.-->
-<!--  <br>Experience :  06 years-->
-<!--  <br>Email ID :  Awari.rahul4@gmail.com-->
-<!-- <br> </td>-->
-
-<!--    <td width="38%"><center><img src="../Akole_Poly/Kotkar  M R_0001.jpg" width="177" height="177" /></center></td>-->
-<!--  </tr>-->
-
-
-<!--  <tr>-->
-<!--    <td>3</td>-->
-<!--    <td width="50%">Name : Rekha G.Ghule-->
-<!--<br>Designation : Leturer-->
-<!-- <br> Area Of Specialization : Physics-->
-<!--  <br>Higher Qualifiction : M.Sc(Physics),B.Ed-->
-<!--  <br>Experience :  06 Years-->
-<!--  <br>Email ID : Rekha.ghule123@gmail.com-->
-<!-- <br> </td>-->
-<!--    <td width="38%"><center><img src="../Akole_Poly/ghule.JPG" width="177" height="177" /> </center></td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>4</td>-->
-<!--    <td width="50%">Name : Priya D.Kedar-->
-<!--<br>Designation : Leturer-->
-<!-- <br> Area Of Specialization : English-->
-<!--  <br>Higher Qualifiction : M.A.(English)-->
-<!--  <br>Experience :  03 Years-->
-<!--  <br>Email ID :  Kedarpriya1@gmail.com-->
-<!-- <br> </td>-->
-<!--    <td width="38%"><center><img src="../Akole_Poly/Priya Image.jpg" width="177" height="177" /></center></td>-->
-<!--  </tr>-->
-
-<!--<tr>-->
-<!--    <td>5</td>-->
-<!--    <td width="50%">Name : Vijay J.Pathave -->
-<!--<br>Designation : Leturer-->
-<!-- <br> Area Of Specialization : Chemistry<br> -->
-<!--  Higher Qualifiction : M.Sc.Chemistry-->
-<!--  <br>Experience :  03 Years-->
-<!--  <br>Email ID :    Vijaypathave007@gmail.com-->
-<!-- <br> </td>-->
-<!--    <td width="38%"><center><img src="../Akole_Poly/vijay.JPG" width="177" height="177" /></center></td>-->
-<!--  </tr>-->
-
-
-<!--  <tr>-->
-<!--    <td>6</td>-->
-<!--    <td width="50%">Name : Deepak M.Balsarph-->
-<!--<br>Designation : Leturer-->
-<!-- <br> Area Of Specialization : Pure mathematics<br> -->
-<!--  Higher Qualifiction : M.Sc(Mathematics),B.Ed.-->
-<!--  <br>Experience :  06 Years -->
-<!--  <br>Email ID :    Balsaraphm00@gamil.com-->
-<!-- <br> </td>-->
-<!--    <td width="38%"><center><!--<img src="../Akole_Poly/Cothave S Photo.jpg" width="177" height="177" /> --</center></td>-->
-<!--  </tr>-->
-
-<!--</table>-->
 
 
     </div>        
 </div><!-- /.row --></div>
 <div class="col-md-1 hidden-sm">&nbsp;</div>
 <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
-<!-- <div
-style="margin-top: -40px;
-margin-bottom: 12px;
-text-align: center;
-border-radius: 0px 0px 10px 10px;
-background-color: #FE9B42;
-color: rgb(255, 255, 255);">
-<i>Last updated on : 24-07-2018 04:26 PM</i>
-</div> -->
-<!--Right col-->
+
 <div class="col-sm-12 right-col-fix">
 <div>
 <div class="list-group">

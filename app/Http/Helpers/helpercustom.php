@@ -4,7 +4,8 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use App\Models\ {
     ActivitiesCategory,
-    DepartmentCategory
+    DepartmentCategory,
+    Marquee
 };
 use Illuminate\Support\Facades\Storage;
 
@@ -61,4 +62,20 @@ function getMenuItemsDepartment() {
     return $reindexed_menu_data_department;
 }
 
+// function getMarquee() {
+
+//     $marquee_data = array();
+//     $marquee_data = Marquee::where('is_active', '=',true)
+//     ->where('fld_delete', 0)
+//                         ->select( 
+//                             'tbl_marquee.marquee_text', 
+//                             'tbl_marquee.fld_marquee_id',
+//                         )
+//                         ->get()
+//                         ->toArray();                      
+//     return $marquee_data ;
+    
                 
+// }
+
+              

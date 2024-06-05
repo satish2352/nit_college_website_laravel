@@ -72,9 +72,9 @@ class DepartmentController extends Controller
             $menuDepartment = $this->menuDepartment;
             $data_output = $this->service->getFaculty($id);
 
-          
+           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-faculty', compact('menu', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-faculty', compact('data_output', 'menu', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
             return view('website.pages.department.polytechnic-faculty', compact('menu', 'data_output', 'menuDepartment'));

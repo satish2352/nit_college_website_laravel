@@ -53,8 +53,8 @@ public function getFaculty($id)
 {
     try {
         $dataOutputCategory = $this->repo->getFaculty($id);
-        dd($dataOutputCategory);
-        die();
+        // dd($dataOutputCategory);
+        // die();
         return $dataOutputCategory; // This will never be executed due to dd()
     } catch (\Exception $e) {
         return $e;

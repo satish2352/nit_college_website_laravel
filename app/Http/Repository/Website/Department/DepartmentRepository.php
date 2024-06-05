@@ -100,22 +100,38 @@ class DepartmentRepository  {
     {
         try {
 
-            $dataOutputCategory = Staff::join('department', 'department.id', '=', 'tbl_staff.department_id')
+            // $dataOutputCategory = Staff::join('department', 'department.id', '=', 'tbl_staff.department_id')
             // ->join('tbl_staff', 'tbl_staff.Designation_id', '=', 'designation.Designation_id')
-                ->select(
-                    'tbl_staff.fld_staff_id',
-                    'department.id as department_id',
-                    'tbl_staff.fld_staff_qualification', 
-                    // 'tbl_staff.fld_staff_experiance', 
-                    // 'tbl_staff.fld_staff_email', 
-                    // 'tbl_staff.fld_staff_mobile', 
-                    // 'tbl_staff.fld_staff_photo', 
-                    // 'department.Department'
-                )
-                ->where('department.id', $id) // Filter by the provided ID
-                // ->orderBy('tbl_staff.fld_staff_id', 'desc')
-                ->first(); // Get a single record
-             
+            //     ->select(
+            //         'tbl_staff.fld_staff_id',
+            //         'department.id as department_id',
+            //         'tbl_staff.Designation_id', 
+            //         'tbl_staff.fld_staff_qualification', 
+            //         'tbl_staff.fld_staff_experiance', 
+                    
+            //         // 'tbl_staff.fld_staff_mobile', 
+            //         'tbl_staff.fld_staff_photo', 
+            //         'department.Department',
+            //         'designation.Designation'
+            //     )
+            //     ->where('department.id', $id) // Filter by the provided ID
+            //     // ->orderBy('tbl_staff.fld_staff_id', 'desc')
+            //     ->first(); // Get a single record
+            $dataOutputCategory = Staff::join('department', 'department.id', '=', 'tbl_staff.department_id')
+            ->join('designation', 'tbl_staff.Designation_id', '=', 'designation.Designation_id')
+            ->select(
+                'tbl_staff.fld_staff_id',
+                'tbl_staff.fld_staff_name',
+                'department.id as department_id',
+                'tbl_staff.Designation_id', 
+                'tbl_staff.fld_staff_qualification', 
+                'tbl_staff.fld_staff_experiance', 
+                'tbl_staff.fld_staff_photo', 
+                'department.Department',
+                'designation.Designation'
+            )
+            ->where('department.id', $id) // Filter by the provided ID
+            ->first(); // Get a single record
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;

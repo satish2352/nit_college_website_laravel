@@ -18,8 +18,11 @@ public function getMarquee()
     try {
         $data_output = Marquee::where('fld_delete', '0')
         ->where('is_active', '1')
-        ->orderBy('fld_achievement_id', 'desc')
+        ->orderBy('fld_marquee_id', 'desc')
         ->get();
+
+        dd($data_output);
+        die();
        return $data_output;
     } catch (\Exception $e) {
         return $e;

@@ -32,63 +32,65 @@ class EnquiryController extends Controller
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
             $contactusdata = $this->service->getEnquiry();
-            return view('website.pages.contactus.contact-us',compact('contactusdata','menu', 'menuDepartment'));
+            return view('website.pages.enquiry.enquiry',compact('contactusdata','menu', 'menuDepartment'));
 
         } catch (\Exception $e) {
             return $e;
         }
     } 
 
-    public function addEnquiry(Request $request)
-    {
-
+    public function addEnquiry(Request $request) {
+        $rules = [
+                        'name' => 'required|max:255',
+                'mobile_number' =>  'required|regex:/^[0-9]{10}$/',
+                'email' => 'required|email',
+                'source' => 'required',
+                'source_name' => 'required|max:255',
+                'admission_level' => 'required',
+                'g-recaptcha-response' => 'required|captcha',
+        ];
+        $messages = [   
+                         'name.required' => 'Please enter full name.',
+                'name.max' => 'Please enter text length up to 255 characters only.',
+                'mobile_number.required' => 'Please enter a mobile number.',
+                'mobile_number.regex' => 'Please enter a valid 10-digit mobile number.',
+                'email.required' => 'Please enter an email address.',
+                'email.email' => 'Please enter a valid email address.',
+                'source.required' => 'Please select a source.',
+                'source_name.required' => 'Please enter a source name.',
+                'source_name.max' => 'Please enter text length up to 255 characters only.',
+                'admission_level.required' => 'Please select an admission level.',
+                'g-recaptcha-response.captcha' => 'Captcha error! try again later or contact site admin.',
+                'g-recaptcha-response.required' =>'Please verify that you are not a robot.',
+        ];
+    
         try {
-
-            $rules = [
-                // 'fld_contact_name' => 'required|max:255',
-                // 'fld_contact_subject' => 'required',
-                // 'fld_contact_email' => 'required|regex:/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z])+\.)+([a-zA-Z0-9]{2,4})+$/',
-                // 'fld_contact_number' =>  'required|regex:/^[0-9]{10}$/',
-                // 'fld_contact_message' => 'required',
-            ];
-            $messages = [
-                // 'fld_contact_name.required' => 'Please  enter title.',
-                // 'fld_contact_name.max' => 'Please  enter text length upto 255 character only.',
-
-                // 'fld_contact_subject.required' => 'Please  enter Subject.',
-
-                // 'fld_contact_email.required' => 'Please enter email.',
-                // 'fld_contact_email.regex' => 'Enter valid email.',
-
-                // 'fld_contact_number.required' => 'Please enter number.',
-                // 'fld_contact_number.regex' => 'Please enter only numbers with 10-digit.',
-
-                // 'fld_contact_message.required' => 'Please  enter Subject.',
-
-            ];
-
             $validation = Validator::make($request->all(), $rules, $messages);
-            if ($validation->fails()) {
-                return redirect('contact-us')
+            if($validation->fails()) {
+                return redirect('enquiry')
                     ->withInput()
                     ->withErrors($validation);
             } else {
-                $add_role = $this->service->addEnquiry($request);
-                if ($add_role) {
-                    $msg = $add_role['msg'];
-                    $status = $add_role['status'];
-                    if ($status == 'success') {
-                        return redirect('contact-us')->with(compact('msg', 'status'));
-                    } else {
-                        return redirect('contact-us')->withInput()->with(compact('msg', 'status'));
-                    }
+                $add_contact = $this->service->addEnquiry($request);
+    
+    
+    
+                if ($add_contact) {
+                    $msg = 'Contact Us Information Submitted Successfully!!';
+                    $status = 'success';
+                } else {
+                    $msg = 'Failed to Your Contact Us Information Submitted';
+                    $status = 'error';
                 }
-
+                
+                // Session::flash('success_message', 'Contact Us submitted successfully!');
+                $request->session()->flash('success', 'Contact Us Information Submitted Successfully!!');
+                return redirect('enquiry')
+                ->with(compact('msg', 'status'));
+              
             }
         } catch (Exception $e) {
-            return redirect('add-projects')->withInput()->with(['msg' => $e->getMessage(), 'status' => 'error']);
+            return redirect('enquiry')->withInput()->with(['msg' => $e->getMessage(), 'status' => 'error']);
         }
-    }
-
-         
+    } 
 }

@@ -33,7 +33,7 @@ class EnquiryServices
     {
         
         try {
-            $add_role = $this->repo->addEnquiry($request);
+            $add_role = $this->repo->addEnquiry($request);          
             if ($add_role) {
                 return ['status' => 'success', 'msg' => 'Enquiry Added Successfully.'];
             } else {
