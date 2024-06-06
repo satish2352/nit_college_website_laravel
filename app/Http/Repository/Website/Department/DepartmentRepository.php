@@ -282,6 +282,46 @@ class DepartmentRepository  {
             return $e;
         }
     }
+    // public function getPlan($id)
+    // {
+    //     try {
+    //         $dataOutputCategory = Plan::join('department', 'department.id', '=', 'tbl_plan.department_id')
+    //             ->select(
+    //                 'tbl_plan.fld_bm_id',
+    //                 'department.id as department_id',
+    //                 'tbl_plan.edu_year', 
+    //                 'tbl_plan.semister', 
+    //                 'tbl_plan.plan_name', 
+    //                 'tbl_plan.subject_name',
+    //                 'tbl_plan.file',
+    //                 'department.Department',
+    //                 'tbl_plan.is_active'
+    //             )
+    //             ->where('department.id', $id) // Filter by the provided ID
+    //             ->orderBy('tbl_plan.fld_bm_id', 'desc')
+    //             ->first(); // Get a single record
+             
+    //         return $dataOutputCategory;
+    //     } catch (\Exception $e) {
+    //         return $e;
+    //     }
+    // }
+    public function getDepartmentId($id)
+    {
+        try {
+            $dataOutputCategory = DepartmentCategory::where('is_active', '=', true)
+            ->where('Department_delete', 0)
+            ->select('department.Department', 'department.id')
+            ->where('id', $id) // Filter by the provided ID
+            ->orderBy('id', 'desc')
+            ->first();
+             
+            return $dataOutputCategory;
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+    
     public function getPlan($id)
     {
         try {
@@ -299,12 +339,11 @@ class DepartmentRepository  {
                 )
                 ->where('department.id', $id) // Filter by the provided ID
                 ->orderBy('tbl_plan.fld_bm_id', 'desc')
-                ->first(); // Get a single record
+                ->get(); 
              
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;
         }
     }
-    
 }                               

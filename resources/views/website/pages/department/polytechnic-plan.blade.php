@@ -96,7 +96,44 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @if (isset($error))
+
+                                <tbody>
+                                    @if (isset($error))
+                                        <div class="alert alert-danger">
+                                            {{ $error }}
+                                        </div>
+                                    @else
+                                        @if ($data_output->isEmpty())
+                                            <div class="alert alert-info">
+                                                Data not found
+                                            </div>
+                                        @else
+                                            @foreach ($data_output as $data)
+                                                @if ($data->is_active == 0)
+                                                    <div class="alert alert-info">
+                                                        Data not found
+                                                    </div>
+                                                @else
+                                                    <tr>
+                                                        <td><center>{{ $data->plan_name }}</center></td>
+                                                        <td><center>{{ $data->edu_year }}</center></td>
+                                                        <td><center>{{ $data->semister }}</center></td>
+                                                        <td><center>{{ $data->subject_name }}</center></td>
+                                                        <td>
+                                                            <a href="{{ Config::get('DocumentConstant.PLAN_VIEW') }}{{ $data->file }}"
+                                                                target="_blank" class="btn btn-small btn-primary">
+                                                                <i class="btn-icon-only icon-ok">Download</i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                @endif
+                                            @endforeach
+                                        @endif
+                                    @endif
+                                </tbody>
+
+                                
+                                {{-- @if (isset($error))
                                 <div class="alert alert-danger">
                                     {{ $error }}
                                 </div>
@@ -125,7 +162,7 @@
                                         
                                     @endif
                                 @endif
-                            @endif
+                            @endif --}}
                             </tbody>
                             </table>
     
