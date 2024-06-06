@@ -261,7 +261,6 @@
                         class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
                     <a href="{{ route('department-plan', ['id' => $data_output['department_id']]) }}"
                         class="list-group-item active-rp-link">PLAN</a>
-
                     @else
                     <p> Data not available.</p>
                     @endif
