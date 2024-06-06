@@ -8,7 +8,7 @@ use App\Http\Services\Website\Enquiry\EnquiryServices;
 // use Session;
 use Validator;
 use Config;
-
+use Session;
 
 // use App\Models\ {
 //     Index
@@ -76,7 +76,7 @@ class EnquiryController extends Controller
     
     
                 if ($add_contact) {
-                    $msg = 'Contact Us Information Submitted Successfully!!';
+                    $msg = 'Enquiry Information Submitted Successfully!!';
                     $status = 'success';
                 } else {
                     $msg = 'Failed to Your Contact Us Information Submitted';
@@ -84,7 +84,7 @@ class EnquiryController extends Controller
                 }
                 
                 // Session::flash('success_message', 'Contact Us submitted successfully!');
-                $request->session()->flash('success', 'Contact Us Information Submitted Successfully!!');
+                $request->session()->flash('success', 'Enquiry Information Submitted Successfully!!');
                 return redirect('enquiry')
                 ->with(compact('msg', 'status'));
               

@@ -345,6 +345,8 @@ text-align: center; }
   align-items: center;
 }
 
-
+h4 p{
+  color: #545353 !important;
+}
 
 

@@ -106,12 +106,12 @@ AOS.init({
 
     
 <marquee>
-    <b style="color:blue"><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2020-21</a>
+    <b style="color:blue"><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2023-24</a>
       &nbsp;&nbsp;<b style="color:blue">Approved By</b> :
 <b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b style="color:blue">Affiliated To</b> : <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
 </marquee>
  <br>
-
+ <b style="color:blue; font-size:18px"><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2023-24</a>
 </p>
 </center>
 

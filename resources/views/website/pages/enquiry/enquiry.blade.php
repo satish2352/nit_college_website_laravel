@@ -4,6 +4,12 @@
     .text-danger{
         color: red;
     }
+    label{
+        color: #545353;
+    }
+    .red-text{
+        color: red;
+    }
     </style>
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
         <div class="container">
@@ -21,6 +27,49 @@
     <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px">
         <div class="container">
             <div class="row">
+
+                {{-- @if (Session::get('status') == 'success')
+                <div class="col-12 grid-margin">
+                    <div class="alert alert-success" id="success-alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <strong> <span id="data_to_show">
+                                {{ Session::get('msg') }}
+                            </span> </strong>
+                    </div>
+                </div>
+            @endif
+        
+            @if (Session::get('status') == 'error')
+                <div class="col-12 grid-margin">
+                    <div class="alert alert-danger" id="danger-alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <strong> <span id="data_to_show">
+                                {!! session('msg') !!}
+                            </span> </strong>
+                    </div>
+                </div>
+            @endif --}}
+            @if (Session::get('status') == 'success')
+            <div class="col-12 grid-margin">
+                <div class="alert alert-success" id="success-alert">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <strong> <span id="data_to_show">
+                        {{ Session::get('msg') }}
+                    </span> </strong>
+                </div>
+            </div>
+        @endif
+        
+        @if (Session::get('status') == 'error')
+            <div class="col-12 grid-margin">
+                <div class="alert alert-danger" id="danger-alert">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <strong> <span id="data_to_show">
+                        {!! session('msg') !!}
+                    </span> </strong>
+                </div>
+            </div>
+        @endif
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="well well-sm" style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); margin-bottom:100px;">
@@ -29,8 +78,8 @@
                             <div class="row" style="display: flex; justify-content: center;">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" value="{{ old('name') }}" />
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter full name" value="{{ old('name') }}" />
                                         @if ($errors->has('name'))
                                         <span class="text-danger">{{ $errors->first('name') }}</span>
                                         @endif
@@ -46,7 +95,7 @@
                                         <label for="email">Email Address</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" value="{{ old('email') }}" />
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" value="{{ old('email') }}" />
                                         </div>
                                         @if ($errors->has('email'))
                                         <span class="text-danger">{{ $errors->first('email') }}</span>
@@ -163,9 +212,9 @@
     </div>
     {{-- <script src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script> --}}
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
       
@@ -250,5 +299,13 @@
             }
         });
       </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Set timeout to hide the alert after 4 seconds
+            setTimeout(function() {
+                $(".alert").alert('close');
+            }, 1000); // 4000 milliseconds = 4 seconds
+        });
+    </script>
       
 @endsection
