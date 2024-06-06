@@ -19,74 +19,80 @@ class FacilitiesController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new FacilitiesServices();  
     }
 
    
     
-    public function getPolytechnicCampus()
+    // public function getPolytechnicCampus($id)
+    // {
+    //     try {
+    //         $menu = $this->menu;
+    //         $menuDepartment = $this->menuDepartment;
+    //         $menuFacility = $this->menuFacility;
+    //         $data_output = $this->service->getPolytechniCampus($id);
+    //         return view('website.pages.facilities.polytechnic-campus',compact('data_output','menu', 'menuDepartment', 'menuFacility'));
+
+    //     } catch (\Exception $e) {
+    //         return $e;
+    //     }
+    // } 
+
+    public function getPolytechnicFacilities($id)
     {
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
-            $data_output = $this->service->getPolytechniCampus();
-            return view('website.pages.facilities.polytechnic-campus',compact('data_output','menu', 'menuDepartment'));
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getPolytechnicFacilities($id);
+            return view('website.pages.facilities.polytechnic-facilities',compact('data_output','menu', 'menuDepartment', 'menuFacility'));
 
         } catch (\Exception $e) {
             return $e;
         }
     } 
 
-    public function getPolytechnicHostel()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $data_output = $this->service->getPolytechniHostel();
-            return view('website.pages.facilities.polytechnic-hostel',compact('data_output','menu', 'menuDepartment'));
+    // public function getPolytechnicLibrary()
+    // {
+    //     try {
+    //         $menu = $this->menu;
+    //         $menuDepartment = $this->menuDepartment;
+    //         $menuFacility = $this->menuFacility;
+    //         $data_output = $this->service->getPolytechniLibrary();
+    //         return view('website.pages.facilities.polytechnic-library',compact('data_output','menu', 'menuDepartment', 'menuFacility'));
 
-        } catch (\Exception $e) {
-            return $e;
-        }
-    } 
+    //     } catch (\Exception $e) {
+    //         return $e;
+    //     }
+    // } 
 
-    public function getPolytechnicLibrary()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $data_output = $this->service->getPolytechniLibrary();
-            return view('website.pages.facilities.polytechnic-library',compact('data_output','menu', 'menuDepartment'));
+    // public function getPolytechnicTransportation()
+    // {
+    //     try {
+    //         $menu = $this->menu;
+    //         $menuDepartment = $this->menuDepartment;
+    //         $menuFacility = $this->menuFacility;
+    //         $data_output = $this->service->getPolytechnicTransportation();
+    //         return view('website.pages.facilities.polytechnic-transportation',compact('data_output', compact('menu', 'menuDepartment', 'menuFacility','menu', 'menuDepartment', 'menuFacility')));
 
-        } catch (\Exception $e) {
-            return $e;
-        }
-    } 
+    //     } catch (\Exception $e) {
+    //         return $e;
+    //     }
+    // } 
 
-    public function getPolytechnicTransportation()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $data_output = $this->service->getPolytechnicTransportation();
-            return view('website.pages.facilities.polytechnic-transportation',compact('data_output', compact('menu', 'menuDepartment','menu', 'menuDepartment')));
+    // public function getPolytechnicOther()
+    // {
+    //     try {
+    //         $menu = $this->menu;
+    //         $menuDepartment = $this->menuDepartment;
+    //         $menuFacility = $this->menuFacility;
+    //         $data_output = $this->service->getPolytechnicOther();
+    //         return view('website.pages.facilities.polytechnic-other',compact('data_output','menu', 'menuDepartment', 'menuFacility'));
 
-        } catch (\Exception $e) {
-            return $e;
-        }
-    } 
-
-    public function getPolytechnicOther()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $data_output = $this->service->getPolytechnicOther();
-            return view('website.pages.facilities.polytechnic-other',compact('data_output','menu', 'menuDepartment'));
-
-        } catch (\Exception $e) {
-            return $e;
-        }
-    }
+    //     } catch (\Exception $e) {
+    //         return $e;
+    //     }
+    // }
          
 }

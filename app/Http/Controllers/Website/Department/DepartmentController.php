@@ -14,19 +14,21 @@ class DepartmentController extends Controller
         $this->service = new DepartmentServices();  
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
     }
     public function getProfile($id)
     {
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getProfile($id);
             $data_output_category = $this->service->getDepartmentId($id);
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-profile', compact('menu', 'data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-profile', compact('menu', 'data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-profile', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-profile', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -37,13 +39,14 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getDepartVisionMission($id);
             $data_output_category = $this->service->getDepartmentId($id);
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-vision-mission', compact('menu','data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-vision-mission', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-vision-mission', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-vision-mission', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -53,14 +56,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getCurriculum($id);
             $data_output_category = $this->service->getDepartmentId($id);
           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-curriculum', compact('menu','data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-curriculum', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-curriculum', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-curriculum', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -71,14 +75,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getFaculty($id);
             $data_output_category = $this->service->getDepartmentId($id);
            
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-faculty', compact('data_output','data_output_category', 'menu', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-faculty', compact('data_output','data_output_category', 'menu', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-faculty', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-faculty', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -89,14 +94,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getSyllabus($id);
             $data_output_category = $this->service->getDepartmentId($id);
           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-syllabus', compact('menu','data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-syllabus', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-syllabus', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-syllabus', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -108,14 +114,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getTimeTable($id);
             $data_output_category = $this->service->getDepartmentId($id);
           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-time-table', compact('menu','data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-time-table', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-time-table', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-time-table', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -125,14 +132,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getMentor($id);
             $data_output_category = $this->service->getDepartmentId($id);
           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-mentor', compact('menu','data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-mentor', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-mentor', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-mentor', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -142,14 +150,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getAchievementsAwards($id);
             $data_output_category = $this->service->getDepartmentId($id);
           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-achievements-awards', compact('menu','data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-achievements-awards', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-achievements-awards', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-achievements-awards', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -159,14 +168,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getActivitiesEvents($id);
             $data_output_category = $this->service->getDepartmentId($id);
           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-activities-events', compact('menu', 'data_output_category','menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-activities-events', compact('menu', 'data_output_category','menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-activities-events', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-activities-events', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -176,14 +186,15 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getStudentsAssociation($id);
             $data_output_category = $this->service->getDepartmentId($id);
           
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-students-association', compact('menu','data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-students-association', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-students-association', compact('menu','data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-students-association', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -197,10 +208,10 @@ class DepartmentController extends Controller
 
           
     //         if ($data_output instanceof \Exception) {
-    //             return view('website.pages.department.polytechnic-plan', compact('menu', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+    //             return view('website.pages.department.polytechnic-plan', compact('menu', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
     //         }
     
-    //         return view('website.pages.department.polytechnic-plan', compact('menu', 'data_output', 'menuDepartment'));
+    //         return view('website.pages.department.polytechnic-plan', compact('menu', 'data_output', 'menuDepartment', 'menuFacility'));
     //     } catch (\Exception $e) {
     //         return $e;
     //     }
@@ -212,16 +223,17 @@ class DepartmentController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getPlan($id);
             $data_output_category = $this->service->getDepartmentId($id);
             
             // dd($data_output_category);
             // die();
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-plan', compact('menu', 'data_output_category', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-plan', compact('menu', 'data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.department.polytechnic-plan', compact('menu', 'data_output_category', 'data_output', 'menuDepartment'));
+            return view('website.pages.department.polytechnic-plan', compact('menu', 'data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }

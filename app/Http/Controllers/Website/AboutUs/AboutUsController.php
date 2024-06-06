@@ -13,6 +13,7 @@ class AboutUsController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new AboutUsServices();  
     }
 
@@ -21,7 +22,8 @@ class AboutUsController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
-            return view('website.pages.aboutus.polytechnic-president', compact('menu', 'menuDepartment'));
+            $menuFacility = $this->menuFacility;
+            return view('website.pages.aboutus.polytechnic-president', compact('menu', 'menuDepartment', 'menuFacility', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -32,7 +34,8 @@ class AboutUsController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
-            return view('website.pages.aboutus.polytechnic-principals', compact('menu', 'menuDepartment'));
+            $menuFacility = $this->menuFacility;
+            return view('website.pages.aboutus.polytechnic-principals', compact('menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -42,7 +45,8 @@ class AboutUsController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
-            return view('website.pages.aboutus.polytechnic-mission-and-vision', compact('menu', 'menuDepartment'));
+            $menuFacility = $this->menuFacility;
+            return view('website.pages.aboutus.polytechnic-mission-and-vision', compact('menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -53,9 +57,10 @@ class AboutUsController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getPolytechnicAboutGoverningbody();
            
-            return view('website.pages.aboutus.polytechnic-about-governingbody', compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.aboutus.polytechnic-about-governingbody', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -66,7 +71,8 @@ class AboutUsController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
-            return view('website.pages.aboutus.polytechnic-about-futureplans', compact('menu', 'menuDepartment'));
+            $menuFacility = $this->menuFacility;
+            return view('website.pages.aboutus.polytechnic-about-futureplans', compact('menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }

@@ -102,12 +102,12 @@
     <div class="container">
     
     <div class="col-sm-12" style="padding:0;">
-        <h4 style="color:green"><strong>Civil Department Achievements And Awards</strong></h4>
-        <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
+        {{-- <h4 style="color:green"><strong>Civil Department Achievements And Awards</strong></h4>
+        <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div> --}}
     </div>
     
     </div>
-    </div><div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px" >
+    </div><div class="container-fluid" style="padding-bottom:40px" >
     <div class="container card-shadow" style="margin-bottom: 95px;"> 
     <div class="row" style="padding:0px">
     <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
@@ -465,12 +465,12 @@
                 class="list-group-item ">PROFILE</a>
             <a href="{{ route('department-vision-mission', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">Vision Mission</a>
-            <a href="{{ route('department-curriculum', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">CURRICULUM</a>
+            {{-- <a href="{{ route('department-curriculum', ['id' => $data_output_category['id']]) }}"
+                class="list-group-item active-rp-link">CURRICULUM</a> --}}
             {{-- <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">Faculty</a> --}}
-            <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">Syllabus</a>
+            {{-- <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
+                class="list-group-item active-rp-link">Syllabus</a> --}}
 
             <a href="{{ route('department-time-table', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">Time Table</a>
@@ -483,7 +483,7 @@
             <a href="{{ route('department-students-association', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
             <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">PLAN</a>
+                class="list-group-item active-rp-link">Syllabus</a>
             @else
             <p> Data not available.</p>
             @endif

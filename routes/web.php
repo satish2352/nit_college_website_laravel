@@ -10,11 +10,11 @@ Route::get('/', ['as' => '/', 'uses' => 'App\Http\Controllers\Website\IndexContr
 
 Route::get('/polytechnic-president', ['as' => 'polytechnic-president', 'uses' => 'App\Http\Controllers\Website\AboutUs\AboutUsController@getPolytechnicPresident']);
 
-Route::get('/polytechnic-campus', ['as' => 'polytechnic-campus', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicCampus']);
-Route::get('/polytechnic-hostel', ['as' => 'polytechnic-hostel', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicHostel']);
-Route::get('/polytechnic-library', ['as' => 'polytechnic-library', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicLibrary']);
-Route::get('/polytechnic-transportation', ['as' => 'polytechnic-transportation', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicTransportation']);
-Route::get('/polytechnic-other', ['as' => 'polytechnic-other', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicOther']);
+Route::get('/polytechnic-facilities/{id}', ['as' => 'polytechnic-facilities', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicFacilities']);
+// Route::get('/polytechnic-hostel/{id}', ['as' => 'polytechnic-hostel', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicHostel']);
+// Route::get('/polytechnic-library/{id}', ['as' => 'polytechnic-library', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicLibrary']);
+// Route::get('/polytechnic-transportation/{id}', ['as' => 'polytechnic-transportation', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicTransportation']);
+// Route::get('/polytechnic-other/{id}', ['as' => 'polytechnic-other', 'uses' => 'App\Http\Controllers\Website\Facilities\FacilitiesController@getPolytechnicOther']);
 
 Route::get('/polytechnic-rules', ['as' => 'polytechnic-rules', 'uses' => 'App\Http\Controllers\Website\Academics\AcademicsController@getPolytechnicRules']);
 

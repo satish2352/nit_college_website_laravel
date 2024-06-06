@@ -225,11 +225,18 @@ AOS.init({
 <li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Facilities</b><span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li class=""><a href="{{ route('polytechnic-campus') }}">College&nbsp;Campus</a></li>
+    
+    @foreach ($menuFacility as $menuFacility)
+    <li class="">
+        <a href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
+    </li>
+@endforeach
+
+{{-- <li class=""><a href="{{ route('polytechnic-campus') }}">College&nbsp;Campus</a></li>
 <li class=""><a href="{{ route('polytechnic-hostel') }}">Hostel&nbsp;Mess</a></li>
 <li class=""><a href="{{ route('polytechnic-library') }}">Library</a></li>
 <li class=""><a href="{{ route('polytechnic-transportation') }}">Transportation</a></li>
-<li class=""><a href="{{ route('polytechnic-other') }}">Other Facilities</a></li>
+<li class=""><a href="{{ route('polytechnic-other') }}">Other Facilities</a></li> --}}
 
 </ul>
 </li>

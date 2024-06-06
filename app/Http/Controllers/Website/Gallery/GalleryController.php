@@ -19,6 +19,7 @@ class GalleryController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new GalleryServices();  
     }
 
@@ -29,8 +30,9 @@ class GalleryController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getGallery();
-            return view('website.pages.gallery.polytechnic-gallery',compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.gallery.polytechnic-gallery',compact('data_output','menu', 'menuDepartment', 'menuFacility'));
 
         } catch (\Exception $e) {
             return $e;

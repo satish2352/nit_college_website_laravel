@@ -21,6 +21,7 @@ class EnquiryController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new EnquiryServices();  
     }
 
@@ -31,6 +32,7 @@ class EnquiryController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $contactusdata = $this->service->getEnquiry();
             return view('website.pages.enquiry.enquiry',compact('contactusdata','menu', 'menuDepartment'));
 

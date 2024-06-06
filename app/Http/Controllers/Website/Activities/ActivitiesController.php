@@ -14,19 +14,21 @@ class ActivitiesController extends Controller
         $this->service = new ActivitiesServices();  
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
     }
     public function getPolytechnicCoCurricular($id)
     {
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getPolytechnicCoCurricular($id);
             
             if ($data_output instanceof \Exception) {
-                return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'menuDepartment'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'data_output', 'menuDepartment'));
+            return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }

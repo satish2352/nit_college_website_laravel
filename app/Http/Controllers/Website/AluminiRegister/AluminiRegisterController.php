@@ -21,6 +21,7 @@ class AluminiRegisterController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new AluminiRegisterServices();  
     }
 
@@ -31,8 +32,9 @@ class AluminiRegisterController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             // $contactusdata = $this->service->getContactUs();
-            return view('website.pages.aluminiregister.alumini-register', compact('menu', 'menuDepartment'));
+            return view('website.pages.aluminiregister.alumini-register', compact('menu', 'menuDepartment', 'menuFacility'));
 
         } catch (\Exception $e) {
             return $e;

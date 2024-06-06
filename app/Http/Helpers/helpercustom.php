@@ -5,7 +5,8 @@ use Illuminate\Support\Facades\DB;
 use App\Models\ {
     ActivitiesCategory,
     DepartmentCategory,
-    Marquee
+    Marquee,
+    Facility
 };
 use Illuminate\Support\Facades\Storage;
 
@@ -62,20 +63,20 @@ function getMenuItemsDepartment() {
     return $reindexed_menu_data_department;
 }
 
-// function getMarquee() {
+function getFacility() {
 
-//     $marquee_data = array();
-//     $marquee_data = Marquee::where('is_active', '=',true)
-//     ->where('fld_delete', 0)
-//                         ->select( 
-//                             'tbl_marquee.marquee_text', 
-//                             'tbl_marquee.fld_marquee_id',
-//                         )
-//                         ->get()
-//                         ->toArray();                      
-//     return $marquee_data ;
+    $facility_data = array();
+    $facility_data = Facility::where('is_active', '=',true)
+    ->where('facility_delete', 0)
+                        ->select( 
+                            'facility.facility', 
+                            'facility.facility_id',
+                        )
+                        ->get()
+                        ->toArray();                      
+    return $facility_data ;
     
                 
-// }
+}
 
               

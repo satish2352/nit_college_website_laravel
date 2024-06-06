@@ -283,8 +283,8 @@
                         class="list-group-item active-rp-link">CURRICULUM</a>
                     {{-- <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
                         class="list-group-item active-rp-link">Faculty</a> --}}
-                    <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
-                        class="list-group-item active-rp-link">Syllabus</a>
+                    {{-- <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
+                        class="list-group-item active-rp-link">Syllabus</a> --}}
 
                     <a href="{{ route('department-time-table', ['id' => $data_output_category['id']]) }}"
                         class="list-group-item active-rp-link">Time Table</a>
@@ -297,7 +297,7 @@
                     <a href="{{ route('department-students-association', ['id' => $data_output_category['id']]) }}"
                         class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
                     <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}"
-                        class="list-group-item active-rp-link">PLAN</a>
+                        class="list-group-item active-rp-link">Syllabus</a>
                     @else
                     <p> Data not available.</p>
                     @endif

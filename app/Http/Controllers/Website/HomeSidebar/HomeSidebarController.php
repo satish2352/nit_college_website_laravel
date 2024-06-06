@@ -13,6 +13,7 @@ class HomeSidebarController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new HomeSidebarServices();  
     }
 
@@ -22,8 +23,9 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getMandataryDisclosure();
-            return view('website.pages.home-sidebar.polytechnic-mandatary', compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-mandatary', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -34,8 +36,9 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getAICTEExtension();
-            return view('website.pages.home-sidebar.polytechnic-aicte', compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-aicte', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -46,8 +49,9 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getMSBTE();
-            return view('website.pages.home-sidebar.polytechnic-affiliation', compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-affiliation', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -57,8 +61,9 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getPolytechnicAffiliationCertificates();
-            return view('website.pages.home-sidebar.polytechnic-affiliation_certificates', compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-affiliation_certificates', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -68,8 +73,9 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getServiceRule();
-            return view('website.pages.home-sidebar.polytechnic-affiliation_certificates', compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-affiliation_certificates', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
@@ -81,13 +87,14 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getAntiRagging();
-            return view('website.pages.home-sidebar.polytechnic-anti-ragging', compact('data_output', 'menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-anti-ragging', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return view('website.pages.home-sidebar.polytechnic-anti-ragging', [
                 'error' => $e->getMessage(),
                 'menu' => $this->menu,
-                'menuDepartment' => $this->menuDepartment
+                'menuDepartment', 'menuFacility' => $this->menuDepartment
             ]);
         }
     }
@@ -98,7 +105,7 @@ class HomeSidebarController extends Controller
     //         $menu = $this->menu;
     //         $menuDepartment = $this->menuDepartment;
     //         $data_output = $this->service->getAntiRagging();
-    //         return view('website.pages.home-sidebar.polytechnic-anti-ragging', compact('data_output','menu', 'menuDepartment'));
+    //         return view('website.pages.home-sidebar.polytechnic-anti-ragging', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
     //     } catch (\Exception $e) {
     //         return $e;
     //     }
@@ -108,16 +115,17 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getInternalComplaint();
             
-            return view('website.pages.home-sidebar.polytechnic-internal-complaint', compact('data_output', 'menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-internal-complaint', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             // Log the exception
             \Log::error('Error in Controller getInternalComplaint: ' . $e->getMessage());
             return view('website.pages.home-sidebar.polytechnic-internal-complaint', [
                 'error' => $e->getMessage(),
                 'menu' => $this->menu,
-                'menuDepartment' => $this->menuDepartment
+                'menuDepartment', 'menuFacility' => $this->menuDepartment
             ]);
         }
     }
@@ -127,15 +135,16 @@ class HomeSidebarController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getAboutSCST();
     
-            return view('website.pages.home-sidebar.polytechnic-scst', compact('data_output', 'menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-scst', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             \Log::error('Error in Controller getAboutSCST: ' . $e->getMessage());
             return view('website.pages.home-sidebar.polytechnic-scst', [
                 'error' => $e->getMessage(),
                 'menu' => $this->menu,
-                'menuDepartment' => $this->menuDepartment
+                'menuDepartment', 'menuFacility' => $this->menuDepartment
             ]);
         }
     }
@@ -145,13 +154,14 @@ class HomeSidebarController extends Controller
     try {
         $menu = $this->menu;
         $menuDepartment = $this->menuDepartment;
+        $menuFacility = $this->menuFacility;
         $data_output = $this->service->getAcademicCalendar();
 
         // Ensure $data_output is an instance of AcademicCalendar
         if($data_output instanceof AcademicCalendar) {
-            return view('website.pages.home-sidebar.polytechnic-calendar', compact('data_output','menu', 'menuDepartment'));
+            return view('website.pages.home-sidebar.polytechnic-calendar', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } else {
-            return view('website.pages.home-sidebar.polytechnic-calendar', compact('menu', 'menuDepartment'))->with('error', 'No data found.');
+            return view('website.pages.home-sidebar.polytechnic-calendar', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
         }
     } catch (\Exception $e) {
         return $e;

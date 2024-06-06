@@ -16,14 +16,48 @@
 <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
 <div class="row outer-white">
         <div class="col-sm-12">
-        @foreach($data_output as $campus_data)
+            @if (isset($error))
+            <div class="alert alert-danger">
+                {{ $error }}
+            </div>
+        @elseif ($data_output->isEmpty())
+            <div>
+                <p class="department-error">Data not available.</p>
+            </div>
+        @else
+            @foreach ($data_output as $achievement)
+                @if ($achievement->is_active == 1)
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8">
+                            <div>
+                                <h4 style="color:black">
+                                    {{ $achievement->facility }}</h4>
+                            </div>
+                            <div>
+                                <p>{{ strip_tags($achievement->facility_description) }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4">
+                            <img id="english"
+                                src="{{ Config::get('DocumentConstant.FACILITY_VIEW') }}{{ $facility_description->photo }}"
+                                class="img-fluid img-thumbnail" height="300px"
+                                width="400px">
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        @endif
+
+        {{-- @foreach($data_output as $campus_data)
             <div>
                 <h4 style="color:blue">{{ $campus_data->facility }}</h4>
             </div>
             <div>    
                 <p>{{ $campus_data->facility_description }}</p>
             </div>
-        @endforeach
+        @endforeach --}}
         <br>
                   
             <div>

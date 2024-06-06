@@ -21,6 +21,7 @@ class ContactUsController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new ContactUsServices();  
     }
 
@@ -31,8 +32,9 @@ class ContactUsController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $contactusdata = $this->service->getContactUs();
-            return view('website.pages.contactus.contact-us',compact('contactusdata','menu', 'menuDepartment'));
+            return view('website.pages.contactus.contact-us',compact('contactusdata','menu', 'menuDepartment', 'menuFacility'));
 
         } catch (\Exception $e) {
             return $e;

@@ -23,6 +23,40 @@
                                             <div class="alert alert-danger">
                                                 {{ $error }}
                                             </div>
+                                        @elseif ($data_output->isEmpty())
+                                            <div>
+                                                <p class="department-error">Data not available.</p>
+                                            </div>
+                                        @else
+                                            @foreach ($data_output as $achievement)
+                                                @if ($achievement->is_active == 1)
+                                                    <div class="row">
+                                                        <div class="col-lg-8 col-md-8">
+                                                            <div>
+                                                                <h4 style="color:black">
+                                                                    {{ $achievement->achievement_title }}</h4>
+                                                            </div>
+                                                            <div>
+                                                                <p>{{ strip_tags($achievement->achievement_description) }}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-4">
+                                                            <img id="english"
+                                                                src="{{ Config::get('DocumentConstant.ACHIEVEMENT_VIEW') }}{{ $achievement->photo }}"
+                                                                class="img-fluid img-thumbnail" height="300px"
+                                                                width="400px">
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            @endforeach
+                                        @endif
+
+                                        {{-- @if (isset($error))
+                                            <div class="alert alert-danger">
+                                                {{ $error }}
+                                            </div>
                                         @else
                                             @if (!$data_output)
                                                 <div>
@@ -57,7 +91,7 @@
                                                     @endif
                                                 @endforeach
                                             @endif
-                                        @endif
+                                        @endif --}}
 
                                         {{-- @if (isset($error))
                                                 <div class="alert alert-danger">

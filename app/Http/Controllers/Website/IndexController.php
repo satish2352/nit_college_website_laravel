@@ -19,7 +19,8 @@ class IndexController extends Controller
         $this->service = new IndexServices();  
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
-
+        $this->menuFacility = getFacility();
+        
     }
 
    
@@ -28,9 +29,10 @@ class IndexController extends Controller
     {
         try {
             $menu = $this->menu;  
-            $menuDepartment = $this->menuDepartment;        
+            $menuDepartment = $this->menuDepartment;  
+            $menuFacility = $this->menuFacility; 
             $data_output = $this->service->index();
-            return view('website.pages.index',compact('menu','data_output', 'menuDepartment'));
+            return view('website.pages.index',compact('menu','data_output', 'menuDepartment', 'menuFacility'));
 
         } catch (\Exception $e) {
             return $e;

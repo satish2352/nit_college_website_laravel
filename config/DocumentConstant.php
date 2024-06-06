@@ -16,6 +16,7 @@ return [
     'GALLERY_VIEW'	         => env("FILE_VIEW").'/images/gallery/', 
     'ACHIEVEMENT_VIEW'	         => env("FILE_VIEW").'/images/awards/', 
     'STAFF_VIEW'	         => env("FILE_VIEW").'/images/staff/', 
+    'FACILITY_VIEW'	         => env("FILE_VIEW").'/images/facility/',
     
     
 ];

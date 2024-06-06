@@ -13,6 +13,7 @@ class MarqueeController extends Controller
     {
         $this->menu = getMenuItemsActivities();
         $this->menuDepartment = getMenuItemsDepartment();
+        $this->menuFacility = getFacility();
         $this->service = new MarqueeServices();  
     }
 
@@ -21,8 +22,9 @@ class MarqueeController extends Controller
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
             $data_output = $this->service->getMarquee();
-            return view('website.layout.header', compact('data_output','menu', 'menuDepartment'));
+            return view('website.layout.header', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }
