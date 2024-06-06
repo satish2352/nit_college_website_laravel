@@ -40,7 +40,7 @@ class DepartmentRepository  {
                 )
                 ->where('department.id', $id) // Filter by the provided ID
                 ->orderBy('tbl_department.id', 'desc')
-                ->first(); // Get a single record
+                ->get(); 
     
             return $dataOutputCategory;
         } catch (\Exception $e) {
@@ -64,7 +64,7 @@ class DepartmentRepository  {
                 )
                 ->where('department.id', $id) // Filter by the provided ID
                 ->orderBy('tbl_department.id', 'desc')
-                ->first(); // Get a single record
+                ->get(); 
     
             return $dataOutputCategory;
         } catch (\Exception $e) {
@@ -88,7 +88,7 @@ class DepartmentRepository  {
                 )
                 ->where('department.id', $id) // Filter by the provided ID
                 ->orderBy('curriculum.id', 'desc')
-                ->first(); // Get a single record
+                ->get(); 
              
             return $dataOutputCategory;
         } catch (\Exception $e) {
@@ -131,7 +131,8 @@ class DepartmentRepository  {
                 'designation.Designation'
             )
             ->where('department.id', $id) // Filter by the provided ID
-            ->first(); // Get a single record
+            ->orderBy('tbl_staff.id', 'desc')
+            ->get(); 
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;
@@ -218,7 +219,7 @@ class DepartmentRepository  {
                 )
                 ->where('department.id', $id) // Filter by the provided ID
                 ->orderBy('tbl_awards.fld_gallery_id', 'desc')
-                ->first(); // Get a single record
+                ->get(); // Get a single record
              
             return $dataOutputCategory;
         } catch (\Exception $e) {
@@ -337,10 +338,11 @@ class DepartmentRepository  {
                     'department.Department',
                     'tbl_plan.is_active'
                 )
-                ->where('department.id', $id) // Filter by the provided ID
+                ->where('tbl_plan.department_id', $id) // Filter by the provided ID
                 ->orderBy('tbl_plan.fld_bm_id', 'desc')
                 ->get(); 
-             
+            //  dd($dataOutputCategory);
+            //  die();
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;

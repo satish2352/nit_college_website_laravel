@@ -117,6 +117,16 @@ public function getStudentsAssociation($id)
         return $e;
     }
 }
+// public function getPlan($id)
+// {
+//     try {
+//         $dataOutputCategory = $this->repo->getPlan($id);
+//         return $dataOutputCategory; // This will never be executed due to dd()
+//     } catch (\Exception $e) {
+//         return $e;
+//     }
+// }
+
 public function getPlan($id)
 {
     try {
@@ -127,4 +137,13 @@ public function getPlan($id)
     }
 }
 
+public function getDepartmentId($id)
+{
+    try {
+        $dataOutputCategory = $this->repo->getDepartmentId($id);
+        return $dataOutputCategory; // This will never be executed due to dd()
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
 }
