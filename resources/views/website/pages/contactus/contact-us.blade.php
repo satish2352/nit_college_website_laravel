@@ -1,6 +1,10 @@
 @extends('website.layout.master')
 @section('content')
-
+<style>
+label{
+    color: #454545;
+  }
+</style>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
 <div class="container">
 
@@ -83,19 +87,19 @@
                 <strong style="color:green">{{ $contactusdata[0]['contact_us_name']}} </strong>
             </address>
              <address>
-                <span class="glyphicon glyphicon-home"></span>&nbsp;<strong><strong style="color:green">Address</strong> <strong>:</strong>&nbsp; {{ $contactusdata[0]['contact_us_address'] }}</strong><br>
+                <span class="glyphicon glyphicon-home" style="color: #454545;"></span>&nbsp;<strong><strong style="color:green">Address</strong> <strong style="color: #454545;">:</strong>&nbsp; <span style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</span></strong><br>
             </address>
             <address>
-                <span class="glyphicon glyphicon-phone"></span>&nbsp;<strong><strong style="color:green">Tel.</strong> <strong>:</strong>&nbsp; {{ $contactusdata[0]['contact_us_telephone'] }}</strong><br>
+                <span class="glyphicon glyphicon-phone" style="color: #454545;"></span>&nbsp;<strong><strong style="color:green">Tel.</strong> <strong style="color: #454545;">:</strong>&nbsp; <span style="color: #454545;">{{ $contactusdata[0]['contact_us_telephone'] }}</span></strong><br>
             </address>
             <address>
-                <span class="glyphicon glyphicon-phone"></span>&nbsp;<strong><strong style="color:green">Mobile.</strong> <strong>:</strong>&nbsp; {{ $contactusdata[0]['contact_us_mobile'] }}</strong><br>
+                <span class="glyphicon glyphicon-phone" style="color: #454545;"></span>&nbsp;<strong><strong style="color:green">Mobile.</strong> <strong style="color: #454545;">:</strong>&nbsp; <span style="color: #454545;">{{ $contactusdata[0]['contact_us_mobile'] }}</span></strong><br>
             </address>
             <address>
-            <span class="glyphicon glyphicon-globe"></span>&nbsp;<strong style="color:green"> Website:</strong>&nbsp; {{ $contactusdata[0]['contact_us_website'] }}<br>
+            <span class="glyphicon glyphicon-globe" style="color: #454545;"></span>&nbsp;<strong style="color:green"> Website :</strong>&nbsp; <span style="color: #454545;">{{ $contactusdata[0]['contact_us_website'] }}</span><br>
             </address>
             <address>
-                <span class="glyphicon glyphicon-envelope"></span>&nbsp;<strong style="color:green">Email:</strong>&nbsp;<a href="mailto:#">{{ $contactusdata[0]['contact_us_email'] }}</a>
+                <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span>&nbsp;<strong style="color:green">Email :</strong>&nbsp;<a href="mailto:#"><span style="color: #454545;">{{ $contactusdata[0]['contact_us_email'] }}</span></a>
                 
             </address>
             </form>
