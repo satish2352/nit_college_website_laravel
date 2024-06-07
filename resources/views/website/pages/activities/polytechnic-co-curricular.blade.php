@@ -13,8 +13,8 @@
     <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px;">
         <div class="container">
             <div class="row" style="padding:0px">
-                <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
-                    <div class="row outer-white1">
+                <div class="col-md-12 col-sm-12 text-justify" id="iwtContentArea">
+                    <div class="row">
                         <div class="col-sm-12">
                             @if (isset($error))
                                 <div class="alert alert-danger">
@@ -22,14 +22,14 @@
                                 </div>
                             @else
                                 @if (!$data_output)
-                                    <div class="alert alert-info">
-                                        Data not found
-                                    </div>
+                                        <div>
+                                            <p class="department-error" style="display: flex;justify-content: center;align-items: center;">Data not available.</p>
+                                        </div>
                                 @else
                                     @if ($data_output->is_active == 0)
-                                        <div class="alert alert-info">
-                                            Data not found
-                                        </div>
+                                            <div>
+                                                <p class="department-error">Data not available.</p>
+                                            </div>
                                     @else
                                         <div>
                                             <h2 style="color:blue">{{ $data_output->activities }}</h2>
@@ -44,21 +44,7 @@
                         
 
                 <!-- /.row -->
-                <div class="row">
-                    <div class="col-sm-12 ">
-                        <p>Our educational institute organizes co-curricular activities every year It helps the students
-                            to enhances their knowledge, confidence, debating power, stage daring and overall
-                            personality.</p>
-                        <p><b style="color:blue">Quiz Contest</b> :- On the occasion of Teachers day, we had organized
-                            the quiz contest The quiz contest was based on general knowledge.</p>
-                        <p><b style="color:blue">Teacher day</b> :- On the occasion of Teachers day, the students
-                            participated and they were given the opportunity to teach in the class before the students.
-                        </p>
-                        <p><b style="color:blue">Debate competition</b> :- On the occasion of Youth Day The debate
-                            competition was tak .The subject for the debate competition was Addiction gives prestige?
-                            Yes or No.The students participated and talked for both the sides.</p>
-                    </div>
-                </div>
+               
             </div><!-- /.row -->
                 <div class="row outer-white">
                     <div class="col-sm-12">

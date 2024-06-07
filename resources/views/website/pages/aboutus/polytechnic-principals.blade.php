@@ -151,7 +151,7 @@
         <!--<h2 style="color:blue"><strong>Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President, Nasik Institute of Technology </strong></h2>-->
     </div>
     
-    <div class="" style="background-color: #fff;">
+    <div class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card-shadow">
@@ -160,7 +160,7 @@
                         <div class="panel panel-primary product-type">
                             <div class="">
                               
-                                <center><h3 class="panel-title" style="color:blue"><b>Principal Message</b></h3></center>
+                                <center><h3 class="panel-title"><b>Principal Message</b></h3></center>
             
                             </div>
 
@@ -177,12 +177,12 @@
                                   </div>
                                   <div class="col-lg-7 m-5">
                                     <h5 class="mt-2" style="color:#00ae97;"><strong> Dear Students,</strong></h5>     
-                                    I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br>
+                                    {{-- <p style="font-size: 15px"></p><br> --}}
 
-                                   <p style="font-size: 15px;"> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.</p>
-                                    <br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
+                                   <p style="font-size: 15px;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br> <br> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
+                                    <br><br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
                                     <br>So be the part of NIT Family.<br>
-                                 
+                                </p>
                                     </p>
                                   </div>
                                 </div>   

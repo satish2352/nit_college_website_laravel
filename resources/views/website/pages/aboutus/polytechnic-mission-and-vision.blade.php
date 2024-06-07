@@ -93,7 +93,7 @@
                         <div class="panel panel-primary product-type">
                             <div class="panel-heading">
                                 <h3 class="panel-title" style="color:blue"><b>Vision</b></h3>
-                                <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
+                                {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                             </div>
                             <div class="panel-body">
                             <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
@@ -116,12 +116,12 @@
     <div class="panel_content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="panel panel-primary product-type">
                             <div class="panel-heading">
                                 <h3 class="panel-title" style="color:blue"><b>Mission</b></h3>
-                                <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
+                                {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                             </div>
                             <div class="panel-body">
                             <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->

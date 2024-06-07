@@ -35,8 +35,8 @@ Route::get('/polytechnic-co-curricular/{id}', ['as' => 'polytechnic-co-curricula
 
 // Route::get('/polytechnic-co-curricular', ['as' => 'polytechnic-co-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCoCurricular']);
 Route::get('/polytechnic-cultural-desk', ['as' => 'polytechnic-cultural-desk', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCulturalDesk']);
-Route::get('/polytechnic-curricular', ['as' => 'polytechnic-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCurricular']);
-Route::get('/polytechnic-extra-curricular', ['as' => 'polytechnic-extra-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicExtraCurricular']);
+// Route::get('/polytechnic-curricular', ['as' => 'polytechnic-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicCurricular']);
+// Route::get('/polytechnic-extra-curricular', ['as' => 'polytechnic-extra-curricular', 'uses' => 'App\Http\Controllers\Website\Activities\ActivitiesController@getPolytechnicExtraCurricular']);
 
 
 Route::get('/department-profile/{id}', ['as' => 'department-profile', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getProfile']);
