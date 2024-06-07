@@ -34,7 +34,7 @@ class EnquiryController extends Controller
             $menuDepartment = $this->menuDepartment;
             $menuFacility = $this->menuFacility;
             $contactusdata = $this->service->getEnquiry();
-            return view('website.pages.enquiry.enquiry',compact('contactusdata','menu', 'menuDepartment'));
+            return view('website.pages.enquiry.enquiry',compact('contactusdata','menu', 'menuDepartment', 'menuFacility'));
 
         } catch (\Exception $e) {
             return $e;

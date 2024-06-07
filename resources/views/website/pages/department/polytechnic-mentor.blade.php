@@ -30,19 +30,27 @@
     <div class="container">
     
     <div class="col-sm-12" style="padding:0;">
-        <h4 style="color:green"><strong>Civil Engineering Mentoring</strong></h4>
-        <div class="pull-right"><img src="../up-images/civil-iconimgFile568246ec20aed.png" alt="" class="img-responsive"></div>
+        {{-- <h4 style="color:green"><strong>Civil Engineering Mentoring</strong></h4>
+        <div class="pull-right"><img src="../up-images/civil-iconimgFile568246ec20aed.png" alt="" class="img-responsive"></div> --}}
     </div>
     
     </div>
-    </div><div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px" >
-    <div class="container card-shadow" style="margin-bottom: 95px;"> 
+    </div><div class="container-fluid" >
+    <div class="container card-shadow" style="margin-bottom: 145px;"> 
     <div class="row" style="padding:0px">
     <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
     <div class="row outer-white">
+        
             <div class="col-sm-12">
                 <div>
-                    <h2>Student Mentoring Activity:</h2>
+                    @if(isset($data_output_category) && isset($data_output_category['id']))                    
+                    <div class="" style="color:#00ae97;" 
+                        >{{$data_output_category->Department}}</div>
+                        @else
+                        @endif
+                </div>
+                <div>
+                    <div style="color:#545353; font-size:19px; padding:10px 0px">Student Mentoring Activity:</div>
                 </div>
                 <div>                   
                                 </div>

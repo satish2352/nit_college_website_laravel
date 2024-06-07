@@ -153,9 +153,10 @@ class DepartmentController extends Controller
             $menuFacility = $this->menuFacility;
             $data_output = $this->service->getAchievementsAwards($id);
             $data_output_category = $this->service->getDepartmentId($id);
-          
+        //   dd($data_output );
+        //   die();
             if ($data_output instanceof \Exception) {
-                return view('website.pages.department.polytechnic-achievements-awards', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
+                return view('website.pages.department.polytechnic-achievements-awards', compact('menu','data_output_category','data_output', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
             return view('website.pages.department.polytechnic-achievements-awards', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));

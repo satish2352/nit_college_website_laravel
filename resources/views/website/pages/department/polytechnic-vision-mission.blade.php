@@ -8,6 +8,13 @@
             <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
                 <div class="row outer-white">
                     <div class="col-sm-12">
+                        <div>
+                            @if(isset($data_output_category) && isset($data_output_category['id']))                    
+                            <div class="" style="color:#00ae97;" 
+                                >{{$data_output_category->Department}}</div>
+                                @else
+                                @endif
+                        </div>
                     </div>
                 </div><!-- /.row -->
                 <div class="row outer-white">

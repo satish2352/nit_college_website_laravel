@@ -33,7 +33,13 @@
     <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
     <div class="row outer-white">
             <div class="col-sm-12">
-                
+                <div>
+                    @if(isset($data_output_category) && isset($data_output_category['id']))                    
+                    <div class="" style="color:#00ae97; padding:10px 0px;"  
+                        >{{$data_output_category->Department}} Download Time Table Here....</div>
+                        @else
+                        @endif
+                </div> 
     <div class="span7">   
     
                 </div>
@@ -48,7 +54,7 @@
 
             <div class="col-sm-12">
                 <div class="col-sm-12" style="padding:0;">
-                    <h4 style="color:green"><strong>Download Time Table Here....</strong></h4>
+                                     
                     <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
                 </div>
                                    <table class="table table-striped table-bordered"  id="customers">

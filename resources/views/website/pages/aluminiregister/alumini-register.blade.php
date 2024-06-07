@@ -1,6 +1,9 @@
 @extends('website.layout.master')
 @section('content')
 <style>
+  label{
+    color: #454545;
+  }
     input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -262,37 +265,7 @@ th {
 <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px" >
 <div class="container"> 
 
-<div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <div class="carousel-caption">
-              <img src="{{ Config::get('DocumentConstant.ALUMINI_VIEW') }}a3.jpg" alt="" class="img-responsive">
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                   <img src="{{ Config::get('DocumentConstant.ALUMINI_VIEW') }}a5.jpg" alt="" class="img-responsive">
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                   <img src="{{ Config::get('DocumentConstant.ALUMINI_VIEW') }}a3.jpg" alt="" class="img-responsive">
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -303,23 +276,59 @@ th {
 
 
 <div class="row" style="padding:0px">
-<div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
-<div class="row outer-white">
-        <div class="col-sm-12">
+<div class="col-md-10 col-sm-12 text-justify" id="iwtContentArea">
+<div class="row outer-white"  style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); margin-bottom:100px;">
+        <div class="col-sm-12" style="padding: 0px;">
             <div>
                 <!--<h2 style="color:blue"></h2>-->
                 <div class="containerid">
-  <form method="post" enctype="multipart/form-data" action="{{ route('add-aluminiregister') }}">
-  <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
+                  <form method="post" enctype="multipart/form-data" action="{{ route('add-aluminiregister') }}">
+                    <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
+     <div class="row">
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="fname">Name Of Student</label>
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="lname">Email ID</label>
+        <input type="text" id="lname" name="email" placeholder="Your Email Address..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="lname">Enrollment Number</label>
+        <input type="text" id="lname" name="enroll" placeholder="Your Enrollment Number..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="fname">Current Working Company</label>
+        <input type="text" id="fname" name="company" placeholder="Your Current Working Company..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="fname">Current Location</label>
+        <input type="text" id="fname" name="location" placeholder="Your Current Location..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="fname">Contact Number</label>
+        <input type="text" id="fname" name="mobile" placeholder="Your Contact Number..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="fname">Passout Year</label>
+        <input type="text" id="fname" name="passout_year" placeholder="Your Passout Year..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="fname">Department Name</label>
+        <input type="text" id="fname" name="department" placeholder="Your Department Name..">
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6">
+        <label for="fname">Message</label>
+        <input type="text" id="fname" name="message" placeholder="Your Message..">
+       </div>
+      
+     </div>
 
-    <label for="fname">Name Of Student</label>
-    <input type="text" id="fname" name="name" placeholder="Your name..">
+   
     
-    <label for="lname">Email ID</label>
-    <input type="text" id="lname" name="email" placeholder="Your Email Address..">
+  
     
-     <label for="lname">Enrollment Number</label>
-    <input type="text" id="lname" name="enroll" placeholder="Your Enrollment Number..">
+    
     
      <div class="creatediv1 marginTop30">
     			
@@ -437,23 +446,15 @@ th {
     
 </div>
     
-    <label for="fname">Current Working Company</label>
-    <input type="text" id="fname" name="company" placeholder="Your Current Working Company..">
+  
+  
     
-    <label for="fname">Current Location</label>
-    <input type="text" id="fname" name="location" placeholder="Your Current Location..">
+     
     
-      <label for="fname">Contact Number</label>
-    <input type="text" id="fname" name="mobile" placeholder="Your Contact Number..">
     
-     <label for="fname">Passout Year</label>
-    <input type="text" id="fname" name="passout_year" placeholder="Your Passout Year..">
+     
     
-     <label for="fname">Department Name</label>
-    <input type="text" id="fname" name="department" placeholder="Your Department Name..">
-    
-     <label for="fname">Message</label>
-    <input type="text" id="fname" name="message" placeholder="Your Message..">
+     
    
     
     

@@ -217,7 +217,8 @@ class DepartmentRepository  {
                     'department.Department',
                     'tbl_awards.is_active'
                 )
-                ->where('department.id', $id) // Filter by the provided ID
+               ->where('department.id', $id) 
+               ->where('tbl_awards.fld_delete', 0) 
                 ->orderBy('tbl_awards.fld_gallery_id', 'desc')
                 ->get(); // Get a single record
              

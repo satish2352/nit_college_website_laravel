@@ -36,7 +36,9 @@
                                                         </div>
                                                     @else
                                                         <div>
-                                                            <h4 style="color:black">{{ $data_output->Department }}</h4>
+                                                            <div class="" style="color:#00ae97;">{{$data_output->Department}}</div>
+
+                                                            {{-- <h4 style="color:black">{{ $data_output->Department }}</h4> --}}
                                                         </div>
                                                         <div>
                                                             <p>{{ strip_tags($data_output->department_description) }}</p>

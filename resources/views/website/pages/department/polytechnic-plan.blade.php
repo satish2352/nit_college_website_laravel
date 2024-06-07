@@ -62,7 +62,11 @@
                 <div class="row outer-white">
             <div class="col-sm-12">
                 <div>
-                    <h3></h3>
+                    @if(isset($data_output_category) && isset($data_output_category['id']))                    
+                    <div class="" style="color:#00ae97;" 
+                        >{{$data_output_category->Department}}</div>
+                        @else
+                        @endif
                 </div>
                 <div>                   
                     <p></p>
@@ -80,10 +84,11 @@
     </div><!-- /.row -->				            													<div class="row outer-white">
             <div class="col-sm-12">
                 <div>
-                    <h2></h2>
+                   
                 </div>
                 <div>  
-                
+                  
+
                 <table class="table table-striped table-bordered"  id="customers">
                             <thead>
                                 <tr>
