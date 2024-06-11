@@ -52,7 +52,7 @@
             </div>
         @endif
                
-                <div class="col-lg-12 col-md-8 col-sm-12 col-11 p-2 pb-5">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-11 p-2 pb-5">
                     <div class="well well-sm" style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);">
                          <form method="POST" enctype="multipart/form-data" id="regForm" action="{{ route('add-enquiry') }}">
                             @csrf
