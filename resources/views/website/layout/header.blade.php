@@ -283,8 +283,8 @@ li #footer-links {
                                     @endforeach
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('achievement') }}">Achievements</a></li>
-                            <li class="nav-item dropdown">
+                            {{-- <li class="nav-item"><a class="nav-link" href="{{ route('achievement') }}">Achievements</a></li> --}}
+                            {{-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="FacilitiesDropdown"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Facilities
@@ -298,7 +298,7 @@ li #footer-links {
                                         </li>
                                     @endforeach
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="AcademicsDropdown"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
