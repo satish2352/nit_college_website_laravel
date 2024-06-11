@@ -10,6 +10,9 @@
     .red-text{
         color: red;
     }
+    i{
+        color: red;
+    }
     </style>
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
         <div class="container pt-4">
@@ -24,31 +27,9 @@
 
         </div>
     </div>
-    <div class="container-fluid" style="padding-top:40px; padding-bottom:40px">
+    <div class="container-fluid">
         <div class="container">
-            <div class="row">
-
-                {{-- @if (Session::get('status') == 'success')
-                <div class="col-12 grid-margin">
-                    <div class="alert alert-success" id="success-alert">
-                        <button type="button" class="close" data-dismiss="alert">x</button>
-                        <strong> <span id="data_to_show">
-                                {{ Session::get('msg') }}
-                            </span> </strong>
-                    </div>
-                </div>
-            @endif
-        
-            @if (Session::get('status') == 'error')
-                <div class="col-12 grid-margin">
-                    <div class="alert alert-danger" id="danger-alert">
-                        <button type="button" class="close" data-dismiss="alert">x</button>
-                        <strong> <span id="data_to_show">
-                                {!! session('msg') !!}
-                            </span> </strong>
-                    </div>
-                </div>
-            @endif --}}
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
             @if (Session::get('status') == 'success')
             <div class="col-12 grid-margin">
                 <div class="alert alert-success" id="success-alert">
@@ -70,29 +51,29 @@
                 </div>
             </div>
         @endif
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <div class="well well-sm" style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); margin-bottom:100px;">
+               
+                <div class="col-lg-12 col-md-8 col-sm-12 col-11 p-2 pb-5">
+                    <div class="well well-sm" style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);">
                          <form method="POST" enctype="multipart/form-data" id="regForm" action="{{ route('add-enquiry') }}">
                             @csrf
                             <div class="row" style="display: flex; justify-content: center; background-color:#fff; padding:10px;">
                                 <div class="col-md-6">
                                     <div class="form-group py-2">
-                                        <label for="name">Full Name</label>
+                                        <label for="name"><b>Full Name</b> <i class="required">*</i></label>
                                         <input type="text" class="form-control" name="name" id="name" placeholder="Enter full name" value="{{ old('name') }}" />
                                         @if ($errors->has('name'))
                                         <span class="text-danger">{{ $errors->first('name') }}</span>
                                         @endif
                                     </div>
                                     <div class="form-group py-2">
-                                        <label for="mobile_number">Mobile Number</label>
+                                        <label for="mobile_number"><b>Mobile Number</b> <i class="required">*</i></label>
                                         <input type="text" class="form-control" id="mobile_number" name="mobile_number" placeholder="Enter Mobile Number" value="{{ old('mobile_number') }}" />
                                         @if ($errors->has('mobile_number'))
                                         <span class="text-danger">{{ $errors->first('mobile_number') }}</span>
                                         @endif
                                     </div>
                                     <div class="form-group py-2">
-                                        <label for="email">Email Address</label>
+                                        <label for="email"><b>Email Address </b><i class="required">*</i></label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
                                             <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" value="{{ old('email') }}" />
@@ -102,7 +83,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group py-2">
-                                        <label for="admission_level">Admission Level <i class="required">*</i></label>
+                                        <label for="admission_level"><b>Admission Level</b> <i class="required">*</i></label>
                                         <select class="form-control" name="admission_level" id="admission_level">
                                             <option value="">Select</option>
                                             <option value="1" {{ old('admission_level') == 'FY' ? 'selected' : '' }}>FY</option>
@@ -113,7 +94,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group py-2">
-                                        <label for="source">Source</label>
+                                        <label for="source"><b>Source</b> <i class="required">*</i></label>
                                         <select class="form-control" id="source" name="source">
                                             <option value="">Select source</option>
                                             <option value="Directly Institute Visit" {{ old('source') == 'Directly Institute Visit' ? 'selected' : '' }}>Directly Institute Visit</option>
@@ -127,7 +108,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group py-2">
-                                        <label for="source_name">Source Name</label>
+                                        <label for="source_name"><b>Source Name</b> <i class="required">*</i></label>
                                         <input type="text" class="form-control" id="source_name" name="source_name" placeholder="Enter source name" value="{{ old('source_name') }}" />
                                         @if ($errors->has('source_name'))
                                         <span class="text-danger">{{ $errors->first('source_name') }}</span>
@@ -147,7 +128,7 @@
                                       </div>
                                 
                               <div class="display:flex; text-align:center; justify-content: center;">
-                                    <button type="submit" name="submit" value="submit" class="btn btn-primary pull-right" id="btnContactUs" style="margin-top: 25px;">Submit</button>
+                                    <button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs" style="margin-top: 25px; background-color:#c70039; color:#fff;">Submit</button>
                               </div>
                             </div>
                         </form>
@@ -155,58 +136,7 @@
                         
                     </div>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row" style="padding:0px">
-                <div class="col-md-6 col-sm-12 text-justify" id="iwtContentArea">
-                    <div class="row outer-white">
-                        <div class="col-sm-12">
-                            <div>
-                                <h2 style="color:blue"></h2>
-                            </div>
-                            <div>
-                                <h2 align="justify" style="color:blue"><strong></strong></h2>
-                                <p align="justify"><strong></strong>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                    <div class="row outer-white">
-                        <div class="col-sm-12">
-                            <div>
-                                <h4 style="color:blue"></h4>
-                            </div>
-                            <div>
-                                <p></p>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                    <div class="row outer-white">
-                        <div class="col-sm-12">
-                            <div>
-                                <a href="https://maps.google.co.in/maps?hl=en&tab=wl"><img
-                                        src="{{ env('FILE_VIEW') }}/up-images/map.jpg" /></a>
-                            </div>
-                            <div>
-                                <p><a href="#">
-                                    </a></p>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                </div>
-
-                <div class="col-md-6 hidden-sm right-col-fix" id="iwtRightPannel">
-
-                    <!--Right col-->
-                    <div class="col-sm-12 right-col-fix">
-                        <div>
-
-
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
