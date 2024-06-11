@@ -97,7 +97,7 @@
 }
 
 .president-msg p {
-    font-size: 1.25rem; /* Adjust as needed */
+   
     text-align: justify;
 }
 
@@ -116,27 +116,7 @@
   width:1100px
 }
 
-/* @media (max-width: 991px) {
-    .president-msg img {
-        height: auto;
-        max-width: 100%;
-    }
-}
 
-@media (max-width: 767px) {
-    .president-msg {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-    
-    .president-msg h5 {
-        font-size: 1.5rem;
-    }
-    
-    .president-msg p {
-        font-size: 1rem;
-    }
-} */
 
     
     </style>
@@ -144,12 +124,7 @@
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container">
     
-    <div class="col-sm-12" style="padding:0;">
-        {{-- <center><h2 style="color:green"><strong>Principal Desk </strong></h2></center> --}}
-        <!-- <br> -->
-        <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">
-        <!--<h2 style="color:blue"><strong>Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President, Nasik Institute of Technology </strong></h2>-->
-    </div>
+
     
     <div class="">
         <div class="container">
@@ -164,22 +139,22 @@
             
                             </div>
 
-                            <div class="col-12 col-lg-9 row mt-5 mb-5 president-msg">
-                                <div class="row1">
-                                  <div class="col-lg-5 col text-center m-5" data-aos="fade-left">
-                                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" height="400">
+                            <div class="col-12 col-lg-12 row mt-5 mb-5">
+                                <div class="row">
+                                  <div class="col-lg-5 col text-center " data-aos="fade-left">
+                                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" class="img-fluid" height="400" width="400">
                                            &nbsp;&nbsp;
                                           
                                          
                                           
 
-                                           <h5 class="mt-2" style="color:#00ae97;"><strong>  Principal, <br>   Prof.Gopal Vadnere</strong></h5>  
+                                           <h5 class="mt-2" style="color:#00ae97;">  Principal, <br>   Prof.Gopal Vadnere</h5>  
                                   </div>
-                                  <div class="col-lg-7 m-5">
-                                    <h5 class="mt-2" style="color:#00ae97;"><strong> Dear Students,</strong></h5>     
+                                  <div class="col-lg-7 ">
+                                    <h5 class="mt-2" style="color:#00ae97;">Dear Students,</h5>     
                                     {{-- <p style="font-size: 15px"></p><br> --}}
 
-                                   <p style="font-size: 15px;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br> <br> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
+                                   <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br> <br> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
                                     <br><br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
                                     <br>So be the part of NIT Family.<br>
                                 </p>

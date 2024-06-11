@@ -20,6 +20,7 @@
     .product-type
     {
         margin-top: 45px;
+        padding: 20px;
     }
     .product-size
     {
@@ -45,6 +46,7 @@
     {
         font-size: 22px;
         font-weight:400;
+        color: #00ae97; !important;
     }
     
     .panel_product_type
@@ -92,7 +94,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="panel panel-primary product-type">
                             <div class="panel-heading">
-                                <h3 class="panel-title" style="color:blue"><b>Vision</b></h3>
+                                <h3 class="panel-title" style="color:#00ae97"><b>Vision</b></h3>
                                 {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                             </div>
                             <div class="panel-body">
@@ -120,7 +122,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="panel panel-primary product-type">
                             <div class="panel-heading">
-                                <h3 class="panel-title" style="color:blue"><b>Mission</b></h3>
+                                <h3 class="panel-title" style="color:#00ae97"><b>Mission</b></h3>
                                 {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                             </div>
                             <div class="panel-body">

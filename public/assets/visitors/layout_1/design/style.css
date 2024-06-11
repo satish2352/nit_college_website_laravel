@@ -109,7 +109,7 @@ text-align: center; }
 
 #iwtHeader{background-color:#f7f9fb; height:150px; border-bottom:#c70039 solid 3px; }
 
-#iwtHeaderNav{background:url(images/HeaderNav-bg.png) repeat-x; min-height:65px; border-bottom:#c70039 solid 1px;}
+#iwtHeaderNav{background:url(images/HeaderNav-bg.png) repeat-x; min-height:65px; border-bottom:#c70039 solid 3px;}
 
 #iwtPageHeading{background: #c70039 url(images/page-header-bg.jpg); min-height:109px;}
 #iwtPageHeading .container{padding-top:5px; padding-bottom:5px;}
@@ -202,7 +202,9 @@ a.active-lp-cpg-link{ color:#3887e0;}
 
 .navbar-nav > li > a { padding-left:15px; padding-right:15px;}
 
-.about-home .about-img{margin-top:58px;}
+.about-home .about-img{
+  /* margin-top:58px; */
+}
 }
 
 

@@ -1,323 +1,382 @@
-<!DOCTYPE php>
-<?php //include 'config.php'; ?>
-<php lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>LATE ANNASAHEB PATIL POLYTECHNIC</title>
+<!DOCTYPE html>
+<html lang="en">
 
-<style>
-    .heading1{font-size:20px;line-height:20px;font-family:'Lato', sans-serif;text-transform:uppercase;color:#1b2834;font-weight:900;}
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATE ANNASAHEB PATIL POLYTECHNIC</title>
 
-<script>
-    var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86,user-scalable=no');
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('public/assets/visitors/hm/design/style.css') }}" rel="stylesheet">
+    <style>
+      .heading1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #1b2834;
+    font-weight: 900;
 }
-</script>
+.navbar {
+         --bs-navbar-padding-y: 0rem;
+}
 
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<meta name="keywords" content="">
-<meta name="description" content="">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="icon" href="{{ asset('public/assets/visitors/layout_1/design/images/logo.gif.jpg')}}" type="image/x-icon">
-<link rel="stylesheet" href="{{ asset('public/assets/visitors/includes/bootstrap-3.3.5/css/bootstrap.min.css')}}">
-<script src="ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{ asset('public/assets/visitors/includes/bootstrap-3.3.5/js/bootstrap.min.js')}}"></script>
-<link href="{{ asset('public/assets/visitors/hm/design/style.css')}}" rel="stylesheet">
-<script src="cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+.nav-link:hover {
+    background-color: #c70039;
+    color: #fff;
+}
+.mob-display{
+    display: none;
+}
+.web-display{
+    display: block;
+}
+.red-watch-bg{
+    width: 100%;
+    background-color: #c70039;
+    position: relative;
+    height: 40px;
+}
+ .nav-item a{
+    font-weight: 600 !important;
+}
+li .dropdown-item{
+    font-weight: normal !important;
+}
+.dropdown-menu {
+    padding: 10px;
+}
+.dropdown-menu li a{
+    font-weight: normal !important;
+    color: #1b2834;
+    /* padding: 30px; */
+}
+.dropdown-menu ul li:hover {
+    background-color: #c70039;
+    color: #fff;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #c70039;
+    color: #fff;
+}
+li #footer-links {
+    color: #00ae97;
+    font-size: 13px;
+    display: block;
+    font-weight: 600 !important;
+}
 
-{{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-AOS.init({
-    offset: 150,
-    duration: 1500,
-});
-</script> --}}
-<!--[if lt IE 9]>
-<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-<script src="js/php5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->  
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
-</head><body>
-<script>
-                        $(document).ready(function() {
- 
-                        // For the Second level Dropdown menu, highlight the parent	
-                        $( ".dropdown-menu" )
-                        .mouseenter(function() {
-                                $(this).parent("li").addClass("active");
-                        });
-						$( ".dropdown-menu" )
-                        .mouseleave(function() {
-                                $(this).parent("li").removeClass("active");
-                        });
+@media only screen and (max-width: 767px) {
+    .main-header {
+        font-size: 14px;
+    }
+    .heading1 {
+        font-size: 11px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #1b2834;
+        font-weight: 900;
+    }
+    .mob-width {
+        width: 40px;
+    }
+    .img-fluid {
+        width: 50px; /* Adjust width for smaller screens */
+    }
+    .mob-display{
+    display: block;
+}
+.web-display{
+    display: none;
+}
 
-                        });
-						$(document).on("show",".accordion", function (e) {
-							 //$(".accordion-heading i").toggleClass(" ");
-							 $(e.target).prev(".accordion-heading").addClass("accordion-opened");
-						});
-						
-						$(document).on("hide",".accordion", function (e) {
-							$(this).find(".accordion-heading").not($(e.target)).removeClass("accordion-opened");
-							//$(".accordion-heading i").toggleClass("fa-chevron-right fa-chevron-down");
-						});
-			</script><div class="container-fluid" id="iwtHeaderTopNav">
-<div class="container">
-<div class="col-sm-5"><a href="{{ route('/') }}">Institute Address : Cannol Road,Behind Hydro-division(MERI),Nashik</a></div>
-<div class="col-sm-7 text-right">
-    Email: <a href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
-    Contact Number:
-    <a href="tel:9595952100">9595952100</a>&nbsp;
-    <a href="tel:9822208687">9822208687</a>&nbsp;
-    <a href="tel:9552551056">9552551056</a>&nbsp;
-    <a href="tel:9552551064">9552551064</a>
+.navbar-toggler {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 75%;
+                height: 100%;
+                background: white;
+                z-index: 999;
+                transition: left 0.3s;
+                padding-top: 1rem;
+            }
+
+            .navbar-collapse.show {
+                left: 0;
+            }
+            .mob-toggle-right-side{
+                display: flex;
+                align-items: center !important;
+            }
+            .mob-width-left{
+                width: 80%;
+            }
+            .mob-width-right{
+                width: 20%;
+            }
+            #iwtHeaderNav{
+                border-bottom: none;
+            }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    .main-header {
+        text-align: center; /* Center align for better visibility */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+
+            // For the Second level Dropdown menu, highlight the parent	
+            $(".dropdown-menu")
+                .mouseenter(function() {
+                    $(this).parent("li").addClass("active");
+                });
+            $(".dropdown-menu")
+                .mouseleave(function() {
+                    $(this).parent("li").removeClass("active");
+                });
+
+        });
+        $(document).on("show", ".accordion", function(e) {
+            //$(".accordion-heading i").toggleClass(" ");
+            $(e.target).prev(".accordion-heading").addClass("accordion-opened");
+        });
+
+        $(document).on("hide", ".accordion", function(e) {
+            $(this).find(".accordion-heading").not($(e.target)).removeClass("accordion-opened");
+            //$(".accordion-heading i").toggleClass("fa-chevron-right fa-chevron-down");
+        });
+    </script>
+    {{-- ======================Start Top Header==================== --}}
+    <div class="container-fluid px-3" id="iwtHeaderTopNav">
+        <div class="container px-0">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5"><a href="{{ route('/') }}">Institute Address : Cannol
+                        Road,Behind Hydro-division(MERI),Nashik</a></div>
+                <div class="col-lg-7 col-md-7 col-sm-7 text-right">
+                    <span style="font-size:13px !important;">Email :</span> <a
+                        href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
+                    <span style="font-size:13px !important;">Contact Number : </span>
+                    <a href="tel:9595952100">9595952100</a>&nbsp;
+                    <a href="tel:9822208687">9822208687</a>&nbsp;
+                    <a href="tel:9552551056">9552551056</a>&nbsp;
+                    <a href="tel:9552551064">9552551064</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- =========================End Top Header======================== --}}
+    {{-- ======================Start Sub Header==================== --}}
+<div class="mob-toggle-right-side">
+    <div class="container-fluid pt-4 pb-1 mob-width-left" id="iwtHeaderNav">
+        <div class="container main-header">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-3">
+                    <img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid mob-width" alt="Logo">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-9 text-center">
+                    <h3 class="heading1">NASHIK INSTITUTE OF TECHNOLOGY</h3>
+                    <h2 class="heading1">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
+                    <p class="web-display mob-display">
+                        <marquee>
+                            <b>Approved By</b> :
+                            <b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b>Affiliated To</b> :
+                            <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
+                        </marquee>
+                        <br>
+                        <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2024-25</a></b>
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-3 text-center displsy-flex web-display mob-display">
+                    <img src="{{ asset('public/assets/Akole_Poly/TWOWIN2p_400x400.jpg') }}" alt="Avatar" class="img-fluid rounded-circle" style="width:100px;">
+                    <p style="font-size:12px;color:red;"><b>Shri.&nbsp;Suresh&nbsp;Patil</b></p>
+                </div>
+
+           
+            </div>
+        </div>
+    </div>
+        {{-- ======================End Sub Header==================== --}}
+    <div class="container-fluid mob-width-right" id="iwtHeaderNav">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    {{-- <a class="navbar-brand" href="#">Brand</a> --}}
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('/') }}">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                    <li><a class="dropdown-item" href="{{ route('polytechnic-president') }}">President
+                                            Desk</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ route('polytechnic-principals') }}">Principal
+                                            Desk</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ route('mission-and-vision') }}">Mission &
+                                            Vision</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ route('about-governingbody') }}">Governing
+                                            Body</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ route('about-futureplans') }}">Future
+                                            Plans</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="ActivitiesDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Activities
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="ActivitiesDropdown">
+                                    @foreach ($menu as $menuItem)
+                                        <li class="">
+                                            <a
+                                                href="{{ route('polytechnic-co-curricular', ['id' => $menuItem['id']]) }}">{{ $menuItem['activities'] }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="DepartmentDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Department
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="DepartmentDropdown">
+                                    @foreach ($menuDepartment as $menuItemDepartment)
+                                        <?php
+                                        
+                                        ?>
+                                        <li class="">
+                                            <a
+                                                href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('achievement') }}">Achievements</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="FacilitiesDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Facilities
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="FacilitiesDropdown">
+
+                                    @foreach ($menuFacility as $menuFacility)
+                                        <li class="">
+                                            <a
+                                                href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="AcademicsDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Academics
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="AcademicsDropdown">
+                                    <li class="nav-item"><a class="nav-link"
+                                        href="{{ route('polytechnic-rules') }}">Admission Rules And
+                                        Process</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('contact-us') }}">Contact Us</a>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="AlumniDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Alumni
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="AlumniDropdown">
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('aluminiregister') }}">Alumni
+                                        Registration</a></li>
+                                </ul>
+                            </li>
+
+                          
+                            <li class="nav-item"><a class="nav-link"
+                                    href="{{ route('polytechnic-gallery') }}">Gallery</a></li>
+                                   
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="QuickLinksDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Quick Links
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="QuickLinksDropdown">
+                                            <li class=""><a href="https://msbte.org.in/" target="_blank">msbte.org</a></li>
+                                            <li class=""><a href="https://www.aicte-india.org/"
+                                                    target="_blank">aicte-india.org</a></li>
+                                            <li class=""><a href="http://www.dtemaharashtra.gov.in/index.html"
+                                                    target="_blank">dtemaharashtra.gov.in</a></li>
+                                            <li class=""><a href="https://scholarships.gov.in/"
+                                                    target="_blank">scholarships.gov.in</a></li>
+                                        </ul>
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+     
+    </div>
+   </div><!--/container-->
 </div>
-</div>
-</div><div class="container-fluid" id="iwtHeader">
-<div class="container">
+    <div class="mob-display">
+        <p class="px-2">
+            <marquee>
+                <b>Approved By</b> :
+                <b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b>Affiliated To</b> :
+                <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
+            </marquee>
+            <br>
+            <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2023-24</a></b>
+        </p>
+    </div>
+    </div><!--/container-fluid /iwtHeaderNav--><!--======================= iwtBanner =======================-->
+  
+  
+    <div class="container-fluid red-watch-bg" id="">
+        <div class="fl news-img"><img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}"
+                border="0" height="40px"></div>
 
-<div class="logo-left" style="margin-left:0px;margin-top:10px;"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-responsive" alt="Logo" >
-<div style="margin-left:950px;margin-top:-100px;"><img src="{{ asset('public/assets/Akole_Poly/TWOWIN2p_400x400.jpg') }}" alt="Avatar" style="width:100px;border-radius:50%;"><p style="font-size:12px;color:red;"><b>Shri.&nbsp;Suresh&nbsp;Patil</b></p></div>
-</div>
-<div class="logo-center">
-    <center><h3 Style="color:blue" class="heading1">NASHIK INSTITUTE OF TECHNOLOGY</h3></center>
-<center ><h2 Style="color:blue" class="heading1">LATE ANNASAHEB PATIL POLYTECHNIC</h2></center>
+        <div class="fl news-text">
+        </div>
 
-<center><p>
-
-
-    {{-- @foreach ($data_output as $item)
-    <p class="marquee_para px-2"><a href="" target="_blank"
-        class="marquee-scroll">{{ $data_output->marquee_text }}</a></p>
-
-@endforeach --}}
-    
-    
-    
-    
-
-    
-<marquee>
-    <b style="color:blue"><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2023-24</a>
-      &nbsp;&nbsp;<b style="color:blue">Approved By</b> :
-<b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b style="color:blue">Affiliated To</b> : <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
-</marquee>
- <br>
- <b style="color:blue; font-size:18px"><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2023-24</a>
-</p>
-</center>
-
-</div>
-<!--<div class="logo-right"><img src="visitors/layout_1/design/images/poojya-kakaji.png" alt="poojya-kakaji"></div>-->
-
-</div><!--/container-->
-</div><!--/container-fluid /iwtHeader-->
-<div class="container-fluid" id="iwtHeaderNav">
-<div class="container padding-LR-0">
-<nav id="main-menu" class="navbar navbar-default ">
-<div class="navbar-header" >
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-</div>
-
-<div class="collapse navbar-collapse" style="height:20px;">
-<ul class="nav navbar-nav" style="width:100%k; display:block; ">
-  <li><a href="{{ route('/') }}" ><b>Home Page</b></a></li>
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>About Us</b><span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li class=""><a href="{{ route('polytechnic-president') }}">President Desk</a></li>
-<li class=""><a href="{{ route('polytechnic-principals') }}">Principal Desk</a></li>
-<li class=""><a href="{{ route('mission-and-vision') }}">Mission &amp; Vision</a></li>
-<li class=""><a href="{{ route('about-governingbody') }}">Governing Body</a></li>
-<li class=""><a href="{{ route('about-futureplans') }}">Future Plans</a></li>
-
-
-<!--<li class=""><a href="pages/polytechnic-co-ordinators-message.php">Co-ordinators Message</a></li>--->
-
-<!--<li class=""><a href="pages/admin-staff.php">Our Admin Staff</a></li>-->
-</ul>
-</li>
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Activities</b><span class="caret"></span></a>
-<ul class="dropdown-menu">
-    {{-- @foreach ($menu as $menuItem)
-    <li class="">
-        <a href="{{ route('polytechnic-co-curricular', ['id' => $menuItem['id']]) }}">{{ $menuItem['activities'] }}</a>
-    </li>
-@endforeach --}}
-    
-@foreach ($menu as $menuItem)
-    <li class="">
-        <a href="{{ route('polytechnic-co-curricular', ['id' => $menuItem['id']]) }}">{{ $menuItem['activities'] }}</a>
-    </li>
-@endforeach
-
-{{-- <li class=""><a href="{{ route('polytechnic-co-curricular') }}">Co-Curricular&nbsp;Activities</a></li>
-<li class=""><a href="{{ route('polytechnic-cultural-desk') }}">Cultural&nbsp;Activities</a></li>
-<li class=""><a href="{{ route('polytechnic-curricular') }}">Curricular&nbsp;Activities</a></li>
-<li class=""><a href="{{ route('polytechnic-extra-curricular') }}">Extra Curricular&nbsp;Activities</a></li> --}}
-
-</ul>
-</li>
-<!--<li class="dropdown">-->
-<!--<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Admission</b><span class="caret"></span></a>-->
-<!--<ul class="dropdown-menu">-->
-<!--<li class=""><a href="pages/polytechnic-first-year-polytechnic-admission.php">First Year Polytechnic</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-second-year-polytechnic-admission.php">Direct Second Year Polytechnic</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-fee-structure.php">Fee Structure</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-admission-enquiry-form.php">Admission Enquiry Form</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-rules-regulation-admission.php">Rules &amp; Regulations</a></li>-->
-<!--</ul>-->
-<!--</li>-->
-<!--<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">T &amp;P Cell<span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li class=""><a href="#">About T &amp;P Cell</a></li>
-<li class=""><a href="#">Our Recrutors</a></li>
-<li class=""><a href="#">Industrial Visits and Training</a></li>
-<li class=""><a href="#">Palcement Record</a></li>
-<li class=""><a href="#">Gallery</a></li>
-</ul>
-</li>-->
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Department</b><span class="caret"></span></a>
-<ul class="dropdown-menu">
-
-    @foreach ($menuDepartment as $menuItemDepartment)
-
-    <?php
-
-    ?>
-    <li class="">
-        <a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
-    </li>
-@endforeach
-
-    {{-- <li><a href="pages/polytechnic-applied-science-profile.php">Humanities & Science</a></li> --}}
-
-{{-- <li><a href="pages/polytechnic-applied-science-profile.php">Humanities & Science</a></li>
-<li><a href="pages/polytechnic-electrical-profile.php">Electrical Engineering</a></li>
-<li><a href="pages/polytechnic-automobile-profile.php">Automobile Engineering</a></li>
-<li class="dropdown-submenu"><a href="pages/polytechnic-civil-engineering-profile.php">Civil Engineering</a></li>
-<!--<li class="dropdown-submenu"><a href="pages/polytechnic-civil-engineering-sandwich.php">Civil Engineering Sandwich</a></li>-->
-<li class="dropdown-submenu"><a href="pages/polytechnic-computer-engineering-profile.php">Computer Engineering</a><li>
-<li class="dropdown-submenu"><a href="pages/polytechnic-e-tc-engineering-profile.php">E&amp;TC Engineering</a></li>
-<li class="dropdown-submenu"><a href="pages/polytechnic-mechanical-engineering-profile.php">Mechanical Engineering</a></li> --}}
-<!--<li class=""><a href="pages/polytechnic-mechanical-engineering-workshop.php">Workshop</a></li>-->
-</ul>
-</li>
-
-<li><a class="" href="{{ route('achievement') }}"><b>Achievements</b></a></li>
-
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Facilities</b><span class="caret"></span></a>
-<ul class="dropdown-menu">
-    
-    @foreach ($menuFacility as $menuFacility)
-    <li class="">
-        <a href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
-    </li>
-@endforeach
-
-{{-- <li class=""><a href="{{ route('polytechnic-campus') }}">College&nbsp;Campus</a></li>
-<li class=""><a href="{{ route('polytechnic-hostel') }}">Hostel&nbsp;Mess</a></li>
-<li class=""><a href="{{ route('polytechnic-library') }}">Library</a></li>
-<li class=""><a href="{{ route('polytechnic-transportation') }}">Transportation</a></li>
-<li class=""><a href="{{ route('polytechnic-other') }}">Other Facilities</a></li> --}}
-
-</ul>
-</li>
-
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Academics</b><span class="caret"></span></a>
-<ul class="dropdown-menu">
-<!--<li class=""><a href="#">Syllabus</a></li>-->
-<li class=""><a href="{{ route('polytechnic-rules') }}">Admission Rules And Process</a></li>
-<!--<li class=""><a href="#">Academic Calender</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-transportation.php">Transportation</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-other.php">Other Facilities</a></li>-->
-
-</ul>
-</li>
-
-
-<!--<li><a class="" href="pages/polytechnic-mechanical-engineering-library.php"><b>Library</b></a></li>-->
-<!--<li class="dropdown">-->
-<!--<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>T &amp; P CELL</b><span class="caret"></span></a>-->
-<!--<ul class="dropdown-menu">-->
-<!--<li class=""><a href="pages/polytechnic-t&p-about.php">ABOUT</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-our-recrutors.php">OUR RECRUTORS</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-I&t.php">INDUSTRIAL VISIT &AMP;TRAINING  </a></li>-->
-<!--<li class=""><a href="pages/polytechnic-placement-record.php">PLACEMENT RECORD</a></li>-->
-<!--<li class=""><a href="pages/polytechnic-t&pcell-gallery.php">GALLERY</a></li>-->
-<!--</ul>-->
-<!--</li>-->
-<li><a class="" href="{{ route('contact-us') }}"><b>Contact Us</b></a></li>
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Alumni</b><span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="{{ route('aluminiregister') }}">Alumni Registration</a></li>
-
-</ul>
-</li>
-<!--<li><a class="" href="pages/polytechnic-alumni.php"><b>Alumni</b></a></li>-->
-<!--<li><a class="" href="#"><b>News</b></a></li>-->
-<li><a class="" href="{{ route('polytechnic-gallery') }}"><b>Gallery</b></a></li>
-<!--<li><a class="" href="#"><b>College Event</b></a></li>-->
-
-<!--<li><a class="" href="pages/test.php"><b>Students</b></a></li>-->
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><b>Quick Links</b><span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li class=""><a href="https://msbte.org.in/" target="_blank">msbte.org</a></li>
-<li class=""><a href="https://www.aicte-india.org/" target="_blank">aicte-india.org</a></li>
-<li class=""><a href="http://www.dtemaharashtra.gov.in/index.html" target="_blank">dtemaharashtra.gov.in</a></li>
-<li class=""><a href="https://scholarships.gov.in/" target="_blank">scholarships.gov.in</a></li>
-</ul>
-</li>
-
-
-
-</ul>
-</div>
-</nav><!--/nav-->
-</div><!--/container-->
-</div><!--/container-fluid /iwtHeaderNav--><!--======================= iwtBanner =======================-->
-	<div class="container-fluid" id="iwtNewsArea">
-	<div class="fl news-img"><img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}"  border="0" height="40px"></div>
-
-	<div class="fl news-text">
-	
-	 <?php 
-                    //    $count=0; 
-                    //   $query="select * from tbl_marquee where fld_delete='0' order by fld_marquee_id desc LIMIT 1";
-                    //   $row=mysqli_query($connect,$query) or die(mysqli_error($connect));
-                                    
-                    //   while($fetch=mysqli_fetch_array($row)) {
-
-                    //   extract($fetch);
-                                
-                ?>
-	
-	<marquee scrollamount="3" onMouseOver="this.setAttribute('scrollamount', 0, 0);" onMouseOut="this.setAttribute('scrollamount', 4, 0);"  height="20" scrolldelay="5" direction="left" behaviour="scroll" >
-<p style="margin-top: -1%;"><?php //echo $fetch['marquee_text']; ?></a></i></u>
-	</marquee>
-	
-	
-	 <?php //} ?>
-</div>
-
-</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>

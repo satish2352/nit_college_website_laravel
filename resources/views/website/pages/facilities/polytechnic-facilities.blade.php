@@ -17,7 +17,7 @@
     <div class="container-fluid" >
         <div class="container">
             <div class="row" style="padding:0px">
-                <div class="col-md-12 col-sm-12 text-justify  card-shadow" id="iwtContentArea" style=" background:#fff; margin-bottom:120px">
+                <div class="col-md-12 col-sm-12 text-justify  card-shadow" id="iwtContentArea" style=" background:#fff;">
                     @if (isset($error))
                     <div class="alert alert-danger">
                         {{ $error }}

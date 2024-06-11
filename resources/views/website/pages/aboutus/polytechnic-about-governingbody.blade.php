@@ -63,6 +63,26 @@
             font-weight: 400;
             color: black;
         }
+        .dataTables_filter{
+            display: flex;
+            justify-content: end;
+            padding-bottom: 10px;
+        }
+        .dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+    padding-top: .755em;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: .25em;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #000 !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, rgba(230, 230, 230, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
     </style>
     <script>
         $(document).on('click', '.panel-heading span.clickable', function(e) {
@@ -136,7 +156,7 @@
                                 <div class="panel panel-primary product-type">
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:blue"><b>Governing Body Members</b></h3>
+                                            <h3 class="panel-title" style="color:#00ae97;"><b>Governing Body Members</b></h3>
                                         </center>
                                         {{-- <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
@@ -145,7 +165,53 @@
                                         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
 
                                         <center>
-                                            <table style="width: 638px;" class="table table-responsive table-hover" cellspacing="0" cellpadding="0">
+
+                                            <table id="order-listing" class="table table-striped table-hover table-bordered border-dark">
+                                                <thead class="" style="background-color: #47194a; color:#fff">
+                                                    <tr>
+                                                        <th scope="col" class="d-flex justify-content-center">
+                                                            SR.NO
+                                                        </th>
+                                                        <th scope="col" class="">
+                                                            Name
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="d-flex justify-content-center">
+                                                                Designation
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="d-flex justify-content-center">
+                                                                Address
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @forelse ($data_output as $data)
+                                                        <tr class="">
+                                                            <td>
+                                                                <center>{{ $data->fld_bm_id }}</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>{{ $data->fld_bm_name }}</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>{{ $data->Designation }}</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>{{ $data->gov_address }}</center>
+                                                            </td>
+                                                         
+                                                        </tr>
+                                                    @empty
+                                                        {{-- <h4>No Data Found For District Disaster Management Plan</h4> --}}
+                                                    @endforelse
+                                                </tbody>
+                                            </table>
+
+
+                                            {{-- <table style="width: 638px;" class="table table-responsive table-hover" cellspacing="0" cellpadding="0">
                                                 <tbody>
                                                     <tr>
                                                         <td valign="top" width="85">
@@ -193,7 +259,7 @@
                                                         @endif
                                                     @endif
                                                 </tbody>
-                                            </table>
+                                            </table> --}}
                                             
                                             
                                             
