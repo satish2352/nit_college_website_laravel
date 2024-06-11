@@ -12,7 +12,7 @@
     }
     </style>
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-        <div class="container">
+        <div class="container pt-4">
 
             <div class="col-sm-12" style="padding:0;">
                 <center>
@@ -24,7 +24,7 @@
 
         </div>
     </div>
-    <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px">
+    <div class="container-fluid" style="padding-top:40px; padding-bottom:40px">
         <div class="container">
             <div class="row">
 
@@ -75,23 +75,23 @@
                     <div class="well well-sm" style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); margin-bottom:100px;">
                          <form method="POST" enctype="multipart/form-data" id="regForm" action="{{ route('add-enquiry') }}">
                             @csrf
-                            <div class="row" style="display: flex; justify-content: center;">
+                            <div class="row" style="display: flex; justify-content: center; background-color:#fff; padding:10px;">
                                 <div class="col-md-6">
-                                    <div class="form-group">
+                                    <div class="form-group py-2">
                                         <label for="name">Full Name</label>
                                         <input type="text" class="form-control" name="name" id="name" placeholder="Enter full name" value="{{ old('name') }}" />
                                         @if ($errors->has('name'))
                                         <span class="text-danger">{{ $errors->first('name') }}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group py-2">
                                         <label for="mobile_number">Mobile Number</label>
                                         <input type="text" class="form-control" id="mobile_number" name="mobile_number" placeholder="Enter Mobile Number" value="{{ old('mobile_number') }}" />
                                         @if ($errors->has('mobile_number'))
                                         <span class="text-danger">{{ $errors->first('mobile_number') }}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group py-2">
                                         <label for="email">Email Address</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
@@ -101,7 +101,7 @@
                                         <span class="text-danger">{{ $errors->first('email') }}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group py-2">
                                         <label for="admission_level">Admission Level <i class="required">*</i></label>
                                         <select class="form-control" name="admission_level" id="admission_level">
                                             <option value="">Select</option>
@@ -112,7 +112,7 @@
                                         <span class="text-danger">{{ $errors->first('admission_level') }}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group py-2">
                                         <label for="source">Source</label>
                                         <select class="form-control" id="source" name="source">
                                             <option value="">Select source</option>
@@ -126,7 +126,7 @@
                                         <span class="text-danger">{{ $errors->first('source') }}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group py-2">
                                         <label for="source_name">Source Name</label>
                                         <input type="text" class="form-control" id="source_name" name="source_name" placeholder="Enter source name" value="{{ old('source_name') }}" />
                                         @if ($errors->has('source_name'))
@@ -135,7 +135,7 @@
                                     </div>
 
 
-                                    <div class="col-md-12 py-3 captcha_set" style="text-align: left;">
+                                    <div class="col-md-12 py-2 captcha_set" style="text-align: left;">
                                         {!! NoCaptcha::renderJs() !!}
                                         {!! NoCaptcha::display() !!}
                       
@@ -146,7 +146,7 @@
                                         @endif
                                       </div>
                                 
-                              <div class="display:flex; text-align:center;">
+                              <div class="display:flex; text-align:center; justify-content: center;">
                                     <button type="submit" name="submit" value="submit" class="btn btn-primary pull-right" id="btnContactUs" style="margin-top: 25px;">Submit</button>
                               </div>
                             </div>
