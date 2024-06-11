@@ -122,7 +122,7 @@ $('[data-toggle="tooltip"]').tooltip();
                     </thead>
                     <tbody>
                         @if (isset($error))
-                        <div class="alert alert-danger">
+                        <div>
                             {{ $error }}
                         </div>
 

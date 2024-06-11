@@ -108,15 +108,15 @@
                                             {{ $error }}
                                         </div>
                                     @else
-                                        @if ($data_output->isEmpty())
-                                            <div class="alert alert-info">
-                                                Data not found
+                                        @if (!$data_output)
+                                            <div>
+                                                <p class="department-error">Data not available.</p>
                                             </div>
                                         @else
                                             @foreach ($data_output as $data)
                                                 @if ($data->is_active == 0)
-                                                    <div class="alert alert-info">
-                                                        Data not found
+                                                    <div>
+                                                        <p class="department-error">Data not available.</p>
                                                     </div>
                                                 @else
                                                     <tr>

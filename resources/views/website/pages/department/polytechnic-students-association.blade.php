@@ -100,13 +100,13 @@
                                 </div>
                                 @else
                                 @if (!$data_output)
-                                    <div class="alert alert-info">
-                                        Data not found
+                                    <div>
+                                         <p class="department-error">Data not available.</p>
                                     </div>
                                 @else
                                     @if ($data_output->is_active == 0)
-                                        <div class="alert alert-info">
-                                            Data not found
+                                        <div>
+                                             <p class="department-error">Data not available.</p>
                                         </div>
                                     @else
                                       <tr>

@@ -23,7 +23,7 @@
                                             <div class="alert alert-danger">
                                                 {{ $error }}
                                             </div>
-                                        @elseif ($data_output->isEmpty())
+                                        @elseif (!$data_output)
                                             <div>
                                                 <p class="department-error">Data not available.</p>
                                             </div>

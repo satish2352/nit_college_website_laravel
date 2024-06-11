@@ -22,19 +22,19 @@
                         <div>
                             <div>
                                 @if (isset($error))
-                                            <div class="alert alert-danger">
+                                            <div>
                                                 {{ $error }}
                                             </div>
                                         @else
                                             @if ($data_output->isEmpty())
-                                                <div class="alert alert-info">
-                                                    Data not found
+                                                <div>
+                                                     <p class="department-error">Data not available.</p>
                                                 </div>
                                             @else
                                                 @foreach ($data_output as $data_output)
                                                     @if ($data_output->is_active == 0)
-                                                        <div class="alert alert-info">
-                                                            Data not found
+                                                        <div>
+                                                             <p class="department-error">Data not available.</p>
                                                         </div>
                                                     @else
                                 <h4><strong>VISION :</strong></h4>

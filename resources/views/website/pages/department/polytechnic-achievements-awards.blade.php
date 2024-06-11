@@ -117,7 +117,7 @@
                         <div class="col-sm-12" >
                             <div class="row">
                                 @if (isset($error))
-                                    <div class="alert alert-danger">
+                                    <div>
                                         {{ $error }}
                                     </div>
                                 @else
