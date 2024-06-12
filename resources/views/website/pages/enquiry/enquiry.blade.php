@@ -30,31 +30,35 @@
     <div class="container-fluid">
         <div class="container">
             <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
-            @if (Session::get('status') == 'success')
-            <div class="col-12 grid-margin">
-                <div class="alert alert-success" id="success-alert">
-                    <button type="button" class="close" data-dismiss="alert">x</button>
-                    <strong> <span id="data_to_show">
-                        {{ Session::get('msg') }}
-                    </span> </strong>
-                </div>
-            </div>
-        @endif
-        
-        @if (Session::get('status') == 'error')
-            <div class="col-12 grid-margin">
-                <div class="alert alert-danger" id="danger-alert">
-                    <button type="button" class="close" data-dismiss="alert">x</button>
-                    <strong> <span id="data_to_show">
-                        {!! session('msg') !!}
-                    </span> </strong>
-                </div>
-            </div>
-        @endif
+          
                
                 <div class="col-lg-8 col-md-8 col-sm-8 col-11 p-2 pb-5">
+
+                    @if (Session::get('status') == 'success')
+                    <div class="col-12 grid-margin">
+                        <div class="alert alert-success" id="success-alert">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            <strong> <span id="data_to_show">
+                                {{ Session::get('msg') }}
+                            </span> </strong>
+                        </div>
+                    </div>
+                @endif
+                
+                @if (Session::get('status') == 'error')
+                    <div class="col-12 grid-margin">
+                        <div class="alert alert-danger" id="danger-alert">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            <strong> <span id="data_to_show">
+                                {!! session('msg') !!}
+                            </span> </strong>
+                        </div>
+                    </div>
+                @endif 
+                
                     <div class="well well-sm" style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);">
-                         <form method="POST" enctype="multipart/form-data" id="regForm" action="{{ route('add-enquiry') }}">
+                     
+                        <form method="POST" enctype="multipart/form-data" id="regForm" action="{{ route('add-enquiry') }}">
                             @csrf
                             <div class="row" style="display: flex; justify-content: center; background-color:#fff; padding:10px;">
                                 <div class="col-md-6">
