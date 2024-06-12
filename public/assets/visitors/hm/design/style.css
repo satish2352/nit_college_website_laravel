@@ -158,7 +158,7 @@ text-align: center; }
 .right-col-fix .list-group-item:first-child { border-top-left-radius: 7px; border-top-right-radius: 7px; background-color:#f5f5f5; color:#00ae97; text-transform:uppercase;}
 .right-col-fix .list-group-item:last-child { margin-bottom: 8px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
 
-.right-col-fix .list-group-item {padding: 10px 20px; margin-bottom: 1px; background-color: #c70039; border:none; border-bottom: 1px solid #fea758;}
+.right-col-fix .list-group-item {margin-bottom: 1px; background-color: #c70039; border:none; border-bottom: 1px solid #fea758;}
 
 .right-col-fix a.list-group-item {color: #fff;}
 .right-col-fix a.list-group-item:hover { padding: 3px 20px; margin:9px; color: #939393; text-decoration: none; border-radius: 20px; background-color: #F5F5F5; border: none;}

@@ -28,8 +28,9 @@ class HomeSidebarRepository  {
             ->where('is_active', '1')
             ->orderBy('mandatory_id', 'desc')
             ->first();
+
                    
-                      return $data_output;
+           return $data_output;
         } catch (\Exception $e) {
             return $e;
         }

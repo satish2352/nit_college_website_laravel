@@ -1,15 +1,16 @@
 <!--About us-->
 <style>
-    .footer-menu ul li{
-    color: #00ae97 !important;
-}
-blockquote {
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #eee;
-}
-    </style>
+    .footer-menu ul li {
+        color: #00ae97 !important;
+    }
+
+    blockquote {
+        padding: 10px 20px;
+        margin: 0 0 20px;
+        font-size: 17.5px;
+        border-left: 5px solid #eee;
+    }
+</style>
 <div class="container">
     <div class="col-md-8 col-sm-6 about-text">
 
@@ -23,8 +24,7 @@ blockquote {
 
     <div class="col-md-4 col-sm-6 about-img"></div>
 </div><!--/about us-->
-<div class="container-fluid" id=""
-    style="background-color:#f7f9fb; border-top:#e0e7ed solid 1px; color:black; ">
+<div class="container-fluid" id="" style="background-color:#f7f9fb; border-top:#e0e7ed solid 1px; color:black; ">
 
 
     <div class="container p-5">
@@ -125,8 +125,8 @@ blockquote {
 
             <span style="color: #fff;">
                 <span style="color: #fff;">Contact</span>
-                <a style="color: #fff" href="tel:9822208687">9822208687</a>&nbsp;
-                <a style="color: #fff;" href="tel:9552551056">9552551056</a>&nbsp;
+                <a style="color: #fff" href="tel:9552551056">9552551056</a>&nbsp;
+                <a style="color: #fff;" href="tel:8149822404">8149822404</a>&nbsp;
                 <a href="mailto:info@nitnasik.com" style="color: #fff;">info@nitnasik.com</a>
                 <span style="color: #fff;">&copy;2024 All Rights Reserved to Late Annasaheb Patil
                     Polytechnic Developed By </span><a href="https://sumagoinfotech.com/" target="_blank"
@@ -148,8 +148,16 @@ blockquote {
                     .now() + "'><\/script>");
             </script>
             <script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!-- Bootstrap 5 JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- DataTables JS -->
+            <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
             {{-- <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script> --}}
-            <script>
+
+            {{-- <script>
                 $(document).ready(function () {
                     var table1 = $('#example').DataTable({
                         "columnDefs": [
@@ -163,14 +171,26 @@ blockquote {
                         ]
                     });
                 });
+            </script> --}}
+
+            <script>
+                $(document).ready(function() {
+                    $('#example').DataTable({
+                        responsive: true,
+                        showNEntries: false
+                    });
+                });
             </script>
             <script>
                 $(document).ready(function() {
                     $('#order-listing').DataTable({
+                        responsive: true,
                         searching: true,
                         ordering: true,
                         lengthChange: false,
                         showNEntries: false
+
+
                     });
                 });
             </script>

@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('public/assets/visitors/hm/design/style.css') }}" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    
     <style>
       .heading1 {
     font-size: 20px;
@@ -174,10 +177,9 @@ li #footer-links {
                     <span style="font-size:13px !important;">Email :</span> <a
                         href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
                     <span style="font-size:13px !important;">Contact Number : </span>
-                    <a href="tel:9595952100">9595952100</a>&nbsp;
-                    <a href="tel:9822208687">9822208687</a>&nbsp;
                     <a href="tel:9552551056">9552551056</a>&nbsp;
-                    <a href="tel:9552551064">9552551064</a>
+                    <a href="tel:8149822404">8149822404</a>&nbsp;
+                    <a href="tel:9890269439">9890269439</a>&nbsp;
                 </div>
             </div>
         </div>
@@ -189,7 +191,7 @@ li #footer-links {
         <div class="container main-header">
             <div class="row align-items-center">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-3">
-                    <img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid mob-width" alt="Logo">
+                    <a href="/" ><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid mob-width" alt="Logo"></a>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8 col-9 text-center">
                     <h3 class="heading1">NASHIK INSTITUTE OF TECHNOLOGY</h3>
@@ -224,7 +226,7 @@ li #footer-links {
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('/') }}">Home</a>

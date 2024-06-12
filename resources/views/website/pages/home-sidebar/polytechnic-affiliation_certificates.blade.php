@@ -157,7 +157,7 @@
                     <div class="col-lg-9 col-md-9 col-sm-9">
                         <div class="panel panel-primary product-type">
                             <div class="panel-heading">
-                                <center><h3 class="panel-title" style="color:blue"><b>AFFILIATION CERTIFICATES </b></h3></center>
+                                <center><h3 class="panel-title" style="color:#00ae97;"><b>AFFILIATION CERTIFICATES </b></h3></center>
                                 <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                             </div>
                             <div class="panel-body">
@@ -168,10 +168,61 @@
                             <thead>
                             
                             </thead>
+
+
                             <tbody>
+                                @if (isset($error))
+                                <div class="alert alert-danger">
+                                    {{ $error }}
+                                </div>
+                            @else
+                                @if (!$data_output)
+                                    <div class="alert alert-info">
+                                        Data not found
+                                    </div>
+                                @else
+                                    @foreach ($data_output as $data)
+                                        @if ($data->is_active == 1)
+                                            <tr>
+                                                <td><center>{{ $data->title }}</center></td>
+                                                <td class="td-actions">
+                                                    <center>
+                                                        <a href="{{ Config::get('DocumentConstant.AFFILIATION_CERTIFICATES_VIEW') }}{{ $data->file }}"
+                                                            target="_blank" class="btn btn-small btn-primary">
+                                                            <i class="btn-icon-only icon-ok">Download</i>
+                                                        </a>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                        @endif
+                                    @endforeach
+                                @endif
+                            @endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                 @if($data_output)
                                 <img src="../images/affiliation_certificates/<?php echo $data_output['fld_affiliation_image'];?>" height="500px" width="550px" >
 
+
+                                AFFILIATION_CERTIFICATES_VIEW
                             @else
                                 <p>No data found</p>
                             @endif    
