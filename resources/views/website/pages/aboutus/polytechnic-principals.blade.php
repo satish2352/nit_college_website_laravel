@@ -142,7 +142,7 @@
                             <div class="col-12 col-lg-12 row mt-5 mb-5">
                                 <div class="row">
                                   <div class="col-lg-5 col text-center " data-aos="fade-left">
-                                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" class="img-fluid" height="400" width="400">
+                                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" class="" height="200" width="300">
                                            &nbsp;&nbsp;
                                           
                                          
