@@ -366,7 +366,7 @@ li #footer-links {
                 <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
             </marquee>
             <br>
-            <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2023-24</a></b>
+            <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2024-25</a></b>
         </p>
     </div>
     </div><!--/container-fluid /iwtHeaderNav--><!--======================= iwtBanner =======================-->
