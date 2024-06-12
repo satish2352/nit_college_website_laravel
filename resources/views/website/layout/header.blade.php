@@ -84,9 +84,9 @@ li #footer-links {
     .mob-width {
         width: 40px;
     }
-    .img-fluid {
+    /* .img-fluid {
         width: 50px; /* Adjust width for smaller screens */
-    }
+    } */
     .mob-display{
     display: block;
 }

@@ -148,13 +148,19 @@
                                          
                                           
 
-                                           <h5 class="mt-2" style="color:#00ae97;">  Principal, <br>   Prof.Gopal Vadnere</h5>  
+                                           <h5 class="mt-2" style="color:#00ae97;">  Principal, <br>   Prof.Gopal A. Wadnere</h5> 
+                                           <span>Ph.D (Mechanical Pursuing)</span><br>
+                                           <span>M.Tech., B.E., DAE.</span> <br>
+                                           <a href="tel:9552551056">9552551056</a>&nbsp;
+                                            <a href="tel:9923585211">9923585211</a>&nbsp;
+                                           
+                                           
                                   </div>
                                   <div class="col-lg-7 ">
                                     <h5 class="mt-2" style="color:#00ae97;">Dear Students,</h5>     
                                     {{-- <p style="font-size: 15px"></p><br> --}}
 
-                                   <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br> <br> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
+                                   <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br> <br> Education tought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
                                     <br><br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
                                     <br>So be the part of NIT Family.<br>
                                 </p>
