@@ -151,8 +151,8 @@
                                            <h5 class="mt-2" style="color:#00ae97;">  Principal, <br>   Prof.Gopal A. Wadnere</h5> 
                                            <span>Ph.D (Mechanical Pursuing)</span><br>
                                            <span>M.Tech., B.E., DAE.</span> <br>
-                                           <a href="tel:9552551056">9552551056</a>&nbsp;
-                                            <a href="tel:9923585211">9923585211</a>&nbsp;
+                                           {{-- <a href="tel:9552551056">9552551056</a>&nbsp;
+                                            <a href="tel:9923585211">9923585211</a>&nbsp; --}}
                                            
                                            
                                   </div>
