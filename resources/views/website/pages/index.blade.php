@@ -36,10 +36,10 @@
                         @foreach($data_output as $index => $slider)
                             <div  class="carousel-item {{ $index === 0 ? 'active' : '' }}">
                                 <img style="height:300px;" src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $slider['fld_slider_image'] }}" class="d-block w-100" alt="{{ $slider['fld_slider_title'] }}">
-                                <div class="carousel-caption d-none d-md-block">
+                                {{-- <div class="carousel-caption d-none d-md-block">
                                     <h5>{{ $slider['fld_slider_title'] }}</h5>
                                     <p>{{ $slider['fld_slider_subtitle'] }}</p>
-                                </div>
+                                </div> --}}
                             </div>
                         @endforeach
                     </div>
