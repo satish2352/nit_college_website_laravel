@@ -80,7 +80,7 @@ $('.container').on('click', '.panel-heading span.filter', function(e){
 $('[data-toggle="tooltip"]').tooltip();
 })
 </script>
-<div class="container-fluid bg-pink" id="iwtPageHeading">
+<div class="container-fluid bg-#fff" id="iwtPageHeading">
 <div class="container">
 
 <div class="col-sm-12" style="padding:0;">

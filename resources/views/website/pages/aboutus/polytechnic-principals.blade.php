@@ -46,7 +46,7 @@
         font-size: 22px;
         font-weight:400;
         color:#00ae97;
-        /* background-color:#c70039; */
+        /* background-color:#015198; */
     }
     
     .panel_product_type
@@ -69,7 +69,7 @@
         border-radius: 10px;
     }
     .president-msg p::first-letter{
-        color: #c70039;
+        color: #015198;
         font-size: xx-large;
     } */
     
@@ -142,22 +142,28 @@
                             <div class="col-12 col-lg-12 row mt-5 mb-5">
                                 <div class="row">
                                   <div class="col-lg-5 col text-center " data-aos="fade-left">
-                                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" class="img-fluid" height="400" width="400">
+                                    <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" class="" height="200" width="300">
                                            &nbsp;&nbsp;
                                           
                                          
                                           
 
-                                           <h5 class="mt-2" style="color:#00ae97;">  Principal, <br>   Prof.Gopal Vadnere</h5>  
+                                           <h5 class="mt-2" style="color:#00ae97;">Prof.Gopal A. Wadnere</h5> 
+                                           <span>Ph.D (Mechanical Pursuing)</span><br>
+                                           <span>M.Tech., B.E., DAE.</span> <br>
+                                           {{-- <a href="tel:9552551056">9552551056</a>&nbsp;
+                                            <a href="tel:9923585211">9923585211</a>&nbsp; --}}
+                                           
+                                           
                                   </div>
                                   <div class="col-lg-7 ">
                                     <h5 class="mt-2" style="color:#00ae97;">Dear Students,</h5>     
                                     {{-- <p style="font-size: 15px"></p><br> --}}
 
-                                   <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br> <br> Education ought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
+                                   <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br> <br> Education tought to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
                                     <br><br>At the Nashik Institute of technology, everyone is committed to provide good technical education along with imbibing social values. 
                                     <br>So be the part of NIT Family.<br>
-                                </p>
+                                    </p>
                                     </p>
                                   </div>
                                 </div>   
@@ -280,7 +286,7 @@
     margin-bottom: 12px;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
-    background-color: #c70039;
+    background-color: #015198;
     color: rgb(255, 255, 255);">
     <i>Last updated on : 01-08-2016 12:32 PM</i>
     </div> -->

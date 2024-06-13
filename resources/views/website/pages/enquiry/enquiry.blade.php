@@ -30,31 +30,35 @@
     <div class="container-fluid">
         <div class="container">
             <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
-            @if (Session::get('status') == 'success')
-            <div class="col-12 grid-margin">
-                <div class="alert alert-success" id="success-alert">
-                    <button type="button" class="close" data-dismiss="alert">x</button>
-                    <strong> <span id="data_to_show">
-                        {{ Session::get('msg') }}
-                    </span> </strong>
-                </div>
-            </div>
-        @endif
-        
-        @if (Session::get('status') == 'error')
-            <div class="col-12 grid-margin">
-                <div class="alert alert-danger" id="danger-alert">
-                    <button type="button" class="close" data-dismiss="alert">x</button>
-                    <strong> <span id="data_to_show">
-                        {!! session('msg') !!}
-                    </span> </strong>
-                </div>
-            </div>
-        @endif
+          
                
                 <div class="col-lg-8 col-md-8 col-sm-8 col-11 p-2 pb-5">
+
+                    @if (Session::get('status') == 'success')
+                    <div class="col-12 grid-margin">
+                        <div class="alert alert-success" id="success-alert">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            <strong> <span id="data_to_show">
+                                {{ Session::get('msg') }}
+                            </span> </strong>
+                        </div>
+                    </div>
+                @endif
+                
+                @if (Session::get('status') == 'error')
+                    <div class="col-12 grid-margin">
+                        <div class="alert alert-danger" id="danger-alert">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            <strong> <span id="data_to_show">
+                                {!! session('msg') !!}
+                            </span> </strong>
+                        </div>
+                    </div>
+                @endif 
+                
                     <div class="well well-sm" style=" box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);">
-                         <form method="POST" enctype="multipart/form-data" id="regForm" action="{{ route('add-enquiry') }}">
+                     
+                        <form method="POST" enctype="multipart/form-data" id="regForm" action="{{ route('add-enquiry') }}">
                             @csrf
                             <div class="row" style="display: flex; justify-content: center; background-color:#fff; padding:10px;">
                                 <div class="col-md-6">
@@ -128,7 +132,7 @@
                                       </div>
                                 
                               <div class="display:flex; text-align:center; justify-content: center;">
-                                    <button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs" style="margin-top: 25px; background-color:#c70039; color:#fff;">Submit</button>
+                                    <button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs" style="margin-top: 25px; background-color:#015198; color:#fff;">Submit</button>
                               </div>
                             </div>
                         </form>
@@ -143,99 +147,83 @@
     {{-- <script src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script> --}}
     {{-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-      
-            $("#regForm").validate({
-                errorClass: "error",
-                rules: {
-                    name: {
-                        required: true,
-                        spcenotallow: true,
-                    },
-                    email: {
-                        required: true,
-                        email: true,
-                    },
-                    mobile_number: {
-                        required: true,
-                        spcenotallow: true,
-                    },
-                    source: {
-                        required: true,
-                    },
-                    source_name: {
-                        required: true,
-                        spcenotallow: true,
-                    },
-                    admission_level: {
-                        required: true,
-                    },
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Custom validation rule
+        $.validator.addMethod("spcenotallow", function(value, element) {
+            return this.optional(element) || value.trim().length > 0;
+        }, "Enter Some Text");
+    
+        // Apply validation to the form
+        $("#regForm").validate({
+            errorClass: "text-danger",
+            rules: {
+                name: {
+                    required: true,
+                    spcenotallow: true
                 },
-                messages: {
-                    name: {
-                        required: "Enter Full Name",
-                        spcenotallow: "Enter Some Text",
-                    },
-                    email: {
-                        required: "Enter Email Id",
-                        spcenotallow: "Enter Some Text",
-                    },
-                    mobile_number: {
-                        required: "Enter Mobile Number",
-                        pattern: "Invalid Mobile Number",
-                        remote: "This mobile number already exists.",
-                        spcenotallow: "Enter Some Text",
-                    },
-                    source: {
-                        required: "Select Source",
-                    },
-                    source_name: {
-                        required: "Enter source name",
-                    },
-                    admission_level: {
-                        required: "Select admission level",
-                    },
-                    
+                email: {
+                    required: true,
+                    email: true
                 },
-                highlight: function(element, errorClass) {
-                    $(element).removeClass(errorClass);
+                mobile_number: {
+                    required: true,
+                    spcenotallow: true
                 },
-                submitHandler: function(form) {
-                    // Check if reCAPTCHA challenge is completed
-                    if (grecaptcha.getResponse() === "") {
-                        alert("Please complete the reCAPTCHA challenge.");
-                    } else {
-                        // Proceed with form submission
-                        form.submit();
-                    }
+                source: {
+                    required: true
+                },
+                source_name: {
+                    required: true,
+                    spcenotallow: true
+                },
+                admission_level: {
+                    required: true
                 }
-            });
-      
-            $("input#document_file").hide();
-      
-        });
-      
-        $.extend($.validator.methods, {
-            spcenotallow: function(b, c, d) {
-                if (!this.depend(d, c)) return "dependency-mismatch";
-                if ("select" === c.nodeName.toLowerCase()) {
-                    var e = a(c).val();
-                    return e && e.length > 0
+            },
+            messages: {
+                name: {
+                    required: "Enter Full Name",
+                    spcenotallow: "Enter Some Text"
+                },
+                email: {
+                    required: "Enter Email Id"
+                },
+                mobile_number: {
+                    required: "Enter Mobile Number"
+                },
+                source: {
+                    required: "Select Source"
+                },
+                source_name: {
+                    required: "Enter source name"
+                },
+                admission_level: {
+                    required: "Select admission level"
                 }
-                return this.checkable(c) ? this.getLength(b, c) > 0 : b.trim().length > 0
+            },
+            highlight: function(element, errorClass) {
+                $(element).removeClass(errorClass);
+            },
+            submitHandler: function(form) {
+                if (grecaptcha.getResponse() === "") {
+                    alert("Please complete the reCAPTCHA challenge.");
+                } else {
+                    form.submit();
+                }
             }
         });
-      </script>
+    });
+    </script>
+    
     <script type="text/javascript">
-        $(document).ready(function() {
-            // Set timeout to hide the alert after 4 seconds
-            setTimeout(function() {
-                $(".alert").alert('close');
-            }, 1000); // 4000 milliseconds = 4 seconds
-        });
+    $(document).ready(function() {
+        setTimeout(function() {
+            $(".alert").alert('close');
+        }, 1000); // 1000 milliseconds = 1 second
+    });
     </script>
       
 @endsection

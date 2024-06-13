@@ -106,7 +106,7 @@
                                      <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item ">MANDATARY DISCLOSURE</a>
                                         <a href="{{ route('polytechnic-aicte-extension') }}"  class="list-group-item ">AICTE EOA</a>
                                        <a  href="{{ route('polytechnic-affiliation') }}"  class="list-group-item ">MSBTE AFFILIATION</a>
-                                       <a  href="{{ route('polytechnic-affiliation_certificates') }}"  class="list-group-item ">AFFILIATION CERTIFICATES</a>
+                                       {{-- <a  href="{{ route('polytechnic-affiliation_certificates') }}"  class="list-group-item ">AFFILIATION CERTIFICATES</a> --}}
                                        {{-- <a href="{{ route('polytechnic-servicerules') }}" class="list-group-item ">SERVICE RULES</a> --}}
                                        {{-- <a href  ="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item ">TRAINING AND PLACEMENT</a> --}}
                                        <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item ">ANTIRAGGING COMMITTEE</a>
@@ -136,22 +136,90 @@
                                 <div class="panel panel-primary product-type">
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:blue"><b>Mandatory Disclosure</b></h3>
+                                            <h3 class="panel-title" style="color:#00ae97;"><b>Mandatory Disclosure</b></h3>
                                         </center>
                                         <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                                     </div>
                                     <div class="panel-body">
-                                        <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
 
                                         <center>
-                                            @if ($data_output)
-                                                <iframe
-                                                    src="{{ asset('images/mandatoryDisclosure/' . $data_output->file) }}"
-                                                    width="100%" height="800px"></iframe>
-                                            @else
-                                                <p>No data found</p>
-                                            @endif
+                                            <table class="table table-striped table-bordered" id="customers">
+                                                <thead>
+                                                    <tr>
+                                                        
+                                                        <th class="td-actions"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @if (isset($error))
+                                                    <div>
+                                                        {{ $error }}
+                                                    </div>
+                                                @elseif (!$data_output)
+                                                    <div>
+                                                        <p class="department-error">Data not available.</p>
+                                                    </div>
+                                                @else
+                                                    @foreach ($data_output as $data)
+                                                        @if (is_object($data) && $data->is_active == 1)
+                                                        <tr>
+                                                            <td class="td-actions">
+                                                                    <a href="{{ Config::get('DocumentConstant.MANDATORYDISCLOSURE_VIEW') }}{{ $data->file }}"
+                                                                        target="_blank" class="btn btn-small btn-primary">
+                                                                        <i class="btn-icon-only icon-ok">Download</i>
+                                                                    </a>     
+                                                            </td>
+                                                        </tr>                                                      
+                                                              
+                                                        @endif
+                                                    @endforeach
+                                                @endif
+                                                </tbody>
+                                            </table>
+                                            
+                       </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <center>
+                                            @if (isset($error))
+                                            <div>
+                                                {{ $error }}
+                                            </div>
+                                        @elseif (!$data_output)
+                                            <div>
+                                                <p class="department-error">Data not available.</p>
+                                            </div>
+                                        @else
+                                            @foreach ($data_output as $data)
+                                                @if (is_object($data) && $data->is_active == 1)
+                                                            <a href="{{ Config::get('DocumentConstant.MANDATORYDISCLOSURE_VIEW') }}{{ $data->file }}"
+                                                                target="_blank" class="btn btn-small btn-primary">
+                                                                <i class="btn-icon-only icon-ok">Download</i>
+                                                            </a>                                                           
+                                                      
+                                                @endif
+                                            @endforeach
+                                        @endif
+                                                                             
                                         </center>
 
                                     </div>
@@ -164,7 +232,7 @@
 
         </div>
     </div>
-    <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px">
+    {{-- <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px">
         <div class="container">
             <div class="row" style="padding:0px">
                 <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
@@ -329,7 +397,7 @@
     margin-bottom: 12px;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
-    background-color: #c70039;
+    background-color: #015198;
     color: rgb(255, 255, 255);">
         <i>Last updated on : 01-08-2016 12:32 PM</i>
         </div> -->
@@ -338,7 +406,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <script type="text/javascript">
         function getsource(path) {

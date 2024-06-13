@@ -65,7 +65,9 @@ public function getSyllabus($id)
 {
     try {
         $dataOutputCategory = $this->repo->getSyllabus($id);
-        return $dataOutputCategory; // This will never be executed due to dd()
+        
+        return $dataOutputCategory; 
+      
     } catch (\Exception $e) {
         return $e;
     }
@@ -131,7 +133,9 @@ public function getPlan($id)
 {
     try {
         $dataOutputCategory = $this->repo->getPlan($id);
+      
         return $dataOutputCategory; // This will never be executed due to dd()
+      
     } catch (\Exception $e) {
         return $e;
     }

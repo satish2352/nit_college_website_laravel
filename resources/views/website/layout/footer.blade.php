@@ -151,7 +151,7 @@ a:hover {
 
 </div>
 
-<div class="container-fluid" style="background-color: #c70039">
+<div class="container-fluid" style="background-color: #015198">
     <div class="container">
 
 
@@ -159,8 +159,8 @@ a:hover {
 
             <span style="color: #fff;">
                 <span style="color: #fff;">Contact</span>
-                <a style="color: #fff" href="tel:9822208687">9822208687</a>&nbsp;
-                <a style="color: #fff;" href="tel:9552551056">9552551056</a>&nbsp;
+                <a style="color: #fff" href="tel:9552551056">9552551056</a>&nbsp;
+                <a style="color: #fff;" href="tel:8149822404">8149822404</a>&nbsp;
                 <a href="mailto:info@nitnasik.com" style="color: #fff;">info@nitnasik.com</a>
                 <span style="color: #fff;">&copy;2024 All Rights Reserved to Late Annasaheb Patil
                     Polytechnic Developed By </span><a href="https://sumagoinfotech.com/" target="_blank"
@@ -183,6 +183,13 @@ a:hover {
                 .now() + "'><\/script>");
             </script>
             <script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!-- Bootstrap 5 JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- DataTables JS -->
+            <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
             {{-- <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script> --}}
             <script>
             $(document).ready(function() {

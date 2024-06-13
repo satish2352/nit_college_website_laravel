@@ -12,7 +12,7 @@
                         <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">MANDATARY DISCLOSURE</a>
                         <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
                         <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE AFFILIATION</a>
-                        <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">AFFILIATION CERTIFICATES</a>
+                        {{-- <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">AFFILIATION CERTIFICATES</a> --}}
                         <a href="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item">TRAINING AND PLACEMENT</a>
                         <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">ANTIRAGGING COMMITTEE</a>
                         <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">INTERNAL COMPLAINT COMMITTEE</a>
@@ -36,10 +36,10 @@
                         @foreach($data_output as $index => $slider)
                             <div  class="carousel-item {{ $index === 0 ? 'active' : '' }}">
                                 <img style="height:300px;" src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $slider['fld_slider_image'] }}" class="d-block w-100" alt="{{ $slider['fld_slider_title'] }}">
-                                <div class="carousel-caption d-none d-md-block">
+                                {{-- <div class="carousel-caption d-none d-md-block">
                                     <h5>{{ $slider['fld_slider_title'] }}</h5>
                                     <p>{{ $slider['fld_slider_subtitle'] }}</p>
-                                </div>
+                                </div> --}}
                             </div>
                         @endforeach
                     </div>
@@ -56,7 +56,7 @@
                 </div>
 
                 <!-- Other content -->
-                <div class="p-3" role="alert" style="background-color:pink;;">
+                <div class="p-3" role="alert" style="background-color:#fff;;">
                     {{-- <button type="button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> --}}
                     <strong><i class="fa fa-warning"></i>
                         <center>
@@ -94,7 +94,7 @@
 
                 <hr style="border: 1px solid black">
 
-                <div style="margin-left:1px;background-color:pink">
+                <div style="margin-left:1px;background-color:#fff">
                     <h2>
                         <span style="font-family: georgia,palatino;">
                             <strong>

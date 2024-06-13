@@ -88,88 +88,96 @@
                 </div>
                 <div>  
                   
-
-                <table class="table table-striped table-bordered"  id="customers">
-                            <thead>
+                    <div class="table-responsive"> <!-- Add this wrapper -->
+                        <table id="example"
+                            class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
+                            style="width:100%">
+                            <thead class="">
                                 <tr>
-                                    <th><center>Plan Name</center></th>
-                                    <th><center>Year</center></th>
-                                    <th><center>Semister</center></th>
-                                    <th><center>Name Of The Subject</center></th>
-                                    <th><center>Download File</center></th>
-                                    
+                                    <th scope="col" class="d-flex justify-content-center">
+                                       Plan Name
+                                    </th>
+                                    <th scope="col" class="">
+                                        Year
+                                    </th>
+                                    <th scope="col">
+                                        <div class="d-flex justify-content-center">
+                                            Semister
+                                        </div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="d-flex justify-content-center">
+                                            Name Of The Subject
+                                        </div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="d-flex justify-content-center">
+                                            Download File
+                                        </div>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @forelse ($data_output as $data)
+                               <?php
+                                dd($data_output);
+                                die();
+                               ?>
+                                    <tr class="">
 
-                                <tbody>
-                                    @if (isset($error))
-                                        <div class="alert alert-danger">
-                                            {{ $error }}
-                                        </div>
-                                    @else
-                                        @if (!$data_output)
-                                            <div>
-                                                <p class="department-error">Data not available.</p>
-                                            </div>
-                                        @else
-                                            @foreach ($data_output as $data)
-                                                @if ($data->is_active == 0)
-                                                    <div>
-                                                        <p class="department-error">Data not available.</p>
-                                                    </div>
-                                                @else
-                                                    <tr>
-                                                        <td><center>{{ $data->plan_name }}</center></td>
-                                                        <td><center>{{ $data->edu_year }}</center></td>
-                                                        <td><center>{{ $data->semister }}</center></td>
-                                                        <td><center>{{ $data->subject_name }}</center></td>
-                                                        <td>
-                                                            <a href="{{ Config::get('DocumentConstant.PLAN_VIEW') }}{{ $data->file }}"
-                                                                target="_blank" class="btn btn-small btn-primary">
-                                                                <i class="btn-icon-only icon-ok">Download</i>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                @endif
-                                            @endforeach
-                                        @endif
-                                    @endif
-                                </tbody>
 
-                                
-                                {{-- @if (isset($error))
-                                <div class="alert alert-danger">
-                                    {{ $error }}
-                                </div>
-                            
-                            
-                            @else
-                                @if (!$data_output)
-                                    <div class="alert alert-info">
-                                        Data not found
-                                    </div>
-                                @else
-                                    @if ($data_output->is_active == 0)
-                                        <div class="alert alert-info">
-                                            Data not found
-                                        </div>
-                                    @else
-                                      <tr>
-                                        <td><center>{{ $data_output->plan_name }}</center></td>
-                                        <td><center>{{ $data_output->edu_year }}</center></td>
-                                    <td><center>{{ $data_output->semister }}</center></td>
-                                    <td><center>{{ $data_output->subject_name }}</center></td>
+                                        <td>
+                                            <center>{{ $data->plan_name }}</center>
+                                        </td>
+                                        <td>
+                                            <center>{{ $data->edu_year }}</center>
+                                        </td>
+                                        <td>
+                                            <center>{{ $data->semister }}</center>
+                                        </td>
+                                        <td>
+                                            <center>{{ $data->subject_name }}</center>
+                                        </td>
+                                        <td>
+                                            <a href="{{ Config::get('DocumentConstant.PLAN_VIEW') }}{{ $data->file }}"
+                                               target="_blank" class="btn btn-small btn-primary">
+                                                <i class="btn-icon-only icon-ok">Download</i>
+                                            </a>
+                                        </td>
 
-                                          
-                                      </tr> 
-                            
-                                        
-                                    @endif
-                                @endif
-                            @endif --}}
+                                    </tr>
+                                @empty
+                                    {{-- <h4>No Data Found For District Disaster Management Plan</h4> --}}
+                                @endforelse
                             </tbody>
-                            </table>
+                        </table>
+                    </div> <!-- Close this wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
     
               </div>
             </div>        

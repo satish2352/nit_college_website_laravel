@@ -12,6 +12,9 @@ return [
     'AICTE_VIEW'	         => env("FILE_VIEW").'/documents/aicte/', 
     'PLAN_VIEW'	         => env("FILE_VIEW").'/documents/plan/',
 
+    'MANDATORYDISCLOSURE_VIEW'	         => env("FILE_VIEW").'/documents/mandatoryDisclosure/', 
+    'AFFILIATION_CERTIFICATES_VIEW'	         => env("FILE_VIEW").'/documents/affiliation_certificates/',
+
     'SLIDER_VIEW'	         => env("FILE_VIEW").'/images/slider_img/', 
     'ACTIVITY_VIEW'	         => env("FILE_VIEW").'/images/activity/', 
     'GALLERY_VIEW'	         => env("FILE_VIEW").'/images/gallery/', 
@@ -20,6 +23,8 @@ return [
     'FACILITY_VIEW'	         => env("FILE_VIEW").'/images/facility/',
     'ACTIVITIES_VIEW'	         => env("FILE_VIEW").'/images/activities/',
     'EVENTS_VIEW'	         => env("FILE_VIEW").'/images/events/',
+    
+
     
     
     

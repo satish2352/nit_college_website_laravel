@@ -46,7 +46,7 @@
         font-size: 22px;
         font-weight:400;
         color:#00ae97;
-        /* background-color:#c70039; */
+        /* background-color:#015198; */
     }
     
     .panel_product_type
@@ -69,7 +69,7 @@
         border-radius: 10px;
     }
     .president-msg p::first-letter{
-        color: #c70039;
+        color: #015198;
         font-size: xx-large;
     } */
     

@@ -106,7 +106,7 @@
                                      <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item ">MANDATARY DISCLOSURE</a>
                                         <a href="{{ route('polytechnic-aicte-extension') }}"  class="list-group-item ">AICTE EOA</a>
                                        <a  href="{{ route('polytechnic-affiliation') }}"  class="list-group-item ">MSBTE AFFILIATION</a>
-                                       <a  href="{{ route('polytechnic-affiliation_certificates') }}"  class="list-group-item ">AFFILIATION CERTIFICATES</a>
+                                       {{-- <a  href="{{ route('polytechnic-affiliation_certificates') }}"  class="list-group-item ">AFFILIATION CERTIFICATES</a> --}}
                                        {{-- <a href="{{ route('polytechnic-servicerules') }}" class="list-group-item ">SERVICE RULES</a> --}}
                                        {{-- <a href  ="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item ">TRAINING AND PLACEMENT</a> --}}
                                        <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item ">ANTIRAGGING COMMITTEE</a>
@@ -329,7 +329,7 @@
     margin-bottom: 12px;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
-    background-color: #c70039;
+    background-color: #015198;
     color: rgb(255, 255, 255);">
         <i>Last updated on : 01-08-2016 12:32 PM</i>
         </div> -->
