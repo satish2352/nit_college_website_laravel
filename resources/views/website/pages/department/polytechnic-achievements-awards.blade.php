@@ -108,160 +108,80 @@
 
         </div>
     </div>
-    <div class="container-fluid" style="padding-bottom:40px">
-        <div class="container card-shadow" style="margin-bottom: 95px;">
-            <div class="row" style="padding:0px">
-
-                <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
-                    <div class="row outer-white" style="display: flex; justify-content: center;">
-                        <div class="col-sm-12" >
-                            <div class="row">
-                                @if (isset($error))
-                                    <div>
-                                        {{ $error }}
-                                    </div>
-                                @else
-                                    @if ($data_output->isEmpty())
-                                        <div>
-                                            <p class="department-error">Data not available.</p>
-                                        </div>
-                                    @else
-                                        @foreach ($data_output as $data_output)
-                                            @if ($data_output->is_active == 0)
-                                                <div>
-                                                    <p class="department-error">Data not available.</p>
-                                                </div>
-                                            @else
-                                                <div class="item">
-
-                                                    <div class="container">
-                                                        <img src="{{ Config::get('DocumentConstant.ACHIEVEMENT_VIEW') }}{{ $data_output->fld_gallery_photo }}"
-                                                            class="img-responsive" width="800px; height:600px;"><br>
-
-                                                        <td>
-                                                            <center style="color: #545353;">{{ $data_output->imageTitle }}</center>
-                                                        </td>
-                                                    </div>
-                                                </div>
-                                            @endif
-                                        @endforeach
-                                    @endif
-                                @endif
-                            </div>
-
-                            <div>
-                                <h3></h3>
-                            </div>
-                            <div>
-                                <p><span style="font-family: georgia,palatino;"><strong><span
-                                                style="font-size: large; color: #ff6600;">
-
-
-                                                <script>
-                                                    var slideIndex = 1;
-                                                    showSlides(slideIndex);
-
-                                                    function plusSlides(n) {
-                                                        showSlides(slideIndex += n);
-                                                    }
-
-                                                    function currentSlide(n) {
-                                                        showSlides(slideIndex = n);
-                                                    }
-
-                                                    function showSlides(n) {
-                                                        var i;
-                                                        var slides = document.getElementsByClassName("mySlides");
-                                                        var dots = document.getElementsByClassName("demo");
-                                                        var captionText = document.getElementById("caption");
-                                                        if (n > slides.length) {
-                                                            slideIndex = 1
-                                                        }
-                                                        if (n < 1) {
-                                                            slideIndex = slides.length
-                                                        }
-                                                        for (i = 0; i < slides.length; i++) {
-                                                            slides[i].style.display = "none";
-                                                        }
-                                                        for (i = 0; i < dots.length; i++) {
-                                                            dots[i].className = dots[i].className.replace(" active", "");
-                                                        }
-                                                        slides[slideIndex - 1].style.display = "block";
-                                                        dots[slideIndex - 1].className += " active";
-                                                        captionText.innerHTML = dots[slideIndex - 1].alt;
-                                                    }
-                                                </script>
-
-
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                    <div class="row outer-white">
-                        <div class="col-sm-12">
-                            <div>
-
-                            </div>
-                            <div class="table-responsive">
-
-
-
-
-                                <p><strong>&nbsp;</strong></p>
-                                <p>&nbsp;</p>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                </div>
-                <div class="col-md-1 hidden-sm">&nbsp;</div>
-                <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
-                    <!-- <div
-        style="margin-top: -40px;
-    margin-bottom: 12px;
-    text-align: center;
-    border-radius: 0px 0px 10px 10px;
-    background-color: #FE9B42;
-    color: rgb(255, 255, 255);">
-        <i>Last updated on : 01-08-2016 12:32 PM</i>
-        </div> -->
-                    <!--Right col-->
-                    <div class="col-sm-12 right-col-fix">
-                        <div>
-                            <div class="list-group">
-                                <div class="list-group-item">Humanities & Science</div>
-                                @if (isset($data_output_category) && isset($data_output_category['id']))
-                                    <a href="{{ route('department-profile', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item ">PROFILE</a>
-                                    <a href="{{ route('department-vision-mission', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item active-rp-link">Vision Mission</a>
-                                    {{-- <a href="{{ route('department-curriculum', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">CURRICULUM</a> --}}
-                                    {{-- <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">Faculty</a> --}}
-                                    {{-- <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">Syllabus</a> --}}
-
-                                    <a href="{{ route('department-time-table', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item active-rp-link">Time Table</a>
-                                    <a href="{{ route('department-mentor', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item active-rp-link">MENTOR</a>
-                                    <a href="{{ route('department-achievements-awards', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item active-rp-link">ACHIEVEMENTS AND AWARDS</a>
-                                    <a href="{{ route('department-activities-events', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item active-rp-link">ACTIVITIES AND EVENTS</a>
-                                    <a href="{{ route('department-students-association', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
-                                    <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}"
-                                        class="list-group-item active-rp-link">Syllabus</a>
-                                @else
-                                    <p> Data not available.</p>
-                                @endif
-                                <div class="list-group-item"></div>
-                            </div>
-
-                        </div>
+   
+    <div class="container card-shadow" style="margin-bottom: 95px;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                @if (isset($error))
+                    <div>
+                        {{ $error }}
                     </div>
+                @else
+                    @if ($data_output->isEmpty())
+                        <div>
+                            <p class="department-error">Data not available.</p>
+                        </div>
+                    @else
+                        @foreach ($data_output as $data_output)
+                            @if ($data_output->is_active == 0)
+                                <div>
+                                    <p class="department-error">Data not available.</p>
+                                </div>
+                            @else
+                                <div class="item">
+
+                                    <div class="container">
+                                        <img src="{{ Config::get('DocumentConstant.ACHIEVEMENT_VIEW') }}{{ $data_output->fld_gallery_photo }}"
+                                            class="img-responsive" width="800px; height:600px;"><br>
+
+                                        <td>
+                                            <center style="color: #545353;">{{ $data_output->imageTitle }}</center>
+                                        </td>
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
+                    @endif
+                @endif
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 right-col-fix">
+                <div>
+                    <div class="list-group">
+                        <div class="list-group-item">Humanities & Science</div>
+                        @if (isset($data_output_category) && isset($data_output_category['id']))
+                            <a href="{{ route('department-profile', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item ">PROFILE</a>
+                            <a href="{{ route('department-vision-mission', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item active-rp-link">Vision Mission</a>
+                            {{-- <a href="{{ route('department-curriculum', ['id' => $data_output_category['id']]) }}"
+            class="list-group-item active-rp-link">CURRICULUM</a> --}}
+                            {{-- <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
+            class="list-group-item active-rp-link">Faculty</a> --}}
+                            {{-- <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
+            class="list-group-item active-rp-link">Syllabus</a> --}}
+
+                            <a href="{{ route('department-time-table', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item active-rp-link">Time Table</a>
+                            <a href="{{ route('department-mentor', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item active-rp-link">MENTOR</a>
+                            <a href="{{ route('department-achievements-awards', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item active-rp-link">ACHIEVEMENTS AND AWARDS</a>
+                            <a href="{{ route('department-activities-events', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item active-rp-link">ACTIVITIES AND EVENTS</a>
+                            <a href="{{ route('department-students-association', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item active-rp-link">STUDENTS ASSOCIATION</a>
+                            <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}"
+                                class="list-group-item active-rp-link">Syllabus</a>
+                        @else
+                            <p> Data not available.</p>
+                        @endif
+                        <div class="list-group-item"></div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 @endsection
