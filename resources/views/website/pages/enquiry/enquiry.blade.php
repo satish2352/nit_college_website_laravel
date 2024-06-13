@@ -147,99 +147,83 @@
     {{-- <script src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script> --}}
     {{-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-      
-            $("#regForm").validate({
-                errorClass: "error",
-                rules: {
-                    name: {
-                        required: true,
-                        spcenotallow: true,
-                    },
-                    email: {
-                        required: true,
-                        email: true,
-                    },
-                    mobile_number: {
-                        required: true,
-                        spcenotallow: true,
-                    },
-                    source: {
-                        required: true,
-                    },
-                    source_name: {
-                        required: true,
-                        spcenotallow: true,
-                    },
-                    admission_level: {
-                        required: true,
-                    },
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Custom validation rule
+        $.validator.addMethod("spcenotallow", function(value, element) {
+            return this.optional(element) || value.trim().length > 0;
+        }, "Enter Some Text");
+    
+        // Apply validation to the form
+        $("#regForm").validate({
+            errorClass: "text-danger",
+            rules: {
+                name: {
+                    required: true,
+                    spcenotallow: true
                 },
-                messages: {
-                    name: {
-                        required: "Enter Full Name",
-                        spcenotallow: "Enter Some Text",
-                    },
-                    email: {
-                        required: "Enter Email Id",
-                        spcenotallow: "Enter Some Text",
-                    },
-                    mobile_number: {
-                        required: "Enter Mobile Number",
-                        pattern: "Invalid Mobile Number",
-                        remote: "This mobile number already exists.",
-                        spcenotallow: "Enter Some Text",
-                    },
-                    source: {
-                        required: "Select Source",
-                    },
-                    source_name: {
-                        required: "Enter source name",
-                    },
-                    admission_level: {
-                        required: "Select admission level",
-                    },
-                    
+                email: {
+                    required: true,
+                    email: true
                 },
-                highlight: function(element, errorClass) {
-                    $(element).removeClass(errorClass);
+                mobile_number: {
+                    required: true,
+                    spcenotallow: true
                 },
-                submitHandler: function(form) {
-                    // Check if reCAPTCHA challenge is completed
-                    if (grecaptcha.getResponse() === "") {
-                        alert("Please complete the reCAPTCHA challenge.");
-                    } else {
-                        // Proceed with form submission
-                        form.submit();
-                    }
+                source: {
+                    required: true
+                },
+                source_name: {
+                    required: true,
+                    spcenotallow: true
+                },
+                admission_level: {
+                    required: true
                 }
-            });
-      
-            $("input#document_file").hide();
-      
-        });
-      
-        $.extend($.validator.methods, {
-            spcenotallow: function(b, c, d) {
-                if (!this.depend(d, c)) return "dependency-mismatch";
-                if ("select" === c.nodeName.toLowerCase()) {
-                    var e = a(c).val();
-                    return e && e.length > 0
+            },
+            messages: {
+                name: {
+                    required: "Enter Full Name",
+                    spcenotallow: "Enter Some Text"
+                },
+                email: {
+                    required: "Enter Email Id"
+                },
+                mobile_number: {
+                    required: "Enter Mobile Number"
+                },
+                source: {
+                    required: "Select Source"
+                },
+                source_name: {
+                    required: "Enter source name"
+                },
+                admission_level: {
+                    required: "Select admission level"
                 }
-                return this.checkable(c) ? this.getLength(b, c) > 0 : b.trim().length > 0
+            },
+            highlight: function(element, errorClass) {
+                $(element).removeClass(errorClass);
+            },
+            submitHandler: function(form) {
+                if (grecaptcha.getResponse() === "") {
+                    alert("Please complete the reCAPTCHA challenge.");
+                } else {
+                    form.submit();
+                }
             }
         });
-      </script>
+    });
+    </script>
+    
     <script type="text/javascript">
-        $(document).ready(function() {
-            // Set timeout to hide the alert after 4 seconds
-            setTimeout(function() {
-                $(".alert").alert('close');
-            }, 1000); // 4000 milliseconds = 4 seconds
-        });
+    $(document).ready(function() {
+        setTimeout(function() {
+            $(".alert").alert('close');
+        }, 1000); // 1000 milliseconds = 1 second
+    });
     </script>
       
 @endsection
