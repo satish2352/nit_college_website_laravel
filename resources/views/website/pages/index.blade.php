@@ -56,7 +56,7 @@
                 </div>
 
                 <!-- Other content -->
-                <div class="p-3" role="alert" style="background-color:pink;;">
+                <div class="p-3" role="alert" style="background-color:#fff;;">
                     {{-- <button type="button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> --}}
                     <strong><i class="fa fa-warning"></i>
                         <center>
@@ -94,7 +94,7 @@
 
                 <hr style="border: 1px solid black">
 
-                <div style="margin-left:1px;background-color:pink">
+                <div style="margin-left:1px;background-color:#fff">
                     <h2>
                         <span style="font-family: georgia,palatino;">
                             <strong>

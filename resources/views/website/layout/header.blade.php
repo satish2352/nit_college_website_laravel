@@ -14,8 +14,8 @@
     
     <style>
       .heading1 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 23px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     color: #1b2834;
@@ -26,7 +26,7 @@
 }
 
 .nav-link:hover {
-    background-color: #c70039;
+    background-color: #015198;
     color: #fff;
 }
 .mob-display{
@@ -37,7 +37,7 @@
 }
 .red-watch-bg{
     width: 100%;
-    background-color: #c70039;
+    background-color: #015198;
     position: relative;
     height: 40px;
 }
@@ -56,11 +56,11 @@ li .dropdown-item{
     /* padding: 30px; */
 }
 .dropdown-menu ul li:hover {
-    background-color: #c70039;
+    background-color: #015198;
     color: #fff;
 }
 .dropdown-item.active, .dropdown-item:active {
-    background-color: #c70039;
+    background-color: #015198;
     color: #fff;
 }
 li #footer-links {
@@ -187,31 +187,30 @@ li #footer-links {
     {{-- =========================End Top Header======================== --}}
     {{-- ======================Start Sub Header==================== --}}
 <div class="mob-toggle-right-side">
-    <div class="container-fluid pt-4 pb-1 mob-width-left" id="iwtHeaderNav">
+    <div class="container-fluid pt-2 pb-1 mob-width-left" id="iwtHeaderNav">
         <div class="container main-header">
-            <div class="row align-items-center">
+            <div class="row align-items-center d-flex justify-content-center">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                     <a href="/" ><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid mob-width" alt="Logo"></a>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-8 col-9 text-center">
-                    <h3 class="heading1">NASHIK INSTITUTE OF TECHNOLOGY</h3>
-                    <h2 class="heading1">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
-                    <p class="web-display mob-display">
-                        <marquee>
-                            <b>Approved By</b> :
-                            <b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b>Affiliated To</b> :
-                            <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
-                        </marquee>
-                        <br>
-                        <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2024-25</a></b>
-                    </p>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
+                    <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
+                    <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
+                    <span class="d-lg-block d-none d-flex justify-content-center">
+                        {{-- <marquee> --}}
+                          Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE 
+                        {{-- </marquee> --}}
+                        
+                        
+                    </span>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-3 text-center displsy-flex web-display mob-display">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-3 text-center displsy-flex web-display mob-display">
                     <img src="{{ asset('public/assets/Akole_Poly/TWOWIN2p_400x400.jpg') }}" alt="Avatar" class="img-fluid rounded-circle" style="width:100px;">
                     <p style="font-size:12px;color:red;"><b>Shri.&nbsp;Suresh&nbsp;Patil</b></p>
                 </div>
-
-           
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center displsy-flex web-display mob-display">
+                <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For <br>Admission Enquiry <br>2024-25</a></b>
+                </div>
             </div>
         </div>
     </div>
@@ -360,13 +359,19 @@ li #footer-links {
 </div>
     <div class="mob-display">
         <p class="px-2">
-            <marquee>
-                <b>Approved By</b> :
+            {{-- <marquee> --}}
+                {{-- <b>Approved By</b> :
                 <b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b>Affiliated To</b> :
-                <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b>
-            </marquee>
+                <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b> --}}
+            {{-- </marquee> --}}
+            <span class="d-sm-block d-none d-flex justify-content-center">
+                
+            </span>
             <br>
-            <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2024-25</a></b>
+            <span>
+                <span class="d-flex justify-content-center">
+                Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE</span> <br>
+               <b> <a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry 2024-25</a></b></span>
         </p>
     </div>
     </div><!--/container-fluid /iwtHeaderNav--><!--======================= iwtBanner =======================-->

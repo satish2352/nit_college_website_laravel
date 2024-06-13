@@ -79,20 +79,20 @@ text-align: center; }
 
 /*---------------Home page css----------------------*/
 
-#iwtNewsArea{background:#c70039; padding:0;}
+#iwtNewsArea{background:#015198; padding:0;}
 #iwtNewsArea .news-img {}
 #iwtNewsArea .news-text {font-family: "Roboto Condensed",sans-serif; padding:0; width:86%; line-height:42px; color:#fff; font-size:16px; margin-top:15px;}
 
 /* .department-box-title{text-align:center; border-bottom:#ededed dotted 1px; margin-bottom:50px;}
 .department-box-title h1{font-size:30px; color:#353535; text-transform:uppercase; font-weight:300; margin-bottom: 20px;}
 .department-box-title h1 strong{font-weight:700;}
-.department-box-title .line{background-color:#c70039; width:150px; margin:auto; height:1px; display:block} */
+.department-box-title .line{background-color:#015198; width:150px; margin:auto; height:1px; display:block} */
 
 
 .department-box{padding-right: 0px; padding-left: 0px;}
 .department-box a{text-align:center; display:block; padding-top:15px; padding-bottom:15px; border-right: dotted 1px #ededed; min-height:220px;}
 .department-box a:hover{ background-color:#ededed; border-radius: 5px;}
-.department-box a:hover .dept-icon{background: #c70039 no-repeat center center;}
+.department-box a:hover .dept-icon{background: #015198 no-repeat center center;}
 
 .department-box a .dept-icon
 {margin:auto; border-radius: 50%; border:#ededed solid 8px; background:#00ae97 no-repeat center center; width:120px; height:120px; display:block;
@@ -138,15 +138,15 @@ text-align: center; }
 
 
 
-#iwtHeaderTopNav{background-color:#c70039; min-height:30px; color:#FFFFFF; padding-top:5px;}
+#iwtHeaderTopNav{background-color:#015198; min-height:30px; color:#FFFFFF; padding-top:5px;}
 #iwtHeaderTopNav a{ color:#FFFFFF; font-size:13px;}
 #iwtHeaderTopNav a:hover{ color:#006180; font-size:13px;}
 
-#iwtHeader{background-color:#f7f9fb; height:150px; border-bottom:#c70039 solid 3px; }
+#iwtHeader{background-color:#f7f9fb; height:150px; border-bottom:#015198 solid 3px; }
 
-#iwtHeaderNav{background:url(images/HeaderNav-bg.png) repeat-x; border-bottom:#c70039  solid 3px; min-height:10px;}
+#iwtHeaderNav{background:url(images/HeaderNav-bg.png) repeat-x; border-bottom:#015198  solid 3px; min-height:10px;}
 
-#iwtPageHeader{background: #c70039 url(images/page-header-bg.jpg);}
+#iwtPageHeader{background: #015198 url(images/page-header-bg.jpg);}
 #iwtPageHeader .container{padding-top:5px; padding-bottom:5px;}
 #iwtPageHeader h2{color:#FFFFFF; font-size:30px; text-transform:uppercase; font-weight:300; margin-top: 30px; margin-bottom:0px; display:inline-block;}
 #iwtPageHeader strong{font-weight:600;}
@@ -154,11 +154,11 @@ text-align: center; }
 
 /*right-col*/
 .right-col-fix{position:relative; top:0px; padding:0;}
-.right-col-fix .list-group {background-color:#c70039; border-radius: 10px;}
+.right-col-fix .list-group {background-color:#015198; border-radius: 10px;}
 .right-col-fix .list-group-item:first-child { border-top-left-radius: 7px; border-top-right-radius: 7px; background-color:#f5f5f5; color:#00ae97; text-transform:uppercase;}
 .right-col-fix .list-group-item:last-child { margin-bottom: 8px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
 
-.right-col-fix .list-group-item {margin-bottom: 1px; background-color: #c70039; border:none; border-bottom: 1px solid #fea758;}
+.right-col-fix .list-group-item {margin-bottom: 1px; background-color: #015198; border:none; border-bottom: 1px solid #fea758;}
 
 .right-col-fix a.list-group-item {color: #fff;}
 .right-col-fix a.list-group-item:hover { padding: 3px 20px; margin:9px; color: #939393; text-decoration: none; border-radius: 20px; background-color: #F5F5F5; border: none;}
@@ -174,7 +174,7 @@ text-align: center; }
 /*-----------------------------------------------------------------------------------*/
 /*  Footer
 /*-----------------------------------------------------------------------------------*/
-#iwtFooter{background-color:#c70039; color:#FFFFFF; text-align:center; padding:0px; }
+#iwtFooter{background-color:#015198; color:#FFFFFF; text-align:center; padding:0px; }
 #iwtFooter .contact{ text-align:center;}
 #iwtFooter .contact span{padding:12px 7px 0px 20px;color:#FFFFFF; font-size:13px;}
 

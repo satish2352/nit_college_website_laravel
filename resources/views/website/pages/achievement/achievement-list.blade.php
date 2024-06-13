@@ -1,6 +1,6 @@
 @extends('website.layout.master')
 @section('content')
-    <div class="container-fluid bg-pink" id="iwtPageHeading">
+    <div class="container-fluid bg-#fff" id="iwtPageHeading">
         {{-- <div class="container">
             <div class="col-sm-12" style="padding:0;">
                 <h4 style="color:green"><strong>Welcome To Humanities & Science Engineering Department </strong></h4>
