@@ -3,7 +3,7 @@
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
         <div class="container">
 
-            <div class="col-sm-12" style="padding:0;">
+            <div class="col-sm-12 pt-4" >
                 <center>
                     <h4 style="color:green"><strong>Facilities</strong></h4>
                 </center>

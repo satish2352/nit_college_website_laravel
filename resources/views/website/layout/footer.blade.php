@@ -51,7 +51,7 @@ blockquote {
 }
 
 a:hover {
-    color: #015198 !important;
+    color: black !important;
 }
 </style>
 <div class="container">

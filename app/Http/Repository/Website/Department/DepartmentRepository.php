@@ -162,27 +162,28 @@ class DepartmentRepository  {
         }
     }
     public function getTimeTable($id)
-    {
-        try {
-            $dataOutputCategory = Timetable::join('department', 'department.id', '=', 'timetable.department_id')
-                ->select(
-                    'timetable.timetable_id',
-                    'department.id as department_id',
-                    'timetable.year', 
-                    'timetable.semister', 
-                    'timetable.file', 
-                    'department.Department',
-                    'timetable.is_active'
-                )
-                ->where('department.id', $id) // Filter by the provided ID
-                ->orderBy('timetable.timetable_id', 'desc')
-                ->first(); // Get a single record
-             
-            return $dataOutputCategory;
-        } catch (\Exception $e) {
-            return $e;
-        }
+{
+    try {
+        $dataOutputCategory = Timetable::join('department', 'department.id', '=', 'timetable.department_id')
+            ->select(
+                'timetable.timetable_id',
+                'department.id as department_id',
+                'timetable.year', 
+                'timetable.semister', 
+                'timetable.file', 
+                'department.Department',
+                'timetable.is_active'
+            )
+            ->where('department.id', $id)
+            ->orderBy('timetable.timetable_id', 'desc')
+            ->get(); // Use get() to fetch multiple records
+
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return $e;
     }
+}
+
     public function getMentor($id)
     {
         try {
@@ -198,7 +199,7 @@ class DepartmentRepository  {
                 )
                 ->where('department.id', $id) // Filter by the provided ID
                 ->orderBy('tbl_mentors.fld_bm_id', 'desc')
-                ->first(); // Get a single record
+                ->get(); // Get a single record
              
             return $dataOutputCategory;
         } catch (\Exception $e) {
@@ -339,14 +340,14 @@ class DepartmentRepository  {
                     'department.Department',
                     'tbl_plan.is_active'
                 )
-                ->where('tbl_plan.department_id', $id) // Filter by the provided ID
+                ->where('tbl_plan.department_id', $id)
                 ->orderBy('tbl_plan.fld_bm_id', 'desc')
                 ->get(); 
-            //  dd($dataOutputCategory);
-            //  die();
+    
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;
         }
     }
+    
 }                               
