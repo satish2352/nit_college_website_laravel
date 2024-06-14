@@ -180,11 +180,11 @@
                                                     Designation
                                                 </div>
                                             </th>
-                                            <th scope="col">
+                                            {{-- <th scope="col">
                                                 <div class="d-flex justify-content-center">
                                                     Address
                                                 </div>
-                                            </th>
+                                            </th> --}}
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -199,9 +199,9 @@
                                                 <td>
                                                     <center>{{ $data->Designation }}</center>
                                                 </td>
-                                                <td>
+                                                {{-- <td>
                                                     <center>{{ $data->gov_address }}</center>
-                                                </td>
+                                                </td> --}}
 
                                             </tr>
                                         @empty

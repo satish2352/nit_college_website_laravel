@@ -47,6 +47,8 @@ class HomeSidebarServices
     {
         try {
             $dataOutputCategory = $this->repo->getMSBTE();
+            // dd($dataOutputCategory);
+            // die();
             return $dataOutputCategory; // This will never be executed due to dd()
         } catch (\Exception $e) {
             return $e;
@@ -56,6 +58,9 @@ class HomeSidebarServices
     {
         try {
             $dataOutputCategory = $this->repo->getPolytechnicAffiliationCertificates();
+
+            // dd($dataOutputCategory);
+            // die();
             return $dataOutputCategory; // This will never be executed due to dd()
         } catch (\Exception $e) {
             return $e;
@@ -87,6 +92,7 @@ class HomeSidebarServices
 {
     try {
         $dataOutputCategory = $this->repo->getAntiRagging();
+    
         return $dataOutputCategory;
     } catch (\Exception $e) {
         throw $e;
@@ -96,20 +102,19 @@ class HomeSidebarServices
 public function getInternalComplaint()
 {
     try {
-        $dataOutputCategory = $this->repo->getInternalComplaint();
-        return $dataOutputCategory;
+        return $this->repo->getInternalComplaint();
     } catch (\Exception $e) {
         // Log the exception
         \Log::error('Error in Service getInternalComplaint: ' . $e->getMessage());
-        return null; // Return null in case of error
+        return collect(); // Return an empty collection in case of error
     }
 }
+
 
 public function getAboutSCST()
 {
     try {
         $dataOutputCategory = $this->repo->getAboutSCST();
-      
         return $dataOutputCategory;
     } catch (\Exception $e) {
         \Log::error('Error in Service getAboutSCST: ' . $e->getMessage());

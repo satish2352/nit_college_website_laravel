@@ -218,12 +218,6 @@
     });
     </script>
     
-    <script type="text/javascript">
-    $(document).ready(function() {
-        setTimeout(function() {
-            $(".alert").alert('close');
-        }, 1000); // 1000 milliseconds = 1 second
-    });
-    </script>
+ 
       
 @endsection

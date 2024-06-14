@@ -192,12 +192,12 @@ a:hover {
             <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
             {{-- <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script> --}}
             <script>
-            $(document).ready(function() {
-                var table1 = $('#example').DataTable({
-                    "columnDefs": [{
-                        "targets": [1, 2],
-                        "orderable": true
-                    }]
+                $(document).ready(function() {
+                    $('#example').DataTable({
+                        responsive: true,
+                        showNEntries: false,
+                        lengthChange: false
+                    });
                 });
 
                 var table2 = $('#example1').DataTable({
@@ -218,6 +218,30 @@ a:hover {
                 });
             });
             </script>
+
+<script>
+    $(document).on('click', '.panel-heading span.clickable', function(e) {
+        var $this = $(this);
+        if (!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
+                'glyphicon glyphicon-plus-sign');
+        } else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
+                'glyphicon glyphicon-minus-sign');
+        }
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            $(".alert").alert('close');
+        }, 1000); // 1000 milliseconds = 1 second
+    });
+    </script>
             <!-- Badge Code End Here -->
         </div>
     </div>

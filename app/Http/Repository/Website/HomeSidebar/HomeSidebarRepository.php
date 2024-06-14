@@ -27,7 +27,7 @@ class HomeSidebarRepository  {
             $data_output = MandatoryDisclosure::where('syllabus_delete', '0')
             ->where('is_active', '1')
             ->orderBy('mandatory_id', 'desc')
-            ->first();
+            ->get();
 
                    
            return $data_output;
@@ -62,12 +62,11 @@ class HomeSidebarRepository  {
     //     }
     // }
     public function getMSBTE(){
-        try {
-
+        try {            
             $data_output = MSBTE::where('fld_delete', '0')
             // ->where('is_active', '1')
             ->orderBy('msbte_id', 'desc')
-            ->first();
+            ->get();
                    
                       return $data_output;
         } catch (\Exception $e) {
@@ -80,7 +79,7 @@ class HomeSidebarRepository  {
             $data_output = AffiliationCertificates::where('fld_delete', '0')
             // ->where('is_active', '1')
             ->orderBy('fld_affiliation_id', 'desc')
-            ->first();
+            ->get();
                    
                       return $data_output;
         } catch (\Exception $e) {
@@ -124,46 +123,49 @@ class HomeSidebarRepository  {
     // }
 
     public function getAntiRagging()
-{
-    try {
-        $data_output = AntiRagging::join('designation', 'designation.Designation_id', '=', 'tbl_antiragging_members.Designation_id')
-            ->select(
-                'tbl_antiragging_members.fld_bm_id',
-                'designation.Designation_id as Designation',
-                'tbl_antiragging_members.fld_bm_name', 
-                'tbl_antiragging_members.mobilenumber', 
-                'tbl_antiragging_members.email',
-                'tbl_antiragging_members.is_active'
-            )
-            ->orderBy('tbl_antiragging_members.fld_bm_id', 'desc')
-            ->first();
-           
-        return $data_output;
-    } catch (\Exception $e) {
-        throw $e;
+    {
+        try {
+            $data_output = AntiRagging::join('designation', 'designation.Designation_id', '=', 'tbl_antiragging_members.Designation_id')
+                ->select(
+                    'tbl_antiragging_members.fld_bm_id',
+                    'designation.Designation as designation_name',
+                    'tbl_antiragging_members.fld_bm_name', 
+                    'tbl_antiragging_members.mobilenumber', 
+                    'tbl_antiragging_members.email'
+                )
+                ->orderBy('tbl_antiragging_members.fld_bm_id', 'desc')
+                ->get();  // Changed from first() to get() to fetch all records
+               
+            return $data_output;
+        } catch (\Exception $e) {
+            throw $e;
+        }
     }
-}
-
+    
    
     public function getInternalComplaint(){
         try {
             $data_output = InternalComplaint::join('designation', 'designation.Designation_id', '=', 'tbl_complaint_members.Designation_id')
-            ->select(
-                'tbl_complaint_members.fld_bm_id',
-                'designation.Designation_id as Designation',
-                'tbl_complaint_members.fld_bm_name', 
-                'tbl_complaint_members.mobilenumber', 
-                'tbl_complaint_members.email',
-                'tbl_complaint_members.is_active'
-            )
-            ->orderBy('tbl_complaint_members.fld_bm_id', 'desc')
-            ->first();
-           
-                      return $data_output;
+                ->select(
+                    'tbl_complaint_members.fld_bm_id',
+                    'designation.Designation as designation_name',
+                    'tbl_complaint_members.fld_bm_name', 
+                    'tbl_complaint_members.mobilenumber', 
+                    'tbl_complaint_members.email',
+                    'tbl_complaint_members.is_active'
+                )
+                ->orderBy('tbl_complaint_members.fld_bm_id', 'desc')
+                ->get();
+            
+            return $data_output;
         } catch (\Exception $e) {
-            return $e;
+            // Log the exception
+            \Log::error('Error in Repository getInternalComplaint: ' . $e->getMessage());
+            // Return an empty collection on error
+            return collect();
         }
     }
+    
 
     
     public function getAboutSCST()
@@ -172,14 +174,14 @@ class HomeSidebarRepository  {
             $data_output = AboutSCST::join('designation', 'designation.Designation_id', '=', 'tbl_scst_members.Designation_id')
                 ->select(
                     'tbl_scst_members.fld_bm_id',
-                    'designation.Designation_id as Designation',
+                    'designation.Designation as designation_name',
                     'tbl_scst_members.fld_bm_name', 
                     'tbl_scst_members.mobilenumber', 
                     'tbl_scst_members.email',
                     'tbl_scst_members.is_active'
                 )
                 ->orderBy('tbl_scst_members.fld_bm_id', 'desc')
-                ->first();
+                ->get();
    
             return $data_output;
         } catch (\Exception $e) {

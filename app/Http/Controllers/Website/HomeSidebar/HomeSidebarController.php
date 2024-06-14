@@ -43,19 +43,19 @@ class HomeSidebarController extends Controller
             return $e;
         }
     }  
-    
     public function getMSBTE()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $menuFacility = $this->menuFacility;
-            $data_output = $this->service->getMSBTE();
-            return view('website.pages.home-sidebar.polytechnic-affiliation', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
-        } catch (\Exception $e) {
-            return $e;
-        }
-    } 
+{
+    try {
+        $menu = $this->menu;
+        $menuDepartment = $this->menuDepartment;
+        $menuFacility = $this->menuFacility;
+        $data_output = $this->service->getMSBTE();
+        return view('website.pages.home-sidebar.polytechnic-affiliation', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
+
     public function getPolytechnicAffiliationCertificates()
     {
         try {
@@ -94,10 +94,13 @@ class HomeSidebarController extends Controller
             return view('website.pages.home-sidebar.polytechnic-anti-ragging', [
                 'error' => $e->getMessage(),
                 'menu' => $this->menu,
-                'menuDepartment', 'menuFacility' => $this->menuDepartment
+                'menuDepartment' => $this->menuDepartment,
+                'menuFacility' => $this->menuFacility,
+                'data_output' => []
             ]);
         }
     }
+    
     
     // public function getAntiRagging()
     // {
@@ -117,7 +120,7 @@ class HomeSidebarController extends Controller
             $menuDepartment = $this->menuDepartment;
             $menuFacility = $this->menuFacility;
             $data_output = $this->service->getInternalComplaint();
-            
+    
             return view('website.pages.home-sidebar.polytechnic-internal-complaint', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             // Log the exception
@@ -125,10 +128,13 @@ class HomeSidebarController extends Controller
             return view('website.pages.home-sidebar.polytechnic-internal-complaint', [
                 'error' => $e->getMessage(),
                 'menu' => $this->menu,
-                'menuDepartment', 'menuFacility' => $this->menuDepartment
+                'menuDepartment' => $this->menuDepartment,
+                'menuFacility' => $this->menuFacility,
+                'data_output' => collect() // Pass an empty collection to the view in case of error
             ]);
         }
     }
+    
     
     public function getAboutSCST()
     {
@@ -137,7 +143,7 @@ class HomeSidebarController extends Controller
             $menuDepartment = $this->menuDepartment;
             $menuFacility = $this->menuFacility;
             $data_output = $this->service->getAboutSCST();
-    
+   
             return view('website.pages.home-sidebar.polytechnic-scst', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             \Log::error('Error in Controller getAboutSCST: ' . $e->getMessage());
