@@ -131,15 +131,14 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card-shadow">
                     <center><h2 style="color:green"><strong>Principal Desk </strong></h2></center>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="panel panel-primary product-type">
+                    
                             <div class="">
                               
-                                <center><h3 class="panel-title"><b>Principal Message</b></h3></center>
+                                <center><h3 class="panel-title pt-4"><b>Principal Message</b></h3></center>
             
                             </div>
 
-                            <div class="col-12 col-lg-12 row mt-5 mb-5">
+                           
                                 <div class="row">
                                   <div class="col-lg-5 col text-center " data-aos="fade-left">
                                     <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" class="" height="200" width="300">
@@ -167,8 +166,7 @@
                                     </p>
                                   </div>
                                 </div>   
-                               </div>
-
+               
 
 
 
@@ -198,8 +196,8 @@
                    
                             
                             {{-- </div> --}}
-                        </div>
-                    </div>
+                       
+                    
                 </div>
             </div>
         </div>

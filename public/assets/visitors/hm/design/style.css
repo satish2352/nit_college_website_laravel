@@ -368,7 +368,7 @@ p{
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 0;
-  width: 800px;
+  width: 741px;
   /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);*/
   /*box-shadow: 0 1px 1px rgba(0,0,0,.05);*/
 }
@@ -395,8 +395,8 @@ p{
   color: #000;
   background-color: #fff;
   border-bottom: 1px solid #eeeeee;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
 
 .panel-title {

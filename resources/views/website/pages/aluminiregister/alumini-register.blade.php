@@ -15,7 +15,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 1px;
     resize: vertical;
 }
 
@@ -95,9 +95,6 @@ input[type=submit]:hover {
     }
 }
 
-.margin-top-50 {
-    margin-top: 50px;
-}
 
 .table-widthB {
     width: 48%;
@@ -118,9 +115,9 @@ input[type=submit]:hover {
     margin-right: 1px;
 }
 
-.marginTop30 {
+/* .marginTop30 {
     margin-top: 30px;
-}
+} */
 
 .radio,
 .checkbox {
@@ -259,64 +256,86 @@ $('#carouselHacked').carousel();
                             <div class="containerid">
                                 <form method="post" enctype="multipart/form-data"
                                     action="{{ route('add-aluminiregister') }}">
-                                    <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
+                                    @csrf
+                                    {{-- <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" /> --}}
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="name">Name Of Student</label>
                                             <input type="text" id="name" name="name" placeholder="Your name..">
+                                            @if ($errors->has('name'))
+                                            <span class="text-danger">{{ $errors->first('name') }}</span>
+                                        @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="email">Email ID</label>
                                             <input type="text" id="email" name="email"
                                                 placeholder="Your Email Address..">
+                                                @if ($errors->has('email'))
+                                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                            @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="enroll">Enrollment Number</label>
                                             <input type="text" id="enroll" name="enroll"
                                                 placeholder="Your Enrollment Number..">
+                                                @if ($errors->has('enroll'))
+                                                <span class="text-danger">{{ $errors->first('enroll') }}</span>
+                                            @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="company">Current Working Company</label>
                                             <input type="text" id="company" name="company"
                                                 placeholder="Your Current Working Company..">
+                                                @if ($errors->has('company'))
+                                                <span class="text-danger">{{ $errors->first('company') }}</span>
+                                            @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="location">Current Location</label>
                                             <input type="text" id="location" name="location"
                                                 placeholder="Your Current Location..">
+                                                @if ($errors->has('location'))
+                                                <span class="text-danger">{{ $errors->first('location') }}</span>
+                                            @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="mobile">Contact Number</label>
                                             <input type="text" id="mobile" name="mobile"
                                                 placeholder="Your Contact Number..">
+                                                @if ($errors->has('mobile'))
+                                                <span class="text-danger">{{ $errors->first('mobile') }}</span>
+                                            @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="passout_year">Passout Year</label>
                                             <input type="text" id="passout_year" name="passout_year"
                                                 placeholder="Your Passout Year..">
+                                                @if ($errors->has('passout_year'))
+                                                <span class="text-danger">{{ $errors->first('passout_year') }}</span>
+                                            @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="department">Department Name</label>
                                             <input type="text" id="department" name="department"
                                                 placeholder="Your Department Name..">
+                                                @if ($errors->has('department'))
+                                                <span class="text-danger">{{ $errors->first('department') }}</span>
+                                            @endif
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="message">Message</label>
                                             <input type="text" id="message" name="message" placeholder="Message..">
+                                            @if ($errors->has('message'))
+                                            <span class="text-danger">{{ $errors->first('message') }}</span>
+                                        @endif
+
                                         </div>
 
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <input type="submit" value="Submit">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                                    
 
-                        <div class="creatediv1 marginTop30">
-                            <div class="row margin-top-50">
+                        <div class="creatediv1 marginTop30 pt-2">
+                            <div class="row">
                                 <div class="col-md-12">
                                     <div class="panel panel-primary filterable">
                                         <div class="panel-heading">
@@ -324,7 +343,7 @@ $('#carouselHacked').carousel();
                                                 <!-- Filter button if needed -->
                                             </div>
                                         </div>
-                                        <div class="bg tablescroll">
+                                        <div class="bg tablescroll ">
                                             <table class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr class="filters">
@@ -448,7 +467,16 @@ $('#carouselHacked').carousel();
                                 </div>
                             </div>
                         </div>
-
+                        <div class="row pt-4">
+                            <div class="col-lg-10">
+                                <button type="submit" name="submit" value="submit" class="btn pull-right"
+                                id="btnContactUs"
+                                style="margin-top: 25px; background-color:#015198; color:#fff;">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
                     </div>
                 </div>
             </div>

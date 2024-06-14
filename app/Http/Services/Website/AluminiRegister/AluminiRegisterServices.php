@@ -35,6 +35,7 @@ class AluminiRegisterServices
         try {
             $add_role = $this->repo->addAluminiRegister($request);
             // dd($add_role);
+            // die();
             if ($add_role) {
                 return ['status' => 'success', 'msg' => 'Alumini Added Successfully.'];
             } else {
