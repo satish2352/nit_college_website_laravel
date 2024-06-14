@@ -1,75 +1,103 @@
 <!--About us-->
 <style>
-    .footer-menu ul li {
-        color: #00ae97 !important;
-    }
+.footer-menu ul li {
+    /* color: #00ae97 !important; */
+}
 
-    blockquote {
-        padding: 10px 20px;
-        margin: 0 0 20px;
-        font-size: 17.5px;
-        border-left: 5px solid #eee;
-    }
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+
+.footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.facebook-bg {
+    background: #3B5998;
+}
+
+.twitter-bg {
+    background: #55ACEE;
+}
+
+.fa-linkedin {
+    background: #0a66c2;
+}
+
+.google-bg {
+    background: #DD4B39;
+}
+
+a:hover {
+    color: #fff !important;
+}
 </style>
 <div class="container">
     <div class="col-md-8 col-sm-6 about-text">
 
 
 
-        <p><!--<a href="https://www.onlinesbi.com/prelogin/icollecthome.htm"><strong><span>ONLINE FEES PAYMENT</span></strong> [Click Here</a>]</p>-->
+        <p>
+            <!--<a href="https://www.onlinesbi.com/prelogin/icollecthome.htm"><strong><span>ONLINE FEES PAYMENT</span></strong> [Click Here</a>]</p>-->
         <p><a href="http://antiragging.in/site/Affidavits_Registration.aspx"><strong><span></span></strong> </a></p>
         </p>
 
     </div>
 
     <div class="col-md-4 col-sm-6 about-img"></div>
-</div><!--/about us-->
-<div class="container-fluid" id="" style="background-color:#f7f9fb; border-top:#e0e7ed solid 1px; color:black; ">
-
-
-    <div class="container p-5">
+</div>
+<!--/about us-->
+<div class="container-fluid footer"
+    style="background-color: #0c0c0c; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0;">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 footer-menu">
-                <h5>About Us</h5>
-                <ul>
-                    <li id="#footer-links"><a href="{{ route('polytechnic-president') }}">President
-                            Desk</a>
-                    </li>
-                    <li><a href="{{ route('polytechnic-principals') }}">Principal
-                            Desk</a>
-                    </li>
-                    <li><a href="{{ route('mission-and-vision') }}">Mission &
-                            Vision</a>
-                    </li>
-                    <li><a href="{{ route('about-governingbody') }}">Governing
-                            Body</a>
-                    </li>
-                    <li><a href="{{ route('about-futureplans') }}">Future
-                            Plans</a></li>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <h5><b>About Us</b></h5>
+                <ul class="list-unstyled">
+                    <li><a href="{{ route('polytechnic-president') }}" style="color: #aca7a7;">President Desk</a></li>
+                    <li><a href="{{ route('polytechnic-principals') }}" style="color: #aca7a7;">Principal Desk</a></li>
+                    <li><a href="{{ route('mission-and-vision') }}" style="color: #aca7a7;">Mission & Vision</a></li>
+                    <li><a href="{{ route('about-governingbody') }}" style="color: #aca7a7;">Governing Body</a></li>
+                    <li><a href="{{ route('about-futureplans') }}" style="color: #aca7a7;">Future Plans</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <h5>Departments</h5>
-                <ul>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <h5><b>Departments</b></h5>
+                <ul class="list-unstyled">
                     @foreach ($menuDepartment as $menuItemDepartment)
-                        <?php
-                        
-                        ?>
-                        <li class="">
-                            <a
-                                href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
-                        </li>
+                    <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
+                            style="color: #aca7a7;">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <h5>Facilities</h5>
-                <ul>
-                    @foreach ($menuFacility as $menuFacility)
-                        <li class="">
-                            <a
-                                href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
-                        </li>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <h5><b>Facilities</b></h5>
+                <ul class="list-unstyled">
+                    @foreach ($menuFacility as $menuFacilityItem)
+                    <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
+                            style="color: #aca7a7;">{{ $menuFacilityItem['facility'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -79,26 +107,29 @@
                         <div>
                             <div id="fb-root"></div>
                             <script>
-                                (function(d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = "../../connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));
+                            (function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = "../../connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
                             </script>
                             <div class="fb-page" data-href="#" data-width="226" data-small-header="true"
                                 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="#"><a href="#">LATE ANNASAHEB PATIL POLYTECHNIC,
+                                    <blockquote cite="#"><a href="#" style="color:#aca7a7">LATE ANNASAHEB PATIL
+                                            POLYTECHNIC,
                                             NIT-422005
                                         </a></blockquote>
-                                    <span>
-                                        <center>
-                                            <img src="https://smallseotools.com/counterDisplay?code=9c9b8a515289a4c615090adc11fe8ff9&style=0009&pad=5&type=page&initCount=500"
-                                                alt="Count Your Users - SmallSEOTools" border="0" height="30">
-                                        </center>
+
+                                    <span class="footer-social-icon">
+
+                                        <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                        <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                        <a href="#"><i class="fab fa-brands fa-linkedin"></i></a>
                                     </span>
                                 </div>
                             </div>
@@ -106,10 +137,13 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+</div>
 
-</div><!--/footer container-->
+
+<!--/footer container-->
 
 
 
@@ -144,8 +178,9 @@
 
             <!-- Badge Code - Do Not Change The Code -->
             <script>
-                document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date
-                    .now() + "'><\/script>");
+            document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" +
+                Date
+                .now() + "'><\/script>");
             </script>
             <script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
             <!-- jQuery -->
@@ -156,23 +191,6 @@
             <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
             <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
             {{-- <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script> --}}
-
-            {{-- <script>
-                $(document).ready(function () {
-                    var table1 = $('#example').DataTable({
-                        "columnDefs": [
-                            { "targets": [1, 2], "orderable": true }
-                        ]
-                    });
-            
-                    var table2 = $('#example1').DataTable({
-                        "columnDefs": [
-                            { "targets": [1, 2], "orderable": true }
-                        ]
-                    });
-                });
-            </script> --}}
-
             <script>
                 $(document).ready(function() {
                     $('#example').DataTable({
@@ -181,19 +199,24 @@
                         lengthChange: false
                     });
                 });
+
+                var table2 = $('#example1').DataTable({
+                    "columnDefs": [{
+                        "targets": [1, 2],
+                        "orderable": true
+                    }]
+                });
+            });
             </script>
             <script>
-                $(document).ready(function() {
-                    $('#order-listing').DataTable({
-                        responsive: true,
-                        searching: true,
-                        ordering: true,
-                        lengthChange: false,
-                        showNEntries: false
-
-
-                    });
+            $(document).ready(function() {
+                $('#order-listing').DataTable({
+                    searching: true,
+                    ordering: true,
+                    lengthChange: false,
+                    showNEntries: false
                 });
+            });
             </script>
 
 <script>
