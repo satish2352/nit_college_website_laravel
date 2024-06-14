@@ -62,6 +62,8 @@
                                             </thead>
                                             <tbody>
 
+                                                <?php
+
                                                 @if (isset($error))
                                                     <div>
                                                         {{ $error }}

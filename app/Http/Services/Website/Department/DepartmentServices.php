@@ -76,12 +76,12 @@ public function getTimeTable($id)
 {
     try {
         $dataOutputCategory = $this->repo->getTimeTable($id);
-      
-        return $dataOutputCategory; // This will never be executed due to dd()
+        return $dataOutputCategory;
     } catch (\Exception $e) {
         return $e;
     }
 }
+
 public function getMentor($id)
 {
     try {
@@ -105,6 +105,8 @@ public function getActivitiesEvents($id)
 {
     try {
         $dataOutputCategory = $this->repo->getActivitiesEvents($id);
+        // dd($dataOutputCategory);
+        // die();
         return $dataOutputCategory; // This will never be executed due to dd()
     } catch (\Exception $e) {
         return $e;
@@ -133,13 +135,12 @@ public function getPlan($id)
 {
     try {
         $dataOutputCategory = $this->repo->getPlan($id);
-      
-        return $dataOutputCategory; // This will never be executed due to dd()
-      
+        return $dataOutputCategory;
     } catch (\Exception $e) {
         return $e;
     }
 }
+
 
 public function getDepartmentId($id)
 {

@@ -52,33 +52,18 @@
             }
         }
 
-        /* just for demo purpose */
         html,
         body,
         .carousel,
         .carousel-inner,
         .carousel-inner .item {
             height: 90%;
-
         }
-
-        /* .item:nth-child(1) {
-            background: blue;
-        }
-
-        .item:nth-child(2) {
-            background: red;
-        }
-
-        .item:nth-child(3) {
-            background: orange;
-        } */
 
         .margin-top-50 {
             margin-top: 50px;
         }
 
-        /*Filter START*/
         .filterable {
             margin-top: 15px;
         }
@@ -86,10 +71,6 @@
         .filterable .panel-heading .pull-right {
             margin-top: -20px;
         }
-
-
-
-        /*Radio and Checkbox END*/
     </style>
 
     <div class="container-fluid">
@@ -105,8 +86,7 @@
                                 @else
                                 @endif
                             </div>
-                            <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
-
+                            <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
@@ -131,10 +111,7 @@
                                                 </div>
                                             @else
                                                 <div class="item">
-
                                                     <div class="carousel-caption">
-
-
                                                         <img src="{{ Config::get('DocumentConstant.EVENTS_VIEW') }}{{ $data_output->fld_gallery_photo }}"
                                                             class="img-responsive"><br>
                                                         <td>
@@ -145,7 +122,6 @@
                                             @endif
                                         @endif
                                     @endif
-
                                 </div>
 
                                 <!-- Controls -->
@@ -162,52 +138,10 @@
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                             <!-- Include all compiled plugins (below), or include individual files as needed -->
                             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-                            <div>
-                                <p><span style="font-family: georgia,palatino;"><strong><span
-                                                style="font-size: large; color: #ff6600;">
-
-
-
-                                                <script>
-                                                    var slideIndex = 1;
-                                                    showSlides(slideIndex);
-
-                                                    function plusSlides(n) {
-                                                        showSlides(slideIndex += n);
-                                                    }
-
-                                                    function currentSlide(n) {
-                                                        showSlides(slideIndex = n);
-                                                    }
-
-                                                    function showSlides(n) {
-                                                        var i;
-                                                        var slides = document.getElementsByClassName("mySlides");
-                                                        var dots = document.getElementsByClassName("demo");
-                                                        var captionText = document.getElementById("caption");
-                                                        if (n > slides.length) {
-                                                            slideIndex = 1
-                                                        }
-                                                        if (n < 1) {
-                                                            slideIndex = slides.length
-                                                        }
-                                                        for (i = 0; i < slides.length; i++) {
-                                                            slides[i].style.display = "none";
-                                                        }
-                                                        for (i = 0; i < dots.length; i++) {
-                                                            dots[i].className = dots[i].className.replace(" active", "");
-                                                        }
-                                                        slides[slideIndex - 1].style.display = "block";
-                                                        dots[slideIndex - 1].className += " active";
-                                                        captionText.innerHTML = dots[slideIndex - 1].alt;
-                                                    }
-                                                </script>
-                            </div>
                         </div>
                     </div><!-- /.row -->
                 </div>
                 <div class="col-md-1 hidden-sm">&nbsp;</div>
-               
             </div>
         </div>
     </div>

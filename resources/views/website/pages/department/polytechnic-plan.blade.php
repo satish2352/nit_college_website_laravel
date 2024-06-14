@@ -34,8 +34,8 @@
     </div>
     
     </div>
-    </div><div class="container-fluid" style="padding-bottom:40px" >
-    <div class="container card-shadow" style="margin-bottom: 95px;"> 
+    </div><div class="container-fluid" >
+    <div class="container card-shadow" > 
     <div class="row" style="padding:0px">
     <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
     <div class="row outer-white">
@@ -89,7 +89,7 @@
                 <div>  
                   
                     <div class="table-responsive"> <!-- Add this wrapper -->
-                        <table id="example"
+                        {{-- <table id="example"
                             class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
                             style="width:100%">
                             <thead class="">
@@ -117,38 +117,65 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                @forelse ($data_output as $data)
-                               <?php
-                                dd($data_output);
-                                die();
-                               ?>
-                                    <tr class="">
+                            <tbody> --}}
 
 
-                                        <td>
-                                            <center>{{ $data->plan_name }}</center>
-                                        </td>
-                                        <td>
-                                            <center>{{ $data->edu_year }}</center>
-                                        </td>
-                                        <td>
-                                            <center>{{ $data->semister }}</center>
-                                        </td>
-                                        <td>
-                                            <center>{{ $data->subject_name }}</center>
-                                        </td>
-                                        <td>
-                                            <a href="{{ Config::get('DocumentConstant.PLAN_VIEW') }}{{ $data->file }}"
-                                               target="_blank" class="btn btn-small btn-primary">
-                                                <i class="btn-icon-only icon-ok">Download</i>
-                                            </a>
-                                        </td>
+                                <div class="table-responsive p-3">
+                                    <table id="example" class="table display responsive nowrap table-striped table-hover table-bordered border-dark" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="d-flex justify-content-center">SR.NO</th>
+                                                <th scope="col" class="d-flex justify-content-center">Plan Name</th>
+                                                <th scope="col" class="d-flex justify-content-center">Education Year</th>
+                                                <th scope="col" class="d-flex justify-content-center">Semester</th>
+                                                <th scope="col" class="d-flex justify-content-center">Subject Name</th>
+                                                <th scope="col" class="d-flex justify-content-center">Download File</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @forelse ($data_output as $data)
+                                                <tr>
+                                                    <td class="text-center">{{ $loop->iteration }}</td>
+                                                    <td class="text-center">{{ $data->plan_name }}</td>
+                                                    <td class="text-center">{{ $data->edu_year }}</td>
+                                                    <td class="text-center">{{ $data->semister }}</td>
+                                                    <td class="text-center">{{ $data->subject_name }}</td>
+                                                    <td class="text-center">
+                                                        <a href="{{ Config::get('DocumentConstant.PLAN_VIEW') . $data->file }}" target="_blank" class="btn btn-small btn-primary">
+                                                            <i class="btn-icon-only icon-ok">Download</i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            @empty
+                                                <tr>
+                                                    <td colspan="6" class="text-center">No Data Found</td>
+                                                </tr>
+                                            @endforelse
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
 
-                                    </tr>
-                                @empty
-                                    {{-- <h4>No Data Found For District Disaster Management Plan</h4> --}}
-                                @endforelse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               
                             </tbody>
                         </table>
                     </div> <!-- Close this wrapper -->

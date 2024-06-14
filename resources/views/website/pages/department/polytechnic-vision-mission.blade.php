@@ -37,11 +37,11 @@
                                                              <p class="department-error">Data not available.</p>
                                                         </div>
                                                     @else
-                                <h4><strong>VISION :</strong></h4>
+                                <h6><strong>VISION :</strong></h6>
                                 <p >{{ $data_output->department_vision }}</p>
                             </div>
                             <div>
-                                <h4><strong>MISSION :</strong></h4>
+                                <h6><strong>MISSION :</strong></h6>
                                 <p>{{ $data_output->department_mission }}</p>
                             </div>
                             @endif
