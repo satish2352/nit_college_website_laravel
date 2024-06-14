@@ -224,10 +224,10 @@ th {
     opacity: 1;
 }
 
-.checkbox label input[type="checkbox"]:disabled+.cr,
+/* .checkbox label input[type="checkbox"]:disabled+.cr,
 .radio label input[type="radio"]:disabled+.cr {
     opacity: .5;
-}
+} */
 
 /*Radio and Checkbox END*/
 </style>
@@ -333,8 +333,133 @@ $('#carouselHacked').carousel();
 
                                     </div>
                                     
-
-                        <div class="creatediv1 marginTop30 pt-2">
+                                    <table>
+                                        <thead>
+                                            <tr class="filters">
+                                                <th style="width: 50px;">
+                                                    <div class="checkbox radio-margin">
+                                                        <label>
+                                                            <input type="checkbox" id="selectAll">
+                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <th style="width: 48%">
+                                                    <center>Semester</center>
+                                                </th>
+                                                <th style="width: 48%">
+                                                    <center>Result</center>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50px;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="firstSem" class="single-checkbox">
+                                                        <label class="form-check-label" for="firstSem">
+                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 48%">First Semester</td>
+                                                <td style="width: 48%">
+                                                    <input type="text" class="form-control" name="firstsem" placeholder="Result">
+                                                    @if ($errors->has('firstsem'))
+                                                    <span class="text-danger">{{ $errors->first('firstsem') }}</span>
+                                                @endif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50px;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="secondSem" class="single-checkbox">
+                                                        <label class="form-check-label" for="secondSem">
+                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 48%">Second Semester</td>
+                                                <td style="width: 48%">
+                                                    <input type="text" class="form-control" name="secondsem" placeholder="Result">
+                                                    @if ($errors->has('secondsem'))
+                                                    <span class="text-danger">{{ $errors->first('secondsem') }}</span>
+                                                @endif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50px;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="thirdSem" class="single-checkbox">
+                                                        <label class="form-check-label" for="thirdSem">
+                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 48%">Third Semester</td>
+                                                <td style="width: 48%">
+                                                    <input type="text" class="form-control" name="thirdsem" placeholder="Result">
+                                                    @if ($errors->has('thirdsem'))
+                                                    <span class="text-danger">{{ $errors->first('thirdsem') }}</span>
+                                                @endif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50px;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="fourthSem" class="single-checkbox">
+                                                        <label class="form-check-label" for="fourthSem">
+                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 48%">Fourth Semester</td>
+                                                <td style="width: 48%">
+                                                    <input type="text" class="form-control" name="fourthsem" placeholder="Result">
+                                                    @if ($errors->has('fourthsem'))
+                                                    <span class="text-danger">{{ $errors->first('fourthsem') }}</span>
+                                                @endif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50px;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="fifthSem" class="single-checkbox">
+                                                        <label class="form-check-label" for="fifthSem">
+                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 48%">Fifth Semester</td>
+                                                <td style="width: 48%">
+                                                    <input type="text" class="form-control" name="fifthsem" placeholder="Result">
+                                                    @if ($errors->has('fifthsem'))
+                                                    <span class="text-danger">{{ $errors->first('fifthsem') }}</span>
+                                                @endif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50px;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="sixthSem" class="single-checkbox">
+                                                        <label class="form-check-label" for="sixthSem">
+                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 48%">Sixth Semester</td>
+                                                <td style="width: 48%">
+                                                    <input type="text" class="form-control" name="sixthsem" placeholder="Result">
+                                                    @if ($errors->has('sixthsem'))
+                                                    <span class="text-danger">{{ $errors->first('sixthsem') }}</span>
+                                                @endif
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+                        {{-- <div class="creatediv1 marginTop30 pt-2">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="panel panel-primary filterable">
@@ -466,8 +591,11 @@ $('#carouselHacked').carousel();
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row pt-4">
+                        </div> --}}
+
+
+                        
+                        <div class="creatediv1 marginTop30 pt-2 row pt-4">
                             <div class="col-lg-10">
                                 <button type="submit" name="submit" value="submit" class="btn pull-right"
                                 id="btnContactUs"
@@ -483,4 +611,27 @@ $('#carouselHacked').carousel();
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const selectAllCheckbox = document.getElementById('selectAll');
+        const singleCheckboxes = document.querySelectorAll('.single-checkbox');
+    
+        selectAllCheckbox.addEventListener('change', function() {
+            singleCheckboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
+    
+        singleCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (!this.checked) {
+                    selectAllCheckbox.checked = false;
+                } else if (Array.from(singleCheckboxes).every(cb => cb.checked)) {
+                    selectAllCheckbox.checked = true;
+                }
+            });
+        });
+    });
+    </script>
+    
 @endsection
