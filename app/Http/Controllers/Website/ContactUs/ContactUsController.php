@@ -54,7 +54,7 @@ class ContactUsController extends Controller
                 'fld_contact_message' => 'required',
             ];
             $messages = [
-                'fld_contact_name.required' => 'Please  enter title.',
+                'fld_contact_name.required' => 'Please  enter name.',
                 'fld_contact_name.max' => 'Please  enter text length upto 255 character only.',
 
                 'fld_contact_subject.required' => 'Please  enter Subject.',

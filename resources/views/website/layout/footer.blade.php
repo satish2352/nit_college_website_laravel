@@ -177,7 +177,8 @@
                 $(document).ready(function() {
                     $('#example').DataTable({
                         responsive: true,
-                        showNEntries: false
+                        showNEntries: false,
+                        lengthChange: false
                     });
                 });
             </script>
@@ -194,6 +195,30 @@
                     });
                 });
             </script>
+
+<script>
+    $(document).on('click', '.panel-heading span.clickable', function(e) {
+        var $this = $(this);
+        if (!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
+                'glyphicon glyphicon-plus-sign');
+        } else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
+                'glyphicon glyphicon-minus-sign');
+        }
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            $(".alert").alert('close');
+        }, 1000); // 1000 milliseconds = 1 second
+    });
+    </script>
             <!-- Badge Code End Here -->
         </div>
     </div>
