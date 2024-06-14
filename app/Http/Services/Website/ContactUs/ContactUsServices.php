@@ -35,9 +35,9 @@ class ContactUsServices
         try {
             $add_role = $this->repo->addContactUs($request);
             if ($add_role) {
-                return ['status' => 'success', 'msg' => 'Project Added Successfully.'];
+                return ['status' => 'success', 'msg' => 'Contact Us Added Successfully.'];
             } else {
-                return ['status' => 'error', 'msg' => 'Project Not Added.'];
+                return ['status' => 'error', 'msg' => 'Contact Us Not Added.'];
             }  
         } catch (Exception $e) {
             return ['status' => 'error', 'msg' => $e->getMessage()];
