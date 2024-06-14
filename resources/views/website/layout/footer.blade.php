@@ -51,7 +51,7 @@ blockquote {
 }
 
 a:hover {
-    color: #fff !important;
+    color: #015198 !important;
 }
 </style>
 <div class="container">
@@ -70,17 +70,17 @@ a:hover {
 </div>
 <!--/about us-->
 <div class="container-fluid footer"
-    style="background-color: #0c0c0c; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0;">
+    style="background-color: #00ae97; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0;">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <h5><b>About Us</b></h5>
                 <ul class="list-unstyled">
-                    <li><a href="{{ route('polytechnic-president') }}" style="color: #aca7a7;">President Desk</a></li>
-                    <li><a href="{{ route('polytechnic-principals') }}" style="color: #aca7a7;">Principal Desk</a></li>
-                    <li><a href="{{ route('mission-and-vision') }}" style="color: #aca7a7;">Mission & Vision</a></li>
-                    <li><a href="{{ route('about-governingbody') }}" style="color: #aca7a7;">Governing Body</a></li>
-                    <li><a href="{{ route('about-futureplans') }}" style="color: #aca7a7;">Future Plans</a></li>
+                    <li><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
+                    <li><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
+                    <li><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
+                    <li><a href="{{ route('about-governingbody') }}"style="color: #fff;">Governing Body</a></li>
+                    <li><a href="{{ route('about-futureplans') }}" style="color: #fff;">Future Plans</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -88,7 +88,7 @@ a:hover {
                 <ul class="list-unstyled">
                     @foreach ($menuDepartment as $menuItemDepartment)
                     <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
-                            style="color: #aca7a7;">{{ $menuItemDepartment['Department'] }}</a></li>
+                    style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -97,7 +97,7 @@ a:hover {
                 <ul class="list-unstyled">
                     @foreach ($menuFacility as $menuFacilityItem)
                     <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
-                            style="color: #aca7a7;">{{ $menuFacilityItem['facility'] }}</a></li>
+                    style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -119,7 +119,7 @@ a:hover {
                             <div class="fb-page" data-href="#" data-width="226" data-small-header="true"
                                 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="#"><a href="#" style="color:#aca7a7">LATE ANNASAHEB PATIL
+                                    <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL
                                             POLYTECHNIC,
                                             NIT-422005
                                         </a></blockquote>

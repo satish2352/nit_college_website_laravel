@@ -11,7 +11,7 @@
     <link href="{{ asset('public/assets/visitors/hm/design/style.css') }}" rel="stylesheet">
     <!-- DataTables CSS -->
     <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .heading1 {
             font-size: 19px;
@@ -37,6 +37,7 @@
 
         .web-display {
             display: block;
+            
         }
 
         .red-watch-bg {
@@ -195,7 +196,7 @@
         <div class="container px-0">
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-5"><a href="{{ route('/') }}">Institute Address : Cannol
-                        Road,Behind Hydro-division(MERI),Nashik</a></div>
+                        Road,Behind Hydro-division(MERI),Nashik-422005</a></div>
                 <div class="col-lg-7 col-md-7 col-sm-7 text-right">
                     <span style="font-size:13px !important;">Email :</span> <a
                         href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
