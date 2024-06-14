@@ -34,6 +34,7 @@
     .panel-heading span {
         margin-top: -20px;
         font-size: 15px;
+        
     }
     .panel-primary>.panel-heading {
         color: #000;
@@ -46,7 +47,8 @@
     {
         font-size: 22px;
         font-weight:400;
-        color: #00ae97; !important;
+        color: #00ae97 !important;
+       
     }
     
     .panel_product_type
@@ -115,14 +117,14 @@
     <br>
     
     
-    <div class="panel_content">
+    <div class="panel_content" \>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="panel panel-primary product-type">
                             <div class="panel-heading">
-                                <h3 class="panel-title" style="color:#00ae97"><b>Mission</b></h3>
+                                <h3 class="panel-title" style="color:#00ae97" ><b>Mission</b></h3>
                                 {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                             </div>
                             <div class="panel-body">
