@@ -20,7 +20,7 @@ return [
     'SLIDER_VIEW'	         => env("FILE_VIEW").'/images/slider_img/', 
     'ACTIVITY_VIEW'	         => env("FILE_VIEW").'/images/activity/', 
     'GALLERY_VIEW'	         => env("FILE_VIEW").'/images/gallery/', 
-    'ACHIEVEMENT_VIEW'	         => env("FILE_VIEW").'/images/awards/', 
+    'ACHIEVEMENT_VIEW'	         => env("FILE_VIEW").'/images/achievement/', 
     'STAFF_VIEW'	         => env("FILE_VIEW").'/images/staff/', 
     'FACILITY_VIEW'	         => env("FILE_VIEW").'/images/facility/',
     'ACTIVITIES_VIEW'	         => env("FILE_VIEW").'/images/activities/',
