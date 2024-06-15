@@ -80,12 +80,13 @@
         }
 
         .dropdown-menu {
-            padding: 10px;
+            /* padding: 10px; */
 
         }
 
         .abcd {
             width: 300px !important;
+            padding: 10px;
         }
         .spaceacademic{
             width: 245px !important;
@@ -94,7 +95,7 @@
         .aaaa .aaab:hover{
             color: #fff !important;
             background-color: #015198;
-            padding:  5px 3px;
+            padding:  5px 17px;
         }
 
         .dropdown-menu li a {
@@ -362,11 +363,11 @@
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Facilities
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="FacilitiesDropdown">
+                                <ul class="dropdown-menu abcd" aria-labelledby="FacilitiesDropdown">
 
                                     @foreach ($menuFacility as $menuFacility)
-                                        <li class="">
-                                            <a
+                                        <li class=" aaaa">
+                                            <a  class="aaab"
                                                 href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
                                     </li>
                                     @endforeach
