@@ -252,39 +252,25 @@ class DepartmentRepository  {
     public function getStudentsAssociation($id)
     {
         try {
-            // $dataOutputCategory = Members::join('department', 'department.id', '=', 'tbl_sa_members.Department_id')
-            //  ->join('tbl_sa_members', 'tbl_sa_members.Designation_id', '=', 'designation.Designation_id')
-            // ->select(
-            //         'tbl_sa_members.fld_bm_id',
-            //         'department.id as department_id',
-            //         'tbl_sa_members.fld_bm_name', 
-            //         'tbl_sa_members.semister', 
-            //         'tbl_sa_members.file', 
-            //         'department.Department',
-            //         'tbl_sa_members.is_active'
-            //     )
-            //     ->where('department.id', $id) // Filter by the provided ID
-            //     ->orderBy('tbl_sa_members.fld_bm_id', 'desc')
-            //     ->first(); // Get a single record
-            $dataOutputCategory = Members::from('tbl_sa_members as m1')
-            ->join('department', 'department.id', '=', 'm1.Department_id')
-            // ->join('tbl_sa_members as m2', 'm2.Designation_id', '=', 'designation.Designation_id')
-            ->select(
-                'm1.fld_bm_id',
-                'department.id as department_id',
-                'm1.fld_bm_name', 
-                'department.Department',
-                'm1.is_active'
-            )
-            ->where('department.id', $id) // Filter by the provided ID
-            ->orderBy('m1.fld_bm_id', 'desc')
-            ->first(); // Get a single record
-        
+            $dataOutputCategory = Members::join('department', 'department.id', '=', 'tbl_sa_members.department_id')
+                ->join('designation', 'tbl_sa_members.Designation_id', '=', 'designation.Designation_id')
+                ->select(
+                    'tbl_sa_members.fld_bm_id',
+                    'department.id as department_id',
+                    'tbl_sa_members.fld_bm_name',
+                    'designation.Designation',
+                    'tbl_sa_members.is_active'
+                )
+                ->where('department.id', $id) // Filter by the provided ID
+                ->orderBy('tbl_sa_members.fld_bm_id', 'desc')
+                ->get();
+    
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;
         }
     }
+    
     // public function getPlan($id)
     // {
     //     try {
@@ -326,28 +312,29 @@ class DepartmentRepository  {
     }
     
     public function getPlan($id)
-    {
-        try {
-            $dataOutputCategory = Plan::join('department', 'department.id', '=', 'tbl_plan.department_id')
-                ->select(
-                    'tbl_plan.fld_bm_id',
-                    'department.id as department_id',
-                    'tbl_plan.edu_year', 
-                    'tbl_plan.semister', 
-                    'tbl_plan.plan_name', 
-                    'tbl_plan.subject_name',
-                    'tbl_plan.file',
-                    'department.Department',
-                    'tbl_plan.is_active'
-                )
-                ->where('tbl_plan.department_id', $id)
-                ->orderBy('tbl_plan.fld_bm_id', 'desc')
-                ->get(); 
-    
-            return $dataOutputCategory;
-        } catch (\Exception $e) {
-            return $e;
-        }
+{
+    try {
+        $dataOutputCategory = Plan::join('department', 'department.id', '=', 'tbl_plan.department_id')
+            ->select(
+                'tbl_plan.fld_bm_id',
+                'department.id as department_id',
+                'tbl_plan.edu_year', 
+                'tbl_plan.semister', 
+                'tbl_plan.plan_name', 
+                'tbl_plan.subject_name',
+                'tbl_plan.file',
+                'department.Department',
+                'tbl_plan.is_active'
+            )
+            ->where('tbl_plan.department_id', $id)
+            ->orderBy('tbl_plan.fld_bm_id', 'desc')
+            ->get();
+
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return $e;
     }
+}
+
     
 }                               

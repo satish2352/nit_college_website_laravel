@@ -36,7 +36,7 @@
                                                         </div>
                                                     @else
                                                         <div>
-                                                            <div class="" style="color:#00ae97;">{{$data_output->Department}}</div>
+                                                            <div class="" style="color:#00ae97; font-size:20px;">{{$data_output->Department}}</div>
 
                                                             {{-- <h4 style="color:black">{{ $data_output->Department }}</h4> --}}
                                                         </div>

@@ -60,12 +60,12 @@ class HomeSidebarServices
             $dataOutputCategory = $this->repo->getPolytechnicAffiliationCertificates();
 
             // dd($dataOutputCategory);
-            // die();
-            return $dataOutputCategory; // This will never be executed due to dd()
-        } catch (\Exception $e) {
-            return $e;
-        }
+        // die();
+        return $dataOutputCategory; // This will never be executed due to dd()
+    } catch (\Exception $e) {
+        return $e;
     }
+}
 
     public function getServiceRule()
     {

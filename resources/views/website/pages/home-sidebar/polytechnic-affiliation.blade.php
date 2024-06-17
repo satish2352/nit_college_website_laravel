@@ -18,24 +18,24 @@
                                 <div class="panel panel-primary product-type">
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#00ae97"><b>MSBTE Affiliation</b></h3>
+                                            <h3 class="panel-title pt-2" style="color:#00ae97"><b>MSBTE Affiliation</b></h3>
                                         </center>
                                         <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                                     </div>
                                     <div class="panel-body">
                                         <center>
-                                            <div class="table-responsive p-3"> <!-- Add this wrapper -->
+                                            <div class="table-responsive p-3 pt-5"> <!-- Add this wrapper -->
                                                 <table id="example"
                                                     class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
                                                     style="width:100%">
                                                     <thead class="">
                                                         <tr>
-                                                            <th scope="col" class="d-flex justify-content-center">
-                                                                SR.NO
+                                                            <th scope="col" class=" justify-content-center">
+                                                               <center> SR.NO</center>
                                                             </th>
                                                             <th scope="col" class="">
-                                                                Name
+                                                                <center>Name</center>
                                                             </th>
                                                             <th scope="col">
                                                                 <div class="d-flex justify-content-center">

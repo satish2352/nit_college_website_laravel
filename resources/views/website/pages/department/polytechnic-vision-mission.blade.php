@@ -10,7 +10,7 @@
                     <div class="col-sm-12">
                         <div>
                             @if(isset($data_output_category) && isset($data_output_category['id']))                    
-                            <div class="" style="color:#00ae97;" 
+                            <div class="" style="color:#00ae97;font-size:20px;" 
                                 >{{$data_output_category->Department}}</div>
                                 @else
                                 @endif
@@ -37,7 +37,7 @@
                                                              <p class="department-error">Data not available.</p>
                                                         </div>
                                                     @else
-                                <h6><strong>VISION :</strong></h6>
+                                <h6 class="pt-2"><strong>VISION :</strong></h6>
                                 <p >{{ $data_output->department_vision }}</p>
                             </div>
                             <div>

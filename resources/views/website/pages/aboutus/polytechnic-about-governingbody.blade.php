@@ -164,7 +164,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9">
+                    <div class="col-lg-9 col-md-9 col-sm-9 pt-5">
                         <div class="table-responsive">
                             <!-- Add this wrapper -->
                             <table id="example"

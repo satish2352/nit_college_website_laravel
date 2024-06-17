@@ -77,7 +77,7 @@ class HomeSidebarRepository  {
         try {
 
             $data_output = AffiliationCertificates::where('fld_delete', '0')
-            // ->where('is_active', '1')
+            ->where('is_active', '1')
             ->orderBy('fld_affiliation_id', 'desc')
             ->get();
                    
