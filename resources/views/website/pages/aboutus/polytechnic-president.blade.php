@@ -135,11 +135,11 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
             </div> -->
             <div class="president-msg">
                 <div style="text-align: center;" data-aos="fade-left">
-                    <img src="{{ asset('public/assets/up-images/annasaheb-patil.gif') }}" alt="">
+                    <img style="height: 300px; width:300px;" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt="">
                     <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President,
                         Nasik Institute of Technology</h5>
                 </div>
-                <div data-aos="fade-right " class="px-3 pb-5 pt-3">
+                <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;">
                     <p>Through my last 36 years of experience in various sectors like Industrial, Construction, Banking,
                         Social etc. I strongly believe that there is still a long way to go to attain the increasing
                         demand of technology Savvy minds by the industrial and for that the excellence in education and
@@ -155,6 +155,11 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                         powerful global asset .We are proud to say that we are creating Youth anium (Intellectual Youth
                         Power).
                     </p>
+                    <div style="float:right">
+                            <h6 class="mt-2" style="color:#00ae97;"><strong>Mr. Suresh .A. Patil</strong></h6>
+                            <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br>
+                            <!-- <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span> -->
+                        </div>
                 </div>
             </div>
         </div>
