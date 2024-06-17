@@ -16,6 +16,7 @@
                     <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">ANTIRAGGING COMMITTEE</a>
                     <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">INTERNAL COMPLAINT COMMITTEE</a>
                     <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item">SC/ST CELL</a>
+                    <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">ACADEMIC CALENDAR</a>
                     <!-- <div class="list-group-item"></div> -->
                 </div>
             </div>

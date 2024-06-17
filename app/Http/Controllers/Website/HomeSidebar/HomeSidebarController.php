@@ -156,22 +156,23 @@ class HomeSidebarController extends Controller
     }
     
     public function getAcademicCalendar()
-{
-    try {
-        $menu = $this->menu;
-        $menuDepartment = $this->menuDepartment;
-        $menuFacility = $this->menuFacility;
-        $data_output = $this->service->getAcademicCalendar();
-
-        // Ensure $data_output is an instance of AcademicCalendar
-        if($data_output instanceof AcademicCalendar) {
-            return view('website.pages.home-sidebar.polytechnic-calendar', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
-        } else {
-            return view('website.pages.home-sidebar.polytechnic-calendar', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getAcademicCalendar();
+            
+            // Check if $data_output is not empty
+            if($data_output && $data_output->isNotEmpty()) {
+                return view('website.pages.home-sidebar.polytechnic-calendar', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
+            } else {
+                return view('website.pages.home-sidebar.polytechnic-calendar', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
+            }
+        } catch (\Exception $e) {
+            return $e;
         }
-    } catch (\Exception $e) {
-        return $e;
     }
-}
+    
 
 }
