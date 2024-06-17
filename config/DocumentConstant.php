@@ -14,6 +14,8 @@ return [
     'MANDATORYDISCLOSURE_VIEW'	         => env("FILE_VIEW").'/documents/mandatoryDisclosure/', 
     'AFFILIATION_CERTIFICATES_VIEW'	         => env("FILE_VIEW").'/images/affiliation_certificates/',
     'AFFILIATION_MSBTE_VIEW'	         => env("FILE_VIEW").'/documents/affiliationmsbte/',
+    'ACADEMICCALENDAR_VIEW'	         => env("FILE_VIEW").'/documents/academiccalendar/',
+    
 
     
 

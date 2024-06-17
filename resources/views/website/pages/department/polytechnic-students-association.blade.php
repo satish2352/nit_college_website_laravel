@@ -2,26 +2,31 @@
 @section('content')
 <style>
 #customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr:hover {
+    background-color: #ddd;
+}
 
 #customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #4CAF50;
-  color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
 }
 </style>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
@@ -123,12 +128,4 @@
       
 
 </div>
-</div>
-<div class="col-md-1 hidden-sm">&nbsp;</div>
-<div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
-    @include('website.pages.department.right-sidebar-department')
-</div>  
-</div>
-</div>
-</div>
-    @endsection
+@endsection
