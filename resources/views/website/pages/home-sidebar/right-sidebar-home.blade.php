@@ -18,6 +18,7 @@
            <a href="{{ route('polytechnic-internal-complaint') }}"  class="list-group-item ">INTERNAL COMPLAINT COMMITTEE</a>
            {{-- <a class="list-group-item ">GRIEVANCE REDRESSAL COMMITTEE</a> --}}
            <a href="{{ route('polytechnic-about-scst') }}"  class="list-group-item ">SC/ST CELL</a>
+           <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">ACADEMIC CALENDAR</a>
        
          {{-- <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">ACADEMIC CALENDAR</a> --}}
            {{-- <a href="pages/polytechnic-about-regulatingauthority-IOD.php" class="list-group-item ">FEES REGULATING AUTHORITY</a>
