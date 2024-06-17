@@ -36,19 +36,17 @@
     <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px">
         <div class="container card-shadow" style="margin-bottom: 95px;">
             <div class="row" style="padding:0px">
-                <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
+                <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
                     <div class="row outer-white">
                         <div class="col-sm-12">
                             <div>
                                 @if (isset($data_output_category) && isset($data_output_category['id']))
-                                    <div class="" style="color:#00ae97; padding:10px 0px;">
+                                    <div class="" style="color:#00ae97; padding:10px 0px;font-size:20px;padding-left:19px;">
                                         {{ $data_output_category->Department }} Download Time Table Here....</div>
                                 @else
                                 @endif
                             </div>
-                            <div class="span7">
-
-                            </div>
+   
 
                             <div>
 
@@ -57,17 +55,12 @@
                     </div><!-- /.row -->
                     <div class="row outer-white">
                         <div class="col-sm-12">
-                            <div class="col-sm-12" style="padding:0;">
-
-                                <div class="pull-right"><img src="../up-images/index.php" alt=""
-                                        class="img-responsive"></div>
-                            </div>
                             <div class="table-responsive p-3"> <!-- Add this wrapper -->
                                 <table id="example" class="table display responsive nowrap table-striped table-hover table-bordered border-dark" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th scope="col" class="d-flex justify-content-center">SR.NO</th>
-                                            <th scope="col">Semester</th>
+                                            <th scope="col"><div class="d-flex justify-content-center">Semester</div></th>
                                             <th scope="col">
                                                 <div class="d-flex justify-content-center">Download File</div>
                                             </th>
@@ -83,9 +76,11 @@
                                                     <center>{{ $data->semister }}</center>
                                                 </td>
                                                 <td>
+                                                    <center>
                                                     <a href="{{ Config::get('DocumentConstant.TIMETABLE_DOC_VIEW') }}{{ $data->file }}" target="_blank" class="btn btn-small btn-primary">
                                                         <i class="btn-icon-only icon-ok">Download</i>
                                                     </a>
+                                                </center>
                                                 </td>
                                             </tr>
                                         @empty
@@ -114,7 +109,7 @@
                         </div>
                     </div><!-- /.row -->
                 </div>
-                <div class="col-md-1 hidden-sm">&nbsp;</div>
+          
                 <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
                     @include('website.pages.department.right-sidebar-department')
                 </div>

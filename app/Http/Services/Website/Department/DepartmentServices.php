@@ -142,6 +142,8 @@ public function getPlan($id)
 }
 
 
+
+
 public function getDepartmentId($id)
 {
     try {

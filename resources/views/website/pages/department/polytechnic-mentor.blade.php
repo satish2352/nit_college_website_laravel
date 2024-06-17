@@ -47,10 +47,10 @@
                 <div class="col-md-8 col-sm-12 text-justify" id="iwtContentArea">
                     <div class="row outer-white">
 
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="padding-left: 27px;">
                             <div>
                                 @if (isset($data_output_category) && isset($data_output_category['id']))
-                                    <div class="" style="color:#00ae97;">{{ $data_output_category->Department }}</div>
+                                    <div class="" style="color:#00ae97; font-size:20px;">{{ $data_output_category->Department }}</div>
                                 @else
                                 @endif
                             </div>
@@ -68,7 +68,7 @@
                         <!--panel 1-->
                         <div class="" id="">
                             <div class="">
-                                <p class="">
+                                <p class="" style="padding-left: 17px;">
                                     The Mentor-Student scheme is used to solve various problems, difficulties and queries of
                                     the students. Each staff is assigned as a mentor to a batch of 20 students and is
                                     responsible to counsell students about their problmes. Following table shows the Mentor

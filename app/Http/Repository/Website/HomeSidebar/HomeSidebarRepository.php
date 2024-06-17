@@ -77,7 +77,7 @@ class HomeSidebarRepository  {
         try {
 
             $data_output = AffiliationCertificates::where('fld_delete', '0')
-            // ->where('is_active', '1')
+            ->where('is_active', '1')
             ->orderBy('fld_affiliation_id', 'desc')
             ->get();
                    
@@ -192,16 +192,15 @@ class HomeSidebarRepository  {
     
     public function getAcademicCalendar(){
         try {
-            $data_output = AcademicCalendar::where('fld_delete', '0')
+            $data_output = AcademicCalendar::where('syllabus_delete', '0')
                 ->orderBy('calendar_id', 'desc')
-                ->first();
-                       dd( $data_output);
-                       die();
+                ->get();
             return $data_output;
         } catch (\Exception $e) {
             return $e;
         }
     }
+    
     
     
 }    

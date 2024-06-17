@@ -11,11 +11,12 @@
                     <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">MANDATARY DISCLOSURE</a>
                     <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
                     <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE AFFILIATION</a>
-                    {{-- <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">AFFILIATION CERTIFICATES</a> --}}
+                    <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">AFFILIATION CERTIFICATES</a>
                     <a href="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item">TRAINING AND PLACEMENT</a>
                     <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">ANTIRAGGING COMMITTEE</a>
                     <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">INTERNAL COMPLAINT COMMITTEE</a>
                     <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item">SC/ST CELL</a>
+                    <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">ACADEMIC CALENDAR</a>
                     <!-- <div class="list-group-item"></div> -->
                 </div>
             </div>

@@ -29,28 +29,36 @@
                                     <div class="panel-body">
                                         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
 
-                                        <center>
-                                            <div class="table-responsive p-3"> <!-- Add this wrapper -->
-                                                @forelse ($data_output as $data)
-                                                <div class="">
-                                                  
-                                                   <?php 
-
-                                                   dd($data_output);
-                                                   die();
-                                                   ?>
-                                                        <img id="english"
-                                                            src="{{ Config::get('DocumentConstant.AFFILIATION_CERTIFICATES_VIEW') }}{{ $data->fld_affiliation_image }}"
-                                                            class="img-fluid img-thumbnail" height="300px"
-                                                            width="700px">
-                                                  
+                                            <center>
+                                                <div class="table-responsive p-3">
+                                                    @if (isset($error))
+                                                        <div class="alert alert-danger">
+                                                            {{ $error }}
+                                                        </div>
+                                                    @else
+                                                        @if ($data_output->isEmpty())
+                                                            <div>
+                                                                <p class="department-error" style="display: flex; justify-content: center; align-items: center;">Data not available.</p>
+                                                            </div>
+                                                        @else
+                                                            @foreach ($data_output as $data)
+                                                                @if ($data->is_active == 0)
+                                                                    <div>
+                                                                        <p class="department-error">Data not available.</p>
+                                                                    </div>
+                                                                @else
+                                                                    <div>
+                                                                        <img id="english"
+                                                                             src="{{ Config::get('DocumentConstant.AFFILIATION_CERTIFICATES_VIEW') }}{{ $data->fld_affiliation_image }}"
+                                                                             class="img-fluid img-thumbnail" height="300px" width="700px">
+                                                                    </div>
+                                                                @endif
+                                                            @endforeach
+                                                        @endif
+                                                    @endif
                                                 </div>
-                                            @empty
-                                                {{-- <h4>No Data Found</h4> --}}
-                                            @endforelse
-                                             
-                                            </div>
-                                        </center>
+                                            </center>
+                                            
 
                                     </div>
                                 </div>

@@ -86,9 +86,9 @@
 
     }
 
-    .abcd {
+    /* .abcd {
         width: 300px !important;
-    }
+    } */
 
     .spaceacademic {
         width: 245px !important;
@@ -97,7 +97,7 @@
     .aaaa .aaab:hover {
         color: #fff !important;
         background-color: #015198;
-        padding: 5px 3px;
+        padding: 5px 17px;
     }
 
     .dropdown-menu li a {
@@ -375,7 +375,7 @@
                                             @endforeach
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link"
+                                    <li class="nav-item dropdown"><a class="nav-link"
                                             href="{{ route('achievement') }}">Achievements</a></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="FacilitiesDropdown"
@@ -386,7 +386,7 @@
 
                                             @foreach ($menuFacility as $menuFacility)
                                             <li class="aaaa">
-                                                <a  class="dropdown-item aaab"
+                                                <a class="dropdown-item aaab"
                                                     href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
                                             </li>
                                             @endforeach
@@ -415,9 +415,7 @@
                                             Alumni
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="AlumniDropdown">
-                                            <li class="nav-item aaaa"><a class=" aaab"
-                                                    href="{{ route('aluminiregister') }}">Alumni
-                                                    Registration</a></li>
+                                            <li class="nav-item aaaa"><a class=" aaab" href="{{ route('aluminiregister') }}">Alumni Registration</a></li>
                                         </ul>
                                     </li>
 

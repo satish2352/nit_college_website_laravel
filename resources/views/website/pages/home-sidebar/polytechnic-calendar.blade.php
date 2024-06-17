@@ -90,44 +90,9 @@
     <div class="panel_content">
         <div class="container">
             <div class="row">
-              
-              <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
-        <!--Right col-->
-        <div class="col-sm-12 right-col-fix">
-        <div>
-           <div class="list-group">
-               
-            <div class="list-group-item"><b>NIT POLYTECHNIC, NASHIK</b></div>
-            <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
-            
-         <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">GOVERNING BODY</a>
-         <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item ">MANDATARY DISCLOSURE</a>
-            <a href="{{ route('polytechnic-aicte-extension') }}"  class="list-group-item ">AICTE EOA</a>
-           <a  href="{{ route('polytechnic-affiliation') }}"  class="list-group-item ">MSBTE AFFILIATION</a>
-           {{-- <a  href="{{ route('polytechnic-affiliation_certificates') }}"  class="list-group-item ">AFFILIATION CERTIFICATES</a> --}}
-           {{-- <a href="{{ route('polytechnic-servicerules') }}" class="list-group-item ">SERVICE RULES</a> --}}
-           {{-- <a href  ="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item ">TRAINING AND PLACEMENT</a> --}}
-           <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item ">ANTIRAGGING COMMITTEE</a>
-           <a href="{{ route('polytechnic-internal-complaint') }}"  class="list-group-item ">INTERNAL COMPLAINT COMMITTEE</a>
-           {{-- <a class="list-group-item ">GRIEVANCE REDRESSAL COMMITTEE</a> --}}
-           <a href="{{ route('polytechnic-about-scst') }}"  class="list-group-item ">SC/ST CELL</a>
-       
-         {{-- <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">ACADEMIC CALENDAR</a> --}}
-           {{-- <a href="pages/polytechnic-about-regulatingauthority-IOD.php" class="list-group-item ">FEES REGULATING AUTHORITY</a>
-           <a href="pages/polytechnic-about-terms-IOD.php" class="list-group-item ">TERMS AND CONDITIONS</a>
-           <a href="pages/polytechnic-about-downloads-IOD.php" class="list-group-item ">STUDENT DOWNLOADS</a>
-           <a href="pages/polytechnic-about-downloadsstaff-IOD.php" class="list-group-item ">STAFF DOWNLOADS</a>
-           <a href="pages/polytechnic-about-scholarship-IOD.php" class="list-group-item ">STUDENT SCHOLARSHIP</a> --}}
-           {{-- <a href="pages/polytechnic-about-events-IOD.php" class="list-group-item ">EVENTS</a>
-           <a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm" class="list-group-item ">SBI COLLECT</a>
-           <a href="pages/polytechnic-about-media-IOD.php" class="list-group-item ">MEDIA NEWS</a>
-           <a href="pages/polytechnic-about-faq-IOD.php" class="list-group-item ">FAQ</a> --}}
-           
-             <div class="list-group-item"></div>
-      </div>
-              </div>
-        </div>
-    </div>  
+                <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
+                    @include('website.pages.home-sidebar.right-sidebar-home')
+                </div>
                 
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                     <div class="col-lg-9 col-md-9 col-sm-9">
@@ -137,27 +102,22 @@
                                 <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                             </div>
                             <div class="panel-body">
-                            <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
-            
-                                     <center>
-                                        <tbody>
-                                            @if($data_output)
-                                                <td class="td-actions">
-                                                    <center>
-                                                        <iframe src="../images/academiccalendar/{{ $data_output->file }}" width="100%" height="800px"></iframe>
-                                                    </center>
-                                                </td>
-                                            @else
-                                                <tr><td colspan="2">No data found</td></tr>
-                                            @endif                            
-                                        </tbody>
-                                        
-                                        
-                                            
-                                      
-                   </center>
-                            
+                                <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
+                                <center>
+                                    <tbody>
+                                        @forelse($data_output as $data)
+                                            <td class="td-actions">
+                                                <center>
+                                                    <iframe src="{{ Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') }}{{ $data->file }}" width="100%" height="800px"></iframe>
+                                                </center>
+                                            </td>
+                                        @empty
+                                            <tr><td colspan="2">No data found</td></tr>
+                                        @endforelse
+                                    </tbody>
+                                </center>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

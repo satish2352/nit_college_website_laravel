@@ -12,8 +12,10 @@ return [
     'AICTE_VIEW'	         => env("FILE_VIEW").'/documents/aicte/', 
     'PLAN_VIEW'	         => env("FILE_VIEW").'/documents/plan/',
     'MANDATORYDISCLOSURE_VIEW'	         => env("FILE_VIEW").'/documents/mandatoryDisclosure/', 
-    'AFFILIATION_CERTIFICATES_VIEW'	         => env("FILE_VIEW").'/documents/affiliation_certificates/',
+    'AFFILIATION_CERTIFICATES_VIEW'	         => env("FILE_VIEW").'/images/affiliation_certificates/',
     'AFFILIATION_MSBTE_VIEW'	         => env("FILE_VIEW").'/documents/affiliationmsbte/',
+    'ACADEMICCALENDAR_VIEW'	         => env("FILE_VIEW").'/documents/academiccalendar/',
+    
 
     
 
