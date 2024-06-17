@@ -369,7 +369,7 @@
                                         <ul class="dropdown-menu abcd" aria-labelledby="DepartmentDropdown">
                                             @foreach ($menuDepartment as $menuItemDepartment)
                                             <li class=" aaaa">
-                                                <a class="dropdown-item aaab"
+                                                <a class="dropdown-item "
                                                     href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
                                             </li>
                                             @endforeach
@@ -386,7 +386,7 @@
 
                                             @foreach ($menuFacility as $menuFacility)
                                             <li class="aaaa">
-                                                <a
+                                                <a  class="dropdown-item aaab"
                                                     href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
                                             </li>
                                             @endforeach
