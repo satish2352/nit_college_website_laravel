@@ -119,8 +119,8 @@
     }
 
     img {
-        width: 100%;
-        height: auto;
+        /* width: 100%; */
+        /* height: auto; */
     }
 }
 </style>
@@ -136,13 +136,10 @@
                     <center>
                         <h2 style="color:green"><strong>Principal Desk</strong></h2>
                     </center>
-                </div>
-                <div class="row">
-                    <div class="text-center" data-aos="fade-left">
-                        <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="50%">
-                        <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
-                        <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
-                        <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
+                    <div class="">
+                        <center>
+                            <h3 class="panel-title pb-4"><b>Principal Message</b></h3>
+                        </center>
                     </div>
                     <div class="row">
                         <div class="text-center" data-aos="fade-left">
