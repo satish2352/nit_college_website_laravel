@@ -139,41 +139,34 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                 </center>
             </div> -->
             <div class="president-msg">
-                    <div style="text-align: center;" data-aos="fade-left">
-                        <img src="{{ asset('public/assets/up-images/annasaheb-patil.gif') }}" alt="">
-                        <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President,
-                            Nasik Institute of Technology</h5>
-                    </div>
-                    <div data-aos="fade-right " class="px-3 pb-5 pt-3">
-                        <p>Through my last 36 years of experience in various sectors like Industrial, Construction,
-                            Banking,
-                            Social etc. I strongly believe that there is still a long way to go to attain the increasing
-                            demand of technology Savvy minds by the industrial and for that the excellence in education
-                            and
-                            training is the need of hour. NIT- Nasik Institute of Technology is taking shape to bridge
-                            the
-                            gap between the future demand and supply technical human resource. Over the year it will
-                            grow in
-                            to a leading educational center in Maharashtra, widely recognized for its modern state of
-                            the
-                            art infrastructure, vibrant campus and academic excellence in the field of technical
-                            education.
-                            The courses designed are amongst the best in the industry and is believed to equip the with
-                            effective knowledge, Potentials, insights and expertise so that they can make a successful
-                            and
-                            bright career. Keeping in mind the requirement of building construction industry, we have
-                            designed Sandwich course in Civil Engineering to give in-depth knowledge of on site working.
-                            We
-                            trust the fact that if youth is equipped with proper knowledge and skills, they can be the
-                            most
-                            powerful global asset .We are proud to say that we are creating Youth anium (Intellectual
-                            Youth
-                            Power).
-                        </p>
-                    </div>
+                <div style="text-align: center;" data-aos="fade-left">
+                    <img style="height: 300px; width:300px;" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt="">
+                    <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President,
+                        Nasik Institute of Technology</h5>
                 </div>
-            </div> 
-           </div>
+                <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;">
+                    <p>Through my last 36 years of experience in various sectors like Industrial, Construction, Banking,
+                        Social etc. I strongly believe that there is still a long way to go to attain the increasing
+                        demand of technology Savvy minds by the industrial and for that the excellence in education and
+                        training is the need of hour. NIT- Nasik Institute of Technology is taking shape to bridge the
+                        gap between the future demand and supply technical human resource. Over the year it will grow in
+                        to a leading educational center in Maharashtra, widely recognized for its modern state of the
+                        art infrastructure, vibrant campus and academic excellence in the field of technical education.
+                        The courses designed are amongst the best in the industry and is believed to equip the with
+                        effective knowledge, Potentials, insights and expertise so that they can make a successful and
+                        bright career. Keeping in mind the requirement of building construction industry, we have
+                        designed Sandwich course in Civil Engineering to give in-depth knowledge of on site working. We
+                        trust the fact that if youth is equipped with proper knowledge and skills, they can be the most
+                        powerful global asset .We are proud to say that we are creating Youth anium (Intellectual Youth
+                        Power).
+                    </p>
+                    <div style="float:right">
+                            <h6 class="mt-2" style="color:#00ae97;"><strong>Mr. Suresh .A. Patil</strong></h6>
+                            <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br>
+                            <!-- <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span> -->
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
