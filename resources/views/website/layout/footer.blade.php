@@ -53,6 +53,21 @@ blockquote {
 a:hover {
     color: black !important;
 }
+@media (max-width: 767px) {
+    .footer .container {
+        text-align: center;
+    }
+
+    .footer .row > div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer .container {
+        text-align: left;
+    }
+}
 </style>
 <div class="container">
     <div class="col-md-8 col-sm-6 about-text">
@@ -66,29 +81,29 @@ a:hover {
 
     </div>
 
-    <div class="col-md-4 col-sm-6 about-img"></div>
+    <!-- <div class="col-md-4 about-img"></div> -->
 </div>
 <!--/about us-->
-<div class="container-fluid footer"
-    style="background-color: #015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0;">
+<div class="container-fluid footer "
+    style="background-color: #015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0; ">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-lg-3 col-md-3" style="text-align:center">
                 <h5><b>About Us</b></h5>
                 <ul class="list-unstyled">
                     <li><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
                     <li><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
                     <li><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
-                    <li><a href="{{ route('about-governingbody') }}"style="color: #fff;">Governing Body</a></li>
+                    <li><a href="{{ route('about-governingbody') }}" style="color: #fff;">Governing Body</a></li>
                     <li><a href="{{ route('about-futureplans') }}" style="color: #fff;">Future Plans</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-lg-3 col-md-3">
                 <h5><b>Departments</b></h5>
                 <ul class="list-unstyled">
                     @foreach ($menuDepartment as $menuItemDepartment)
                     <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
-                    style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
+                            style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -97,7 +112,7 @@ a:hover {
                 <ul class="list-unstyled">
                     @foreach ($menuFacility as $menuFacilityItem)
                     <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
-                    style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
+                            style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -192,20 +207,20 @@ a:hover {
             <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
             {{-- <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script> --}}
             <script>
-                $(document).ready(function() {
-                    $('#example').DataTable({
-                        responsive: true,
-                        showNEntries: false,
-                        lengthChange: false
-                    });
+            $(document).ready(function() {
+                $('#example').DataTable({
+                    responsive: true,
+                    showNEntries: false,
+                    lengthChange: false
                 });
+            });
 
-                var table2 = $('#example1').DataTable({
-                    "columnDefs": [{
-                        "targets": [1, 2],
-                        "orderable": true
-                    }]
-                });
+            var table2 = $('#example1').DataTable({
+            "columnDefs": [{
+                "targets": [1, 2],
+                "orderable": true
+            }]
+            });
             });
             </script>
             <script>
@@ -219,29 +234,29 @@ a:hover {
             });
             </script>
 
-<script>
-    $(document).on('click', '.panel-heading span.clickable', function(e) {
-        var $this = $(this);
-        if (!$this.hasClass('panel-collapsed')) {
-            $this.parents('.panel').find('.panel-body').slideUp();
-            $this.addClass('panel-collapsed');
-            $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
-                'glyphicon glyphicon-plus-sign');
-        } else {
-            $this.parents('.panel').find('.panel-body').slideDown();
-            $this.removeClass('panel-collapsed');
-            $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
-                'glyphicon glyphicon-minus-sign');
-        }
-    })
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        setTimeout(function() {
-            $(".alert").alert('close');
-        }, 1000); // 1000 milliseconds = 1 second
-    });
-    </script>
+            <script>
+            $(document).on('click', '.panel-heading span.clickable', function(e) {
+                var $this = $(this);
+                if (!$this.hasClass('panel-collapsed')) {
+                    $this.parents('.panel').find('.panel-body').slideUp();
+                    $this.addClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
+                        'glyphicon glyphicon-plus-sign');
+                } else {
+                    $this.parents('.panel').find('.panel-body').slideDown();
+                    $this.removeClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
+                        'glyphicon glyphicon-minus-sign');
+                }
+            })
+            </script>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                setTimeout(function() {
+                    $(".alert").alert('close');
+                }, 1000); // 1000 milliseconds = 1 second
+            });
+            </script>
             <!-- Badge Code End Here -->
         </div>
     </div>
