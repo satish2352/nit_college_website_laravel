@@ -45,7 +45,7 @@
         background-color: #fff;
         border-bottom: 1px solid #eeeeee;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 20px
     }
     .govbody{
         margin-top: -60px;
