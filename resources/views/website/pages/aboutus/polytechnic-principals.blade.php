@@ -136,7 +136,7 @@
                     <center>
                         <h2 style="color:green"><strong>Principal Desk</strong></h2>
                     </center>
-                </div>
+               
                 <div class="row">
                     {{-- <div class="text-center" data-aos="fade-left">
                         <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="50%">
@@ -179,6 +179,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
