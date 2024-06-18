@@ -274,7 +274,7 @@
                 <div class="row align-items-center d-flex justify-content-center">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                         <a href="/"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}"
-                                class="img-fluid mob-width" alt="Logo"></a>
+                                class="img-fluid mob-width" alt="Logo" style="height:110px"></a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
@@ -347,20 +347,7 @@
                                         </ul>
                                     </li>
 
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="ActivitiesDropdown"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Activities
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="ActivitiesDropdown">
-                                            @foreach ($menu as $menuItem)
-                                            <li class="aaaa">
-                                                <a class="dropdown-item aaab"
-                                                    href="{{ route('polytechnic-co-curricular', ['id' => $menuItem['id']]) }}">{{ $menuItem['activities'] }}</a>
-                                            </li>
-                                            @endforeach
-                                        </ul>
-                                    </li>
+
                                     <li class="nav-item dropdown ">
                                         <a class="nav-link dropdown-toggle" href="#" id="DepartmentDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -415,14 +402,28 @@
                                             Alumni
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="AlumniDropdown">
-                                            <li class="nav-item aaaa"><a class=" aaab" href="{{ route('aluminiregister') }}">Alumni Registration</a></li>
+                                            <li class="nav-item aaaa"><a class=" aaab"
+                                                    href="{{ route('aluminiregister') }}">Alumni Registration</a></li>
                                         </ul>
                                     </li>
 
 
                                     <li class="nav-item dropdown"><a class="nav-link"
                                             href="{{ route('polytechnic-gallery') }}">Gallery</a></li>
-
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="ActivitiesDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Activities
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="ActivitiesDropdown">
+                                            @foreach ($menu as $menuItem)
+                                            <li class="aaaa">
+                                                <a class="dropdown-item aaab"
+                                                    href="{{ route('polytechnic-co-curricular', ['id' => $menuItem['id']]) }}">{{ $menuItem['activities'] }}</a>
+                                            </li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="QuickLinksDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
