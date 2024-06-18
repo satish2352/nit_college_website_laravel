@@ -254,7 +254,7 @@
         <div class="container px-0">
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-5"><a href="{{ route('/') }}">Institute Address : Cannol
-                        Road,Behind Hydro-division(MERI),Nashik-422005</a></div>
+                        Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
                 <div class="col-lg-7 col-md-7 col-sm-7 text-right">
                     <span style="font-size:13px !important;">Email :</span> <a
                         href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
@@ -364,7 +364,7 @@
                                     <li class="nav-item dropdown ">
                                         <a class="nav-link dropdown-toggle" href="#" id="DepartmentDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Department
+                                            Academics
                                         </a>
                                         <ul class="dropdown-menu abcd" aria-labelledby="DepartmentDropdown">
                                             @foreach ($menuDepartment as $menuItemDepartment)
@@ -395,7 +395,7 @@
                                     <li class="nav-item dropdown ">
                                         <a class="nav-link dropdown-toggle" href="#" id="AcademicsDropdown"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Academics
+                                            Admission
                                         </a>
                                         <ul class="dropdown-menu spaceacademic" aria-labelledby="AcademicsDropdown">
                                             <li class="nav-item aaaa"><a class=" aaab"

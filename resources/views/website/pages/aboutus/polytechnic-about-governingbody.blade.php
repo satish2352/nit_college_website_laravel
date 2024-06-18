@@ -104,14 +104,14 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
 })
 </script>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-    <div class="container">
-        <div class="col-sm-12" style="padding:0;">
+    <div>
+        <!-- <div class="col-sm-12" style="padding:0;">
             <div class="pull-right"><img src="../up-images/civil-iconimgFile568246ec20aed.png" alt=""
                     class="img-responsive"></div>
-        </div>
+        </div> -->
 
         <div class="panel_content">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="" id="iwtRightPannel">
@@ -128,7 +128,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                                         <a href="{{ route('about-governingbody') }}"
                                             class="list-group-item active-rp-link">GOVERNING BODY</a>
                                         <a href="{{ route('polytechnic-mandatary') }}"
-                                            class="list-group-item ">MANDATARY DISCLOSURE</a>
+                                            class="list-group-item ">MANDATORY DISCLOSURE</a>
                                         <a href="{{ route('polytechnic-aicte-extension') }}"
                                             class="list-group-item ">AICTE EOA</a>
                                         <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item ">MSBTE

@@ -1,19 +1,22 @@
 @extends('website.layout.master')
 @section('content')
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-        <div class="container">
-
+        <div >
+<!-- 
             <div class="col-sm-12" style="padding:0;">
                 <h2><strong></strong></h2>
                 <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
-            </div>
+            </div> -->
 
         </div>
     </div>
     <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px;">
-        <div class="container">
+        <div >
             <div class="row" style="padding:0px">
-                <div class="col-md-12 col-sm-12 text-justify" id="iwtContentArea">
+            <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
+                @include('website.pages.home-sidebar.right-sidebar-home')
+            </div>
+                <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
                     <div class="row">
                         <div class="col-sm-12">
                             @if (isset($error))

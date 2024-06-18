@@ -121,42 +121,59 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
 })
 </script>
 <div class="container-fluid pageHeading-bg " id="iwtPageHeading">
-    <div class="container">
-        <div class="pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
-            <center>
-                <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
-                <h3 class="panel-title"><b>President Message</b></h3>
-            </center>
-            <br>
-            <!-- <div class="container about1">
+    <div >
+        <div class="row">
+            <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
+                @include('website.pages.home-sidebar.right-sidebar-home')
+            </div>
+           <div class="col-md-9">
+           <div class="pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
+                <center>
+                    <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
+                    <h3 class="panel-title"><b>President Message</b></h3>
+                </center>
+                <br>
+                <!-- <div class="container about1">
                 <center>
                     <h3 class="panel-title"><b>President Message</b></h3>
                 </center>
             </div> -->
             <div class="president-msg">
-                <div style="text-align: center;" data-aos="fade-left">
-                    <img src="{{ asset('public/assets/up-images/annasaheb-patil.gif') }}" alt="">
-                    <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President,
-                        Nasik Institute of Technology</h5>
+                    <div style="text-align: center;" data-aos="fade-left">
+                        <img src="{{ asset('public/assets/up-images/annasaheb-patil.gif') }}" alt="">
+                        <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President,
+                            Nasik Institute of Technology</h5>
+                    </div>
+                    <div data-aos="fade-right " class="px-3 pb-5 pt-3">
+                        <p>Through my last 36 years of experience in various sectors like Industrial, Construction,
+                            Banking,
+                            Social etc. I strongly believe that there is still a long way to go to attain the increasing
+                            demand of technology Savvy minds by the industrial and for that the excellence in education
+                            and
+                            training is the need of hour. NIT- Nasik Institute of Technology is taking shape to bridge
+                            the
+                            gap between the future demand and supply technical human resource. Over the year it will
+                            grow in
+                            to a leading educational center in Maharashtra, widely recognized for its modern state of
+                            the
+                            art infrastructure, vibrant campus and academic excellence in the field of technical
+                            education.
+                            The courses designed are amongst the best in the industry and is believed to equip the with
+                            effective knowledge, Potentials, insights and expertise so that they can make a successful
+                            and
+                            bright career. Keeping in mind the requirement of building construction industry, we have
+                            designed Sandwich course in Civil Engineering to give in-depth knowledge of on site working.
+                            We
+                            trust the fact that if youth is equipped with proper knowledge and skills, they can be the
+                            most
+                            powerful global asset .We are proud to say that we are creating Youth anium (Intellectual
+                            Youth
+                            Power).
+                        </p>
+                    </div>
                 </div>
-                <div data-aos="fade-right " class="px-3 pb-5 pt-3">
-                    <p>Through my last 36 years of experience in various sectors like Industrial, Construction, Banking,
-                        Social etc. I strongly believe that there is still a long way to go to attain the increasing
-                        demand of technology Savvy minds by the industrial and for that the excellence in education and
-                        training is the need of hour. NIT- Nasik Institute of Technology is taking shape to bridge the
-                        gap between the future demand and supply technical human resource. Over the year it will grow in
-                        to a leading educational center in Maharashtra, widely recognized for its modern state of the
-                        art infrastructure, vibrant campus and academic excellence in the field of technical education.
-                        The courses designed are amongst the best in the industry and is believed to equip the with
-                        effective knowledge, Potentials, insights and expertise so that they can make a successful and
-                        bright career. Keeping in mind the requirement of building construction industry, we have
-                        designed Sandwich course in Civil Engineering to give in-depth knowledge of on site working. We
-                        trust the fact that if youth is equipped with proper knowledge and skills, they can be the most
-                        powerful global asset .We are proud to say that we are creating Youth anium (Intellectual Youth
-                        Power).
-                    </p>
-                </div>
-            </div>
+            </div> 
+           </div>
         </div>
     </div>
 </div>

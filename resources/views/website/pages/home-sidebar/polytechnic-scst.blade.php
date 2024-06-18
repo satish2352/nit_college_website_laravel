@@ -1,16 +1,16 @@
 @extends('website.layout.master')
 @section('content')
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-        <div class="container">
-            <div class="col-sm-12" style="padding:0;">
+        <div >
+            <!-- <div class="col-sm-12" style="padding:0;">
                 <h2><strong></strong></h2>
                 <div class="pull-right"><img src="../up-images/civil-iconimgFile568246ec20aed.png" alt=""
                         class="img-responsive"></div>
-            </div>
+            </div> -->
             <div class="panel_content">
-                <div class="container">
+                <div >
                     <div class="row">
-                        <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
+                        <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
                             @include('website.pages.home-sidebar.right-sidebar-home')
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">

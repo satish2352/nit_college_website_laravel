@@ -80,17 +80,20 @@
         })
     </script>
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-        <div class="container">
+        <div >
 
-            <div class="col-sm-12" style="padding:0;">
+            <!-- <div class="col-sm-12" style="padding:0;">
                 <h2><strong></strong></h2>
                 <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
-            </div>
+            </div> -->
 
        
-                <div class="container">
+                <div >
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
+                @include('website.pages.home-sidebar.right-sidebar-home')
+            </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="card-shadow p-4">
                                     <div class="panel-heading">
@@ -102,12 +105,13 @@
                                     </div>
                                     <div class="panel-body">
                                         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
-                                        <center>
-                                            <p align="Justify">To start Engineering College.<br>
-                                                To start College of MCA<br>
-                                                Develop the campas for technical education<br></p>
+                                        
+                                            <p align="Justify"><li>To start Engineering College.</li>
+                                                <li>To start College of MCA</li>
+                                                <li>Develop the campas for technical education</li><br></p>
+                                               
 
-                                        </center>
+                                       
                                     </div>
                                 </div>
                             </div>

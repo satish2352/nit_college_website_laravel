@@ -80,25 +80,38 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
 })
 </script>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-    <div class="container">
+    <div>
 
-        <div class="col-sm-12" style="padding:0;">
+        <!-- <div class="col-sm-12" style="padding:0;">
             <h2><strong></strong></h2>
             <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
-        </div>
+        </div> -->
 
         <div class="panel_content">
-            <div class="container">
+            <div >
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
+                @include('website.pages.home-sidebar.right-sidebar-home')
+            </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
                         <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="panel panel-primary product-type">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title" style="color:#00ae97"><b>Mission</b></h3>
+                                    {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
+                                </div>
+                                <div class="panel-body">
+                                    <p align="Justify">To give the quality technical education for empowerment of the
+                                        common masses.</p>
+                                </div>
+                            </div>
                             <div class="panel panel-primary product-type">
                                 <div class="panel-heading">
                                     <h3 class="panel-title" style="color:#00ae97"><b>Vision</b></h3>
                                     {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                                 </div>
                                 <div class="panel-body">
-                                    <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
+
 
                                     <p align="Justify">Dedicated to promote the quality technical education through
                                         advanced teaching and learning process , high quality research and extension to
@@ -114,29 +127,11 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
             </div>
         </div>
 
+
         <br>
 
 
-        <div class="panel_content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="panel panel-primary product-type">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title" style="color:#00ae97"><b>Mission</b></h3>
-                                    {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
-                                </div>
-                                <div class="panel-body">
-                                    <p align="Justify">To give the quality technical education for empowerment of the
-                                        common masses.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
 
 
