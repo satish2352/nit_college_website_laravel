@@ -85,7 +85,7 @@ a:hover {
 </div>
 <!--/about us-->
 <div class="container-fluid footer "
-    style="background-color: #015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0; ">
+    style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0; ">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3" style="text-align:center">

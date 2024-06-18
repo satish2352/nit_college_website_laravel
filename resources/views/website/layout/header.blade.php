@@ -99,7 +99,8 @@
         background-color: #015198;
         padding: 5px 0px;
     }
-    .alumnispace{
+
+    .alumnispace {
         width: 200px !important;
     }
 
@@ -436,15 +437,16 @@
                                             <li class="aaaa">
                                                 <a class="aaab dropdown-item" href="https://msbte.org.in/"
                                                     target="_blank">msbte.org</a>
-                                                </li>
+                                            </li>
                                             <li class="aaaa">
                                                 <a class="aaab dropdown-item" href="https://www.aicte-india.org/"
                                                     target="_blank">aicte-india.org</a>
-                                                </li>
+                                            </li>
                                             <li class="aaaa"><a class="aaab dropdown-item"
                                                     href="http://www.dtemaharashtra.gov.in/index.html"
                                                     target="_blank">dtemaharashtra.gov.in</a></li>
-                                            <li class="aaaa"><a class="aaab dropdown-item" href="https://scholarships.gov.in/"
+                                            <li class="aaaa"><a class="aaab dropdown-item"
+                                                    href="https://scholarships.gov.in/"
                                                     target="_blank">scholarships.gov.in</a></li>
                                         </ul>
                                     </li>
@@ -473,8 +475,9 @@
             <span>
                 <span class="d-flex justify-content-center">
                     Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE</span> <br>
-                <b> <a href="{{ route('enquiry') }}" style="color:red">Click Here For Admission Enquiry
-                        2024-25</a></b></span>
+                <button class="btn btn-danger">
+                    <b> <a href="{{ route('enquiry') }}" style="color:#fff"> Admission Enquiry</a></b></span>
+            </button>
         </p>
     </div>
     </div>
