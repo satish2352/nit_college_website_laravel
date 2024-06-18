@@ -39,10 +39,5 @@
     </div>
 </div>
 
-{{-- <script type="text/javascript">
-function getsource(path) {
-    var frame = document.getElementById('curriculamframe');
-    frame.src = path;
-}
-</script> --}}
+
 @endsection
