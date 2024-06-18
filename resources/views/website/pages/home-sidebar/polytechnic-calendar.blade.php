@@ -3,13 +3,6 @@
 
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div>
-
-        <!-- <div class="col-sm-12" style="padding:0;">
-            <h2><strong></strong></h2>
-            <div class="pull-right"><img src="../up-images/civil-iconimgFile568246ec20aed.png" alt=""
-                    class="img-responsive"></div>
-        </div> -->
-
         <div class="panel_content">
             <div >
                 <div class="row">
@@ -24,48 +17,32 @@
                                     <center>
                                         <h3 class="panel-title" style="color:blue"><b>Academic Calendar</b></h3>
                                     </center>
-                                    <span class="pull-right clickable"><i
-                                            class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
+                                    <span class="pull-right clickable">
+                                        <i class="glyphicon glyphicon-plus-sign collapse-ico"></i>
+                                    </span>
                                 </div>
                                 <div class="panel-body">
-                                    <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
                                     <center>
-                                        <tbody>
-                                            @forelse($data_output as $data)
-                                            <td class="td-actions">
-                                                <center>
-                                                    <iframe
-                                                        src="{{ Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') }}{{ $data->file }}"
-                                                        width="100%" height="800px"></iframe>
-                                                </center>
-                                            </td>
-                                            @empty
-                                            <tr>
-                                                <td colspan="2">No data found</td>
-                                            </tr>
-                                            @endforelse
-                                        </tbody>
+                                        @forelse($data_output as $data)
+                                            <iframe src="{{ url(Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') . '/' . $data->file) }}" width="100%" height="800px"></iframe>
+                                        @empty
+                                            <p>No data found</p>
+                                        @endforelse
                                     </center>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
-
 <script type="text/javascript">
 function getsource(path) {
-
     var frame = document.getElementById('curriculamframe');
-
     frame.src = path;
-
 }
 </script>
 @endsection
