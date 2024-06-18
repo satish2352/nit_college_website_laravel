@@ -135,7 +135,11 @@ text-align: center; }
 /*------------------Sections----------------*/
 
 .container-fluid{ max-width:1366px;  box-shadow: 4px  4px -4px #ccc , -4px 0 4px -4px #ccc; padding: 0px; }
-
+@media (min-width: 1300px) and (max-width:1900px) {
+  .container-fluid {
+    max-width:1566px !important;
+  }
+}
 
 
 #iwtHeaderTopNav{background-color:#015198; min-height:30px; color:#FFFFFF; padding-top:5px;}
@@ -375,6 +379,7 @@ p{
 
 .product-type {
   margin-top: 45px;
+  width: 100%;
 }
 
 .product-size {

@@ -2,13 +2,13 @@
 @section('content')
 <div class="container-fluid" id="iwtBanner">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3" >
             <div class="right-col-fix" id="iwtRightPannel">
                 <div class="list-group">
                     <div class="list-group-item"><b>NIT POLYTECHNIC, NASHIK</b></div>
                     <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
                     <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">GOVERNING BODY</a>
-                    <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">MANDATARY DISCLOSURE</a>
+                    <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">MANDATORY DISCLOSURE</a>
                     <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
                     <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE AFFILIATION</a>
                     <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">AFFILIATION CERTIFICATES</a>
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div class="col-md-8" style="margin-top: 10px;">
+        <div class="col-md-9" style="margin-top: 10px;">
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel                                                                                                                                                                          ">
                 <!-- Indicators -->
                 <!-- <div class="carousel-indicators">

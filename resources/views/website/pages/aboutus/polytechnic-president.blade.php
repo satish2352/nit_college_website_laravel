@@ -121,14 +121,19 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
 })
 </script>
 <div class="container-fluid pageHeading-bg " id="iwtPageHeading">
-    <div class="container">
-        <div class="pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
-            <center>
-                <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
-                <h3 class="panel-title"><b>President Message</b></h3>
-            </center>
-            <br>
-            <!-- <div class="container about1">
+    <div >
+        <div class="row">
+            <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
+                @include('website.pages.home-sidebar.right-sidebar-home')
+            </div>
+           <div class="col-md-9">
+           <div class="pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
+                <center>
+                    <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
+                    <h3 class="panel-title"><b>President Message</b></h3>
+                </center>
+                <br>
+                <!-- <div class="container about1">
                 <center>
                     <h3 class="panel-title"><b>President Message</b></h3>
                 </center>

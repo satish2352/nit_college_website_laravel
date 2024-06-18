@@ -70,7 +70,7 @@ a:hover {
 </div>
 <!--/about us-->
 <div class="container-fluid footer"
-    style="background-color: #00ae97; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0;">
+    style="background-color: #015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0;">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -121,7 +121,7 @@ a:hover {
                                 <div class="fb-xfbml-parse-ignore">
                                     <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL
                                             POLYTECHNIC,
-                                            NIT-422005
+                                            NIT-422003
                                         </a></blockquote>
 
                                     <span class="footer-social-icon">
@@ -151,20 +151,20 @@ a:hover {
 
 </div>
 
-<div class="container-fluid" style="background-color: #015198">
+<div class="container-fluid" style="background-color: #fff">
     <div class="container">
 
 
         <div class="row py-2">
 
-            <span style="color: #fff;">
-                <span style="color: #fff;">Contact</span>
-                <a style="color: #fff" href="tel:9552551056">9552551056</a>&nbsp;
-                <a style="color: #fff;" href="tel:8149822404">8149822404</a>&nbsp;
-                <a href="mailto:info@nitnasik.com" style="color: #fff;">info@nitnasik.com</a>
-                <span style="color: #fff;">&copy;2024 All Rights Reserved to Late Annasaheb Patil
+            <span style="color:black;">
+                <span style="color:black;">Contact</span>
+                <a style="color:black" href="tel:9552551056">9552551056</a>&nbsp;
+                <a style="color:black;" href="tel:8149822404">8149822404</a>&nbsp;
+                <a href="mailto:info@nitnasik.com" style="color:black;">info@nitnasik.com</a>
+                <span style="color:black;">&copy;2024 All Rights Reserved to Late Annasaheb Patil
                     Polytechnic Developed By </span><a href="https://sumagoinfotech.com/" target="_blank"
-                    style="color:white">Sumago Infotech <img src="{{ asset('public/assets/up-images/slogo.png') }}"
+                    style="color:black">Sumago Infotech <img src="{{ asset('public/assets/up-images/slogo.png') }}"
                         alt="" style="width:19px;"></a>&nbsp;
 
             </span>

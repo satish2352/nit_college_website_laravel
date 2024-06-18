@@ -1,140 +1,140 @@
 @extends('website.layout.master')
 @section('content')
 <style>
-    .panel_content {
-        background-color: #eceff7;
+.panel_content {
+    background-color: #eceff7;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.panel {
+    background-color: #fff !important;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.product-type,
+.product-size,
+.product-use {
+    margin-top: 25px;
+}
+
+.product-type {
+    margin-top: 45px;
+}
+
+.product-use {
+    margin-bottom: 25px;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+.panel-primary>.panel-heading {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+}
+
+.panel-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #00ae97;
+}
+
+.panel_product_type {
+    margin-top: 20px;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.president-msg {
+    margin: 5rem 0;
+}
+
+.president-msg .col {
+    text-align: center;
+}
+
+.president-msg img {
+    height: 250px;
+}
+
+.president-msg h5 {
+    color: #00ae97;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.president-msg p {
+    text-align: justify;
+}
+
+.row1 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+@media (max-width: 768px) {
+    .president-msg img {
+        height: auto;
+        width: 100%;
     }
 
-    .clickable {
-        cursor: pointer;
-    }
-
-    .panel {
-        background-color: #fff !important;
-        border: 1px solid transparent;
-        border-radius: 0;
-    }
-
-    .product-type,
-    .product-size,
-    .product-use {
-        margin-top: 25px;
-    }
-
-    .product-type {
-        margin-top: 45px;
-    }
-
-    .product-use {
-        margin-bottom: 25px;
-    }
-
-    .panel-heading span {
-        margin-top: -20px;
-        font-size: 15px;
-    }
-
-    .panel-primary>.panel-heading {
-        color: #000;
-        background-color: #fff;
-        border-bottom: 1px solid #eeeeee;
-        padding: 20px 0;
-    }
-
-    .panel-title {
-        font-size: 22px;
-        font-weight: 400;
-        color: #00ae97;
-    }
-
-    .panel_product_type {
-        margin-top: 20px;
-        line-height: 26px;
-        font-size: 18px;
-        font-weight: 400;
-        color: black;
-    }
-
-    .president-msg {
-        margin: 5rem 0;
-    }
-
-    .president-msg .col {
+    .president-msg h5,
+    .president-msg p {
         text-align: center;
     }
 
-    .president-msg img {
-        height: 250px;
+    .text-center {
+        text-align: center !important;
     }
 
-    .president-msg h5 {
-        color: #00ae97;
-        margin-top: 2rem;
-        font-weight: bold;
+    .panel_title {
+        font-size: 18px;
     }
 
-    .president-msg p {
-        text-align: justify;
+    .panel_product_type {
+        font-size: 16px;
     }
 
-    .row1 {
-        margin: 0 auto;
+    .px-5 {
+        padding: 0 1.5rem !important;
+    }
+
+    .pt-1 {
+        padding-top: 1rem !important;
+    }
+
+    .pb-3 {
+        padding-bottom: 1rem !important;
+    }
+
+    img {
         width: 100%;
-        max-width: 1100px;
+        height: auto;
     }
-
-    @media (max-width: 768px) {
-        .president-msg img {
-            height: auto;
-            width: 100%;
-        }
-
-        .president-msg h5,
-        .president-msg p {
-            text-align: center;
-        }
-
-        .text-center {
-            text-align: center !important;
-        }
-
-        .panel_title {
-            font-size: 18px;
-        }
-
-        .panel_product_type {
-            font-size: 16px;
-        }
-
-        .px-5 {
-            padding: 0 1.5rem !important;
-        }
-
-        .pt-1 {
-            padding-top: 1rem !important;
-        }
-
-        .pb-3 {
-            padding-bottom: 1rem !important;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
+}
 </style>
 
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-    <div class="container">
-        <div class="row1">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card-shadow">
-                <center>
-                    <h2 style="color:green"><strong>Principal Desk</strong></h2>
-                </center>
-                <div class="">
+    <div>
+        <div class="row">
+            <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
+                @include('website.pages.home-sidebar.right-sidebar-home')
+            </div>
+            <div class=" col-lg-9">
+                <div class="pt-2 card-shadow"style="padding:0;" data-aos="flip-left">
                     <center>
-                        <h3 class="panel-title pb-4"><b>Principal Message</b></h3>
+                        <h2 style="color:green"><strong>Principal Desk</strong></h2>
                     </center>
                 </div>
                 <div class="row">
@@ -144,17 +144,38 @@
                         <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                         <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
                     </div>
-                    <div class="px-5 pt-1 pb-3">
-                        <h5 class="mt-2" style="color:#00ae97;">Dear Students,</h5>
-                        <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil Polytechnic, Nashik.<br><br>
-                            Education taught to teach us not only how to make a living but also how to live, hence everyone in our NIT'S Campus is trying to bring to full blossoming the potential in every student. It is very important to learn to develop ourselves by imbibing certain qualities in our life. They are, a steady mind that can function without wavering in any situation, a healthy body filled with a passion for life, a flexible intellect that allows space for new thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and do all your work with zeal and sincerity. If you love what you are doing, you will be successful in life.
-                            <br><br>At the Nashik Institute of Technology, everyone is committed to provide good technical education along with imbibing social values.
-                            <br>So be the part of NIT Family.<br>
-                        </p>
-                        <div style="float:right">
+                    <div class="row">
+                        <div class="text-center" data-aos="fade-left">
+                            <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="80%">
                             <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
                             <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                             <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
+                        </div>
+                        <div class="px-5 pt-1 pb-3">
+                            <h5 class="mt-2" style="color:#00ae97;">Dear Students,</h5>
+                            <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil
+                                Polytechnic, Nashik.<br><br>
+                                Education taught to teach us not only how to make a living but also how to live, hence
+                                everyone in our NIT'S Campus is trying to bring to full blossoming the potential in
+                                every
+                                student. It is very important to learn to develop ourselves by imbibing certain
+                                qualities in
+                                our life. They are, a steady mind that can function without wavering in any situation, a
+                                healthy body filled with a passion for life, a flexible intellect that allows space for
+                                new
+                                thoughts and ideas and a clear aim which gives a proper direction. Always be joyful and
+                                do
+                                all your work with zeal and sincerity. If you love what you are doing, you will be
+                                successful in life.
+                                <br><br>At the Nashik Institute of Technology, everyone is committed to provide good
+                                technical education along with imbibing social values.
+                                <br>So be the part of NIT Family.<br>
+                            </p>
+                            <div style="float:right">
+                                <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
+                                <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
+                                <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
+                            </div>
                         </div>
                     </div>
                 </div>
