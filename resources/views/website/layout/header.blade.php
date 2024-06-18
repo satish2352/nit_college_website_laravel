@@ -91,13 +91,16 @@
     } */
 
     .spaceacademic {
-        width: 245px !important;
+        width: 280px !important;
     }
 
     .aaaa .aaab:hover {
         color: #fff !important;
         background-color: #015198;
-        padding: 5px 17px;
+        padding: 5px 0px;
+    }
+    .alumnispace{
+        width: 200px !important;
     }
 
     .dropdown-menu li a {
@@ -356,7 +359,7 @@
                                         <ul class="dropdown-menu abcd" aria-labelledby="DepartmentDropdown">
                                             @foreach ($menuDepartment as $menuItemDepartment)
                                             <li class=" aaaa">
-                                                <a class="dropdown-item "
+                                                <a class="dropdown-item aaab "
                                                     href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
                                             </li>
                                             @endforeach
@@ -369,7 +372,7 @@
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Facilities
                                         </a>
-                                        <ul class="dropdown-menu abcd" aria-labelledby="FacilitiesDropdown">
+                                        <ul class="dropdown-menu " aria-labelledby="FacilitiesDropdown">
 
                                             @foreach ($menuFacility as $menuFacility)
                                             <li class="aaaa">
@@ -384,8 +387,8 @@
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Admission
                                         </a>
-                                        <ul class="dropdown-menu spaceacademic" aria-labelledby="AcademicsDropdown">
-                                            <li class="nav-item aaaa"><a class=" aaab"
+                                        <ul class="dropdown-menu spaceacademic " aria-labelledby="AcademicsDropdown">
+                                            <li class="nav-item aaaa"><a class=" aaab dropdown-item  "
                                                     href="{{ route('polytechnic-rules') }}">Admission Rules And
                                                     Process</a></li>
                                         </ul>
@@ -401,8 +404,8 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Alumni
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="AlumniDropdown">
-                                            <li class="nav-item aaaa"><a class=" aaab"
+                                        <ul class="dropdown-menu alumnispace" aria-labelledby="AlumniDropdown">
+                                            <li class="nav-item aaaa"><a class=" dropdown-item aaab"
                                                     href="{{ route('aluminiregister') }}">Alumni Registration</a></li>
                                         </ul>
                                     </li>
@@ -430,14 +433,18 @@
                                             Quick Links
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="QuickLinksDropdown">
-                                            <li class="aaaa"><a class="aaab" href="https://msbte.org.in/"
-                                                    target="_blank">msbte.org</a></li>
-                                            <li class="aaaa"><a class="aaab" href="https://www.aicte-india.org/"
-                                                    target="_blank">aicte-india.org</a></li>
-                                            <li class="aaaa"><a class="aaab"
+                                            <li class="aaaa">
+                                                <a class="aaab dropdown-item" href="https://msbte.org.in/"
+                                                    target="_blank">msbte.org</a>
+                                                </li>
+                                            <li class="aaaa">
+                                                <a class="aaab dropdown-item" href="https://www.aicte-india.org/"
+                                                    target="_blank">aicte-india.org</a>
+                                                </li>
+                                            <li class="aaaa"><a class="aaab dropdown-item"
                                                     href="http://www.dtemaharashtra.gov.in/index.html"
                                                     target="_blank">dtemaharashtra.gov.in</a></li>
-                                            <li class="aaaa"><a class="aaab" href="https://scholarships.gov.in/"
+                                            <li class="aaaa"><a class="aaab dropdown-item" href="https://scholarships.gov.in/"
                                                     target="_blank">scholarships.gov.in</a></li>
                                         </ul>
                                     </li>
