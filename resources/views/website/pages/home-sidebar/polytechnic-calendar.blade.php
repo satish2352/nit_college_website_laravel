@@ -24,12 +24,13 @@
                                 <div class="panel-body">
                                     <center>
                                         @forelse($data_output as $data)
-                                            <iframe src="{{ url(Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW')  $data->file) }}" width="100%" height="800px"></iframe>
+                                            <iframe src="{{ url(Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') . $data->file) }}" width="100%" height="800px"></iframe>
                                         @empty
                                             <p>No data found</p>
                                         @endforelse
                                     </center>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
