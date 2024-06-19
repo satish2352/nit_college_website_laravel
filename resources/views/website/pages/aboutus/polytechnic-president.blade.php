@@ -141,7 +141,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
             <div class="president-msg">
                 <div style="text-align: center;" data-aos="fade-left">
                     <img style="height: 300px; width:300px;" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt="">
-                    <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh .A. Patil B.Sc (Hons), L.L.B. <br>President,
+                    <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh A. Patil B.Sc (Hons), L.L.B. <br>President,
                         Nasik Institute of Technology</h5>
                 </div>
                 <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;">
