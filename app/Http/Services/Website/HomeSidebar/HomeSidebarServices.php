@@ -129,9 +129,10 @@ public function getAcademicCalendar()
         $dataOutputCategory = $this->repo->getAcademicCalendar();
         return $dataOutputCategory;
     } catch (\Exception $e) {
-        return $e;
+        return collect(); // return an empty collection in case of error
     }
 }
+
 
 
 

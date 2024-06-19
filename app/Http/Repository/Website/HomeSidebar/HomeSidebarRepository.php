@@ -190,16 +190,18 @@ class HomeSidebarRepository  {
         }
     }
     
-    public function getAcademicCalendar(){
+    public function getAcademicCalendar()
+    {
         try {
             $data_output = AcademicCalendar::where('syllabus_delete', '0')
                 ->orderBy('calendar_id', 'desc')
                 ->get();
             return $data_output;
         } catch (\Exception $e) {
-            return $e;
+            return collect(); // return an empty collection in case of error
         }
     }
+    
     
     
     

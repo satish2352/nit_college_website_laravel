@@ -92,11 +92,11 @@
             width: 280px !important;
         }
 
-        .aaaa .aaab:hover {
-            color: #fff !important;
-            background-color: #015198;
-            padding: 5px 0px;
-        }
+    .aaaa .aaab:hover {
+        color: #fff !important;
+        background-color: #015198;
+        padding: 5px 17px;
+    }
 
         .alumnispace {
             width: 200px !important;
