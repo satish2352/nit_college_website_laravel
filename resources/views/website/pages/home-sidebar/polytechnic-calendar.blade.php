@@ -16,6 +16,7 @@
                                 <div class="panel-heading">
                                     <center>
                                         <h3 class="panel-title" style="color:blue"><b>Academic Calendar</b></h3>
+                                        <embed src="{{ asset('http://nitnasik.com/nitadmin/assets/documents/academiccalendar/667274fd3a639A.Y.%202024-25_AcademicCalendar_16052024_1104.pdf') }}" type="application/pdf" width="100%" height="600px" />
                                     </center>
                                     <span class="pull-right clickable">
                                         <i class="glyphicon glyphicon-plus-sign collapse-ico"></i>
