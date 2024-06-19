@@ -46,6 +46,7 @@ blockquote {
     background: #0a66c2;
 }
 
+
 .google-bg {
     background: #DD4B39;
 }
@@ -88,7 +89,10 @@ a:hover {
     style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0; ">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3" style="text-align:center">
+            <div class="col-lg-1 col-md-1">
+
+            </div>
+            <div class="col-lg-2 col-md-2" >
                 <h5><b>About Us</b></h5>
                 <ul class="list-unstyled">
                     <li><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
@@ -102,8 +106,8 @@ a:hover {
                 <h5><b>Departments</b></h5>
                 <ul class="list-unstyled">
                     @foreach ($menuDepartment as $menuItemDepartment)
-                    <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
-                            style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
+                    <li><a  href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
+                            style="color: #fff; ">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
