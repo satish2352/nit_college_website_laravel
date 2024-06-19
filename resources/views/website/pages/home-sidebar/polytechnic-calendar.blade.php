@@ -25,11 +25,13 @@
                                     <center>
                                         @forelse($data_output as $data)
                                             <iframe src="{{ url(Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') . $data->file) }}" width="100%" height="800px"></iframe>
+                                            <p>{{ url(Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') . $data->file) }}</p> <!-- Add this line for debugging -->
                                         @empty
                                             <p>No data found</p>
                                         @endforelse
                                     </center>
                                 </div>
+                                
                                 
                             </div>
                         </div>
