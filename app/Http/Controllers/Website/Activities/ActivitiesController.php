@@ -17,22 +17,19 @@ class ActivitiesController extends Controller
         $this->menuFacility = getFacility();
     }
     public function getPolytechnicCoCurricular($id)
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $menuFacility = $this->menuFacility;
-            $data_output = $this->service->getPolytechnicCoCurricular($id);
-            
-            if ($data_output instanceof \Exception) {
-                return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
-            }
-    
-            return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'data_output', 'menuDepartment', 'menuFacility'));
-        } catch (\Exception $e) {
-            return $e;
-        }
+{
+    try {
+        $menu = $this->menu;
+        $menuDepartment = $this->menuDepartment;
+        $menuFacility = $this->menuFacility;
+        $data_output = $this->service->getPolytechnicCoCurricular($id);
+        
+        return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'data_output', 'menuDepartment', 'menuFacility'));
+    } catch (\Exception $e) {
+        return $e;
     }
+}
+
     
     
     // public function getPolytechnicCoCurricular($id)
