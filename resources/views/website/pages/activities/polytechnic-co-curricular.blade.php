@@ -17,7 +17,7 @@
                 @include('website.pages.home-sidebar.right-sidebar-home')
             </div>
                 <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
-                    <div class="row">
+                    <div class="row card-shadow">
                         <div class="col-sm-12">
                             @if (isset($error))
                                 <div class="alert alert-danger">
