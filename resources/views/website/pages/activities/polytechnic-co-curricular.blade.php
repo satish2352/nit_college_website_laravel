@@ -10,7 +10,7 @@
 
         </div>
     </div>
-    <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px;">
+    <div class="container-fluid" >
         <div >
             <div class="row" style="padding:0px">
             <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
