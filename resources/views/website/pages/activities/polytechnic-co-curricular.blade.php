@@ -18,7 +18,7 @@
             </div>
                 <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
                     <div class="row card-shadow">
-                        <div class="col-sm-12">
+                        {{-- <div class="col-sm-12">
                             @if (isset($error))
                                 <div class="alert alert-danger">
                                     {{ $error }}
@@ -47,6 +47,25 @@
                                         </div>
                                     @endif
                                 @endif
+                            @endif
+                        </div> --}}
+                        <div class="col-sm-12">
+                            @if (!$data_output)
+                                <div>
+                                    <p class="department-error" style="display: flex;justify-content: center;align-items: center;">Data not available.</p>
+                                </div>
+                            @else
+                                <div>
+                                    <h2 style="color:#00ae97">{{ $data_output->activities }}</h2>
+                                </div>
+                                <div>
+                                    <p>{{ $data_output->activity_description }}</p>
+                                </div>
+                                <div>
+                                    <img id="english"
+                                        src="{{ Config::get('DocumentConstant.ACTIVITY_VIEW') }}{{ $data_output->photo }}"
+                                        class="img-fluid img-thumbnail" height="300px" width="400px">
+                                </div>
                             @endif
                         </div>
                         
