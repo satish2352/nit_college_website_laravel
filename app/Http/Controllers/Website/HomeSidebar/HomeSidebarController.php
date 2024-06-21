@@ -162,17 +162,18 @@ class HomeSidebarController extends Controller
             $menuDepartment = $this->menuDepartment;
             $menuFacility = $this->menuFacility;
             $data_output = $this->service->getAcademicCalendar();
-            
+    
             // Check if $data_output is not empty
-            if($data_output && $data_output->isNotEmpty()) {
+            if ($data_output && $data_output->isNotEmpty()) {
                 return view('website.pages.home-sidebar.polytechnic-calendar', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
             } else {
                 return view('website.pages.home-sidebar.polytechnic-calendar', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
             }
         } catch (\Exception $e) {
-            return $e;
+            return back()->with('error', 'An error occurred while fetching the academic calendar.');
         }
     }
+    
     
 
 }
