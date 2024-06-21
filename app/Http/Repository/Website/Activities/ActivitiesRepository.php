@@ -52,7 +52,7 @@ class ActivitiesRepository  {
                 )
                 ->where('activities.id', $id) // Filter by the provided ID
                 ->orderBy('tbl_activity.id', 'desc')
-                ->first(); // Get a single record
+                ->get(); // Get a single record
     
             return $dataOutputCategory;
         } catch (\Exception $e) {
