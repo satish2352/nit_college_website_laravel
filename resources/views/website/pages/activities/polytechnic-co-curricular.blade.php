@@ -10,15 +10,15 @@
 
         </div>
     </div>
-    <div class="container-fluid" style=" background:#fff; padding-top:40px; padding-bottom:40px;">
+    <div class="container-fluid" >
         <div >
             <div class="row" style="padding:0px">
             <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
                 @include('website.pages.home-sidebar.right-sidebar-home')
             </div>
                 <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
-                    <div class="row">
-                        <div class="col-sm-12">
+                    <div class="row card-shadow">
+                        {{-- <div class="col-sm-12">
                             @if (isset($error))
                                 <div class="alert alert-danger">
                                     {{ $error }}
@@ -35,15 +35,44 @@
                                             </div>
                                     @else
                                         <div>
-                                            <h2 style="color:blue">{{ $data_output->activities }}</h2>
+                                            <h2 style="color:#00ae97">{{ $data_output->activities }}</h2>
                                         </div>
                                         <div>
                                             <p>{{ $data_output->activity_description }}</p>
                                         </div>
+                                        <div>
+                                            <img id="english"
+                                                src="{{ Config::get('DocumentConstant.ACTIVITY_VIEW') }}{{ $data_output->photo }}"
+                                                class="img-fluid img-thumbnail" height="300px" width="400px">
+                                        </div>
                                     @endif
                                 @endif
                             @endif
+                        </div> --}}
+                        <div class="container">
+                            <div class="row">
+                                @if ($data_output->isEmpty())
+                                    <div class="col-sm-12 d-flex justify-content-center">
+                                        <div>
+                                            <p class="department-error" style="display: flex; justify-content: center; align-items: center;">Data not available.</p>
+                                        </div>
+                                    </div>
+                                @else
+                                    @foreach ($data_output as $item)
+                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                            <div class="card">
+                                                <img src="{{ Config::get('DocumentConstant.ACTIVITY_VIEW') }}{{ $item->photo }}" class="card-img-top img-fluid img-thumbnail" alt="{{ $item->activities_name }}" style="height: 300px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    {{-- <h5 class="card-title" style="color: #00ae97;">{{ $item->activities_name }}</h5> --}}
+                                                    <p class="card-text">{{ $item->activity_description }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
                         </div>
+                        
                         
 
                 <!-- /.row -->

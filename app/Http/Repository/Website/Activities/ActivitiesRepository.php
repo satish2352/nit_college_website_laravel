@@ -37,6 +37,7 @@ class ActivitiesRepository  {
     // }
 
 
+    // Repository method
     public function getPolytechnicCoCurricular($id)
     {
         try {
@@ -47,18 +48,20 @@ class ActivitiesRepository  {
                     'tbl_activity.activity_description', 
                     'tbl_activity.activity_specification', 
                     'tbl_activity.photo', 
-                    'activities.activities',
+                    'activities.activities as activities_name',
                     'tbl_activity.is_active'
                 )
                 ->where('activities.id', $id) // Filter by the provided ID
                 ->orderBy('tbl_activity.id', 'desc')
-                ->first(); // Get a single record
-    
-            return $dataOutputCategory;
+                ->get(); // Get all records matching the criteria
+        
+            return $dataOutputCategory; // Return a collection of objects
         } catch (\Exception $e) {
-            return $e;
+            throw $e; // Throw the exception to be caught by the calling function
         }
     }
+    
+
     
     
     
