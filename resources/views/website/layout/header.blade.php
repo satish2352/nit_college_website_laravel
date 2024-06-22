@@ -92,11 +92,11 @@
             width: 280px !important;
         }
 
-    .aaaa .aaab:hover {
-        color: #fff !important;
-        background-color: #015198;
-        padding: 5px 17px;
-    }
+        .aaaa .aaab:hover {
+            color: #fff !important;
+            background-color: #015198;
+            padding: 5px 17px;
+        }
 
         .alumnispace {
             width: 200px !important;
@@ -182,6 +182,7 @@
                 background-color: white;
                 box-shadow: 0 0 20px black;
             }
+
             /* .navbar-toggler .common{
                 position: absolute;
                 height: 2px;
@@ -221,7 +222,8 @@
                 transition: left 0.3s;
                 padding-top: 1rem;
             }
-            .navbar-collapse .navbar-toggler{
+
+            .navbar-collapse .navbar-toggler {
                 /* right: 10%; */
                 left: 0;
             }
