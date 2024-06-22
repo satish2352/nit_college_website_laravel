@@ -177,7 +177,7 @@
                             <div class="card-shadow p-4">
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title" style="color:#00ae97"><b>GOVERNING BODY</b></h3>
+                                        <h3 class="panel-title pb-2" style="color:#00ae97; font-size:20px"><b>GOVERNING BODY</b></h3>
                                     </center>
 
                                 </div>

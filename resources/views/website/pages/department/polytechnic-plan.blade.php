@@ -51,7 +51,7 @@
                                   
                                         @if (isset($data_output_category) && isset($data_output_category['id']))
                                             <h3 class="" style="color:#00ae97; font-size:18px; padding-left:17px">
-                                                {{ $data_output_category->Department }}</h3>
+                                                <strong>{{ $data_output_category->Department }}</strong></h3>
                                         @else
                                         @endif
                                    

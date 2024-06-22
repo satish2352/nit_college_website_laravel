@@ -11,7 +11,7 @@
                         <div>
                             @if(isset($data_output_category) && isset($data_output_category['id']))                    
                             <div class="" style="color:#00ae97;font-size:20px;" 
-                                >{{$data_output_category->Department}}</div>
+                                ><strong>{{$data_output_category->Department}}</strong></div>
                                 @else
                                 @endif
                         </div>
