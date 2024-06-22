@@ -6,8 +6,10 @@
 
 blockquote {
     padding: 10px 20px;
+    font-weight: 700;
     margin: 0 0 20px;
-    font-size: 17.5px;
+    font-size: 15px;
+    line-height: 25px;
     border-left: 5px solid #eee;
 }
 
@@ -24,6 +26,7 @@ blockquote {
     color: #fff;
     font-size: 16px;
     margin-right: 15px;
+    
 }
 
 .footer-social-icon i {
@@ -32,6 +35,7 @@ blockquote {
     text-align: center;
     line-height: 38px;
     border-radius: 50%;
+    margin-top: -25px !important;
 }
 
 .facebook-bg {
