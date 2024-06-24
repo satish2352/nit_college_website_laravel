@@ -5,7 +5,7 @@
         <div class="col-md-3" >
             <div class="right-col-fix" id="iwtRightPannel">
                 <div class="list-group">
-                    <div class="list-group-item"><b>NIT POLYTECHNIC, NASHIK</b></div>
+                    <div class="list-group-item"><b></b></div>
                     <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
                     <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing Body</a>
                     <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
