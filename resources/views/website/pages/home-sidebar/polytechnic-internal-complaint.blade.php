@@ -16,12 +16,11 @@
                         @include('website.pages.home-sidebar.right-sidebar-home')
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                        <div class="col-lg-9 col-md-9 col-sm-9">
-                            <div class="panel panel-primary product-type">
+                        <div class="col-lg-9 col-md-9 col-sm-9 card-shadow p-4"style=" width:100%">
+                            <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title pt-3" style="color:#00ae97"><b>Internal Complaint
-                                                Committee</b></h3>
+                                        <h3 class="panel-title " style="color:#00ae97"><b>INTERNAL COMPLAINT COMMITTEE</b></h3>
                                     </center>
                                    
                                     <center>
@@ -35,7 +34,7 @@
                                     <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
 
                                     <center>
-                                        <div class="table-responsive p-3 pt-5">
+                                        <div class="table-responsive p-3 ">
                                             <table id="example"
                                                 class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
                                                 style="width:100%">

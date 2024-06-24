@@ -14,18 +14,18 @@
                         @include('website.pages.home-sidebar.right-sidebar-home')
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                        <div class="col-lg-9 col-md-9 col-sm-9" style=" width:100%">
-                            <div class="panel panel-primary product-type">
+                        <div class="col-lg-9 col-md-9 col-sm-9 card-shadow" style=" width:100%">
+                            <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title pt-2" style="color:#00ae97"><b>MSBTE Affiliation</b></h3>
+                                        <h3 class="panel-title pt-2" style="color:#00ae97"><b>MSBTE AFFILIATION</b></h3>
                                     </center>
                                     <span class="pull-right clickable"><i
                                             class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                                 </div>
                                 <div class="panel-body">
                                     <center>
-                                        <div class="table-responsive p-3 pt-5">
+                                        <div class="table-responsive p-3 ">
                                             <!-- Add this wrapper -->
                                             <table id="example"
                                                 class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
@@ -57,8 +57,8 @@
                                                         <td>
                                                             <center><a
                                                                     href="{{ Config::get('DocumentConstant.AFFILIATION_MSBTE_VIEW') }}{{ $data->file }}"
-                                                                    target="_blank" class="btn btn-small btn-primary">
-                                                                    <i class="btn-icon-only icon-ok">Download</i>
+                                                                    target="_blank" class="btn btn-small bg-primary download-btn1 btn-icon-only icon-ok " style="color:#fff">
+                                                                    Download
                                                                 </a></center>
                                                         </td>
                                                     </tr>

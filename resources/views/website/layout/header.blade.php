@@ -306,7 +306,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6"><a href="{{ route('/') }}">Institute Address : Cannol
                         Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
                 <div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                    <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
+                    <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">principle@nitnasik.com</a> |
                     <span style="font-size:13px !important;">Contact Number : </span>
                     <a href="tel:9552551056">9552551056</a>&nbsp;
                     <a href="tel:8149822404">8149822404</a>&nbsp;

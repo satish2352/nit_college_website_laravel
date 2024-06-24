@@ -51,8 +51,8 @@
                                                     </td>
                                                     <td class="text-center">
                                                         <a href="{{ Config::get('DocumentConstant.MANDATORYDISCLOSURE_VIEW') }}{{ $data->file }}"
-                                                            target="_blank" class="btn btn-small " style="background-color:#015198;color:#fff">
-                                                            <i class="btn-icon-only icon-ok">Download</i>
+                                                            target="_blank" class="btn btn-small bg-primary download-btn1 btn-icon-only icon-ok " style="color:#fff">
+                                                            Download
                                                         </a>
                                                     </td>
                                                 </tr>

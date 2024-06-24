@@ -11,18 +11,18 @@
                     </div>
 
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="panel panel-primary product-type">
+                        <div class="col-lg-12 col-md-12 col-sm-12 card-shadow p-4">
+                            <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title" style="color:blue"><b>Academic Calendar</b></h3>
+                                        <h3 class="panel-title" style="color:#00ae97"><strong>ACADEMIC CALENDAR</strong></h3>
                                     </center>
                                     <span class="pull-right clickable">
                                         <i class="glyphicon glyphicon-plus-sign collapse-ico"></i>
                                     </span>
                                 </div>
                                 <center>
-                                    <div class="table-responsive p-3 pt-5">
+                                    <div class="table-responsive p-3">
                                         <!-- Add this wrapper -->
                                         <table id="example"
                                             class="table display responsive nowrap table-striped table-hover table-bordered border-dark"

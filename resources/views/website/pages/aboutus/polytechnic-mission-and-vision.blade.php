@@ -88,14 +88,14 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
         </div> -->
 
         <div class="panel_content">
-            <div >
+            <div>
                 <div class="row">
-                <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
-                @include('website.pages.home-sidebar.right-sidebar-home')
-            </div>
+                    <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
+                        @include('website.pages.home-sidebar.right-sidebar-home')
+                    </div>
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="panel panel-primary product-type">
+                            <div class="panel panel-primary product-type ">
                                 <div class="panel-heading">
                                     <h3 class="panel-title" style="color:#00ae97"><b>Mission</b></h3>
                                     {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}

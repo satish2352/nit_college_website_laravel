@@ -10,7 +10,7 @@
             </div> -->
 
         <div class="panel_content">
-            <div>
+            <div >
                 <div class="row">
 
                     <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
@@ -18,12 +18,11 @@
                     </div>
 
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                        <div>
-                            <div class="panel panel-primary product-type">
+                        <div class="card-shadow p-4">
+                            <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title pt-2" style="color:#00ae97"><b>AICTE Extension of
-                                                Approval (EOA)
+                                    <h3 class="panel-title " style="color:#00ae97"><b>AICTE EXTENSION OF APPROVAL(EOA)
                                             </b></h3>
                                     </center>
                                     <span class="pull-right clickable"><i
@@ -33,7 +32,7 @@
                                     <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
 
                                     <center>
-                                        <div class="table-responsive p-3 pt-5">
+                                        <div class="table-responsive p-3 ">
                                             <!-- Add this wrapper -->
                                             <table id="example"
                                                 class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
@@ -66,7 +65,7 @@
                                                             <center>
                                                                 <a href="{{ Config::get('DocumentConstant.AICTE_VIEW') }}{{ $data->file }}"
                                                                     target="_blank"
-                                                                    class="btn btn-small bg-primary download-btn1 btn-icon-only icon-ok ">
+                                                                    class="btn btn-small bg-primary download-btn1 btn-icon-only icon-ok " style="color:#fff">
                                                                     Download
                                                                 </a>
                                                             </center>
