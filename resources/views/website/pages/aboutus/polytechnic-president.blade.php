@@ -140,8 +140,9 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
             </div> -->
             <div class="president-msg">
                 <div style="text-align: center;" data-aos="fade-left">
-                    <img style="height: 300px; width:300px;" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt="">
-                    <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh A. Patil B.Sc (Hons), L.L.B. <br>President,
+                    <img style="height: 300px; width:300px;" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt=""><br>
+                    <br>
+                    <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh A. Patil B.Sc (Hons), L.L.B. <br>President,<br>
                         Nasik Institute of Technology</h5>
                 </div>
                 <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;">
