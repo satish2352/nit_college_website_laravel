@@ -75,6 +75,9 @@ a:hover {
     .footer .container {
         text-align: left;
     }
+    .about-list{
+        
+    }
 }
 </style>
 <div class="container">
