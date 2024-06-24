@@ -94,7 +94,7 @@ body,
                         </div>
                         @elseif (!$data_output || $data_output->is_active == 0)
                         <div>
-                            <p class="department-error">Data not available.</p>
+                            <p class="department-error">Data not available</p>
                         </div>
                         @else
                         <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">

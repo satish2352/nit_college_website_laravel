@@ -94,6 +94,10 @@
     margin-left: 0px;
     width: 1100px
 }
+.imgborder{
+    /* border: 1px solid #545353; */
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); 
+}
 
 @media (max-width: 768px) {
     .president-msg .col img {
@@ -130,9 +134,10 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
            <div class="pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
                 <center>
                     <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
-                    <h3 class="panel-title"><b>President Message</b></h3>
+                    <!-- <h3 class="panel-title"><b>President Message</b></h3> -->
                 </center>
                 <br>
+                                
                 <!-- <div class="container about1">
                 <center>
                     <h3 class="panel-title"><b>President Message</b></h3>
@@ -140,9 +145,26 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
             </div> -->
             <div class="president-msg">
                 <div style="text-align: center;" data-aos="fade-left">
-                    <img style="height: 300px; width:300px;" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt="">
-                    <h5 class="mt-2" style="color:#00ae97;">Mr. Suresh A. Patil <br>B.Sc (Hons), L.L.B. <br>President,
-                        Nasik Institute of Technology</h5>
+                    <img style="height: 300px; width:300px;" class="imgborder" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt=""><br>
+
+                    <br>
+                    <h6 class="mt-2" style="color:#00ae97;"><strong>Mr. Suresh A. Patil</strong></h6>
+                            <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br>
+                            <span style="font-size:15px"><strong>President,
+                            Nasik Institute of Technology</strong></span>
+                    <br>
+                
+
+                        <!-- <div class="text-center pt-2" data-aos="fade-left">
+                        
+                            <h6 class="mt-2" style="color:#00ae97;"><strong>Mr. Suresh A. Patil</strong></h6>
+                            <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br>
+                            <span style="font-size:15px"><strong>President,
+                            Nasik Institute of Technology</strong></span>
+                        </div> -->
+
+
+
                 </div>
                 <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;">
                     <p>Through my last 36 years of experience in various sectors like Industrial, Construction, Banking,

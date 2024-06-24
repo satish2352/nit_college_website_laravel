@@ -47,10 +47,9 @@
                                                 </thead>
                                                 <tbody>
                                                     @forelse ($data_output as $data)
-                                                    <tr class="">
-                                                        <td>
-                                                            <center>{{ $loop->iteration }}</center>
-                                                        </td>
+                                                    <tr>
+                                                        <td>  <center>{{ $loop->iteration }}</center></td>
+                                                      
                                                         <td>
                                                             <center>{{ $data->title }}</center>
                                                         </td>
@@ -62,9 +61,12 @@
                                                                 </a></center>
                                                         </td>
                                                     </tr>
-                                                    @empty
-                                                    {{-- <h4>No Data Found</h4> --}}
-                                                    @endforelse
+                                                @empty
+                                                    <tr>
+                                                        <td colspan="3">No Data Found</td>
+                                                    </tr>
+                                                @endforelse
+                                                
                                                 </tbody>
                                             </table>
                                         </div>

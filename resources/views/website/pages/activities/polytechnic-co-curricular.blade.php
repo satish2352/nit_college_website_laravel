@@ -26,12 +26,12 @@
                             @else
                                 @if (!$data_output)
                                         <div>
-                                            <p class="department-error" style="display: flex;justify-content: center;align-items: center;">Data not available.</p>
+                                            <p class="department-error" style="display: flex;justify-content: center;align-items: center;">Data not available</p>
                                         </div>
                                 @else
                                     @if ($data_output->is_active == 0)
                                             <div>
-                                                <p class="department-error">Data not available.</p>
+                                                <p class="department-error">Data not available</p>
                                             </div>
                                     @else
                                         <div>
@@ -54,7 +54,7 @@
                                 @if ($data_output->isEmpty())
                                     <div class="col-sm-12 d-flex justify-content-center">
                                         <div>
-                                            <p class="department-error" style="display: flex; justify-content: center; align-items: center;">Data not available.</p>
+                                            <p class="department-error" style="display: flex; justify-content: center; align-items: center;">Data not available</p>
                                         </div>
                                     </div>
                                 @else

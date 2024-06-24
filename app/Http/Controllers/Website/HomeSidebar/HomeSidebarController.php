@@ -44,17 +44,18 @@ class HomeSidebarController extends Controller
         }
     }  
     public function getMSBTE()
-{
-    try {
-        $menu = $this->menu;
-        $menuDepartment = $this->menuDepartment;
-        $menuFacility = $this->menuFacility;
-        $data_output = $this->service->getMSBTE();
-        return view('website.pages.home-sidebar.polytechnic-affiliation', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
-    } catch (\Exception $e) {
-        return $e;
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getMSBTE(); // Assuming this fetches data correctly
+            return view('website.pages.home-sidebar.polytechnic-affiliation', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
+        } catch (\Exception $e) {
+            return $e;
+        }
     }
-}
+    
 
     public function getPolytechnicAffiliationCertificates()
     {

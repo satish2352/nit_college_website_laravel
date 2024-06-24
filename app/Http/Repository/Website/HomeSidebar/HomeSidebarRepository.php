@@ -61,18 +61,18 @@ class HomeSidebarRepository  {
     //         return $e;
     //     }
     // }
-    public function getMSBTE(){
-        try {            
-            $data_output = MSBTE::where('fld_delete', '0')
-            // ->where('is_active', '1')
-            ->orderBy('msbte_id', 'desc')
-            ->get();
-                   
-                      return $data_output;
+    public function getMSBTE()
+    {
+        try {
+            return MSBTE::where('fld_delete', '0')
+                ->where('is_active', '1')
+                ->orderBy('msbte_id', 'desc')
+                ->get();
         } catch (\Exception $e) {
-            return $e;
+            throw $e;
         }
     }
+    
     public function getPolytechnicAffiliationCertificates(){
         try {
 
