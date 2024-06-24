@@ -135,7 +135,7 @@
                 <div class="pt-2 card-shadow"style="padding:0;" data-aos="flip-left">
                     <center>
                         <h2 style="color:green" class="pt-2"><strong>Principal Desk</strong></h2>
-                        <h3 class="panel-title pt-2"><b>Principal Message</b></h3>
+                        <!-- <h3 class="panel-title pt-2"><b>Principal Message</b></h3> -->
                     </center>
                
                 <div class="row">
