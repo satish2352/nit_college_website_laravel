@@ -50,7 +50,7 @@
                         <div class="col-sm-12" style="padding-left: 27px;">
                             <div>
                                 @if (isset($data_output_category) && isset($data_output_category['id']))
-                                    <div class="" style="color:#00ae97; font-size:20px;">{{ $data_output_category->Department }}</div>
+                                    <div class="" style="color:#00ae97; font-size:20px;"><strong>{{ $data_output_category->Department }}</strong></div>
                                 @else
                                 @endif
                             </div>
@@ -81,7 +81,7 @@
                                 <table id="example" class="table display responsive nowrap table-striped table-hover table-bordered border-dark" style="width:100%">
                                     <thead class="">
                                         <tr>
-                                            <th scope="col" class="d-flex justify-content-center">SR.NO</th>
+                                            <th scope="col" class="justify-content-center"><center>SR.NO</center></th>
                                             <th scope="col">Class Name</th>
                                             <th scope="col">
                                                 <div class="d-flex justify-content-center">Roll Number</div>

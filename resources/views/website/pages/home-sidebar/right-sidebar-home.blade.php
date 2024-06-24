@@ -4,7 +4,7 @@
     <div>
            <div class="list-group">
            
-            <div class="list-group-item"><b>NIT POLYTECHNIC, NASHIK</b></div>
+            <div class="list-group-item"><b></b></div>
             <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" class="list-group-item active-rp-link" target="_blank" >तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
             
          <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">GOVERNING BODY</a>
@@ -31,7 +31,7 @@
            <a href="pages/polytechnic-about-media-IOD.php" class="list-group-item ">MEDIA NEWS</a>
            <a href="pages/polytechnic-about-faq-IOD.php" class="list-group-item ">FAQ</a> --}}
            
-             <div class="list-group-item"></div>
+        
       </div>
           </div>
     </div>

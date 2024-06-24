@@ -1,13 +1,16 @@
-<!--About us-->
 <style>
 .footer-menu ul li {
     /* color: #00ae97 !important; */
 }
-
+#about-list{
+    list-style-type:1px;
+}
 blockquote {
     padding: 10px 20px;
+    font-weight: 700;
     margin: 0 0 20px;
-    font-size: 17.5px;
+    font-size: 15px;
+    line-height: 25px;
     border-left: 5px solid #eee;
 }
 
@@ -32,6 +35,7 @@ blockquote {
     text-align: center;
     line-height: 38px;
     border-radius: 50%;
+    margin-top: -25px !important;
 }
 
 .facebook-bg {
@@ -53,13 +57,15 @@ blockquote {
 a:hover {
     color: black !important;
 }
+
 @media (max-width: 767px) {
     .footer .container {
         text-align: center;
     }
 
-    .footer .row > div {
+    .footer .row>div {
         margin-bottom: 20px;
+        text-align: center;
     }
 }
 
@@ -69,28 +75,20 @@ a:hover {
     }
 }
 </style>
+
 <div class="container">
     <div class="col-md-8 col-sm-6 about-text">
-
-
-
-        <p>
-            <!--<a href="https://www.onlinesbi.com/prelogin/icollecthome.htm"><strong><span>ONLINE FEES PAYMENT</span></strong> [Click Here</a>]</p>-->
         <p><a href="http://antiragging.in/site/Affidavits_Registration.aspx"><strong><span></span></strong> </a></p>
-        </p>
-
     </div>
-
-    <!-- <div class="col-md-4 about-img"></div> -->
 </div>
-<!--/about us-->
-<div class="container-fluid footer "
-    style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0; ">
-    <div class="container">
+
+<div class="container-fluid footer" style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0;">
+    <div>
         <div class="row">
-            <div class="col-lg-3 col-md-3" style="text-align:center">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-2 col-md-2">
                 <h5><b>About Us</b></h5>
-                <ul class="list-unstyled">
+                <ul id="about-list">
                     <li><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
                     <li><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
                     <li><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
@@ -100,24 +98,22 @@ a:hover {
             </div>
             <div class="col-lg-3 col-md-3">
                 <h5><b>Departments</b></h5>
-                <ul class="list-unstyled">
+                <ul>
                     @foreach ($menuDepartment as $menuItemDepartment)
-                    <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
-                            style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
+                    <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}" style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-lg-2 col-md-3 col-sm-6">
                 <h5><b>Facilities</b></h5>
-                <ul class="list-unstyled">
+                <ul>
                     @foreach ($menuFacility as $menuFacilityItem)
-                    <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
-                            style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
+                    <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}" style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <div id="">
+                <div>
                     <div class="address">
                         <div>
                             <div id="fb-root"></div>
@@ -131,16 +127,10 @@ a:hover {
                                 fjs.parentNode.insertBefore(js, fjs);
                             }(document, 'script', 'facebook-jssdk'));
                             </script>
-                            <div class="fb-page" data-href="#" data-width="226" data-small-header="true"
-                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-page" data-href="#" data-width="226" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL
-                                            POLYTECHNIC,
-                                            NIT-422003
-                                        </a></blockquote>
-
+                                    <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL POLYTECHNIC, NIT-422003</a></blockquote>
                                     <span class="footer-social-icon">
-
                                         <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                                         <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                                         <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
@@ -152,116 +142,77 @@ a:hover {
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
-
-<!--/footer container-->
-
-
-
-
-
-</div>
-
 <div class="container-fluid" style="background-color: #fff">
     <div class="container">
-
-
         <div class="row py-2">
-
             <span style="color:black;">
                 <span style="color:black;">Contact</span>
                 <a style="color:black" href="tel:9552551056">9552551056</a>&nbsp;
                 <a style="color:black;" href="tel:8149822404">8149822404</a>&nbsp;
                 <a href="mailto:info@nitnasik.com" style="color:black;">info@nitnasik.com</a>
-                <span style="color:black;">&copy;2024 All Rights Reserved to Late Annasaheb Patil
-                    Polytechnic Developed By </span><a href="https://sumagoinfotech.com/" target="_blank"
-                    style="color:black">Sumago Infotech <img src="{{ asset('public/assets/up-images/slogo.png') }}"
-                        alt="" style="width:19px;"></a>&nbsp;
-
+                <span style="color:black;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:black">Sumago Infotech <img src="{{ asset('public/assets/up-images/slogo.png') }}" alt="" style="width:19px;"></a>&nbsp;
             </span>
-
-            <!-- jQuery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <!-- Bootstrap JS -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-
-            <!-- Badge Code - Do Not Change The Code -->
-            <script>
-            document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" +
-                Date
-                .now() + "'><\/script>");
-            </script>
-            <script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
-            <!-- jQuery -->
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <!-- Bootstrap 5 JS -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- DataTables JS -->
-            <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-            <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-            {{-- <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script> --}}
-            <script>
-            $(document).ready(function() {
-                $('#example').DataTable({
-                    responsive: true,
-                    showNEntries: false,
-                    lengthChange: false
-                });
-            });
-
-            var table2 = $('#example1').DataTable({
-            "columnDefs": [{
-                "targets": [1, 2],
-                "orderable": true
-            }]
-            });
-            });
-            </script>
-            <script>
-            $(document).ready(function() {
-                $('#order-listing').DataTable({
-                    searching: true,
-                    ordering: true,
-                    lengthChange: false,
-                    showNEntries: false
-                });
-            });
-            </script>
-
-            <script>
-            $(document).on('click', '.panel-heading span.clickable', function(e) {
-                var $this = $(this);
-                if (!$this.hasClass('panel-collapsed')) {
-                    $this.parents('.panel').find('.panel-body').slideUp();
-                    $this.addClass('panel-collapsed');
-                    $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
-                        'glyphicon glyphicon-plus-sign');
-                } else {
-                    $this.parents('.panel').find('.panel-body').slideDown();
-                    $this.removeClass('panel-collapsed');
-                    $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
-                        'glyphicon glyphicon-minus-sign');
-                }
-            })
-            </script>
-            <script type="text/javascript">
-            $(document).ready(function() {
-                setTimeout(function() {
-                    $(".alert").alert('close');
-                }, 1000); // 1000 milliseconds = 1 second
-            });
-            </script>
-            <!-- Badge Code End Here -->
         </div>
     </div>
 </div>
-</body>
 
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Badge Code - Do Not Change The Code -->
+<script>
+document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() + "'><\/script>");
+</script>
+<script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#example').DataTable({
+        responsive: true,
+        showNEntries: false,
+        lengthChange: false
+    });
 
-</php>
+    var table2 = $('#example1').DataTable({
+        "columnDefs": [{
+            "targets": [1, 2],
+            "orderable": true
+        }]
+    });
+
+    $('#order-listing').DataTable({
+        searching: true,
+        ordering: true,
+        lengthChange: false,
+        showNEntries: false
+    });
+
+    $(document).on('click', '.panel-heading span.clickable', function(e) {
+        var $this = $(this);
+        if (!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass('glyphicon glyphicon-plus-sign');
+        } else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass('glyphicon glyphicon-minus-sign');
+        }
+    });
+
+    setTimeout(function() {
+        $(".alert").alert('close');
+    }, 1000); // 1000 milliseconds = 1 second
+});
+</script>

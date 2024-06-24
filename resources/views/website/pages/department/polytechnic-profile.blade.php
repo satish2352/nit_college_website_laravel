@@ -3,7 +3,7 @@
 <div class="container-fluid bg-#fff" id="iwtPageHeading">
     {{-- <div class="container">
             <div class="col-sm-12" style="padding:0;">
-                <h4 style="color:green"><strong>Welcome To Humanities & Science Engineering Department </strong></h4>
+                <h4 style="color:green"><b>Welcome To Humanities & Science Engineering Department</b></h4>
             </div>
         </div> --}}
 </div>
@@ -24,18 +24,18 @@
                                     @else
                                         @if ($data_output->isEmpty())
                                             <div>
-                                                <p class="department-error">Data not available.</p>
+                                                <p class="department-error">Data not available</p>
                                             </div>
                                         @else
                                             @foreach ($data_output as $data)
                                                 @if ($data->is_active == 0)
                                                     <div class="alert alert-info">
-                                                        <p class="department-error">Data not available.</p>
+                                                        <p class="department-error">Data not available</p>
                                                     </div>
                                                 @else
                                                     <div>
                                                         <div class="" style="color:#00ae97; font-size:20px;">
-                                                            {{ $data->Department }}
+                                                           <strong> {{ $data->Department }}</strong>
                                                         </div>
                                                         <div>
                                                             <p>{{ strip_tags($data->department_description) }}</p>

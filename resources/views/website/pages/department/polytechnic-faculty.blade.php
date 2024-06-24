@@ -144,12 +144,12 @@ $(function() {
                                                 @else
                                                 @if (!$data_output)
                                                 <div>
-                                                    <p class="department-error">Data not available.</p>
+                                                    <p class="department-error">Data not available</p>
                                                 </div>
                                                 @else
                                                 @if ($data_output->is_active == 0)
                                                 <div>
-                                                    <p class="department-error">Data not available.</p>
+                                                    <p class="department-error">Data not available</p>
                                                 </div>
                                                 @else
                                                 <td>
@@ -159,7 +159,7 @@ $(function() {
                                                     <p>{{ strip_tags($data_output->fld_staff_qualification) }}</p>
                                                 </td>
                                                 <td>>
-                                                    <p>{{ strip_tags($data_output->Department) }}</p>
+                                                    <p><strong>{{ strip_tags($data_output->Department) }}</strong></p>
                                                 </td>
                                                 <td>>
                                                     <p>{{ strip_tags($data_output->Designation) }}</p>

@@ -24,7 +24,7 @@
                 </div>
                 @elseif (!$data_output)
                 <div>
-                    <p class="department-error">Data not available.</p>
+                    <p class="department-error">Data not available</p>
                 </div>
                 @else
                 @foreach ($data_output as $data)

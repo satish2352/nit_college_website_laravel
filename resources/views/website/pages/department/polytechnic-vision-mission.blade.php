@@ -11,7 +11,7 @@
                         <div>
                             @if(isset($data_output_category) && isset($data_output_category['id']))                    
                             <div class="" style="color:#00ae97;font-size:20px;" 
-                                >{{$data_output_category->Department}}</div>
+                                ><strong>{{$data_output_category->Department}}</strong></div>
                                 @else
                                 @endif
                         </div>
@@ -28,13 +28,13 @@
                                         @else
                                             @if ($data_output->isEmpty())
                                                 <div>
-                                                     <p class="department-error">Data not available.</p>
+                                                     <p class="department-error">Data not available</p>
                                                 </div>
                                             @else
                                                 @foreach ($data_output as $data_output)
                                                     @if ($data_output->is_active == 0)
                                                         <div>
-                                                             <p class="department-error">Data not available.</p>
+                                                             <p class="department-error">Data not available</p>
                                                         </div>
                                                     @else
                                 <h6 class="pt-2"><strong>VISION :</strong></h6>

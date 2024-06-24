@@ -42,7 +42,7 @@
                             <div>
                                 @if (isset($data_output_category) && isset($data_output_category['id']))
                                     <div class="" style="color:#00ae97; padding:10px 0px;font-size:20px;padding-left:19px;">
-                                        {{ $data_output_category->Department }} Download Time Table Here....</div>
+                                        <strong>{{ $data_output_category->Department }} Download Time Table Here....</strong></div>
                                 @else
                                 @endif
                             </div>
@@ -59,7 +59,7 @@
                                 <table id="example" class="table display responsive nowrap table-striped table-hover table-bordered border-dark" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="d-flex justify-content-center">SR.NO</th>
+                                            <th scope="col" class=" justify-content-center"><center>SR.NO</center></th>
                                             <th scope="col"><div class="d-flex justify-content-center">Semester</div></th>
                                             <th scope="col">
                                                 <div class="d-flex justify-content-center">Download File</div>

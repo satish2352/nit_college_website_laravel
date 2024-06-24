@@ -65,13 +65,13 @@
                                     @else
                                         @if (!$data_output)
                                             <div>
-                                                <p class="department-error">Data not available.</p>
+                                                <p class="department-error">Data not available</p>
                                             </div>
                                         @else
                                             @foreach ($data_output as $data_output)
                                                 @if ($data_output->is_active == 0)
                                                     <div >
-                                                        <p class="department-error">Data not available.</p>
+                                                        <p class="department-error">Data not available</p>
                                                     </div>
                                                 @else
                                                     <tr>
