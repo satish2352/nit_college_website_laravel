@@ -14,7 +14,7 @@
                         @include('website.pages.home-sidebar.right-sidebar-home')
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                        <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div class="col-lg-9 col-md-9 col-sm-9" style=" width:100%">
                             <div class="panel panel-primary product-type">
                                 <div class="panel-heading">
                                     <center>
