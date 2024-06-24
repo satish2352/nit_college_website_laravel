@@ -21,7 +21,7 @@ a {text-decoration:none; color:#489194;
 -o-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out; }
-a:hover {text-decoration:none;}
+/* a:hover {text-decoration:none;} */
 
 .no-margin {margin: 0px;}
 .padding-LR-0{ padding-left:0; padding-right:0;}
@@ -30,7 +30,7 @@ a:hover {text-decoration:none;}
 
 .fl{float:left;}/* float left */
 
-ol,ul{list-style:none; padding:0; margin:0;}
+ol,ul{ padding:0; margin:0;}
 ul.arrow{ padding:0; text-align:left; }
 ul.arrow li{margin:0px 0px; padding:5px 0px 0px 24px; background: url(images/arrow-red.html) 5px 13px no-repeat;}
 
@@ -195,7 +195,8 @@ text-align: center; }
 
 #footer-links div{display: inline-block;width: 23%;float: left; margin-right:2%;}
 #footer-links div ul {padding:0;}
-#footer-links ul li {margin: 8px 0; list-style:none;} 
+#footer-links ul li {margin: 8px 0; } 
+
 
 #footer-address{width:20%; float:right;}
 .address{ margin:10px 0 8px 0; color:#5b5b5b;font-size:15px;line-height:20px;}
