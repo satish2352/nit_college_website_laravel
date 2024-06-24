@@ -161,6 +161,12 @@
                 /* Adjust width for smaller screens */
             }
 
+            .nitlogo {
+                padding-left: 25px !important;
+
+            }
+
+
             .mob-display {
                 display: block;
             }
@@ -262,7 +268,7 @@
         }
 
         .AICTE {
-            margin-left: -48px !important;
+            margin-left: -68px !important;
         }
     </style>
 </head>
@@ -295,21 +301,20 @@
     {{-- ======================Start Top Header==================== --}}
     <div class="container-fluid px-3" id="iwtHeaderTopNav">
         <div class="container px-0">
+
             <div class="row">
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-sm-5"><a href="{{ route('/') }}">Institute Address : Cannol
-                                Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
-                        <div class="col-lg-7 col-md-7 col-sm-7 text-right">
-                            <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
-                            <span style="font-size:13px !important;">Contact Number : </span>
-                            <a href="tel:9552551056">9552551056</a>&nbsp;
-                            <a href="tel:8149822404">8149822404</a>&nbsp;
-                            <a href="tel:9890269439">9890269439</a>&nbsp;
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-6 col-sm-6"><a href="{{ route('/') }}">Institute Address : Cannol
+                        Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                    <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">info@nitnasik.com</a> |
+                    <span style="font-size:13px !important;">Contact Number : </span>
+                    <a href="tel:9552551056">9552551056</a>&nbsp;
+                    <a href="tel:8149822404">8149822404</a>&nbsp;
+                    <a href="tel:9890269439">9890269439</a>&nbsp;
                 </div>
-                <!-- <div class="col-2">
+            </div>
+        </div>
+        <!-- <div class="col-2">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <span class="top_line common"></span>
@@ -319,34 +324,38 @@
                     </button>
 
                 </div> -->
-            </div>
-        </div>
+
+
     </div>
     {{-- =========================End Top Header======================== --}}
     {{-- ======================Start Sub Header==================== --}}
     <div class="mob-toggle-right-side">
         <div class="container-fluid pt-2 pb-1 mob-width-left" id="iwtHeaderNav">
-            <div class="container main-header">
+            <div class="container-fluid main-header">
                 <div class="row align-items-center d-flex justify-content-center">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-3">
-                        <a href="/"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid mob-width" alt="Logo" style="height:110px"></a>
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-3 ">
+                        <a href="/"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
-                        <span class="d-lg-block d-none d-flex justify-content-center AICTE ">
+                        <p class=" d-flex justify-content-star"> Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE</p>
+
+                        <!-- <span class="d-lg-block d-none d-flex justify-content-center AICTE ">
                             {{-- <marquee> --}}
                             Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE
                             {{-- </marquee> --}}
+                        </span> -->
 
-
-                        </span>
                     </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-3 text-center displsy-flex web-display mob-display">
+
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-3 text-center displsy-flex web-display mob-display ">
                         <img src="{{ asset('public/assets/Akole_Poly/TWOWIN2p_400x400.jpg') }}" alt="Avatar" class="img-fluid rounded-circle" style="width:100px;">
                         <p style="font-size:12px;color:red;"><b>Shri.&nbsp;Suresh&nbsp;Patil</b></p>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center displsy-flex web-display mob-display">
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-3 text-center displsy-flex web-display mob-display">
                         <button class="btn btn-danger">
                             <a href="{{ route('enquiry') }}" style="color:white; text-decoration:none;">Admission
                                 Enquiry</a>
