@@ -136,7 +136,8 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                     <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
                     <!-- <h3 class="panel-title"><b>President Message</b></h3> -->
                 </center>
-                
+                <br>
+                                
                 <!-- <div class="container about1">
                 <center>
                     <h3 class="panel-title"><b>President Message</b></h3>

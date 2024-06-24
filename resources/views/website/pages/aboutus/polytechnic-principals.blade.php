@@ -137,6 +137,7 @@
                         <h2 style="color:green" class="pt-2"><strong>Principal Desk</strong></h2>
                         <!-- <h3 class="panel-title pt-2"><b>Principal Message</b></h3> -->
                     </center>
+                    <br>
                
                 <div class="row">
                     {{-- <div class="text-center" data-aos="fade-left">
