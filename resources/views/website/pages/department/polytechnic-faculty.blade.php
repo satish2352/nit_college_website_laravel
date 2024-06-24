@@ -159,7 +159,7 @@ $(function() {
                                                     <p>{{ strip_tags($data_output->fld_staff_qualification) }}</p>
                                                 </td>
                                                 <td>>
-                                                    <p>{{ strip_tags($data_output->Department) }}</p>
+                                                    <p><strong>{{ strip_tags($data_output->Department) }}</strong></p>
                                                 </td>
                                                 <td>>
                                                     <p>{{ strip_tags($data_output->Designation) }}</p>

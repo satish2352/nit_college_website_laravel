@@ -3,7 +3,7 @@
 <div class="container-fluid bg-#fff" id="iwtPageHeading">
     {{-- <div class="container">
             <div class="col-sm-12" style="padding:0;">
-                <h4 style="color:green"><strong>Welcome To Humanities & Science Engineering Department </strong></h4>
+                <h4 style="color:green"><b>Welcome To Humanities & Science Engineering Department</b></h4>
             </div>
         </div> --}}
 </div>
@@ -35,7 +35,7 @@
                                                 @else
                                                     <div>
                                                         <div class="" style="color:#00ae97; font-size:20px;">
-                                                            {{ $data->Department }}
+                                                           <strong> {{ $data->Department }}</strong>
                                                         </div>
                                                         <div>
                                                             <p>{{ strip_tags($data->department_description) }}</p>

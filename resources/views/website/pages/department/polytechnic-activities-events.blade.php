@@ -28,7 +28,6 @@
 
 @media all and (transform-3d),
 (-webkit-transform-3d) {
-
     .carousel-fade .carousel-inner>.item.next,
     .carousel-fade .carousel-inner>.item.active.right {
         opacity: 0;
@@ -52,33 +51,20 @@
     }
 }
 
-/* just for demo purpose */
+/* Just for demo purpose */
 html,
 body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
     height: 90%;
-
 }
-
-/* .item:nth-child(1) {
-            background: blue;
-        }
-
-        .item:nth-child(2) {
-            background: red;
-        }
-
-        .item:nth-child(3) {
-            background: orange;
-        } */
 
 .margin-top-50 {
     margin-top: 50px;
 }
 
-/*Filter START*/
+/* Filter START */
 .filterable {
     margin-top: 15px;
 }
@@ -86,10 +72,6 @@ body,
 .filterable .panel-heading .pull-right {
     margin-top: -20px;
 }
-
-
-
-/*Radio and Checkbox END*/
 </style>
 
 <div class="container-fluid">
@@ -100,52 +82,30 @@ body,
                     <div class="col-sm-12">
                         <div>
                             @if (isset($data_output_category) && isset($data_output_category['id']))
-                            <div class="" style="color:#00ae97; padding:20px 0px;">
-                                {{ $data_output_category->Department }}</div>
-                            @else
+                            <div style="color:#00ae97;font-size:20px;">
+                                <strong>{{ $data_output_category->Department }}</strong>
+                            </div>
                             @endif
                         </div>
-                        <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
 
+                        @if (isset($error))
+                        <div class="alert alert-danger">
+                            {{ $error }}
+                        </div>
+                        @elseif (!$data_output || $data_output->is_active == 0)
+                        <div>
+                            <p class="department-error">Data not available.</p>
+                        </div>
+                        @else
+                        <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    {{-- <div class="carousel-caption">
-                                            <img src="../images/events/Industrial Visits_1.jpg" alt=""
-                                                class="img-responsive">
-                                        </div> --}}
-                                </div>
-                                @if (isset($error))
-                                <div class="alert alert-danger">
-                                    {{ $error }}
-                                </div>
-                                @else
-                                @if (!$data_output)
-                                <div>
-                                    <p class="department-error">Data not available.</p>
-                                </div>
-                                @else
-                                @if ($data_output->is_active == 0)
-                                <div>
-                                    <p class="department-error">Data not available.</p>
-                                </div>
-                                @else
-                                <div class="item">
-
                                     <div class="carousel-caption">
-
-
-                                        <img src="{{ Config::get('DocumentConstant.EVENTS_VIEW') }}{{ $data_output->fld_gallery_photo }}"
-                                            class="img-responsive"><br>
-                                        <td>
-                                            <center>{{ $data_output->imageTitle }}</center>
-                                        </td>
+                                        <img src="{{ Config::get('DocumentConstant.EVENTS_VIEW') }}{{ $data_output->fld_gallery_photo }}" class="img-responsive"><br>
+                                        <center>{{ $data_output->imageTitle }}</center>
                                     </div>
                                 </div>
-                                @endif
-                                @endif
-                                @endif
-
                             </div>
 
                             <!-- Controls -->
@@ -158,16 +118,14 @@ body,
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
+                        @endif
+
                         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                         <!-- Include all compiled plugins (below), or include individual files as needed -->
                         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
                         <div>
-                            <p><span style="font-family: georgia,palatino;"><strong></span></p>
-                            <!-- style="font-size: large; color: #ff6600;"> -->
-
-
-
                             <script>
                             var slideIndex = 1;
                             showSlides(slideIndex);
@@ -206,11 +164,10 @@ body,
                     </div>
                 </div><!-- /.row -->
             </div>
-            
+
             <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
                 @include('website.pages.department.right-sidebar-department')
             </div>
-
         </div>
     </div>
 </div>

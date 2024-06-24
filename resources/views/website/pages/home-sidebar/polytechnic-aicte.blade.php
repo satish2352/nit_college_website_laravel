@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                        <div class="col-lg-9 col-md-9 col-sm-9">
+                        <div>
                             <div class="panel panel-primary product-type">
                                 <div class="panel-heading">
                                     <center>
@@ -65,8 +65,9 @@
                                                         <td>
                                                             <center>
                                                                 <a href="{{ Config::get('DocumentConstant.AICTE_VIEW') }}{{ $data->file }}"
-                                                                    target="_blank" class="btn btn-small btn-primary">
-                                                                    <i class="btn-icon-only icon-ok">Download</i>
+                                                                    target="_blank"
+                                                                    class="btn btn-small bg-primary download-btn1 btn-icon-only icon-ok ">
+                                                                    Download
                                                                 </a>
                                                             </center>
                                                         </td>

@@ -3,7 +3,9 @@
 .footer-menu ul li {
     /* color: #00ae97 !important; */
 }
-
+#about-list{
+    list-style-type:1px;
+}
 blockquote {
     padding: 10px 20px;
     font-weight: 700;
@@ -26,7 +28,7 @@ blockquote {
     color: #fff;
     font-size: 16px;
     margin-right: 15px;
-    
+
 }
 
 .footer-social-icon i {
@@ -58,12 +60,13 @@ blockquote {
 a:hover {
     color: black !important;
 }
+
 @media (max-width: 767px) {
     .footer .container {
         text-align: center;
     }
 
-    .footer .row > div {
+    .footer .row>div {
         margin-bottom: 20px;
     }
 }
@@ -71,6 +74,9 @@ a:hover {
 @media (min-width: 768px) {
     .footer .container {
         text-align: left;
+    }
+    .about-list{
+        
     }
 }
 </style>
@@ -89,16 +95,16 @@ a:hover {
     <!-- <div class="col-md-4 about-img"></div> -->
 </div>
 <!--/about us-->
-<div class="container-fluid footer "
-    style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 50px 0; ">
-    <div class="container">
+<div class="container-fluid footer " 
+    style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0; ">
+    <div>
         <div class="row">
             <div class="col-lg-1 col-md-1">
 
             </div>
-            <div class="col-lg-2 col-md-2" >
+            <div class="col-lg-2 col-md-2">
                 <h5><b>About Us</b></h5>
-                <ul class="list-unstyled">
+                <ul id="about-list" >
                     <li><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
                     <li><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
                     <li><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
@@ -108,16 +114,16 @@ a:hover {
             </div>
             <div class="col-lg-3 col-md-3">
                 <h5><b>Departments</b></h5>
-                <ul class="list-unstyled">
+                <ul >
                     @foreach ($menuDepartment as $menuItemDepartment)
-                    <li><a  href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
+                    <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
                             style="color: #fff; ">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-lg-2 col-md-3 col-sm-6">
                 <h5><b>Facilities</b></h5>
-                <ul class="list-unstyled">
+                <ul >
                     @foreach ($menuFacility as $menuFacilityItem)
                     <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
                             style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>

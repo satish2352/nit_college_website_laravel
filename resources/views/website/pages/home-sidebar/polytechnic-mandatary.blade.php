@@ -1,7 +1,7 @@
 @extends('website.layout.master')
 @section('content')
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
-    <div >
+    <div>
 
         <!-- <div class="col-sm-12" style="padding:0;">
             <h2><strong></strong></h2>
@@ -15,14 +15,16 @@
                     <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
                         @include('website.pages.home-sidebar.right-sidebar-home')
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                        <div class="panel panel-primary product-type">
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="panel panel-primary product-type card-shadow p-4">
                             <div class="panel-heading">
                                 <center>
-                                    <h3 class="panel-title" style="color:#00ae97;"><b>Mandatory Disclosure</b></h3>
+                                    <h3 class="panel-title " style="color:#00ae97; font-size: 20px">
+                                        <b>MANDATORY DISCLOSURE</b>
+                                    </h3>
                                 </center>
-                                <span class="pull-right clickable"><i
-                                        class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
+                                <!-- <span class="pull-right clickable"><i
+                                        class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> -->
                             </div>
                             <div class="panel-body">
                                 <center>
@@ -49,7 +51,7 @@
                                                     </td>
                                                     <td class="text-center">
                                                         <a href="{{ Config::get('DocumentConstant.MANDATORYDISCLOSURE_VIEW') }}{{ $data->file }}"
-                                                            target="_blank" class="btn btn-small btn-primary">
+                                                            target="_blank" class="btn btn-small " style="background-color:#015198;color:#fff">
                                                             <i class="btn-icon-only icon-ok">Download</i>
                                                         </a>
                                                     </td>

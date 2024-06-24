@@ -31,7 +31,7 @@
            <a href="pages/polytechnic-about-media-IOD.php" class="list-group-item ">MEDIA NEWS</a>
            <a href="pages/polytechnic-about-faq-IOD.php" class="list-group-item ">FAQ</a> --}}
            
-             <div class="list-group-item"></div>
+        
       </div>
           </div>
     </div>
