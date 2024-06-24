@@ -48,8 +48,8 @@
                                                     <td>
                                                         <center>
                                                             <a href="{{ Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') }}{{ $data->file }}"
-                                                                target="_blank" class="btn btn-small btn-primary">
-                                                                <i class="btn-icon-only icon-ok">Download</i>
+                                                                target="_blank" class="btn btn-small " style="color:#fff;background-color:#015198">
+                                                                Download
                                                             </a>
                                                         </center>
                                                     </td>

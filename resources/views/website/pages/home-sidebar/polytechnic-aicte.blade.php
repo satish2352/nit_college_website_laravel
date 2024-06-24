@@ -65,7 +65,7 @@
                                                             <center>
                                                                 <a href="{{ Config::get('DocumentConstant.AICTE_VIEW') }}{{ $data->file }}"
                                                                     target="_blank"
-                                                                    class="btn btn-small bg-primary download-btn1 btn-icon-only icon-ok " style="color:#fff">
+                                                                    class="btn btn-small download-btn1 btn-icon-only icon-ok " style="color:#fff;background-color:#015198">
                                                                     Download
                                                                 </a>
                                                             </center>
