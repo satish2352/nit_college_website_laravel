@@ -147,7 +147,9 @@
                     </div> --}}
                     <div class="row">
                         <div class="text-center pt-2" data-aos="fade-left">
-                            <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="40%">
+                            <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="40%"><br>
+                            
+                            <br>
                             <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
                             <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                             <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>

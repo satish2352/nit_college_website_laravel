@@ -27,7 +27,7 @@
                 <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}"
                     class="list-group-item active-rp-link">Syllabus</a>
                 @else
-                <p> Data not available.</p>
+                <p> Data not available</p>
                 @endif
                 
             </div>
