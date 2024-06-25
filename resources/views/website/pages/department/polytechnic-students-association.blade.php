@@ -38,7 +38,7 @@
                 <div class="row outer-white">
                     <div class="col-sm-12">
                         <div>
-                            <h2>Association of Civil Engineering Students - CESA : </h2>
+                            <h2> Students Association : </h2>
                         </div>
                         <div>
                         </div>

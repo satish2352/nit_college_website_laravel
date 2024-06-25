@@ -102,7 +102,7 @@ i {
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="name">
-                                    Message</label>
+                                    <b>Message</b></label>
                                 <textarea id="message" name="fld_contact_message" class="form-control" rows="9"
                                     cols="25" placeholder="Message"></textarea>
                             </div>
