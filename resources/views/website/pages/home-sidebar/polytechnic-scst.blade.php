@@ -14,8 +14,8 @@
                             @include('website.pages.home-sidebar.right-sidebar-home')
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <div class="col-lg-9 col-md-9 col-sm-9">
-                                <div class="panel panel-primary product-type">
+                            <div class="col-lg-9 col-md-9 col-sm-9 card-shadow p-4"style=" width:100%">
+                                <div >
                                     <div class="panel-heading">
                                         <center>
                                             <h3 class="panel-title" style="color:#00ae97"><b>SC/ST Cell</b></h3>
@@ -31,11 +31,11 @@
                                                     style="width:100%">
                                                     <thead class="">
                                                         <tr>
-                                                            <th scope="col" class="d-flex justify-content-center">
-                                                                SR.NO
+                                                            <th scope="col" class=" justify-content-center">
+                                                               <center> SR.NO</center>
                                                             </th>
                                                             <th scope="col" class="">
-                                                                Name
+                                                              <center> Name</center>
                                                             </th>
                                                             <th scope="col">
                                                                 <div class="d-flex justify-content-center">

@@ -16,11 +16,11 @@
                             @include('website.pages.home-sidebar.right-sidebar-home')
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <div class="col-lg-9 col-md-9 col-sm-9">
-                                <div class="panel panel-primary product-type">
+                            <div class="col-lg-9 col-md-9 col-sm-9 card-shadow p-4" style=" width:100%">
+                                <div >
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#00ae97"><b>Antiragging Committee</b>
+                                            <h3 class="panel-title" style="color:#00ae97"><b>ANTIRAGGING COMMITTEE</b>
                                             </h3>
                                         </center>
                                         <span class="pull-right clickable"><i

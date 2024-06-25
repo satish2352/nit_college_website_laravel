@@ -58,7 +58,7 @@
 
 
 
-                        <div class="col-sm-12">
+                        <!-- <div class="col-sm-12">
                             <div>
                                 <h4 style="color:#00ae97">Branches</h4>
                             </div>
@@ -74,7 +74,7 @@
 
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-sm-12">
                             <div>
@@ -144,7 +144,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
+                        <!-- <div class="col-sm-12">
                             <div>
                                 <h4 style="color:#00ae97">Require Documents :</h4>
                             </div>
@@ -165,7 +165,7 @@
 
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
 
 
 
