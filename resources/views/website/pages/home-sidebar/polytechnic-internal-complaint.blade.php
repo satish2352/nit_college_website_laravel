@@ -49,13 +49,13 @@
                                                         <th scope="col">
                                                             <div class="d-flex justify-content-center">Designation</div>
                                                         </th>
-                                                        <th scope="col">
+                                                        {{-- <th scope="col">
                                                             <div class="d-flex justify-content-center">Mobile Number
                                                             </div>
                                                         </th>
                                                         <th scope="col">
                                                             <div class="d-flex justify-content-center">Email</div>
-                                                        </th>
+                                                        </th> --}}
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -70,12 +70,12 @@
                                                         <td>
                                                             <center>{{ $data->designation_name }}</center>
                                                         </td>
-                                                        <td>
+                                                        {{-- <td>
                                                             <center>{{ $data->mobilenumber }}</center>
                                                         </td>
                                                         <td>
                                                             <center>{{ $data->email }}</center>
-                                                        </td>
+                                                        </td> --}}
                                                     </tr>
                                                     @empty
                                                     <tr>

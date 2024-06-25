@@ -158,10 +158,9 @@
             width: 40px;
         }
 
-        .img-fluid {
-            width: 50px;
-            /* Adjust width for smaller screens */
-        }
+    
+
+
 
         .nitlogo {
             padding-left: 25px !important;
@@ -181,58 +180,165 @@
             display: none;
         }
 
-        .navbar-toggler {
-            position: absolute;
-            z-index: 999;
-            top: 0;
-            /* margin-top: 25px; */
-            /* width: 45px;
-                height: 40px; */
-            right: 10px;
-            cursor: pointer;
-            /* border: 2px solid black; */
-            background-color: white;
-            box-shadow: 0 0 20px black;
+        .red-watch-bg {
+            width: 100%;
+            background-color: #015198;
+            position: relative;
+            height: 40px;
         }
 
-        /* .navbar-toggler .common{
-                position: absolute;
-                height: 2px;
-                width: 20px;
-                background-color: black;
-                border-radius: 50px;
-                transition: 0.3s ease;
-            } */
-        /* .navbar-toggler .top_line{
-                top: 30%;
-                left: 30%;
-            }
-            .navbar-toggler .middle_line{
-                top: 50%;
-                left: 30%;
-            }
-            .navbar-toggler .bottom_line{
-                top: 70%;
-                left: 30%;
-            } */
+        .nav-item a {
+            font-weight: 600 !important;
+        }
 
-        /* .navbar-toggler-icon{
-                color: black;
-                z-index: 999 ;
-            } */
+        li .dropdown-item {
+            font-weight: normal !important;
+        }
 
-        .navbar-collapse {
-            position: fixed;
-            /* top: -20px; */
-            top: 0;
-            left: -100%;
-            width: 80%;
-            height: 100%;
+        .dropdown-menu {
+            padding: 10px;
+          
             overflow: hidden;
-            background: white;
-            z-index: 999;
-            transition: left 0.3s;
-            padding-top: 1rem;
+        }
+
+        /* .spaceacademic {
+            width: 280px !important;
+        } */
+
+      
+
+
+        .dropdown-menu li a {
+            font-weight: normal !important;
+            color: #1b2834;
+      
+        }
+
+        .dropdown-menu ul li:hover {
+            background-color: #015198;
+            color: #fff;
+        }
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+            background-color: #015198;
+            color: #fff;
+        }
+
+
+        li #footer-links {
+            color: #00ae97;
+            font-size: 13px;
+            display: block;
+            font-weight: 600 !important;
+        }
+
+        a:hover {
+            color: #1b2834 !important;
+        }
+
+        a:hover:active {
+            color: #1b2834 !important;
+        }
+
+
+
+        @media only screen and (max-width: 767px) {
+            .main-header {
+                font-size: 14px;
+            }
+            
+            .navbar-nav > li > a{
+              /* padding-top: 5px; */
+              padding-bottom: 5px;
+            }
+
+            .heading1 {
+                font-size: 11px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #1b2834;
+                font-weight: 900;
+            }
+            .itemfromstart{
+                justify-content: start !important;
+            }
+
+            /* .mob-width {
+                width: 40px;
+            } */
+
+            .img-fluid {
+                width: 50px;
+              
+            }
+
+            .nitlogo {
+                padding-left: 25px !important;
+
+            }
+
+
+            .mob-display {
+                display: block;
+            }
+
+            .web-display {
+                display: none;
+            }
+
+            .navbar-toggler {
+                position: absolute;
+                z-index: 999;
+                top: 0;
+                right: 10px;
+                cursor: pointer;
+                background-color: white;
+                box-shadow: 0 0 20px black;
+            }
+
+
+            .navbar-collapse {
+                position: fixed;
+                margin-top: 251px;
+                /* top: -20px; */
+                /* top: 0; */
+                left: -100%;
+                width: 50%;
+                height: 100%;
+                /* overflow: hidden; */
+                background: white;
+                z-index: 999;
+                transition: left 0.3s;
+                /* padding-top: 1rem; */
+                /* border: 1px solid black; */
+            }
+
+            .navbar-collapse .navbar-toggler {
+                /* right: 10%; */
+                left: 0;
+            }
+
+            .navbar-collapse.show {
+                left: 0;
+            }
+
+            .mob-toggle-right-side {
+                display: flex;
+                align-items: center !important;
+            }
+
+            .mob-width-left {
+                width: 80%;
+            }
+
+            .mob-width-right {
+                width: 20%;
+            }
+
+            #iwtHeaderNav {
+                border-bottom: none;
+            }
         }
 
         .navbar-collapse .navbar-toggler {
@@ -240,8 +346,39 @@
             left: 0;
         }
 
-        .navbar-collapse.show {
-            left: 0;
+        @media only screen and (min-width: 769px){
+          
+        .nav-link::before {
+           
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: blue;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+            color: black;
+            
+        }
+
+              .aaaa .aaab:hover {
+            color: #fff !important;
+            background-color: #015198;
+            padding: 5px 17px;
+        }
+        
+        .alumnispace {
+            width: 200px !important;
+        }
+
+    }
+
+
+        .AICTE {
+            margin-left: -68px !important;
         }
 
         .mob-toggle-right-side {
@@ -388,7 +525,7 @@
                                 aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                            <div class="collapse navbar-collapse d-flex justify-content-center itemfromstart" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown ">
                                         <a class="nav-link" href="{{ route('/') }}">Home</a>
