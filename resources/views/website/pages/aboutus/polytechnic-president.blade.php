@@ -145,10 +145,10 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
             </div> -->
             <div class="president-msg">
                 <div style="text-align: center;" data-aos="fade-left">
-                    <img style="height: 300px; width:300px;" class="imgborder" src="{{ asset('public/assets/images/Suresh.A.Patil.jpg') }}" alt=""><br>
+                    <img style="height: 300px; width:300px;" class="imgborder" src="{{ asset('public/assets/images/img11.jpeg') }}" alt=""><br>
 
                     <br>
-                    <h6 class="mt-2" style="color:#00ae97;"><strong>Mr. Suresh A. Patil</strong></h6>
+                    <h6 class="mt-2 fs-3" style="color:#00ae97;"><strong>Mr. Suresh A. Patil</strong></h6>
                             <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br>
                             <span style="font-size:15px"><strong>President,
                             Nasik Institute of Technology</strong></span>

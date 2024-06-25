@@ -27,26 +27,9 @@
             --bs-navbar-padding-y: 0rem;
         }
 
-        /* .nav-link:hover {
-            background-color: #015198;
-            color: #fff;
-        } */
-        .nav-link::before {
-            /* background-color: #015198;
-            color: #fff; */
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background-color: blue;
-            /* Change color as per your need */
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            visibility: hidden;
-            transition: 0.3s ease-in-out;
-            color: black;
-        }
+    
+
+
 
         .nav-link:hover::before,
         .nav-link.active::before {
@@ -81,31 +64,21 @@
 
         .dropdown-menu {
             padding: 10px;
-
+          
+            overflow: hidden;
         }
 
-        /* .abcd {
-        width: 300px !important;
-    } */
-
-        .spaceacademic {
+        /* .spaceacademic {
             width: 280px !important;
-        }
+        } */
 
-        .aaaa .aaab:hover {
-            color: #fff !important;
-            background-color: #015198;
-            padding: 5px 17px;
-        }
+      
 
-        .alumnispace {
-            width: 200px !important;
-        }
 
         .dropdown-menu li a {
             font-weight: normal !important;
             color: #1b2834;
-            /* padding: 30px; */
+      
         }
 
         .dropdown-menu ul li:hover {
@@ -119,10 +92,6 @@
             color: #fff;
         }
 
-        /* .dropdown-item:hover{
-            color: white !important;
-            background-color: #015198;
-        } */
 
         li #footer-links {
             color: #00ae97;
@@ -139,9 +108,16 @@
             color: #1b2834 !important;
         }
 
+
+
         @media only screen and (max-width: 767px) {
             .main-header {
                 font-size: 14px;
+            }
+            
+            .navbar-nav > li > a{
+              /* padding-top: 5px; */
+              padding-bottom: 5px;
             }
 
             .heading1 {
@@ -151,14 +127,17 @@
                 color: #1b2834;
                 font-weight: 900;
             }
-
-            .mob-width {
-                width: 40px;
+            .itemfromstart{
+                justify-content: start !important;
             }
+
+            /* .mob-width {
+                width: 40px;
+            } */
 
             .img-fluid {
                 width: 50px;
-                /* Adjust width for smaller screens */
+              
             }
 
             .nitlogo {
@@ -179,54 +158,27 @@
                 position: absolute;
                 z-index: 999;
                 top: 0;
-                /* margin-top: 25px; */
-                /* width: 45px;
-                height: 40px; */
                 right: 10px;
                 cursor: pointer;
-                /* border: 2px solid black; */
                 background-color: white;
                 box-shadow: 0 0 20px black;
             }
 
-            /* .navbar-toggler .common{
-                position: absolute;
-                height: 2px;
-                width: 20px;
-                background-color: black;
-                border-radius: 50px;
-                transition: 0.3s ease;
-            } */
-            /* .navbar-toggler .top_line{
-                top: 30%;
-                left: 30%;
-            }
-            .navbar-toggler .middle_line{
-                top: 50%;
-                left: 30%;
-            }
-            .navbar-toggler .bottom_line{
-                top: 70%;
-                left: 30%;
-            } */
-
-            /* .navbar-toggler-icon{
-                color: black;
-                z-index: 999 ;
-            } */
 
             .navbar-collapse {
                 position: fixed;
+                margin-top: 251px;
                 /* top: -20px; */
-                top: 0;
+                /* top: 0; */
                 left: -100%;
-                width: 80%;
+                width: 50%;
                 height: 100%;
-                overflow: hidden;
+                /* overflow: hidden; */
                 background: white;
                 z-index: 999;
                 transition: left 0.3s;
-                padding-top: 1rem;
+                /* padding-top: 1rem; */
+                /* border: 1px solid black; */
             }
 
             .navbar-collapse .navbar-toggler {
@@ -266,6 +218,37 @@
                 /* Center align for better visibility */
             }
         }
+
+        @media only screen and (min-width: 769px){
+          
+        .nav-link::before {
+           
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: blue;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+            color: black;
+            
+        }
+
+              .aaaa .aaab:hover {
+            color: #fff !important;
+            background-color: #015198;
+            padding: 5px 17px;
+        }
+        
+        .alumnispace {
+            width: 200px !important;
+        }
+
+    }
+
 
         .AICTE {
             margin-left: -68px !important;
@@ -375,7 +358,7 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                            <div class="collapse navbar-collapse d-flex justify-content-center itemfromstart" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown ">
                                         <a class="nav-link" href="{{ route('/') }}">Home</a>

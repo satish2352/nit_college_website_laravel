@@ -67,6 +67,7 @@
     height: 250px;
 }
 
+
 .president-msg h5 {
     color: #00ae97;
     margin-top: 2rem;
@@ -134,7 +135,7 @@
             <div class=" col-lg-9">
                 <div class="pt-2 card-shadow"style="padding:0;" data-aos="flip-left">
                     <center>
-                        <h2 style="color:green" class="pt-2"><strong>Principal Desk</strong></h2>
+                        <h2 style="color:green" class="pt-2 "><strong>Principal Desk</strong></h2>
                         <!-- <h3 class="panel-title pt-2"><b>Principal Message</b></h3> -->
                     </center>
                     <br>
@@ -142,7 +143,7 @@
                 <div class="row">
                     {{-- <div class="text-center" data-aos="fade-left">
                         <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="50%">
-                        <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
+                        <h6 class="mt-2 fs-1" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
                         <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                         <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
                     </div> --}}
