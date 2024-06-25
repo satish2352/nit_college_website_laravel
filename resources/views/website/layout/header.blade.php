@@ -168,12 +168,13 @@
 
         }
 
-        .aff-hide{
+        .aff-hide {
             display: none !important;
         }
+
         .mob-display {
             display: block;
-            margine-top:-20px !important
+            margine-top: -20px !important
         }
 
         .web-display {
@@ -347,7 +348,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
-                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt. of
+                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt.
+                            of
                             Maharashtra AICTE</p>
 
                         <!-- <span class="d-lg-block d-none d-flex justify-content-center AICTE ">
@@ -536,8 +538,8 @@
                 <b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b>Affiliated To</b> :
                 <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b> --}}
             {{-- </marquee> --}}
-         
-            
+
+
             <span>
                 <span class="d-flex justify-content-center">
                     Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE</span> <br>
