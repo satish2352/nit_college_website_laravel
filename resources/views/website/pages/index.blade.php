@@ -96,7 +96,7 @@
                         </strong>
                     </span>
                 </h2>
-                <p align="justify">
+                <p align="d-flex justify-content-center " class="d-flex justify-content-center">
                     <span style="font-family: georgia,palatino;">
                         <strong>
                             <span style="font-size:small; color: black;margin-left:5px;">To give the quality technical

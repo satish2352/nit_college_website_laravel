@@ -89,6 +89,13 @@
         height: auto;
         width: 100%;
     }
+    .principle-row{
+        padding-right:0px !important;
+        margin-left:0px !important;
+    }
+    .row>*{
+        padding-right:0px;
+    }
 
     .president-msg h5,
     .president-msg p {
@@ -140,21 +147,23 @@
                     </center>
                     <br>
                
-                <div class="row">
+                <div class="row  principle-row">
                     {{-- <div class="text-center" data-aos="fade-left">
-                        <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="50%">
-                        <h6 class="mt-2 fs-1" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
+                        <img src="{{ asset('public/assets/up-images/pricipal.png') }}"  alt="" width="50%">
+                        <h1 class="mt-2 fs-1" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h1>
                         <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                         <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
                     </div> --}}
-                    <div class="row">
+
+                    
+                    <div class="row ">
                         <div class="text-center pt-2" data-aos="fade-left">
-                            <img src="{{ asset('public/assets/up-images/pricipal.png') }}" alt="" width="40%"><br>
+                            <img src="{{ asset('public/assets/up-images/pricipal.png') }}"alt="" width="40%"><br>
                             
                             <br>
-                            <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
-                            <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
-                            <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
+                            <h6 class="mt-2  fs-3" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
+                            <span style="font-size:18px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
+                            <span style="font-size:18px"><strong>M.Tech., B.E., DAE.</strong></span>
                         </div>
                         <div class="px-5 pt-1 pb-3">
                             <h5 class="mt-2" style="color:black;"><strong>Dear Students,</strong></h5>
