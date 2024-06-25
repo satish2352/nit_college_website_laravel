@@ -131,7 +131,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                 @include('website.pages.home-sidebar.right-sidebar-home')
             </div>
            <div class="col-md-9">
-           <div class="pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
+           <div class=" pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
                 <center>
                     <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
                     <!-- <h3 class="panel-title"><b>President Message</b></h3> -->
@@ -166,7 +166,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
 
 
                 </div>
-                <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;">
+                <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;font-size: 15px">
                     <p>Through my last 36 years of experience in various sectors like Industrial, Construction, Banking,
                         Social etc. I strongly believe that there is still a long way to go to attain the increasing
                         demand of technology Savvy minds by the industrial and for that the excellence in education and

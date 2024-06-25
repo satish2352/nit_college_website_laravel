@@ -157,9 +157,9 @@
                             <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
                         </div>
                         <div class="px-5 pt-1 pb-3">
-                            <h5 class="mt-2" style="color:#00ae97;">Dear Students,</h5>
+                            <h5 class="mt-2" style="color:black;"><strong>Dear Students,</strong></h5>
                             <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil
-                                Polytechnic, Nashik.<br><br>
+                                Polytechnic, Nashik.
                                 Education taught to teach us not only how to make a living but also how to live, hence
                                 everyone in our NIT'S Campus is trying to bring to full blossoming the potential in
                                 every
@@ -172,9 +172,9 @@
                                 do
                                 all your work with zeal and sincerity. If you love what you are doing, you will be
                                 successful in life.
-                                <br><br>At the Nashik Institute of Technology, everyone is committed to provide good
+                                At the Nashik Institute of Technology, everyone is committed to provide good
                                 technical education along with imbibing social values.
-                                <br>So be the part of NIT Family.<br>
+                               So be the part of NIT Family.<br>
                             </p>
                             <div style="float:right">
                                 <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>

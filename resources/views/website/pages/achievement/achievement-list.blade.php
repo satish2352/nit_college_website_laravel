@@ -33,7 +33,7 @@
                                     <div class="row">
                                         <div class="col-lg-8 col-md-8">
                                             <div>
-                                                <h4 style="color:black">
+                                                <h4 style="color:#00ae97 !important">
                                                     {{ $achievement->achievement_title }}</h4>
                                             </div>
                                             <div>

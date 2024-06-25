@@ -2,9 +2,11 @@
 .footer-menu ul li {
     /* color: #00ae97 !important; */
 }
-#about-list{
-    list-style-type:1px;
+
+#about-list {
+    list-style-type: 1px;
 }
+
 blockquote {
     padding: 10px 20px;
     font-weight: 700;
@@ -57,15 +59,24 @@ blockquote {
 a:hover {
     color: black !important;
 }
+hr{
+    display: none;
+}
 
 @media (max-width: 767px) {
     .footer .container {
         text-align: center;
     }
+    li{
+        margin-left: 20px
+    }
 
     .footer .row>div {
         margin-bottom: 20px;
-        text-align: center;
+      padding-left: 40px;
+    }
+    hr{
+        display: block;
     }
 }
 
@@ -82,35 +93,41 @@ a:hover {
     </div>
 </div>
 
-<div class="container-fluid footer" style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0;">
+<div class="container-fluid footer"
+    style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0;">
     <div>
         <div class="row">
             <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-2 col-md-2">
                 <h5><b>About Us</b></h5>
-                <ul id="about-list">
-                    <li><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
-                    <li><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
-                    <li><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
-                    <li><a href="{{ route('about-governingbody') }}" style="color: #fff;">Governing Body</a></li>
-                    <li><a href="{{ route('about-futureplans') }}" style="color: #fff;">Future Plans</a></li>
+                <ul id="about-list ">
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('about-governingbody') }}" style="color: #fff;">Governing Body</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('about-futureplans') }}" style="color: #fff;">Future Plans</a></li>
                 </ul>
+                <hr>
             </div>
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-4 col-md-3">
                 <h5><b>Departments</b></h5>
                 <ul>
                     @foreach ($menuDepartment as $menuItemDepartment)
-                    <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}" style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
+                            style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
+                <hr>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-6">
                 <h5><b>Facilities</b></h5>
                 <ul>
                     @foreach ($menuFacility as $menuFacilityItem)
-                    <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}" style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
+                            style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
                     @endforeach
                 </ul>
+                <hr>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div>
@@ -127,9 +144,11 @@ a:hover {
                                 fjs.parentNode.insertBefore(js, fjs);
                             }(document, 'script', 'facebook-jssdk'));
                             </script>
-                            <div class="fb-page" data-href="#" data-width="226" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-page" data-href="#" data-width="226" data-small-header="true"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL POLYTECHNIC, NIT-422003</a></blockquote>
+                                    <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL
+                                            POLYTECHNIC, NIT-422003</a></blockquote>
                                     <span class="footer-social-icon">
                                         <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                                         <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
@@ -154,7 +173,9 @@ a:hover {
                 <a style="color:black" href="tel:9552551056">9552551056</a>&nbsp;
                 <a style="color:black;" href="tel:8149822404">8149822404</a>&nbsp;
                 <a href="mailto:info@nitnasik.com" style="color:black;">info@nitnasik.com</a>
-                <span style="color:black;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:black">Sumago Infotech <img src="{{ asset('public/assets/up-images/slogo.png') }}" alt="" style="width:19px;"></a>&nbsp;
+                <span style="color:black;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed
+                    By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:black">Sumago Infotech
+                    <img src="{{ asset('public/assets/up-images/slogo.png') }}" alt="" style="width:19px;"></a>&nbsp;
             </span>
         </div>
     </div>
@@ -166,7 +187,8 @@ a:hover {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- Badge Code - Do Not Change The Code -->
 <script>
-document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() + "'><\/script>");
+document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() +
+    "'><\/script>");
 </script>
 <script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
 <!-- jQuery -->
@@ -203,11 +225,13 @@ $(document).ready(function() {
         if (!$this.hasClass('panel-collapsed')) {
             $this.parents('.panel').find('.panel-body').slideUp();
             $this.addClass('panel-collapsed');
-            $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass('glyphicon glyphicon-plus-sign');
+            $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
+                'glyphicon glyphicon-plus-sign');
         } else {
             $this.parents('.panel').find('.panel-body').slideDown();
             $this.removeClass('panel-collapsed');
-            $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass('glyphicon glyphicon-minus-sign');
+            $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
+                'glyphicon glyphicon-minus-sign');
         }
     });
 

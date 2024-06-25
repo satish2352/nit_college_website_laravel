@@ -102,7 +102,7 @@ i {
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="name">
-                                    Message</label>
+                                    <b>Message</b></label>
                                 <textarea id="message" name="fld_contact_message" class="form-control" rows="9"
                                     cols="25" placeholder="Message"></textarea>
                             </div>
@@ -128,38 +128,38 @@ i {
                 <div class="row align-text-bottom">
                     <div class="col-12">
                     <form>
-                        <legend><span class="glyphicon glyphicon-globe">&nbsp;</span>Our Office</legend>
+                        <legend><span class="glyphicon glyphicon-globe"></span>Our Office</legend>
                         <address>
                             <strong style="color:green">{{ $contactusdata[0]['contact_us_name'] }} </strong>
                         </address>
                         <address>
-                            <span class="glyphicon glyphicon-home" style="color: #454545;"></span>&nbsp;<strong><strong
+                            <span class="glyphicon glyphicon-home" style="color: #454545;"></span><strong><strong
                                     style="color:green">Address</strong> <strong
                                     style="color: #454545;">:</strong>&nbsp;
                                 <span
                                     style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</span></strong><br>
                         </address>
                         <address>
-                            <span class="glyphicon glyphicon-phone" style="color: #454545;"></span>&nbsp;<strong><strong
-                                    style="color:green">Tel.</strong> <strong style="color: #454545;">:</strong>&nbsp;
+                            <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><strong><strong
+                                    style="color:green">Tel.</strong> <strong style="color: #454545;">:</strong>
                                 <span
                                     style="color: #454545;">{{ $contactusdata[0]['contact_us_telephone'] }}</span></strong><br>
                         </address>
                         <address>
-                            <span class="glyphicon glyphicon-phone" style="color: #454545;"></span>&nbsp;<strong><strong
+                            <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><strong><strong
                                     style="color:green">Mobile.</strong> <strong
                                     style="color: #454545;">:</strong>&nbsp;
                                 <span
                                     style="color: #454545;">{{ $contactusdata[0]['contact_us_mobile'] }}</span></strong><br>
                         </address>
                         <address>
-                            <span class="glyphicon glyphicon-globe" style="color: #454545;"></span>&nbsp;<strong
-                                style="color:green"> Website :</strong>&nbsp; <span
+                            <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><strong
+                                style="color:green"> <b>Website :</b></strong>&nbsp; <span
                                 style="color: #454545;">{{ $contactusdata[0]['contact_us_website'] }}</span><br>
                         </address>
                         <address>
-                            <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span>&nbsp;<strong
-                                style="color:green">Email :</strong>&nbsp;<a href="mailto:#"><span
+                            <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span><strong
+                                style="color:green; "><b>Email :</b></strong>&nbsp;<a href="mailto:#"><span
                                     style="color: #454545;">{{ $contactusdata[0]['contact_us_email'] }}</span></a>
 
                         </address>
