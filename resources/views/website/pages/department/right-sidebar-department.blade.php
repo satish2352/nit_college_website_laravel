@@ -1,7 +1,7 @@
     <div class="col-sm-12 right-col-fix">
         <div>
             <div class="list-group">
-                <div class="list-group-item"><strong>NIT POLYTECHNIC, NASHIK</strong></div>
+                <div class="list-group-item"><strong></strong></div>
                 @if (isset($data_output_category) && isset($data_output_category['id']))
                 <a href="{{ route('department-profile', ['id' => $data_output_category['id']]) }}"
                     class="list-group-item ">Profile</a>

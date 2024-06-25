@@ -59,15 +59,24 @@ blockquote {
 a:hover {
     color: black !important;
 }
+hr{
+    display: none;
+}
 
 @media (max-width: 767px) {
     .footer .container {
         text-align: center;
     }
+    li{
+        margin-left: 20px
+    }
 
     .footer .row>div {
         margin-bottom: 20px;
-        text-align: center;
+      padding-left: 40px;
+    }
+    hr{
+        display: block;
     }
 }
 
@@ -91,31 +100,34 @@ a:hover {
             <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-2 col-md-2">
                 <h5><b>About Us</b></h5>
-                <ul id="about-list">
-                    <li><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
-                    <li><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
-                    <li><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
-                    <li><a href="{{ route('about-governingbody') }}" style="color: #fff;">Governing Body</a></li>
-                    <li><a href="{{ route('about-futureplans') }}" style="color: #fff;">Future Plans</a></li>
+                <ul id="about-list ">
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('about-governingbody') }}" style="color: #fff;">Governing Body</a></li>
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('about-futureplans') }}" style="color: #fff;">Future Plans</a></li>
                 </ul>
+                <hr>
             </div>
             <div class="col-lg-4 col-md-3">
                 <h5><b>Departments</b></h5>
                 <ul>
                     @foreach ($menuDepartment as $menuItemDepartment)
-                    <li><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
                             style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
                     @endforeach
                 </ul>
+                <hr>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-6">
                 <h5><b>Facilities</b></h5>
                 <ul>
                     @foreach ($menuFacility as $menuFacilityItem)
-                    <li><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
+                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
                             style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
                     @endforeach
                 </ul>
+                <hr>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div>

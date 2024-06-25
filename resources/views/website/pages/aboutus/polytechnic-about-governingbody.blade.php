@@ -48,7 +48,7 @@
         padding-bottom: 20px
     }
     .govbody{
-        margin-top: -60px;
+        margin-top: -70px;
     }
 
     .panel-title {
@@ -128,7 +128,7 @@
                                 <div>
                                     <div class="list-group">
 
-                                        <div class="list-group-item"><b>NIT POLYTECHNIC, NASHIK</b></div>
+                                        <div class="list-group-item"><b></b></div>
                                         <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश –
                                             थोडक्यात</a>
 
@@ -174,7 +174,7 @@
                         <div class="table-responsive">
 
                             <!-- Add this wrapper -->
-                            <div class="card-shadow p-4">
+                            <div class="product-type card-shadow p-4">
                                 <div class="panel-heading">
                                     <center>
                                         <h3 class="panel-title pb-2" style="color:#00ae97; font-size:20px"><b>GOVERNING BODY</b></h3>
