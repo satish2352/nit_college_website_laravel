@@ -119,8 +119,8 @@
                 @include('website.pages.home-sidebar.right-sidebar-home')
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                <div class="col-lg-9 col-md-9 col-sm-9 product-type card-shadow" style="width:100%">
-                    <div class="panel panel-primary ">
+                <div class="col-lg-9 col-md-9 col-sm-9" style="width:100%">
+                    <div class="panel panel-primary product-type">
                         <div class="panel-heading">
                             <center>
                                 <h3 class="panel-title pt-3 pb-1" style="color:#00ae97;"><b>AFFILIATION CERTIFICATES </b></h3>
