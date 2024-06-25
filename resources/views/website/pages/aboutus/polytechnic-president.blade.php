@@ -166,7 +166,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
 
 
                 </div>
-                <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;">
+                <div data-aos="fade-right " class="px-3  pt-3" style="padding-bottom: 80px;font-size: 15px">
                     <p>Through my last 36 years of experience in various sectors like Industrial, Construction, Banking,
                         Social etc. I strongly believe that there is still a long way to go to attain the increasing
                         demand of technology Savvy minds by the industrial and for that the excellence in education and
