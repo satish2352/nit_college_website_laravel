@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="col-md-9" style="margin-top: 10px;">
+        <div class="col-md-9" style="margin-top: 18px;">
             <div id="myCarousel" class="carousel slide"
                 data-bs-ride="carousel                                                                                                                                                                          ">
                 <!-- Indicators -->
