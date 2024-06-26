@@ -50,9 +50,9 @@
                             <div class="panel-body">
 
                                 @if (isset($data_output_category) && isset($data_output_category['id']))
-                                <h3 class="" style="color:#00ae97; font-size:18px; padding-left:17px">
-                                    <strong>{{ $data_output_category->Department }}</strong>
-                                </h3>
+                                <div class="" style="color:#00ae97; font-size:20px; padding-left:17px">
+                                    <strong>{{ $data_output_category->Department }} Syllabus...</strong>
+                                </div>
                                 @else
                                 @endif
 
