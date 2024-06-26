@@ -49,12 +49,12 @@
 
     }
 
-    .red-watch-bg {
-        width: 100%;
-        background-color: #015198;
-        position: relative;
-        height: 40px;
-    }
+        .red-watch-bg {
+            width: 100%;
+            background-color:   #015198;
+            position: relative;
+            height: 40px;
+        }
 
     .nav-item a {
         font-weight: 600 !important;
@@ -79,7 +79,7 @@
 
     /* .aaaa .aaab:hover {
             color: #fff !important;
-            background-color: #015198;
+            background-color:   #015198;
             padding: 5px 17px;
         } */
 
@@ -93,20 +93,20 @@
         /* padding: 30px; */
     }
 
-    .dropdown-menu ul li:hover {
-        background-color: #015198;
-        color: #fff;
-    }
+        .dropdown-menu ul li:hover {
+            background-color:   #015198;
+            color: #fff;
+        }
 
-    .dropdown-item.active,
-    .dropdown-item:active {
-        background-color: #015198;
-        color: #fff;
-    }
+        .dropdown-item.active,
+        .dropdown-item:active {
+            background-color:   #015198;
+            color: #fff;
+        }
 
     /* .dropdown-item:hover{
             color: white !important;
-            background-color: #015198;
+            background-color:   #015198;
         } */
 
     li #footer-links {
@@ -138,11 +138,11 @@
         color: black;
     }
 
-    .aaaa .aaab:hover {
-        color: #fff !important;
-        background-color: #015198 !important;
-        padding: 5px 17px;
-    }
+        .aaaa .aaab:hover {
+            color: #fff !important;
+            background-color:   #015198 !important;
+            padding: 5px 17px;
+        }
 
 
     #myImg {
@@ -251,19 +251,19 @@
 
     @media only screen and (max-width: 767px) {
 
-        .nav-link::before {
-
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background-color: #e6f3ff !important;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            visibility: hidden;
-            transition: 0.3s ease-in-out;
-            color: black;
-        }
+            .nav-link::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: #fff !important;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                visibility: hidden;
+                transition: 0.3s ease-in-out;
+                color: black;
+            }
 
         .aaaa .aaab:hover {
             color: black !important;
@@ -301,21 +301,21 @@
             display: none !important;
         }
 
-        .mob-display {
-            display: block;
-            margine-top: -20px !important;
-        }
+            .mob-display {
+                display: block;
+                margine-top: -20px !important
+            }
 
         .web-display {
             display: none;
         }
 
-        .red-watch-bg {
-            width: 100%;
-            background-color: #015198;
-            position: relative;
-            height: 40px;
-        }
+            .red-watch-bg {
+                width: 100%;
+                background-color:   #015198;
+                position: relative;
+                height: 40px;
+            }
 
         .nav-item a {
             font-weight: 600 !important;
@@ -344,16 +344,16 @@
 
         }
 
-        .dropdown-menu ul li:hover {
-            background-color: #015198;
-            color: #fff;
-        }
+            .dropdown-menu ul li:hover {
+                background-color:   #015198;
+                color: #fff;
+            }
 
-        .dropdown-item.active,
-        .dropdown-item:active {
-            background-color: #015198;
-            color: #fff;
-        }
+            .dropdown-item.active,
+            .dropdown-item:active {
+                background-color:   #015198;
+                color: #fff;
+            }
 
 
         li #footer-links {
@@ -433,16 +433,17 @@
 
 
 
-            .navbar-collapse {
-                position: fixed;
-                margin-top: 251px;
-                left: -100%;
-                width: 50%;
-                height: 100%;
-                background: white;
-                z-index: 999;
-                transition: left 0.3s;
-            }
+                .navbar-collapse {
+                    position: fixed;
+                    margin-top: 251px;
+
+                    left: -100%;
+                    width: 50%;
+                    height: 100%;
+                    background: white;
+                    z-index: 999;
+                    transition: left 0.3s;
+                }
 
 
             .navbar-collapse .navbar-toggler {
@@ -527,33 +528,28 @@
         }
     }
 
-    @media only screen and (max-width: 767px) {
-
-        /* Show close button on mobile devices */
-        .btn-close {
-            display: block;
-            position: absolute;
-            background-color: #e6f3ff;
-            color: black;
-            font-size: 30px;
-            height: 15px;
-            width: 10px;
-            top: 25px;
-            /* Adjust top position as needed */
-            right: 21px;
-            /* Adjust right position as needed */
-            z-index: 1001;
-            /* Ensure it's above the offcanvas content */
-        }
-
-        .gunju1 {
-            margin-left: 0px !important;
-        }
-
-        .offcanvas-body {
-            background-color: #e6f3ff !important;
-        }
+@media only screen and (max-width: 767px) {
+    /* Show close button on mobile devices */
+    .btn-close {
+        display: block;
+        position: absolute;
+        background-color: #e6f3ff;
+        color: black;
+        font-size: 30px;
+        height: 15px;
+        width: 10px;
+        top: 25px; /* Adjust top position as needed */
+        right: 21px; /* Adjust right position as needed */
+        z-index: 1001; /* Ensure it's above the offcanvas content */
     }
+    .gunju1{
+        margin-left: 0px !important;
+    }
+    .offcanvas-body{
+        background-color: #e6f3ff;
+    }
+}
+
     </style>
 </head>
 
@@ -626,8 +622,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
-                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt.
-                            of
+                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt. of
                             Maharashtra AICTE</p>
 
                         <!-- <span class="d-lg-block d-none d-flex justify-content-center AICTE ">

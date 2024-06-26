@@ -94,7 +94,7 @@ hr{
 </div>
 
 <div class="container-fluid footer"
-    style="background-color:#015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0;">
+    style="background-color:  #015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0;">
     <div>
         <div class="row">
             <div class="col-lg-1 col-md-1"></div>

@@ -103,7 +103,7 @@
 
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container">
-        <div class="col-sm-12" style="padding:0;">
+        <div class="col-sm-12" style="margin-top:20px;">
             <center>
                 <h2 style="color:green"><strong>Gallery</strong></h2>
             </center>
@@ -111,7 +111,7 @@
     </div>
 </div>
 
-<div class="container-fluid" style="background:#fff; padding-top:40px; padding-bottom:40px">
+<div class="container-fluid" style="background:#fff; padding-top:40px; padding-bottom:40px;">
     <div class="container">
         <div class="row">
             @if (isset($error))
@@ -132,7 +132,7 @@
                 <p class="department-error">Data not available</p>
             </div>
             @else
-            <div class="col-lg-3 col-md-3 col-sm-3 imghover">
+            <div class="col-lg-3 col-md-3 col-sm-6 "  style="margin-bottom:15px;">
                 <img id="myImg{{ $key }}" src="{{ Config::get('DocumentConstant.GALLERY_VIEW') }}{{ $data['fld_gallery_photo'] }}" class="img-fluid img-thumbnail myImg" alt="Certificate Image {{ $key }}">
             </div>
 
