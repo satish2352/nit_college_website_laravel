@@ -1,5 +1,18 @@
 @extends('website.layout.master')
 @section('content')
+
+<style>
+    @media only screen and (max-width:767px) {
+        .sidebar-mb{
+        display: none;
+    } 
+    }
+    
+</style>
+
+
+
+
 <div class="container-fluid bg-#fff" id="iwtPageHeading">
     {{-- <div class="container">
             <div class="col-sm-12" style="padding:0;">
@@ -59,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
+            <div class="col-md-3 hidden-sm right-col-fix sidebar-mb" id="iwtRightPannel">
                 @include('website.pages.department.right-sidebar-department')
             </div>
         </div>

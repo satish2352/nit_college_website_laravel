@@ -127,43 +127,45 @@ i {
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="row align-text-bottom">
                     <div class="col-12">
-                    <form>
-                        <legend><span class="glyphicon glyphicon-globe"></span>Our Office</legend>
-                        <address>
-                            <strong style="color:green">{{ $contactusdata[0]['contact_us_name'] }} </strong>
-                        </address>
-                        <address>
-                            <span class="glyphicon glyphicon-home" style="color: #454545;"></span><strong><strong
-                                    style="color:green">Address</strong> <strong
-                                    style="color: #454545;">:</strong>&nbsp;
-                                <span
-                                    style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</span></strong><br>
-                        </address>
-                        <address>
-                            <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><strong><strong
-                                    style="color:green">Tel.</strong> <strong style="color: #454545;">:</strong>
-                                <span
-                                    style="color: #454545;">{{ $contactusdata[0]['contact_us_telephone'] }}</span></strong><br>
-                        </address>
-                        <address>
-                            <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><strong><strong
-                                    style="color:green">Mobile.</strong> <strong
-                                    style="color: #454545;">:</strong>&nbsp;
-                                <span
-                                    style="color: #454545;">{{ $contactusdata[0]['contact_us_mobile'] }}</span></strong><br>
-                        </address>
-                        <address>
-                            <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><strong
-                                style="color:green"> <b>Website :</b></strong>&nbsp; <span
-                                style="color: #454545;">{{ $contactusdata[0]['contact_us_website'] }}</span><br>
-                        </address>
-                        <address>
-                            <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span><strong
-                                style="color:green; "><b>Email :</b></strong>&nbsp;<a href="mailto:#"><span
-                                    style="color: #454545;">{{ $contactusdata[0]['contact_us_email'] }}</span></a>
+                        <form class="mt-4">
+                            <legend><span class="glyphicon glyphicon-globe"></span>Our Office</legend>
+                            <address>
+                                <b style="color:green">{{ $contactusdata[0]['contact_us_name'] }} </b>
+                            </address>
+                            <address>
+                                <span class="glyphicon glyphicon-home" style="color: #454545;"></span><b
+                                        style="color:green">Address</b> <b
+                                        style="color: #454545;">:</b>&nbsp;
+                                    <span
+                                        style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</span><br>
+                            </address>
+                            <address>
+                                <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
+                                        style="color:green">Tel.</b> <b style="color: #454545;">:</b>
+                                    <span
+                                        style="color: #454545;">{{ $contactusdata[0]['contact_us_telephone'] }}</span><br>
+                            </address>
+                            <address>
+                                <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
+                                        style="color:green">Mobile.</b> <b
+                                        style="color: #454545;">:</b>&nbsp;
+                                    <span
+                                        style="color: #454545;">{{ $contactusdata[0]['contact_us_mobile'] }}</span><br>
+                            </address>
+                            <address>
+                                <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><b
+                                    style="color:green">Website :</b>&nbsp;
+                                <a href="www.nitnasik.com" style="color: #454545;">
+                                {{ $contactusdata[0]['contact_us_website'] }}</a><br>
+                            </address>
+                            <address>
+                                <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span><b
+                                    style="color:green; ">Email :</b>&nbsp;<a href="mailto:#">
+                                    <link style="color: #454545;">{{ $contactusdata[0]['contact_us_email'] }}</link>
+                                </a>
 
-                        </address>
-                    </form>
+                            </address>
+                        </form>
                     </div>
                 </div>
             </div>
