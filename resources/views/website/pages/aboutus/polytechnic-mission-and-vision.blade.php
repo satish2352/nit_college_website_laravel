@@ -50,10 +50,10 @@
 
 }
 
-.panel_product_type {
+/* .panel_product_type {
 
     margin-top: 20px;
-}
+} */
 
 .panel_product_type {
     line-height: 26px;
@@ -93,7 +93,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                     <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
                         @include('website.pages.home-sidebar.right-sidebar-home')
                     </div>
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" >
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="panel panel-primary product-type ">
                                 <div class="panel-heading">
@@ -105,7 +105,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                                         common masses.</p>
                                 </div>
                             </div>
-                            <div class="panel panel-primary product-type">
+                            <div class="panel panel-primary product-type" style="margin-top: 0px!important; ">
                                 <div class="panel-heading">
                                     <h3 class="panel-title" style="color:#00ae97"><b>Vision</b></h3>
                                     {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
@@ -139,7 +139,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
     </div>
 </div>
 
-<div class="container-fluid" style=" background:#fff;">
+<div class="container-fluid" >
     <!-- padding-top:40px; padding-bottom:40px -->
     <div class="container">
         <div class="row" style="padding:0px">

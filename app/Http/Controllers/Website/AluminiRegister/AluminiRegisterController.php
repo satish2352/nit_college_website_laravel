@@ -60,6 +60,7 @@ class AluminiRegisterController extends Controller {
 
                 'department' => 'required|max:255',
                 'message' => 'required|max:500',
+                'g-recaptcha-response' => 'required|captcha',
             ];
             $messages = [
                 'name.required' => 'Please enter the student name.',
@@ -119,6 +120,8 @@ class AluminiRegisterController extends Controller {
 
                 'message.required' => 'Please enter a message.',
                 'message.max' => 'The message may not be greater than 500 characters.',
+                'g-recaptcha-response.captcha' => 'Captcha error! try again later.',
+                'g-recaptcha-response.required' =>'Please verify that you are not a robot.',
             ];
 
             $validation = Validator::make( $request->all(), $rules, $messages );

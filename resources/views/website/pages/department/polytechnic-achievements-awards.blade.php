@@ -10,11 +10,18 @@
 <div class="container-fluid" style="padding-bottom:20px">
     <div class="container card-shadow">
 
-        <div class="row" style="padding:0px ">
+        <div class="row" style="padding:0px "> 
             <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
-               
+
                 <div class="row outer-white">
                     <div class="col-lg-12 col-sm-12">
+                    <div>
+                                @if (isset($data_output_category) && isset($data_output_category['id']))
+                                    <div class="" style="color:#00ae97; padding:10px 0px;font-size:20px;padding-left:19px;">
+                                        <strong>{{ $data_output_category->Department }} Download Time Table Here....</strong></div>
+                                @else
+                                @endif
+                            </div>
                         <div >
                             <div class="card-body">
                                 <div>

@@ -119,7 +119,7 @@ i {
                         </div>
                         <div class="display:flex; text-align:center; justify-content: center;">
                             <button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs"
-                                style="margin-top: 25px; background-color:#015198; color:#fff;">Submit</button>
+                                style="margin-top: 25px; background-color:  #015198; color:#fff;">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -155,13 +155,12 @@ i {
                             <address>
                                 <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><b
                                     style="color:green">Website :</b>&nbsp;
-                                <a href="www.nitnasik.com" style="color: #454545;">
+                                <a href="https://nitnasik.com/" style="color: blue;">
                                 {{ $contactusdata[0]['contact_us_website'] }}</a><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span><b
-                                    style="color:green; ">Email :</b>&nbsp;<a href="mailto:#">
-                                    <link style="color: #454545;">{{ $contactusdata[0]['contact_us_email'] }}</link>
+                                    style="color:green; ">Email :</b>&nbsp;<a href="mailto:#" style="color: blue !important;">{{ $contactusdata[0]['contact_us_email'] }}
                                 </a>
 
                             </address>

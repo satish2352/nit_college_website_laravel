@@ -52,6 +52,7 @@ class ContactUsController extends Controller
                 'fld_contact_email' => 'required|regex:/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z])+\.)+([a-zA-Z0-9]{2,4})+$/',
                 'fld_contact_number' =>  'required|regex:/^[0-9]{10}$/',
                 'fld_contact_message' => 'required',
+                'g-recaptcha-response' => 'required|captcha',
             ];
             $messages = [
                 'fld_contact_name.required' => 'Please  enter name.',
@@ -66,6 +67,8 @@ class ContactUsController extends Controller
                 'fld_contact_number.regex' => 'Please enter only numbers with 10-digit.',
 
                 'fld_contact_message.required' => 'Please  enter Subject.',
+                'g-recaptcha-response.captcha' => 'Captcha error! try again later.',
+                'g-recaptcha-response.required' =>'Please verify that you are not a robot.',
 
             ];
 
