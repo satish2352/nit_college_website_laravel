@@ -703,13 +703,13 @@
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Facilities
                                         </a>
-                                        <!-- <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu">
                                         @foreach ($menuFacility as $menuFacility)
                                             <li class=" aaaa">
-                                                <a class="dropdown-item aaab " href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
+                                                <a class="dropdown-item aaab " href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
                                             </li>
                                             @endforeach
-                                        </ul> -->
+                                        </ul> 
                                     </li>
 
                                     <li class="nav-item dropdown">
