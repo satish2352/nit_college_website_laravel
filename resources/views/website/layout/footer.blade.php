@@ -165,16 +165,16 @@ hr{
     </div>
 </div>
 
-<div class="container-fluid" style="background-color: #fff">
+<div class="container-fluid" style="background-color: #000">
     <div class="container">
         <div class="row py-2">
-            <span style="color:black;">
-                <span style="color:black;">Contact</span>
-                <a style="color:black" href="tel:9552551056">9552551056</a>&nbsp;
-                <a style="color:black;" href="tel:8149822404">8149822404</a>&nbsp;
-                <a href="mailto:info@nitnasik.com" style="color:black;">info@nitnasik.com</a>
-                <span style="color:black;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed
-                    By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:black">Sumago Infotech
+            <span style="color:white;">
+                <span style="color:white;">Contact</span>
+                <a style="color:white" href="tel:9552551056">9552551056</a>&nbsp;
+                <a style="color:white;" href="tel:8149822404">8149822404</a>&nbsp;
+                <a href="mailto:info@nitnasik.com" style="color:white;">info@nitnasik.com</a>
+                <span style="color:white;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed
+                    By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:white">Sumago Infotech
                     <img src="{{ asset('public/assets/up-images/slogo.png') }}" alt="" style="width:19px;"></a>&nbsp;
             </span>
         </div>

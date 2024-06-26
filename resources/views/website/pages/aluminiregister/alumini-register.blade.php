@@ -624,7 +624,17 @@ $('#carouselHacked').carousel();
                         </div> --}}
 
 
+                                        <div class="col-md-12 py-2 captcha_set" style="text-align: left;">
+                                            {!! NoCaptcha::renderJs() !!}
+                                            {!! NoCaptcha::display() !!}
 
+                                            @if ($errors->has('g-recaptcha-response'))
+                                            <span class="help-block">
+                                                <span
+                                                    class="red-text">{{ $errors->first('g-recaptcha-response') }}</span>
+                                            </span>
+                                            @endif
+                                        </div>
                                         <div class="creatediv1 marginTop30  row pt-1">
                                             <div class="col-lg-12">
                                                 <center> <button type="submit" name="submit" value="submit"
