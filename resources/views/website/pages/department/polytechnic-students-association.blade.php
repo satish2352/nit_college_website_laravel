@@ -59,13 +59,13 @@
 
                         <div id="collapse4" class="">
                             <div class="panel-body">
-                                <div class="row outer-white">
+                                <!-- <div class="row outer-white">
                                     <div class="col-sm-12">
                                         <div>
                                             <h3></h3>
                                         </div>
                                     </div>
-                                </div><!-- /.row -->
+                                </div>/.row -->
                                 <div class="row outer-white">
                                     <div class="col-sm-12">
                                         <!--<img src="../up-images/engineering-mechanics-labimgFile56d40781da7f6.jpg" alt="Engineering Mechanics Laboratory" class="img-responsive" style="margin:0 auto">-->
@@ -77,7 +77,7 @@
                                             <h2></h2>
                                         </div>
                                         <center>
-                                            <div class="table-responsive p-3 pt-5">
+                                            <div class="table-responsive p-3 ">
                                                 <table id="example"
                                                     class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
                                                     style="width:100%">

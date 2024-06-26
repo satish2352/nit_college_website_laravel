@@ -37,7 +37,7 @@
                                                         <div class="" style="color:#00ae97; font-size:20px;">
                                                            <strong> {{ $data->Department }}</strong>
                                                         </div>
-                                                        <div>
+                                                        <div style="margin-top: 40px;">
                                                             <p>{{ strip_tags($data->department_description) }}</p>
                                                         </div>
                                                         <img id="english"

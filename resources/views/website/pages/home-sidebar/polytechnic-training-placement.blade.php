@@ -329,7 +329,7 @@
     margin-bottom: 12px;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
-    background-color: #015198;
+    background-color:   #015198;
     color: rgb(255, 255, 255);">
     <i>Last updated on : 01-08-2016 12:32 PM</i>
     </div> -->

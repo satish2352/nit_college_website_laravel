@@ -149,7 +149,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
 
                     <br>
                     <h6 class="mt-2 fs-3" style="color:#00ae97;"><strong>Mr. Suresh A. Patil</strong></h6>
-                            <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br>
+                            <!-- <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br> -->
                             <span style="font-size:15px"><strong>President,
                             Nasik Institute of Technology</strong></span>
                     <br>

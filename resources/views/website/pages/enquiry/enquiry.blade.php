@@ -132,7 +132,7 @@
                                       </div>
                                 
                               <div class="display:flex; text-align:center; justify-content: center;">
-                                    <button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs" style="margin-top: 25px; background-color:#015198; color:#fff;">Submit</button>
+                                    <button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs" style="margin-top: 25px; background-color:  #015198; color:#fff;">Submit</button>
                               </div>
                             </div>
                         </form>

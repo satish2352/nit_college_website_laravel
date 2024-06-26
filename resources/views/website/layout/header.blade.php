@@ -49,7 +49,7 @@
 
         .red-watch-bg {
             width: 100%;
-            background-color: #015198;
+            background-color:   #015198;
             position: relative;
             height: 40px;
         }
@@ -77,7 +77,7 @@
 
         /* .aaaa .aaab:hover {
             color: #fff !important;
-            background-color: #015198;
+            background-color:   #015198;
             padding: 5px 17px;
         } */
 
@@ -92,19 +92,19 @@
         }
 
         .dropdown-menu ul li:hover {
-            background-color: #015198;
+            background-color:   #015198;
             color: #fff;
         }
 
         .dropdown-item.active,
         .dropdown-item:active {
-            background-color: #015198;
+            background-color:   #015198;
             color: #fff;
         }
 
         /* .dropdown-item:hover{
             color: white !important;
-            background-color: #015198;
+            background-color:   #015198;
         } */
 
         li #footer-links {
@@ -138,7 +138,7 @@
 
         .aaaa .aaab:hover {
             color: #fff !important;
-            background-color: #015198 !important;
+            background-color:   #015198 !important;
             padding: 5px 17px;
         }
 
@@ -250,11 +250,11 @@
         @media only screen and (max-width: 767px) {
 
             .nav-link::before {
-                
+                content: "";
                 position: absolute;
                 width: 0;
                 height: 2px;
-                background-color: #e6f3ff !important;
+                background-color: #fff !important;
                 bottom: 20px;
                 left: 50%;
                 transform: translateX(-50%);
@@ -301,7 +301,7 @@
 
             .mob-display {
                 display: block;
-                margine-top: -20px !important;
+                margine-top: -20px !important
             }
 
             .web-display {
@@ -310,7 +310,7 @@
 
             .red-watch-bg {
                 width: 100%;
-                background-color: #015198;
+                background-color:   #015198;
                 position: relative;
                 height: 40px;
             }
@@ -343,13 +343,13 @@
             }
 
             .dropdown-menu ul li:hover {
-                background-color: #015198;
+                background-color:   #015198;
                 color: #fff;
             }
 
             .dropdown-item.active,
             .dropdown-item:active {
-                background-color: #015198;
+                background-color:   #015198;
                 color: #fff;
             }
 
@@ -434,6 +434,7 @@
                 .navbar-collapse {
                     position: fixed;
                     margin-top: 251px;
+
                     left: -100%;
                     width: 50%;
                     height: 100%;
@@ -542,7 +543,7 @@
         margin-left: 0px !important;
     }
     .offcanvas-body{
-        background-color: #e6f3ff !important;
+        background-color: #e6f3ff;
     }
 }
 
@@ -616,8 +617,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
-                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt.
-                            of
+                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt. of
                             Maharashtra AICTE</p>
 
                         <!-- <span class="d-lg-block d-none d-flex justify-content-center AICTE ">

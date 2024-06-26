@@ -49,8 +49,9 @@
                                 @endif
                             @endif
                         </div> --}}
-                        <div class="container">
+                        <div class="container" style="margin-left: 20px;">
                             <div class="row">
+                                
                                 @if ($data_output->isEmpty())
                                     <div class="col-sm-12 d-flex justify-content-center">
                                         <div>
@@ -62,10 +63,10 @@
                                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                                             <div class="card">
                                                 <img src="{{ Config::get('DocumentConstant.ACTIVITY_VIEW') }}{{ $item->photo }}" class="card-img-top img-fluid img-thumbnail" alt="{{ $item->activities_name }}" style="height: 300px; object-fit: cover;">
-                                                <div class="card-body">
+                                                <!-- <div class="card-body">
                                                     {{-- <h5 class="card-title" style="color: #00ae97;">{{ $item->activities_name }}</h5> --}}
                                                     <p class="card-text">{{ $item->activity_description }}</p>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     @endforeach
