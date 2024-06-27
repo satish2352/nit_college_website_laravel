@@ -59,6 +59,9 @@ blockquote {
 a:hover {
     color: black !important;
 }
+.footerdetail:hover {
+    color: white !important;
+}
 hr{
     display: none;
 }
@@ -99,36 +102,38 @@ hr{
         <div class="row">
             <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-2 col-md-2">
-                <h5><b>About Us</b></h5>
+                <h5 style="color: white; font-size:22px;"><b>About Us</b></h5>
                 <ul id="about-list ">
-                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-president') }}" style="color: #fff;">President Desk</a></li>
-                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-principals') }}" style="color: #fff;">Principal Desk</a></li>
-                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('mission-and-vision') }}" style="color: #fff;">Mission & Vision</a></li>
-                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('about-governingbody') }}" style="color: #fff;">Governing Body</a></li>
-                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('about-futureplans') }}" style="color: #fff;">Future Plans</a></li>
+                    <h6><a  href="{{ route('polytechnic-president') }}" style="color: #cccccc;">President Desk</a></h6>
+                    <h6><a href="{{ route('polytechnic-principals') }}" style="color: #cccccc;">Principal Desk</a></h6>
+                    <h6><a href="{{ route('mission-and-vision') }}" style="color: #cccccc;">Mission & Vision</a></h6>
+                    <h6><a href="{{ route('about-governingbody') }}" style="color: #cccccc;">Governing Body</a></h6>
+                    <h6><a href="{{ route('about-futureplans') }}" style="color: #cccccc;">Future Plans</a></h6>
                 </ul>
                 <hr>
             </div>
-            <div class="col-lg-4 col-md-3">
-                <h5><b>Departments</b></h5>
-                <ul>
-                    @foreach ($menuDepartment as $menuItemDepartment)
-                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
-                            style="color: #fff;">{{ $menuItemDepartment['Department'] }}</a></li>
-                    @endforeach
-                </ul>
-                <hr>
-            </div>
+            
             <div class="col-lg-2 col-md-3 col-sm-6">
-                <h5><b>Facilities</b></h5>
+                <h5 style="color: white; font-size:22px;"><b>Facilities</b></h5>
                 <ul>
                     @foreach ($menuFacility as $menuFacilityItem)
-                    <li class="ms-md-3 ms-sm-1"><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
-                            style="color: #fff;">{{ $menuFacilityItem['facility'] }}</a></li>
+                    <h6 ><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
+                            style="color: #cccccc;">{{ $menuFacilityItem['facility'] }}</a></h6>
                     @endforeach
                 </ul>
                 <hr>
             </div>
+            <div class="col-lg-3 col-md-3">
+                <h5 style="color: white; font-size:22px;"><b>Departments</b></h5>
+                <ul>
+                    @foreach ($menuDepartment as $menuItemDepartment)
+                    <h6 ><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
+                            style="color: #cccccc;">{{ $menuItemDepartment['Department'] }}</a></h6>
+                    @endforeach
+                </ul>
+                <hr>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div>
                     <div class="address">
@@ -162,19 +167,23 @@ hr{
                 </div>
             </div>
         </div>
+        <!-- <a herf="#" class="scroll-top" style="display: inline;" >
+            <i class="fa fa-chevron-up" aria-hidden="true">
+            ::before
+        </i></a> -->
     </div>
 </div>
 
-<div class="container-fluid" style="background-color: #fff">
+<div class="container-fluid" style="background-color: #000">
     <div class="container">
         <div class="row py-2">
-            <span style="color:black;">
-                <span style="color:black;">Contact</span>
-                <a style="color:black" href="tel:9552551056">9552551056</a>&nbsp;
-                <a style="color:black;" href="tel:8149822404">8149822404</a>&nbsp;
-                <a href="mailto:info@nitnasik.com" style="color:black;">info@nitnasik.com</a>
-                <span style="color:black;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed
-                    By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:black">Sumago Infotech
+            <span style="color:white;">
+                <span style="color:white;">Contact</span>
+                <a class="footerdetail" style="color:white" href="tel:9552551056">9552551056</a>&nbsp;
+                <a class="footerdetail" style="color:white;" href="tel:8149822404">8149822404</a>&nbsp;
+                <a class="footerdetail" href="mailto:info@nitnasik.com" style="color:white;">info@nitnasik.com</a>
+                <span style="color:white;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed
+                    By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:white">Sumago Infotech
                     <img src="{{ asset('public/assets/up-images/slogo.png') }}" alt="" style="width:19px;"></a>&nbsp;
             </span>
         </div>

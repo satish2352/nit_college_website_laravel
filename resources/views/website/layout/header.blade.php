@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIT</title>
+    <title> NIT</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +23,24 @@
             color: #1b2834;
             font-weight: 900;
         }
-       
+
 
         .navbar {
             --bs-navbar-padding-y: 0rem;
         }
 
+        /* .sticky1 {
+            position: -webkit-sticky;
+            position: sticky !important;
+            top: 0px !important;
+        } */
 
+        .sticky {
+            position: sticky;
+            top: 0 !important;
+            width: 100%;
+            z-index: 1001;  
+        } 
 
 
         .nav-link:hover::before,
@@ -49,8 +61,8 @@
 
         .red-watch-bg {
             width: 100%;
-            background-color:   #015198;
-            position: relative;
+            background-color: #015198;
+            /* position: relative; */
             height: 40px;
         }
 
@@ -92,13 +104,13 @@
         }
 
         .dropdown-menu ul li:hover {
-            background-color:   #015198;
+            background-color: #015198;
             color: #fff;
         }
 
         .dropdown-item.active,
         .dropdown-item:active {
-            background-color:   #015198;
+            background-color: #015198;
             color: #fff;
         }
 
@@ -138,112 +150,112 @@
 
         .aaaa .aaab:hover {
             color: #fff !important;
-            background-color:   #015198 !important;
+            background-color: #015198 !important;
             padding: 5px 17px;
         }
 
 
         #myImg {
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    #myImg:hover {
-        opacity: 0.7;
-    }
-
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 999;
-        padding-top: 70px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    /* Modal Content (image) */
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-
-    /* Caption of Modal Image */
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-    }
-
-    /* Add Animation */
-    .modal-content,
-    #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
-
-    @-webkit-keyframes zoom {
-        from {
-            -webkit-transform: scale(0)
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
         }
 
-        to {
-            -webkit-transform: scale(1)
-        }
-    }
-
-    @keyframes zoom {
-        from {
-            transform: scale(0)
+        #myImg:hover {
+            opacity: 0.7;
         }
 
-        to {
-            transform: scale(1)
-        }
-    }
-
-    /* The Close Button */
-    .close {
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px) {
-        .modal-content {
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 70px;
+            left: 0;
+            top: 0;
             width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
-        .dropdown-toggle::after{
-            float: right !important;
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
         }
-    }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+
+            .dropdown-toggle::after {
+                float: right !important;
+            }
+        }
 
 
 
@@ -310,8 +322,8 @@
 
             .red-watch-bg {
                 width: 100%;
-                background-color:   #015198;
-                position: relative;
+                background-color: #015198;
+                /* position: relative; */
                 height: 40px;
             }
 
@@ -343,13 +355,13 @@
             }
 
             .dropdown-menu ul li:hover {
-                background-color:   #015198;
+                background-color: #015198;
                 color: #fff;
             }
 
             .dropdown-item.active,
             .dropdown-item:active {
-                background-color:   #015198;
+                background-color: #015198;
                 color: #fff;
             }
 
@@ -393,6 +405,7 @@
 
                 .itemfromstart {
                     justify-content: start !important;
+
                 }
 
                 /* .mob-width {
@@ -420,7 +433,7 @@
 
                 .navbar-toggler {
                     position: absolute;
-                    z-index: 999;
+                    z-index: 1001;
                     top: 0;
                     right: 10px;
                     cursor: pointer;
@@ -439,7 +452,7 @@
                     width: 50%;
                     height: 100%;
                     background: white;
-                    z-index: 999;
+                    z-index: 1001;
                     transition: left 0.3s;
                 }
 
@@ -485,7 +498,7 @@
 
             }
 
-             .AICTE {
+            .AICTE {
                 margin-left: -68px !important;
             }
 
@@ -519,34 +532,42 @@
         }
 
         @media only screen and (min-width: 768px) {
-    /* Hide close button on larger screens */
-    .btn-close {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 767px) {
-    /* Show close button on mobile devices */
-    .btn-close {
-        display: block;
-        position: absolute;
-        background-color: #e6f3ff;
-        color: black;
-        font-size: 30px;
-        height: 15px;
-        width: 10px;
-        top: 25px; /* Adjust top position as needed */
-        right: 21px; /* Adjust right position as needed */
-        z-index: 1001; /* Ensure it's above the offcanvas content */
-    }
-    .gunju1{
-        margin-left: 0px !important;
-    }
-    .offcanvas-body{
-        background-color: #e6f3ff;
-    }
-}
+            /* Hide close button on larger screens */
+            .btn-close {
+                display: none;
+            }
 
+
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            /* Show close button on mobile devices */
+            .btn-close {
+                display: block;
+                position: absolute;
+                background-color: #e6f3ff;
+                color: black;
+                font-size: 30px;
+                height: 15px;
+                width: 10px;
+                top: 25px;
+                /* Adjust top position as needed */
+                right: 21px;
+                /* Adjust right position as needed */
+                z-index: 1001;
+                /* Ensure it's above the offcanvas content */
+            }
+
+            .gunju1 {
+                margin-left: 0px !important;
+            }
+
+            .offcanvas-body {
+                background-color: #e6f3ff;
+            }
+        }
     </style>
 </head>
 
@@ -583,7 +604,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6"><a href="{{ route('/') }}">Institute Address : Cannol
                         Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
                 <div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                    <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">principle@nitnasik.com</a> |
+                    <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">principal@nitnasik.com</a> |
                     <span style="font-size:13px !important;">Contact Number : </span>
                     <a href="tel:9552551056">9552551056</a>&nbsp;
                     <a href="tel:8149822404">8149822404</a>&nbsp;
@@ -606,8 +627,8 @@
     </div>
     {{-- =========================End Top Header======================== --}}
     {{-- ======================Start Sub Header==================== --}}
-    <div class="mob-toggle-right-side">
-        <div class="container-fluid pt-2 pb-1 mob-width-left" id="iwtHeaderNav">
+    <div class="mob-toggle-right-side" id="iwtHeaderNav">
+        <div class="container-fluid pt-2 pb-1 mob-width-left">
             <div class="container-fluid main-header">
                 <div class="row align-items-center d-flex justify-content-center">
                     <div class="col-lg-1 col-md-1 col-sm-1"></div>
@@ -643,20 +664,19 @@
                 </div>
             </div>
         </div>
-        {{-- ======================End Sub Header==================== --}}
-        <div class="container-fluid mob-width-right" id="iwtHeaderNav">
-            <div class="container">
-                <nav class="navbar  navbar-expand-lg navbar-light bg-light ">
-                    <div class="container-fluid">
+    </div>
+    {{-- ======================End Sub Header==================== --}}
+    <div id="stick" class="navbar-light bg-light" >
+        <div class="container-fluid mob-width-right   " id="iwtHeaderNav ">
+            <div class="container    sticky  ">
+                <nav class=" navbar  navbar-expand-lg navbar-light bg-light   ">
+                    <div class="container-fluid  ">
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-
-                     
-
                         </button>
                         <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <button class="btn-close  d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            <div class="offcanvas-body">
+                            <button class="btn-close  d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <div class="offcanvas-body ">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link " aria-current="page" href="{{ route('/') }}">Home</a>
@@ -703,13 +723,13 @@
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Facilities
                                         </a>
-                                        <!-- <ul class="dropdown-menu">
-                                        @foreach ($menuFacility as $menuFacility)
+                                        <ul class="dropdown-menu">
+                                            @foreach ($menuFacility as $menuFacility)
                                             <li class=" aaaa">
-                                                <a class="dropdown-item aaab " href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
+                                                <a class="dropdown-item aaab " href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
                                             </li>
                                             @endforeach
-                                        </ul> -->
+                                        </ul>
                                     </li>
 
                                     <li class="nav-item dropdown">
@@ -779,36 +799,29 @@
                         </div>
                     </div>
                 </nav>
-
-
-
             </div>
         </div>
 
 
-
-
-
-
         <!--/container-->
-    </div>
-    <div class="mob-display" style="">
-        <p class="px-2">
-            {{-- <marquee> --}}
-            {{-- <b>Approved By</b> :
+
+        <div class="mob-display" style="">
+            <p class="px-2">
+                {{-- <marquee> --}}
+                {{-- <b>Approved By</b> :
                 <b>Govt. of Maharashtra & All India Council of Technical Education (AICTE)</b>&nbsp;&nbsp;&nbsp;<b>Affiliated To</b> :
                 <b>Maharashtra State Board Of Technical Education (MSBTE), Mumbai</b> --}}
-            {{-- </marquee> --}}
+                {{-- </marquee> --}}
 
 
-            <span>
-                <span class="d-flex justify-content-center">
-                    Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE</span> <br>
-                <button class="btn btn-danger">
-                    <b> <a href="{{ route('enquiry') }}" style="color:#fff"> Admission Enquiry</a></b></span>
-            </button>
-        </p>
-    </div>
+                <span>
+                    <span class="d-flex justify-content-center">
+                        Affiliated to MSBTE Mumbai, Approved By Govt. of Maharashtra AICTE</span> <br>
+                    <button class="btn btn-danger">
+                        <b> <a href="{{ route('enquiry') }}" style="color:#fff"> Admission Enquiry</a></b></span>
+                </button>
+            </p>
+        </div>
     </div>
     <!--/container-fluid /iwtHeaderNav-->
     <!--======================= iwtBanner =======================-->
@@ -825,34 +838,55 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <script>
-    // JavaScript to open modal for each image
-    var modals = document.querySelectorAll('.modal');
-    var images = document.querySelectorAll('.myImg');
-    var modalImages = document.querySelectorAll('.modal-content');
-    var captions = document.querySelectorAll('#caption');
+        // JavaScript to open modal for each image
+        var modals = document.querySelectorAll('.modal');
+        var images = document.querySelectorAll('.myImg');
+        var modalImages = document.querySelectorAll('.modal-content');
+        var captions = document.querySelectorAll('#caption');
 
-    images.forEach(function(image, index) {
-        image.onclick = function() {
-            modals[index].style.display = "block";
-            modalImages[index].src = this.src;
-            captions[index].innerHTML = this.alt;
-        }
-    });
+        images.forEach(function(image, index) {
+            image.onclick = function() {
+                modals[index].style.display = "block";
+                modalImages[index].src = this.src;
+                captions[index].innerHTML = this.alt;
+            }
+        });
 
-    var closeButtons = document.querySelectorAll('.close');
-    closeButtons.forEach(function(button) {
-        button.onclick = function() {
-            var modal = this.parentElement;
-            modal.style.display = "none";
-        }
-    });
-
-    // Close modal on outside click
-    window.onclick = function(event) {
-        modals.forEach(function(modal) {
-            if (event.target == modal) {
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(button) {
+            button.onclick = function() {
+                var modal = this.parentElement;
                 modal.style.display = "none";
             }
         });
-    }
-</script>
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            modals.forEach(function(modal) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("stick");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
