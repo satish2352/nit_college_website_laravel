@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIT</title>
+    <link rel="icon" href="{{ asset('public\assets\images\logo\logo.gif.jpg') }}"/>
+    <title>NIT POLYTECHNIC</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +66,7 @@
     }
 
     .dropdown-menu {
-        padding: 10px;
+        /* padding: 10px; */
 
     }
 
@@ -96,6 +97,7 @@
     .dropdown-menu ul li:hover {
         background-color: #015198;
         color: #fff;
+        
     }
 
     .dropdown-item.active,
@@ -141,7 +143,8 @@
     .aaaa .aaab:hover {
         color: #fff !important;
         background-color: #015198 !important;
-        padding: 5px 17px;
+       
+        /* padding: 5px 17px; */
     }
 
 
@@ -269,8 +272,8 @@
 
         .aaaa .aaab:hover {
             color: black !important;
-            background-color: white !important;
-            padding: 5px 17px;
+            /* background-color: white !important;
+            padding: 5px 17px; */
         }
 
 
@@ -287,7 +290,8 @@
         }
 
         .mob-width {
-            width: 40px;
+            width: 50px;
+            margin-left:20px;
         }
 
 
@@ -400,7 +404,8 @@
             }
 
             /* .mob-width {
-                width: 40px;
+                margin-left: 30px !important;
+                
             } */
 
             .img-fluid {
@@ -623,8 +628,8 @@
                 <div class="row align-items-center d-flex justify-content-center">
                     <div class="col-lg-1 col-md-1 col-sm-1"></div>
                     <div class="col-lg-1 col-md-1 col-sm-1 col-3 gunju1 ">
-                        <a href="/"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}"
-                                class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
+                        <a href="/"><img src="{{ asset('public\assets\images\logo\logo.gif.jpg') }}"
+                                class="img-fluid  mob-width" alt="Logo "></a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>

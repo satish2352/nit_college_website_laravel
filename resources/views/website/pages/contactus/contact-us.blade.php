@@ -135,7 +135,7 @@ label {
                 <div class="row align-text-bottom">
                     <div class="col-12">
                         <form class="mt-4">
-                            <legend><span class="glyphicon glyphicon-globe"></span>Our Office</legend>
+                            <legend><span class="glyphicon glyphicon-globe" ></span><strong >Our Office</strong></legend>
                             <address>
                                 <b style="color:green">{{ $contactusdata[0]['contact_us_name'] }} </b>
                             </address>

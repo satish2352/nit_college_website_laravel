@@ -1,7 +1,7 @@
     <div class="col-sm-12 right-col-fix">
         <div>
             <div class="list-group">
-                <div class="list-group-item">
+                <div class="">
                      
                     </div>
                 @if (isset($data_output_category) && isset($data_output_category['id']))
