@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{ asset('public\assets\images\logo\logo.gif.jpg') }}"/>
+    <link rel="icon" href="{{ asset('public\assets\images\logo\logo.gif.jpg') }}" />
     <title>NIT POLYTECHNIC</title>
 
     <!-- Bootstrap CSS -->
@@ -97,7 +97,7 @@
     .dropdown-menu ul li:hover {
         background-color: #015198;
         color: #fff;
-        
+
     }
 
     .dropdown-item.active,
@@ -143,7 +143,7 @@
     .aaaa .aaab:hover {
         color: #fff !important;
         background-color: #015198 !important;
-       
+
         /* padding: 5px 17px; */
     }
 
@@ -192,7 +192,7 @@
         height: 150px;
     }
 
-    
+
 
     /* Add Animation */
     .modal-content,
@@ -291,7 +291,7 @@
 
         .mob-width {
             width: 50px;
-            margin-left:20px;
+            margin-left: 20px;
         }
 
 
@@ -554,7 +554,7 @@
             /* Ensure it's above the offcanvas content */
         }
 
-        .gunju1 {
+        .nsk-poly {
             margin-left: 0px !important;
         }
 
@@ -603,31 +603,19 @@
                     <span style="font-size:13px !important;">Contact Number : </span>
                     <a href="tel:9552551056">9552551056</a>&nbsp;
                     <a href="tel:8149822404">8149822404</a>&nbsp;
-                    <a href="tel:9890269439">9890269439</a>&nbsp;
+                    <a href="tel:9890269439">9890269439</a>
                 </div>
             </div>
         </div>
-        <!-- <div class="col-2">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <span class="top_line common"></span>
-                            <span class="middle_line common"></span>
-                            <span class="bottom_line common"></span>
-                        </span>
-                    </button>
-
-                </div> -->
-
-
     </div>
     {{-- =========================End Top Header======================== --}}
     {{-- ======================Start Sub Header==================== --}}
     <div class="mob-toggle-right-side">
-        <div class="container-fluid pt-2 pb-1 mob-width-left" id="iwtHeaderNav">
+        <div class="container-fluid pt-2 pb-1 mob-width-left">
             <div class="container-fluid main-header">
                 <div class="row align-items-center d-flex justify-content-center">
                     <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-3 gunju1 ">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-3 nsk-poly ">
                         <a href="/"><img src="{{ asset('public\assets\images\logo\logo.gif.jpg') }}"
                                 class="img-fluid  mob-width" alt="Logo "></a>
                     </div>
@@ -671,12 +659,9 @@
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-
-
-
                         </button>
-                        <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart  "
-                            tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart  " tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <button class="btn-close  d-lg-none" type="button" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                             <div class="offcanvas-body">
@@ -819,24 +804,13 @@
                                                     target="_blank">scholarships.gov.in</a></li>
                                         </ul>
                                     </li>
-
-
                                 </ul>
-
                             </div>
                         </div>
                     </div>
                 </nav>
-
-
-
             </div>
         </div>
-
-
-
-
-
 
         <!--/container-->
     </div>
