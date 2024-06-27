@@ -19,7 +19,7 @@
 
 <div class="container-fluid" id="iwtBanner">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-lg-3 col-sm-12">
             <div class="right-col-fix" id="iwtRightPannel">
                 <div class="list-group">
                     <div class="list-group-item"><b></b></div>

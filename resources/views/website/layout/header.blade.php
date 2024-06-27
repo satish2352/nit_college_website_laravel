@@ -29,18 +29,9 @@
             --bs-navbar-padding-y: 0rem;
         }
 
-        /* .sticky1 {
-            position: -webkit-sticky;
-            position: sticky !important;
-            top: 0px !important;
-        } */
 
-        .sticky {
-            position: sticky;
-            top: 0 !important;
-            width: 100%;
-            z-index: 1001;  
-        } 
+
+      
 
 
         .nav-link:hover::before,
@@ -62,7 +53,7 @@
         .red-watch-bg {
             width: 100%;
             background-color: #015198;
-            /* position: relative; */
+            position: relative;
             height: 40px;
         }
 
@@ -153,12 +144,13 @@
             background-color: #015198 !important;
             padding: 5px 17px;
         }
-    .aaaa .aaab:hover {
-        color: #fff !important;
-        background-color: #015198 !important;
 
-        /* padding: 5px 17px; */
-    }
+        .aaaa .aaab:hover {
+            color: #fff !important;
+            background-color: #015198 !important;
+
+            /* padding: 5px 17px; */
+        }
 
 
         #myImg {
@@ -267,19 +259,19 @@
 
         @media only screen and (max-width: 767px) {
 
-        .nav-link::before {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background-color: #fff !important;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            visibility: hidden;
-            transition: 0.3s ease-in-out;
-            color: black;
-        }
+            .nav-link::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: #fff !important;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                visibility: hidden;
+                transition: 0.3s ease-in-out;
+                color: black;
+            }
 
             .aaaa .aaab:hover {
                 color: black !important;
@@ -305,9 +297,6 @@
             }
 
 
-
-
-
             .nitlogo {
                 padding-left: 25px !important;
 
@@ -317,10 +306,10 @@
                 display: none !important;
             }
 
-        .mob-display {
-            display: block;
-            margine-top: -20px !important
-        }
+            .mob-display {
+                display: block;
+                margin-top: -20px !important
+            }
 
             .web-display {
                 display: none;
@@ -329,7 +318,7 @@
             .red-watch-bg {
                 width: 100%;
                 background-color: #015198;
-                /* position: relative; */
+                position: relative;
                 height: 40px;
             }
 
@@ -343,16 +332,8 @@
 
             .dropdown-menu {
                 padding: 10px;
-
                 overflow: hidden;
             }
-
-            /* .spaceacademic {
-            width: 280px !important;
-        } */
-
-
-
 
             .dropdown-menu li a {
                 font-weight: normal !important;
@@ -387,125 +368,81 @@
                 color: #1b2834 !important;
             }
 
+        }
 
 
 
+        @media only screen and (max-width: 767px) {
+            .main-header {
+                font-size: 14px;
+            }
 
-            @media only screen and (max-width: 767px) {
-                .main-header {
-                    font-size: 14px;
-                }
+            .navbar-nav>li>a {
+                /* padding-top: 5px; */
+                padding-bottom: 5px;
+            }
 
-                .navbar-nav>li>a {
-                    /* padding-top: 5px; */
-                    padding-bottom: 5px;
-                }
+            .heading1 {
+                font-size: 11px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #1b2834;
+                font-weight: 900;
+            }
 
-                .heading1 {
-                    font-size: 11px;
-                    line-height: 20px;
-                    text-transform: uppercase;
-                    color: #1b2834;
-                    font-weight: 900;
-                }
+            .itemfromstart {
+                justify-content: start !important;
 
-                .itemfromstart {
-                    justify-content: start !important;
+            }
 
-                }
+            .img-fluid {
+                width: 70px;
 
-                /* .mob-width {
-                width: 40px;
-            } */
+            }
 
-                .img-fluid {
-                    width: 70px;
+            .nitlogo {
+                padding-left: 25px !important;
 
-                }
-
-                .nitlogo {
-                    padding-left: 25px !important;
-
-                }
+            }
 
 
-                .mob-display {
-                    display: block;
-                }
+            .mob-display {
+                display: block;
+            }
 
-                .web-display {
-                    display: none;
-                }
+            .web-display {
+                display: none;
+            }
 
-                .navbar-toggler {
-                    position: absolute;
-                    z-index: 1001;
-                    top: 0;
-                    right: 10px;
-                    cursor: pointer;
-                    background-color: white;
-                    box-shadow: 0 0 20px black;
-                }
-
-
-
+            .navbar-toggler {
+                position: absolute;
+                z-index: 1001;
+                top: 0;
+                right: 10px;
+                cursor: pointer;
+                background-color: white;
+                box-shadow: 0 0 20px black;
+            }
 
             .navbar-collapse {
                 position: fixed;
                 margin-top: 251px;
 
-                    left: -100%;
-                    width: 50%;
-                    height: 100%;
-                    background: white;
-                    z-index: 1001;
-                    transition: left 0.3s;
-                }
-
-
-                .navbar-collapse .navbar-toggler {
-                    /* right: 10%; */
-                    left: 0;
-                }
-
-                .navbar-collapse.show {
-                    left: 0;
-                }
-
-                .mob-toggle-right-side {
-                    display: flex;
-                    align-items: center !important;
-                }
-
-                .mob-width-left {
-                    width: 80%;
-                }
-
-                .mob-width-right {
-                    width: 20%;
-                }
-
-                #iwtHeaderNav {
-                    border-bottom: none;
-                }
+                left: -100%;
+                width: 50%;
+                height: 100%;
+                background: white;
+                z-index: 1001;
+                transition: left 0.3s;
             }
 
+
             .navbar-collapse .navbar-toggler {
-                /* right: 10%; */
                 left: 0;
             }
 
-
-            @media only screen and (min-width: 767px) and (max-width: 19000px) {
-
-                .alumnispace {
-                    width: 200px !important;
-                }
-
-            }
-
-            .AICTE {
-                margin-left: -68px !important;
+            .navbar-collapse.show {
+                left: 0;
             }
 
             .mob-toggle-right-side {
@@ -524,6 +461,48 @@
             #iwtHeaderNav {
                 border-bottom: none;
             }
+        
+
+        .navbar-collapse .navbar-toggler {
+            /* right: 10%; */
+            left: 0;
+        }
+
+
+        @media only screen and (min-width: 767px) and (max-width: 19000px) {
+
+            .alumnispace {
+                width: 200px !important;
+            }
+            .sticky {
+            position: sticky;
+            top: 0 !important;
+            width: 100%;
+            z-index: 1001;
+        }
+
+        }
+
+        .AICTE {
+            margin-left: -68px !important;
+        }
+
+        .mob-toggle-right-side {
+            display: flex;
+            align-items: center !important;
+        }
+
+        .mob-width-left {
+            width: 80%;
+        }
+
+        .mob-width-right {
+            width: 20%;
+        }
+
+        #iwtHeaderNav {
+            border-bottom: none;
+        }
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -535,6 +514,12 @@
                 text-align: center;
 
             }
+            .sticky {
+            position: sticky;
+            top: 0 !important;
+            width: 100%;
+            z-index: 1001;
+        }
         }
 
         @media only screen and (min-width: 768px) {
@@ -543,6 +528,12 @@
             .btn-close {
                 display: none;
             }
+            .sticky {
+            position: sticky;
+            top: 0 !important;
+            width: 100%;
+            z-index: 1001;
+        }
 
 
         }
@@ -560,7 +551,7 @@
                 width: 10px;
                 top: 25px;
                 /* Adjust top position as needed */
-                right: 21px;
+                /* right: 21px; */
                 /* Adjust right position as needed */
                 z-index: 1001;
                 /* Ensure it's above the offcanvas content */
@@ -625,11 +616,11 @@
         <div class="container-fluid pt-2 pb-1 mob-width-left">
             <div class="container-fluid main-header">
                 <div class="row align-items-center d-flex justify-content-center">
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-1 col-md-1 col-sm-1 col-3 gunju1 ">
                         <a href="/"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
+                    <div class="col-lg-6 col-md-6 col-sm-4 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
                         <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt.
@@ -644,12 +635,12 @@
 
                     </div>
 
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-3 text-center displsy-flex web-display mob-display ">
+                    <div class="col-lg-1 col-md-1 col-3 text-center displsy-flex web-display mob-display ">
                         <img src="{{ asset('public/assets/Akole_Poly/TWOWIN2p_400x400.jpg') }}" alt="Avatar" class="img-fluid rounded-circle" style="width:100px;">
                         <p style="font-size:12px;color:red;"><b>Shri.&nbsp;Suresh&nbsp;Patil</b></p>
                     </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-3 text-center displsy-flex web-display mob-display">
+                    <div class="col-lg-1 col-md-1 "></div>
+                    <div class="col-lg-2 col-md-2  col-3 text-center displsy-flex web-display mob-display">
                         <button class="btn btn-danger">
                             <a href="{{ route('enquiry') }}" style="color:white; text-decoration:none;">Admission
                                 Enquiry</a>
@@ -661,11 +652,11 @@
         </div>
     </div>
     {{-- ======================End Sub Header==================== --}}
-    <div id="stick" class="navbar-light bg-light" >
-        <div class="container-fluid mob-width-right   " id="iwtHeaderNav ">
-            <div class="container    sticky  ">
+    <div id="stick" class="navbar-light bg-light">
+        <div class="container-fluid mob-width-right " id="iwtHeaderNav">
+            <div class="container mob-toggle-left-side ">
                 <nav class=" navbar  navbar-expand-lg navbar-light bg-light   ">
-                    <div class="container-fluid  ">
+                    <div class="container-fluid " >
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -719,15 +710,14 @@
                                             Facilities
                                         </a>
                                         <ul class="dropdown-menu">
-                                            @foreach ($menuFacility as $menuFacility)
+
                                             @foreach ($menuFacility as $menuFacility)
                                             <li class=" aaaa">
-                                                <a class="dropdown-item aaab "
-                                                    href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
+                                                <a class="dropdown-item aaab " href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
                                             </li>
                                             @endforeach
                                         </ul>
-                                        </ul>
+
                                     </li>
 
                                     <li class="nav-item dropdown">
@@ -796,6 +786,10 @@
                 </nav>
             </div>
         </div>
+
+
+
+
 
 
         <!--/container-->
