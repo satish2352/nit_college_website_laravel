@@ -189,6 +189,8 @@
         height: 150px;
     }
 
+    
+
     /* Add Animation */
     .modal-content,
     #caption {
@@ -656,7 +658,7 @@
             </div>
         </div>
         {{-- ======================End Sub Header==================== --}}
-        <div class="container-fluid mob-width-right" id="iwtHeaderNav">
+        <div class="container-fluid mob-width-right " id="iwtHeaderNav">
             <div class="container">
                 <nav class="navbar  navbar-expand-lg navbar-light bg-light ">
                     <div class="container-fluid">
@@ -668,8 +670,8 @@
 
 
                         </button>
-                        <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart " tabindex="-1"
-                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart  "
+                            tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <button class="btn-close  d-lg-none" type="button" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                             <div class="offcanvas-body">
