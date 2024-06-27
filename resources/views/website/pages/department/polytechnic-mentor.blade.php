@@ -54,9 +54,9 @@
                                 @else
                                 @endif
                             </div>
-                            <div>
-                                <div style="color:#545353; font-size:19px; padding:10px 0px">Student Mentoring Activity:
-                                </div>
+                            <div style="margin-top:15px !important">
+                                <b style="color:#545353;  ">Student Mentoring Activity:
+                                </b>
                             </div>
                             <div>
                             </div>

@@ -5,7 +5,7 @@
 <div class="container-fluid" style="padding-bottom:40px">
     <div class="container card-shadow" style="margin-bottom: 95px;">
         <div class="row" style="padding:0px">
-            <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
+            <div class="col-md-9 col-sm-12 text-justify ps-5" id="iwtContentArea">
                 <div class="row outer-white">
                     <div class="col-sm-12">
                         <div>

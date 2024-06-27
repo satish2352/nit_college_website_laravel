@@ -153,6 +153,12 @@
             background-color: #015198 !important;
             padding: 5px 17px;
         }
+    .aaaa .aaab:hover {
+        color: #fff !important;
+        background-color: #015198 !important;
+
+        /* padding: 5px 17px; */
+    }
 
 
         #myImg {
@@ -261,19 +267,19 @@
 
         @media only screen and (max-width: 767px) {
 
-            .nav-link::before {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 2px;
-                background-color: #fff !important;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                visibility: hidden;
-                transition: 0.3s ease-in-out;
-                color: black;
-            }
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #fff !important;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+            color: black;
+        }
 
             .aaaa .aaab:hover {
                 color: black !important;
@@ -311,10 +317,10 @@
                 display: none !important;
             }
 
-            .mob-display {
-                display: block;
-                margine-top: -20px !important
-            }
+        .mob-display {
+            display: block;
+            margine-top: -20px !important
+        }
 
             .web-display {
                 display: none;
@@ -444,9 +450,9 @@
 
 
 
-                .navbar-collapse {
-                    position: fixed;
-                    margin-top: 251px;
+            .navbar-collapse {
+                position: fixed;
+                margin-top: 251px;
 
                     left: -100%;
                     width: 50%;
@@ -608,22 +614,10 @@
                     <span style="font-size:13px !important;">Contact Number : </span>
                     <a href="tel:9552551056">9552551056</a>&nbsp;
                     <a href="tel:8149822404">8149822404</a>&nbsp;
-                    <a href="tel:9890269439">9890269439</a>&nbsp;
+                    <a href="tel:9890269439">9890269439</a>
                 </div>
             </div>
         </div>
-        <!-- <div class="col-2">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <span class="top_line common"></span>
-                            <span class="middle_line common"></span>
-                            <span class="bottom_line common"></span>
-                        </span>
-                    </button>
-
-                </div> -->
-
-
     </div>
     {{-- =========================End Top Header======================== --}}
     {{-- ======================Start Sub Header==================== --}}
@@ -638,7 +632,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
-                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt. of
+                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt.
+                            of
                             Maharashtra AICTE</p>
 
                         <!-- <span class="d-lg-block d-none d-flex justify-content-center AICTE ">
@@ -725,10 +720,13 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             @foreach ($menuFacility as $menuFacility)
+                                            @foreach ($menuFacility as $menuFacility)
                                             <li class=" aaaa">
-                                                <a class="dropdown-item aaab " href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
+                                                <a class="dropdown-item aaab "
+                                                    href="{{ route('polytechnic-facilities', ['id' => $menuFacility['facility_id']]) }}">{{ $menuFacility['facility'] }}</a>
                                             </li>
                                             @endforeach
+                                        </ul>
                                         </ul>
                                     </li>
 
@@ -791,10 +789,7 @@
                                             <li class="aaaa"><a class="aaab dropdown-item" href="https://scholarships.gov.in/" target="_blank">scholarships.gov.in</a></li>
                                         </ul>
                                     </li>
-
-
                                 </ul>
-
                             </div>
                         </div>
                     </div>

@@ -15,6 +15,7 @@ background: #f5f1e8 url(images/body-bg-1.png);
 color: #545353;
 line-height: 26px;
 font-family: 'Open Sans', sans-serif;
+height: -20px;
 }
 a {text-decoration:none; color:#489194;
 -webkit-transition: all 0.5s ease-in-out;
@@ -154,7 +155,7 @@ text-align: center; }
 
 #iwtHeader{background-color:#f7f9fb; height:150px; border-bottom:  #015198 solid 3px; }
 
-#iwtHeaderNav{background:url(images/HeaderNav-bg.png) repeat-x; border-bottom:  #015198  solid 3px; min-height:10px;}
+#iwtHeaderNav{background:url(images/HeaderNav-bg.png) repeat-x; border-bottom:  #015198  solid 3px; min-height:-300px;}
 
 #iwtPageHeader{background:   #015198 url(images/page-header-bg.jpg);}
 #iwtPageHeader .container{padding-top:5px; padding-bottom:5px;}

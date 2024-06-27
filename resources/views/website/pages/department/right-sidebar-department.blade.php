@@ -2,7 +2,7 @@
         <div>
             <div class="list-group">
                 <div class="list-group-item">
-                     <strong>{{ strip_tags($data->department_description) }}</strong>
+                     <!-- <strong>{{ strip_tags($data->department_description) }}</strong> -->
                     </div>
                 @if (isset($data_output_category) && isset($data_output_category['id']))
                 <a href="{{ route('department-profile', ['id' => $data_output_category['id']]) }}"

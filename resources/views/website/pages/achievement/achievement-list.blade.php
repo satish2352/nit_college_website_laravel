@@ -17,7 +17,7 @@
                 <div class="row outer-white">
                     <div class="col-lg-12 col-sm-12">
                         <div >
-                            <div class="card-body">
+                            <div class="card-body ms-5">
                                 <div>
                                     @if (isset($error))
                                     <div class="alert alert-danger">

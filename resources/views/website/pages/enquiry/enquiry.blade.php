@@ -13,9 +13,9 @@ label {
     color: red;
 }
 
-i {
+/* i {
     color: red;
-}
+} */
 </style>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container pt-4">
@@ -154,7 +154,7 @@ i {
                                 <div class="display:flex; text-align:center; justify-content: center;">
                                     <button type="submit" name="submit" value="submit" class="btn pull-right"
                                         id="btnContactUs"
-                                        style="margin-top: 25px; background-color:#015198; color:#fff;">Submit</button>
+                                        style="background-color:#015198; color:#fff;">Submit</button>
                                 </div>
                             </div>
                     </form>

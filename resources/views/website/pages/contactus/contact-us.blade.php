@@ -5,9 +5,16 @@ label {
     color: #454545;
 }
 
-i {
+/* i {
     color: red !important;
+} */
+.data-con{
+    color:#454545 !important;
 }
+.data-con:hover{
+    color:blue !important;
+}
+
 </style>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container">
@@ -118,8 +125,8 @@ i {
                             @endif
                         </div>
                         <div class="display:flex; text-align:center; justify-content: center;">
-                            <button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs"
-                                style="margin-top: 25px; background-color:  #015198; color:#fff;">Submit</button>
+                            <center><button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs"
+                            style="margin-top: 25px; background-color:  #015198; color:#fff;">Submit</button></center>
                         </div>
                     </div>
                 </form>
@@ -128,7 +135,7 @@ i {
                 <div class="row align-text-bottom">
                     <div class="col-12">
                         <form class="mt-4">
-                            <legend><span class="glyphicon glyphicon-globe"></span>Our Office</legend>
+                            <legend><span class="glyphicon glyphicon-globe" ></span><strong >Our Office</strong></legend>
                             <address>
                                 <b style="color:green">{{ $contactusdata[0]['contact_us_name'] }} </b>
                             </address>
@@ -143,24 +150,24 @@ i {
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
                                         style="color:green">Tel.</b> <b style="color: #454545;">:</b>
                                     <span
-                                        style="color: #454545;">{{ $contactusdata[0]['contact_us_telephone'] }}</span><br>
+                                    class="data-con">{{ $contactusdata[0]['contact_us_telephone'] }}</span><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
                                         style="color:green">Mobile.</b> <b
                                         style="color: #454545;">:</b>&nbsp;
                                     <span
-                                        style="color: #454545;">{{ $contactusdata[0]['contact_us_mobile'] }}</span><br>
+                                    class="data-con">{{ $contactusdata[0]['contact_us_mobile'] }}</span><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><b
                                     style="color:green">Website :</b>&nbsp;
-                                <a href="https://nitnasik.com/" style="color: blue;">
+                                <a href="https://nitnasik.com/" class="data-con">
                                 {{ $contactusdata[0]['contact_us_website'] }}</a><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span><b
-                                    style="color:green; ">Email :</b>&nbsp;<a href="mailto:#" style="color: blue !important;">{{ $contactusdata[0]['contact_us_email'] }}
+                                    style="color:green; ">Email :</b>&nbsp;<a class="data-con" href="mailto:#"  >{{ $contactusdata[0]['contact_us_email'] }}
                                 </a>
 
                             </address>
