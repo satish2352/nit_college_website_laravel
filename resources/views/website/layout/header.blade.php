@@ -375,7 +375,7 @@
 
 
 
-        @media only screen and (max-width: 767px) {
+        @media only screen and (min-width: 767px) {
             .main-header {
                 font-size: 14px;
             }
@@ -668,7 +668,7 @@
 
 
                         </button>
-                        <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart" tabindex="-1"
+                        <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart " tabindex="-1"
                             id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <button class="btn-close  d-lg-none" type="button" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>

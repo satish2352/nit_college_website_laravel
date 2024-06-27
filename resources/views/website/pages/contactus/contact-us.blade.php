@@ -8,9 +8,13 @@ label {
 /* i {
     color: red !important;
 } */
+.data-con{
+    color:#454545 !important;
+}
 .data-con:hover{
     color:blue !important;
 }
+
 </style>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container">
@@ -146,24 +150,24 @@ label {
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
                                         style="color:green">Tel.</b> <b style="color: #454545;">:</b>
                                     <span
-                                        style="color: #454545;">{{ $contactusdata[0]['contact_us_telephone'] }}</span><br>
+                                    class="data-con">{{ $contactusdata[0]['contact_us_telephone'] }}</span><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
                                         style="color:green">Mobile.</b> <b
                                         style="color: #454545;">:</b>&nbsp;
                                     <span
-                                        style="color: #454545;">{{ $contactusdata[0]['contact_us_mobile'] }}</span><br>
+                                    class="data-con">{{ $contactusdata[0]['contact_us_mobile'] }}</span><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><b
                                     style="color:green">Website :</b>&nbsp;
-                                <a href="https://nitnasik.com/" style="color:#454545;">
+                                <a href="https://nitnasik.com/" class="data-con">
                                 {{ $contactusdata[0]['contact_us_website'] }}</a><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-envelope" style="color: #454545;"></span><b
-                                    style="color:green; ">Email :</b>&nbsp;<a class="data-con" href="mailto:#" style="color:#454545 !important;" >{{ $contactusdata[0]['contact_us_email'] }}
+                                    style="color:green; ">Email :</b>&nbsp;<a class="data-con" href="mailto:#"  >{{ $contactusdata[0]['contact_us_email'] }}
                                 </a>
 
                             </address>
