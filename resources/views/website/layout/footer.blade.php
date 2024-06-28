@@ -55,6 +55,9 @@
     .fa-linkedin {
         background: #0a66c2;
     }
+    .fa-instagram{
+        background: rgb(233,  89,  80);
+        }
 
     .google-bg {
         background: #DD4B39;
@@ -164,6 +167,8 @@
                                         <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                                         <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
                                         <a href="#"><i class="fab fa-brands fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                        
                                     </span>
                                 </div>
                             </div>
@@ -176,7 +181,7 @@
 </div>
 
 <div class="container-fluid" style="background-color: #013665">
-    <div class="container">
+    <div class="container" style="display: flex; justify-content:center;">
         <div class="row py-2">
             <span style="color:white;">
                 <span style="color:white;">Contact</span>

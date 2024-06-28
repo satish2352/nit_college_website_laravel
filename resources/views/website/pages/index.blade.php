@@ -46,10 +46,7 @@
 
 
         <div class="col-md-9" style="margin-top: 18px;">
-        <marquee style="background-color: white; padding-top:5px;">
-                    <h5 style="color: black;"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
-                        LATE ANNASAHEB PATIL POLYTECHNIC</b></h5>
-                </marquee> 
+         
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     @foreach($data_output as $index => $slider)
@@ -106,26 +103,13 @@
                         </center>
                     </strong>
                     <marquee direction="up" style="height:170px;" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start()">
-
                         <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px;">
                             <a href="pages/final web quotation advertisement .pdf">
-                                <span style="color:black; font-size:13px"> Procurement under AICTE Grant in Aid- SPDP-Skill and Personality Development Programme Centre for SC/ST Students 1-7107561391-2020-21.</span>
+                                <span style="color:black; font-size:13px">Golden Opportunity for 10th Pass Students, Date Extended for Diploma (Polytechnic) Admission up to 9th July 2024...</span>
                                 <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
                             </a>
-                            
                         </p>
-                        <h1 style="border: 1px dotted  black; width:100%; margin-left:25px"></h1>
-                        
-                        <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px;">
-                            <a href="pages/final web quotation advertisement .pdf">
-                                <span style="color:black; font-size:13px">"Golden Opportunity for 10th Pass Students, Date Extended for Diploma (Polytechnic) Admission up to 9th July 2024.."</span>
-                                <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
-                            </a>
-                            
-                        </p>
-                        <h1 style="border: 1px dotted  black; width:100%; margin-left:25px"></h1>
-
-                        
+                        <h1 style="border: 1px dotted  black; width:100%; margin-left:25px"></h1>                        
                     </marquee>
 
 

@@ -51,7 +51,7 @@
         }
 
         .red-watch-bg {
-            width: 100%;
+            width: 100% ;
             background-color: #015198;
             position: relative;
             height: 40px;
@@ -866,10 +866,16 @@
     </div>
     <!--/container-fluid /iwtHeaderNav-->
     <!--======================= iwtBanner =======================-->
+    <!-- <img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}" border="0" height="40px"> -->
 
-
-    <div class="container-fluid red-watch-bg" id="">
-        <div class="fl news-img"><img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}" border="0" height="40px"></div>
+    <div class="container-fluid red-watch-bg "> 
+        <div class="d-flex" style="align-items: center;">
+        <img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}" border="0" height="40px">
+            <marquee >
+                    <h5 style="color: white; font-size:18px"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
+                        LATE ANNASAHEB PATIL POLYTECHNIC</b></h5>
+                </marquee>
+       </div>
 
         <div class="fl news-text">
         </div>
