@@ -166,8 +166,8 @@
                             <span style="font-size:18px"><strong>M.Tech., B.E., DAE.</strong></span>
                         </div>
                         <div class="px-5 pt-1 pb-3">
-                            <h5 class="mt-2" style="color:black;"><strong>Dear Students,</strong></h5>
-                            <p style="font-size: 15px; text-align:justify;">I welcome you to NIT'S Late Annasaheb Patil
+                            <p class="mt-2" style="color:black;"><strong>Dear Students,</strong></p>
+                            <p style="font-size: 15px; text-align:justify; padding-bottom: 80px;">I welcome you to NIT'S Late Annasaheb Patil
                                 Polytechnic, Nashik.
                                 Education taught to teach us not only how to make a living but also how to live, hence
                                 everyone in our NIT'S Campus is trying to bring to full blossoming the potential in
@@ -186,9 +186,9 @@
                                So be the part of NIT Family.<br>
                             </p>
                             <div style="float:right">
-                                <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
-                                <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
-                                <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
+                                <!-- <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6> -->
+                                <!-- <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
+                                <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span> -->
                             </div>
                         </div>
                     </div>

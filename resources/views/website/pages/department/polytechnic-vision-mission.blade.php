@@ -19,7 +19,7 @@
                 <div class="row outer-white">
                     <div class="col-sm-12">
                         <div>
-                            <div>
+                            <div style="margin-top: 20px;">
                                 @if (isset($error))
                                 <div>
                                     {{ $error }}

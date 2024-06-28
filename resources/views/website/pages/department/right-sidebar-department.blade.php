@@ -1,8 +1,15 @@
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+    
+    
     <div class="col-sm-12 right-col-fix">
         <div>
             <div class="list-group">
-                <div class="list-group-item">
-                     <!-- <strong>{{ strip_tags($data->department_description) }}</strong> -->
+                <div class="list-group-item hidden">
+               
                     </div>
                 @if (isset($data_output_category) && isset($data_output_category['id']))
                 <a href="{{ route('department-profile', ['id' => $data_output_category['id']]) }}"

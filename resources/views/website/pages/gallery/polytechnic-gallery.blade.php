@@ -99,6 +99,15 @@
             width: 100%;
         }
     }
+
+    @media only screen and (min-width: 769px){
+    .imgbottomspacing{
+        margin-bottom:22px;
+
+    }
+}
+
+
 </style>
 
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
@@ -132,7 +141,7 @@
                 <p class="department-error">Data not available</p>
             </div>
             @else
-            <div class="col-lg-3 col-md-3 col-sm-6 "  style="margin-bottom:15px;">
+            <div class="col-lg-3 col-md-3 col-sm-6 imgbottomspacing " >
                 <img id="myImg{{ $key }}" src="{{ Config::get('DocumentConstant.GALLERY_VIEW') }}{{ $data['fld_gallery_photo'] }}" class="img-fluid img-thumbnail myImg" alt="Certificate Image {{ $key }}">
             </div>
 

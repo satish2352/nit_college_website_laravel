@@ -75,8 +75,8 @@
                     <span class="visually-hidden">Next</span>
                 </button>
                 <marquee style="background-color: white; padding-top:5px;">
-                    <h5 style="color: black;">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
-                        LATE ANNASAHEB PATIL POLYTECHNIC</h5>
+                    <h5 style="color: black;"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
+                        LATE ANNASAHEB PATIL POLYTECHNIC</b></h5>
                 </marquee>
             </div>
             <!-- Other content -->
@@ -97,7 +97,7 @@
                             <span style="font-size: 16px; color: black;display:flex;"><h6>Nashik Institute of Technology
                                     (NIT), Nashik. A versatile personality of the Nashik District. Having a vast experience
                                     in various fields including Education, Construction, Industrial, Banking & Social
-                                    Etc. <a style="font-size:smaller;padding-top:8px; padding-left:10px; position:absolute;" href="#">Know More</a></h6></span>
+                                    Etc.<a style="font-size:smaller;padding-top:8px; padding-left:10px; position:absolute;" href="{{ route('polytechnic-president') }}">Know More</a></h6></span>
                             
 
                         </span>
@@ -122,7 +122,7 @@
                         <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px;">
                             <a href="pages/final web quotation advertisement .pdf">
                                 <span style="color:black; font-size:15px"> Procurement under AICTE Grant in Aid- SPDP-Skill and Personality Development Programme Centre for SC/ST Students 1-7107561391-2020-21.</span>
-                                <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span>
+                                <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
                             </a>
                             
                         </p>

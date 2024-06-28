@@ -184,8 +184,8 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                         Power).
                     </p>
                     <div style="float:right">
-                            <h6 class="mt-2" style="color:#00ae97;"><strong>Mr. Suresh .A. Patil</strong></h6>
-                            <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br>
+                            <!-- <h6 class="mt-2 fs-6" style="color:#00ae97;"><strong>Mr. Suresh .A. Patil</strong></h6> -->
+                            <!-- <span style="font-size:15px"><strong>B.Sc (Hons), L.L.B.</strong></span><br> -->
                             <!-- <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span> -->
                         </div>
                 </div>
