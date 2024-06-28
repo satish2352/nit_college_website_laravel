@@ -181,7 +181,7 @@
             <span style="color:white;">
                 <span style="color:white;">Contact</span>
                 <a class="footerdetail" style="color:white" href="tel:9552551056">9552551056</a>&nbsp;
-                <a class="footerdetail" style="color:white;" href="tel:8149822404">8149822404</a>&nbsp;
+                <!-- <a class="footerdetail" style="color:white;" href="tel:8149822404">8149822404</a>&nbsp; -->
                 <a class="footerdetail" href="mailto:info@nitnasik.com" style="color:white;">info@nitnasik.com</a>
                 <span style="color:white;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed
                     By </span><a class="footerdetail" href="https://sumagoinfotech.com/" target="_blank" style="color:white">Sumago Infotech

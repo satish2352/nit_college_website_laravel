@@ -38,14 +38,18 @@
                     <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item">SC/ST Cell</a>
                     <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic
                         Calender</a>
+                        <a  href="{{ route('aluminiregister') }}"  class="list-group-item">Alumni Registration</a> 
 
                 </div>
             </div>
         </div>
 
         <div class="col-md-9" style="margin-top: 18px;">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel                                                                                                                                                                          ">
-                <!-- Indicators -->
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators --> <marquee style="background-color: white; padding-top:5px;">
+                    <h5 style="color: black;"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
+                        LATE ANNASAHEB PATIL POLYTECHNIC</b></h5>
+                </marquee> 
                 <!-- <div class="carousel-indicators">
                         @foreach($data_output as $index => $slider)
                             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}" aria-current="{{ $index === 0 ? 'true' : '' }}" aria-label="Slide {{ $index + 1 }}"></button>
@@ -74,10 +78,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-                <marquee style="background-color: white; padding-top:5px;">
-                    <h5 style="color: black;"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
-                        LATE ANNASAHEB PATIL POLYTECHNIC</b></h5>
-                </marquee>
+                
             </div>
             <!-- Other content -->
             <div>
@@ -97,7 +98,7 @@
                             <span style="font-size: 16px; color: black;display:flex;"><h6>Nashik Institute of Technology
                                     (NIT), Nashik. A versatile personality of the Nashik District. Having a vast experience
                                     in various fields including Education, Construction, Industrial, Banking & Social
-                                    Etc.<a style="font-size:smaller;padding-top:8px; padding-left:10px; position:absolute;" href="{{ route('polytechnic-president') }}">Know More</a></h6></span>
+                                    Etc.<a style="font-size:smaller;padding-top:8px; padding-left:10px; position:absolute;" href="{{ route('polytechnic-president') }}">Read More</a></h6></span>
                             
 
                         </span>
@@ -126,7 +127,18 @@
                             </a>
                             
                         </p>
-                        <h1 style="border: 1px dotted  black; width:100%; margin-left:25px">
+                        <h1 style="border: 1px dotted  black; width:100%; margin-left:25px"></h1>
+                        
+                        <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px;">
+                            <a href="pages/final web quotation advertisement .pdf">
+                                <span style="color:black; font-size:13px">"Golden Opportunity for 10th Pass Students, Date Extended for Diploma (Polytechnic) Admission up to 9th July 2024.."</span>
+                                <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
+                            </a>
+                            
+                        </p>
+                        <h1 style="border: 1px dotted  black; width:100%; margin-left:25px"></h1>
+
+                        
                     </marquee>
 
 

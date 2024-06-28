@@ -146,12 +146,12 @@ label {
                                     <span
                                         style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</span><br>
                             </address>
-                            <address>
+                            <!-- <address>
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
                                         style="color:green">Tel.</b> <b style="color: #454545;">:</b>
                                     <span
                                     class="data-con">{{ $contactusdata[0]['contact_us_telephone'] }}</span><br>
-                            </address>
+                            </address> -->
                             <address>
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
                                         style="color:green">Mobile.</b> <b

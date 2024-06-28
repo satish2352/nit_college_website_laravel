@@ -554,15 +554,15 @@
                 width: 10px;
                 top: 25px;
                 /* Adjust top position as needed */
-                /* right: 21px; */
+                right: 21px;
                 /* Adjust right position as needed */
                 z-index: 1001;
                 /* Ensure it's above the offcanvas content */
             }
 
-            .gunju1 {
+            /* .gunju1 {
                 margin-left: 0px !important;
-            }
+            } */
 
             .offcanvas-body {
                 background-color: #e6f3ff;
@@ -650,12 +650,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6"><a href="{{ route('/') }}">Institute Address : Cannol
                         Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                <div class="col-lg-6 col-md-6 col-sm-6 text-right d-flex flot-end">
                     <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">principal@nitnasik.com</a> |
                     <span style="font-size:13px !important;">Contact Number : </span>
                     <a href="tel:9552551056">9552551056</a>&nbsp;
-                    <a href="tel:8149822404">8149822404</a>&nbsp;
-                    <a href="tel:9890269439">9890269439</a>
+                    <!-- <a href="tel:8149822404">8149822404</a>&nbsp;
+                    <a href="tel:9890269439">9890269439</a> -->
                 </div>
             </div>
         </div>
@@ -666,11 +666,11 @@
         <div class="container-fluid pt-2 pb-1 mob-width-left">
             <div class="container-fluid main-header">
                 <div class="row align-items-center d-flex justify-content-center">
-                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-1 col-md-1 col-sm-0"></div>
                     <div class="col-lg-1 col-md-1 col-sm-1 col-3 gunju1 ">
                         <a href="/"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-4 col-9 text-center ">
+                    <div class="col-lg-6 col-md-6 col-sm-3 col-9 text-center ">
                         <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
                         <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt.
@@ -742,7 +742,7 @@
 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Academics
+                                        Departments
                                         </a>
                                         <ul class="dropdown-menu">
                                             @foreach ($menuDepartment as $menuItemDepartment)
