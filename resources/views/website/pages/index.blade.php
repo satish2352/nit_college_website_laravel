@@ -121,7 +121,7 @@
 
                         <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px;">
                             <a href="pages/final web quotation advertisement .pdf">
-                                <span style="color:black; font-size:15px"> Procurement under AICTE Grant in Aid- SPDP-Skill and Personality Development Programme Centre for SC/ST Students 1-7107561391-2020-21.</span>
+                                <span style="color:black; font-size:13px"> Procurement under AICTE Grant in Aid- SPDP-Skill and Personality Development Programme Centre for SC/ST Students 1-7107561391-2020-21.</span>
                                 <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
                             </a>
                             
@@ -138,18 +138,18 @@
             <div class="row" >
                 <div class="col-lg-6 col-md-6" >
                     <div style="background-color: white;" class="col-height">
-                    <div style="background-color:gray; height:55px !important; align-items: center; display: flex; justify-content: center; " align="justify">
+                    <div style="background-color:#d8d8d8;; height:55px !important; align-items: center; display: flex; justify-content: center; " align="justify">
                         <center>
-                            <h4><b><span style="color:White; font-family: georgia, palatino; font-size:20px;margin:10px">VISION</span></b></h4>
+                            <h4><b><span style="color:black; font-family: georgia, palatino; font-size:20px;margin:10px">VISION</span></b></h4>
                         </center>
                     </div>
-                    <p align="justify" style="margin-top:15px;padding-left: 10px; padding-right:10px">
+                    <p align="justify" >
 
-                            <span style="font-size: 16px; color: black;" ><i>Dedicated to promote the quality technical
+                            <span style="font-size: 16px; color: black;" ><p style="margin-top:15px;padding-left: 10px; padding-right:10px">Dedicated to promote the quality technical
                                     education through advanced teaching and learning process, high quality research and
                                     extension to serve the human society for sustainable development by developing
                                     community, the ability and passion to work wisely, creatively and effectively, for the
-                                    betterment of Humankind</i>
+                                    betterment of Humankind</p>
                                 </span>
                     </p>
                     </div>
@@ -160,17 +160,17 @@
 
                 <div style="background-color: white;" class="col-height">
 
-                    <div style="background-color:gray; height:55px !important; align-items: center; display: flex; justify-content: center; " align="justify">
+                    <div style="background-color:#d8d8d8;; height:55px !important; align-items: center; display: flex; justify-content: center; " align="justify">
 
                         <center>
-                            <h4><b><span style="color:White; font-family: georgia, palatino; font-size:20px;margin:10px">MISSION</span></b></h4>
+                            <h4><b><span style="color:black; font-family: georgia, palatino; font-size:20px;margin:10px">MISSION</span></b></h4>
                         </center>
                     </div>
                     <p align="justify" style="margin-top:15px;padding-left: 10px; padding-right:10px">
                         
 
-                            <span style="font-size:16px; color: black;"><i>To give the quality technical
-                                    education for empowerment of the common masses.</i></span>
+                            <span style="font-size:16px; color: black;"><p style="margin-top:15px;padding-left: 10px; padding-right:10px">To give the quality technical
+                                    education for empowerment of the common masses.</p></span>
 
                      
                     </p>
