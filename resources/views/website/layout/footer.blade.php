@@ -163,11 +163,11 @@
                                     <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL
                                             POLYTECHNIC, NIT-422003</a></blockquote>
                                     <span class="footer-social-icon">
-                                        <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                        <a href="https://www.facebook.com/NITLAPP/" target="_blank"><i class="fab fa-facebook-f facebook-bg"></i></a>
                                         <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                                         <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
                                         <a href="#"><i class="fab fa-brands fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                        <a href="https://www.instagram.com/nit_polytechnic_nashik/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
                                         
                                     </span>
                                 </div>

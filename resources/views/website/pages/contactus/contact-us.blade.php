@@ -157,7 +157,7 @@ label {
                                         style="color:green">Mobile.</b> <b
                                         style="color: #454545;">:</b>&nbsp;
                                     <span
-                                    class="data-con">{{ $contactusdata[0]['contact_us_mobile'] }}</span><br>
+                                    class="data-con">{{ $contactusdata[0]['contact_us_mobile'] }}&nbsp;</span><br>
                             </address>
                             <address>
                                 <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><b
