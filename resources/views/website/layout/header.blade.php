@@ -417,8 +417,9 @@
             .navbar-toggler {
                 position: absolute;
                 z-index: 1001;
-                top: 0;
-                right: 10px;
+                top: -84;
+                left: 152px;
+                /* right: 10px; */
                 cursor: pointer;
                 background-color: white;
                 box-shadow: 0 0 20px black;
@@ -571,11 +572,12 @@
 
     
 .admissionbutton {
-  background-color: #004A7F;
+  /* background-color: #004A7F; */
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  box-shadow: none !important;
   border: none;
-  color: #ffffff;
+  color:white !important;
   cursor: pointer;
   display: inline-block;
   font-family: Arial;
@@ -583,9 +585,9 @@
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
-  -webkit-animation: glowing 1500ms infinite;
+  /* -webkit-animation: glowing 1500ms infinite;
   -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite; */
   animation: glowing 1500ms infinite;
 }
 @-webkit-keyframes glowing {
@@ -689,11 +691,11 @@
                         <img src="{{ asset('public/assets/Akole_Poly/TWOWIN2p_400x400.jpg') }}" alt="Avatar" class="img-fluid rounded-circle" style="width:100px;">
                         <p style="font-size:12px;color:red;"><b>Shri.&nbsp;Suresh&nbsp;Patil</b></p>
                     </div>
-                    <div class="col-lg-1 col-md-1 "></div>
-                    <div class="col-lg-2 col-md-2  col-3 text-center displsy-flex web-display mob-display">
-                        <button class="btn btn-danger admissionbutton">
-                            <a href="{{ route('enquiry') }}" >Admission
-                                Enquiry</a>
+                    <!-- <div class="col-lg-1 col-md-1 "></div> -->
+                    <div class="col-lg-3 col-md-3  col-3 text-center displsy-flex web-display mob-display">
+                        <button class="btn  admissionbutton">
+                            <a href="{{ route('enquiry') }}" ><b style="z-index: 100;">Admission
+                                Enquiry</b></a>
                         </button>
                         <!-- <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For <br>Admission Enquiry <br>2024-25</a></b> -->
                     </div>
@@ -705,7 +707,7 @@
     <div id="stick" class="navbar-light bg-light">
         <div class="container-fluid mob-width-right " id="iwtHeaderNav">
             <div class="container mob-toggle-left-side ">
-                <nav class=" navbar  navbar-expand-lg navbar-light bg-light   ">
+                <nav class=" navbar  navbar-expand-lg navbar-light  ">
                     <div class="container-fluid ">
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>

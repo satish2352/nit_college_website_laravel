@@ -44,32 +44,20 @@
             </div>
         </div>
 
+
         <div class="col-md-9" style="margin-top: 18px;">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators --> <marquee style="background-color: white; padding-top:5px;">
+        <marquee style="background-color: white; padding-top:5px;">
                     <h5 style="color: black;"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
                         LATE ANNASAHEB PATIL POLYTECHNIC</b></h5>
                 </marquee> 
-                <!-- <div class="carousel-indicators">
-                        @foreach($data_output as $index => $slider)
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}" aria-current="{{ $index === 0 ? 'true' : '' }}" aria-label="Slide {{ $index + 1 }}"></button>
-                        @endforeach
-                    </div> -->
-
-                <!-- Wrapper for slides -->
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     @foreach($data_output as $index => $slider)
-                    <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                    <div class="carousel-item {{ $index === 0 ? 'active' : '' }}" >
                         <img style="" src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $slider['fld_slider_image'] }}" class="d-block w-100" alt="{{ $slider['fld_slider_title'] }}">
-                        <!-- {{-- <div class="carousel-caption d-none d-md-block">
-                                    <h5>{{ $slider['fld_slider_title'] }}</h5>
-                                    <p>{{ $slider['fld_slider_subtitle'] }}</p>
-                                </div> --}} -->
                     </div>
                     @endforeach
                 </div>
-
-                <!-- Left and right controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -78,7 +66,6 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-                
             </div>
             <!-- Other content -->
             <div>
