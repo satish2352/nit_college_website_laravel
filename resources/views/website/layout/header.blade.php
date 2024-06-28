@@ -31,7 +31,7 @@
 
 
 
-      
+
 
 
         .nav-link:hover::before,
@@ -461,48 +461,49 @@
             #iwtHeaderNav {
                 border-bottom: none;
             }
-        
-
-        .navbar-collapse .navbar-toggler {
-            /* right: 10%; */
-            left: 0;
-        }
 
 
-        @media only screen and (min-width: 767px) and (max-width: 19000px) {
-
-            .alumnispace {
-                width: 200px !important;
+            .navbar-collapse .navbar-toggler {
+                /* right: 10%; */
+                left: 0;
             }
-            .sticky {
-            position: sticky;
-            top: 0 !important;
-            width: 100%;
-            z-index: 1001;
-        }
 
-        }
 
-        .AICTE {
-            margin-left: -68px !important;
-        }
+            @media only screen and (min-width: 767px) and (max-width: 19000px) {
 
-        .mob-toggle-right-side {
-            display: flex;
-            align-items: center !important;
-        }
+                .alumnispace {
+                    width: 200px !important;
+                }
 
-        .mob-width-left {
-            width: 80%;
-        }
+                .sticky {
+                    position: sticky;
+                    top: 0 !important;
+                    width: 100%;
+                    z-index: 1001;
+                }
 
-        .mob-width-right {
-            width: 20%;
-        }
+            }
 
-        #iwtHeaderNav {
-            border-bottom: none;
-        }
+            .AICTE {
+                margin-left: -68px !important;
+            }
+
+            .mob-toggle-right-side {
+                display: flex;
+                align-items: center !important;
+            }
+
+            .mob-width-left {
+                width: 80%;
+            }
+
+            .mob-width-right {
+                width: 20%;
+            }
+
+            #iwtHeaderNav {
+                border-bottom: none;
+            }
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -514,12 +515,13 @@
                 text-align: center;
 
             }
+
             .sticky {
-            position: sticky;
-            top: 0 !important;
-            width: 100%;
-            z-index: 1001;
-        }
+                position: sticky;
+                top: 0 !important;
+                width: 100%;
+                z-index: 1001;
+            }
         }
 
         @media only screen and (min-width: 768px) {
@@ -528,12 +530,13 @@
             .btn-close {
                 display: none;
             }
+
             .sticky {
-            position: sticky;
-            top: 0 !important;
-            width: 100%;
-            z-index: 1001;
-        }
+                position: sticky;
+                top: 0 !important;
+                width: 100%;
+                z-index: 1001;
+            }
 
 
         }
@@ -565,6 +568,53 @@
                 background-color: #e6f3ff;
             }
         }
+
+    
+.admissionbutton {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+
+
+
     </style>
 </head>
 
@@ -641,8 +691,8 @@
                     </div>
                     <div class="col-lg-1 col-md-1 "></div>
                     <div class="col-lg-2 col-md-2  col-3 text-center displsy-flex web-display mob-display">
-                        <button class="btn btn-danger">
-                            <a href="{{ route('enquiry') }}" style="color:white; text-decoration:none;">Admission
+                        <button class="btn btn-danger admissionbutton">
+                            <a href="{{ route('enquiry') }}" >Admission
                                 Enquiry</a>
                         </button>
                         <!-- <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For <br>Admission Enquiry <br>2024-25</a></b> -->
@@ -656,7 +706,7 @@
         <div class="container-fluid mob-width-right " id="iwtHeaderNav">
             <div class="container mob-toggle-left-side ">
                 <nav class=" navbar  navbar-expand-lg navbar-light bg-light   ">
-                    <div class="container-fluid " >
+                    <div class="container-fluid ">
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>

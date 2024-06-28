@@ -1,93 +1,101 @@
 <style>
-.footer-menu ul li {
-    /* color: #00ae97 !important; */
-}
-
-#about-list {
-    list-style-type: 1px;
-}
-
-blockquote {
-    padding: 10px 20px;
-    font-weight: 700;
-    margin: 0 0 20px;
-    font-size: 15px;
-    line-height: 25px;
-    border-left: 5px solid #eee;
-}
-
-.footer-social-icon span {
-    color: #fff;
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
-}
-
-.footer-social-icon a {
-    color: #fff;
-    font-size: 16px;
-    margin-right: 15px;
-}
-
-.footer-social-icon i {
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 38px;
-    border-radius: 50%;
-    margin-top: -25px !important;
-}
-
-.facebook-bg {
-    background: #3B5998;
-}
-
-.twitter-bg {
-    background: #55ACEE;
-}
-
-.fa-linkedin {
-    background: #0a66c2;
-}
-
-.google-bg {
-    background: #DD4B39;
-}
-
-a:hover {
-    color: black !important;
-}
-.footerdetail:hover {
-    color: white !important;
-}
-hr{
-    display: none;
-}
-
-@media (max-width: 767px) {
-    .footer .container {
-        text-align: center;
-    }
-    li{
-        margin-left: 20px
+    .footer-menu ul li {
+        /* color: #00ae97 !important; */
     }
 
-    .footer .row>div {
-        margin-bottom: 20px;
-      padding-left: 40px;
+    /* col{
+    column-gap: 20px;
+} */
+
+    #about-list {
+        list-style-type: 1px;
     }
-    hr{
+
+    blockquote {
+        padding: 10px 20px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        font-size: 15px;
+        line-height: 25px;
+        border-left: 5px solid #eee;
+    }
+
+    .footer-social-icon span {
+        color: #fff;
         display: block;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 20px;
     }
-}
 
-@media (min-width: 768px) {
-    .footer .container {
-        text-align: left;
+    .footer-social-icon a {
+        color: #fff;
+        font-size: 16px;
+        margin-right: 15px;
     }
-}
+
+    .footer-social-icon i {
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 38px;
+        border-radius: 50%;
+        margin-top: -25px !important;
+    }
+
+    .facebook-bg {
+        background: #3B5998;
+    }
+
+    .twitter-bg {
+        background: #55ACEE;
+    }
+
+    .fa-linkedin {
+        background: #0a66c2;
+    }
+
+    .google-bg {
+        background: #DD4B39;
+    }
+
+    a:hover {
+        color: black !important;
+    }
+
+    .footerdetail:hover {
+        color: white !important;
+    }
+
+    hr {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .footer .container {
+            text-align: center;
+        }
+
+        li {
+            margin-left: 20px
+        }
+
+        .footer .row>div {
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        hr {
+            display: block;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer .container {
+            text-align: left;
+        }
+    }
 </style>
 
 <div class="container">
@@ -96,61 +104,58 @@ hr{
     </div>
 </div>
 
-<div class="container-fluid footer"
-    style="background-color:  #015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0;">
+<div class="container-fluid footer" style="background-color:  #015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0; padding-bottom:35px;">
     <div>
-        <div class="row">
-            <div class="col-lg-1 col-md-1"></div>
+        <div class="row" style="margin-top: 20px;">
+
+           <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-2 col-md-2">
-                <h5 style="color: white; font-size:22px;"><b>About Us</b></h5>
-                <ul id="about-list ">
-                    <h6><a  href="{{ route('polytechnic-president') }}" style="color: #cccccc;">President Desk</a></h6>
-                    <h6><a href="{{ route('polytechnic-principals') }}" style="color: #cccccc;">Principal Desk</a></h6>
-                    <h6><a href="{{ route('mission-and-vision') }}" style="color: #cccccc;">Mission & Vision</a></h6>
-                    <h6><a href="{{ route('about-governingbody') }}" style="color: #cccccc;">Governing Body</a></h6>
-                    <h6><a href="{{ route('about-futureplans') }}" style="color: #cccccc;">Future Plans</a></h6>
+                <h5 style="color: white; font-size:20px;"><b>About Us</b></h5>
+                <ul id="about-list" style="margin-top: 25px;">
+                    <h6><a href="{{ route('polytechnic-president') }}" style="color: #cccccc;line-height:25px">President Desk</a></h6>
+                    <h6><a href="{{ route('polytechnic-principals') }}" style="color: #cccccc;line-height:25px">Principal Desk</a></h6>
+                    <h6><a href="{{ route('mission-and-vision') }}" style="color: #cccccc;line-height:25px">Mission & Vision</a></h6>
+                    <h6><a href="{{ route('about-governingbody') }}" style="color: #cccccc;line-height:25px">Governing Body</a></h6>
+                    <h6><a href="{{ route('about-futureplans') }}" style="color: #cccccc;line-height:25px">Future Plans</a></h6>
                 </ul>
                 <hr>
             </div>
-            
-            <div class="col-lg-2 col-md-3 col-sm-6">
-                <h5 style="color: white; font-size:22px;"><b>Facilities</b></h5>
-                <ul>
+
+            <div class="col-lg-2 col-md-2 col-sm-6">
+                <h5 style="color: white; font-size:20px;"><b>Facilities</b></h5>
+                <ul style="margin-top: 25px;">
                     @foreach ($menuFacility as $menuFacilityItem)
-                    <h6 ><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}"
-                            style="color: #cccccc;">{{ $menuFacilityItem['facility'] }}</a></h6>
+                    <h6><a href="{{ route('polytechnic-facilities', ['id' => $menuFacilityItem['facility_id']]) }}" style="color: #cccccc; line-height:25px">{{ $menuFacilityItem['facility'] }}</a></h6>
+                    @endforeach
+                </ul>
+                <hr>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <h5 style="color: white; font-size:20px;"><b>Departments</b></h5>
+                <ul style="margin-top: 25px;">
+                    @foreach ($menuDepartment as $menuItemDepartment)
+                    <h6><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}" style="color: #cccccc; line-height:25px;">{{ $menuItemDepartment['Department'] }}</a></h6>
                     @endforeach
                 </ul>
                 <hr>
             </div>
             <div class="col-lg-3 col-md-3">
-                <h5 style="color: white; font-size:22px;"><b>Departments</b></h5>
-                <ul>
-                    @foreach ($menuDepartment as $menuItemDepartment)
-                    <h6 ><a href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}"
-                            style="color: #cccccc;">{{ $menuItemDepartment['Department'] }}</a></h6>
-                    @endforeach
-                </ul>
-                <hr>
-            </div>
-            <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div>
                     <div class="address">
                         <div>
                             <div id="fb-root"></div>
                             <script>
-                            (function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = "../../connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));
+                                (function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "../../connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
                             </script>
-                            <div class="fb-page" data-href="#" data-width="226" data-small-header="true"
-                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-page" data-href="#" data-width="226" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <div class="fb-xfbml-parse-ignore">
                                     <blockquote cite="#"><a href="#" style="color: #fff;">LATE ANNASAHEB PATIL
                                             POLYTECHNIC, NIT-422003</a></blockquote>
@@ -167,14 +172,10 @@ hr{
                 </div>
             </div>
         </div>
-        <!-- <a herf="#" class="scroll-top" style="display: inline;" >
-            <i class="fa fa-chevron-up" aria-hidden="true">
-            ::before
-        </i></a> -->
     </div>
 </div>
 
-<div class="container-fluid" style="background-color: #000">
+<div class="container-fluid" style="background-color: #013665">
     <div class="container">
         <div class="row py-2">
             <span style="color:white;">
@@ -183,7 +184,7 @@ hr{
                 <a class="footerdetail" style="color:white;" href="tel:8149822404">8149822404</a>&nbsp;
                 <a class="footerdetail" href="mailto:info@nitnasik.com" style="color:white;">info@nitnasik.com</a>
                 <span style="color:white;">&copy;2024 All Rights Reserved to Late Annasaheb Patil Polytechnic Developed
-                    By </span><a href="https://sumagoinfotech.com/" target="_blank" style="color:white">Sumago Infotech
+                    By </span><a class="footerdetail" href="https://sumagoinfotech.com/" target="_blank" style="color:white">Sumago Infotech
                     <img src="{{ asset('public/assets/up-images/slogo.png') }}" alt="" style="width:19px;"></a>&nbsp;
             </span>
         </div>
@@ -196,8 +197,8 @@ hr{
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- Badge Code - Do Not Change The Code -->
 <script>
-document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() +
-    "'><\/script>");
+    document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() +
+        "'><\/script>");
 </script>
 <script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
 <!-- jQuery -->
@@ -208,44 +209,44 @@ document.write("<script type='text/javascript' src='https://visitorshitcounter.c
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('#example').DataTable({
-        responsive: true,
-        showNEntries: false,
-        lengthChange: false
-    });
+    $(document).ready(function() {
+        $('#example').DataTable({
+            responsive: true,
+            showNEntries: false,
+            lengthChange: false
+        });
 
-    var table2 = $('#example1').DataTable({
-        "columnDefs": [{
-            "targets": [1, 2],
-            "orderable": true
-        }]
-    });
+        var table2 = $('#example1').DataTable({
+            "columnDefs": [{
+                "targets": [1, 2],
+                "orderable": true
+            }]
+        });
 
-    $('#order-listing').DataTable({
-        searching: true,
-        ordering: true,
-        lengthChange: false,
-        showNEntries: false
-    });
+        $('#order-listing').DataTable({
+            searching: true,
+            ordering: true,
+            lengthChange: false,
+            showNEntries: false
+        });
 
-    $(document).on('click', '.panel-heading span.clickable', function(e) {
-        var $this = $(this);
-        if (!$this.hasClass('panel-collapsed')) {
-            $this.parents('.panel').find('.panel-body').slideUp();
-            $this.addClass('panel-collapsed');
-            $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
-                'glyphicon glyphicon-plus-sign');
-        } else {
-            $this.parents('.panel').find('.panel-body').slideDown();
-            $this.removeClass('panel-collapsed');
-            $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
-                'glyphicon glyphicon-minus-sign');
-        }
-    });
+        $(document).on('click', '.panel-heading span.clickable', function(e) {
+            var $this = $(this);
+            if (!$this.hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideUp();
+                $this.addClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon glyphicon-minus-sign').addClass(
+                    'glyphicon glyphicon-plus-sign');
+            } else {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $this.removeClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon glyphicon-plus-sign').addClass(
+                    'glyphicon glyphicon-minus-sign');
+            }
+        });
 
-    setTimeout(function() {
-        $(".alert").alert('close');
-    }, 1000); // 1000 milliseconds = 1 second
-});
+        setTimeout(function() {
+            $(".alert").alert('close');
+        }, 1000); // 1000 milliseconds = 1 second
+    });
 </script>
