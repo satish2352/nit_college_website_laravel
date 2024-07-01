@@ -55,9 +55,10 @@
     .fa-linkedin {
         background: #0a66c2;
     }
-    .fa-instagram{
-        background: rgb(233,  89,  80);
-        }
+
+    .fa-instagram {
+        background: rgb(233, 89, 80);
+    }
 
     .google-bg {
         background: #DD4B39;
@@ -73,6 +74,35 @@
 
     hr {
         display: none;
+    }
+
+
+
+    .fortopbutton {
+        justify-content: end;
+        justify-self: end;
+    }
+
+    .scrolltop {
+        /* position: fixed; */
+        z-index: 999;
+        width: 100px;
+        color: white;
+        display: flex;
+        justify-content: end;
+    }
+
+    .fas {
+        position: absolute;
+        z-index: 1001;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+        background-color: black;
+        border-radius: 50%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-weight: 900;
     }
 
     @media (max-width: 767px) {
@@ -98,7 +128,8 @@
         .footer .container {
             text-align: left;
         }
-        .leftspace{
+
+        .leftspace {
             margin-left: 10px;
         }
     }
@@ -114,7 +145,7 @@
     <div>
         <div class="row leftspace" style="margin-top: 20px;">
 
-           <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-2 col-md-2">
                 <h5 style="color: white; font-size:20px;"><b>About Us</b></h5>
                 <ul id="about-list" style="margin-top: 25px;">
@@ -171,7 +202,7 @@
                                         <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
                                         <a href="#"><i class="fab fa-brands fa-linkedin"></i></a>
                                         <a href="https://www.instagram.com/nit_polytechnic_nashik/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-                                        
+
                                     </span>
                                 </div>
                             </div>
@@ -182,6 +213,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="container-fluid" style="background-color: #013665">
     <div class="container" style="display: flex; justify-content:center;">
@@ -198,6 +230,13 @@
         </div>
     </div>
 </div>
+<!-- <div class=" fortopbutton">
+    <a href="#" class="scrolltop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div> -->
+
+
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
