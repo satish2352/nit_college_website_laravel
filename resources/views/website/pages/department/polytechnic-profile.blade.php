@@ -29,6 +29,7 @@
                     <div class="col-lg-12 col-sm-12">
                         <div>
                             <div class="card-body ">
+                                <div class=""></div>
                                 <div>
                                     @if (isset($error))
                                     <div>
@@ -53,7 +54,7 @@
                                         <div style="margin-top: 40px;">
                                             <p>{{ strip_tags($data->department_description) }}</p>
                                         </div>
-                                        <img id="english" src="{{ Config::get('DocumentConstant.DEPARTMENT_VIEW_PROFILE') }}{{ $data->photo }}" class="img-fluid img-thumbnail" height="300px" width="700px">
+                                        <img id="english" src="{{ Config::get('DocumentConstant.DEPARTMENT_VIEW_PROFILE') }}{{ $data->photo }}" class="img-fluid img-thumbnail  hidden-sm" height="300px" width="700px">
                                     </div>
                                     @endif
                                     @endforeach

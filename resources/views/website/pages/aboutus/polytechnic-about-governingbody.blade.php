@@ -21,6 +21,9 @@
         width: 100%;
         /* Changed from fixed width to 100% */
     }
+    .row>*{
+        padding-right: 0px !important;
+    }
 
     .product-type {
         margin-top: 45px;
@@ -170,7 +173,7 @@
                     </div>
 
 
-                    <div class="col-lg-9 col-md-9 col-sm-9 pt-5 govbody">
+                    <div class="col-lg-9 col-md-9 col-sm-12 pt-5 govbody">
                         <div class="table-responsive">
 
                             <!-- Add this wrapper -->

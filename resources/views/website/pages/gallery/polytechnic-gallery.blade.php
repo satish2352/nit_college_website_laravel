@@ -100,14 +100,12 @@
         }
     }
 
-    @media only screen and (min-width: 769px){
-    .imgbottomspacing{
-        margin-bottom:22px;
+    @media only screen and (min-width: 769px) {
+        .imgbottomspacing {
+            margin-bottom: 22px;
 
+        }
     }
-}
-
-
 </style>
 
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
@@ -123,6 +121,7 @@
 <div class="container-fluid" style="background:#fff; padding-top:40px; padding-bottom:40px;">
     <div class="container">
         <div class="row">
+
             @if (isset($error))
             <div class="alert alert-danger">
                 {{ $error }}
@@ -141,7 +140,7 @@
                 <p class="department-error">Data not available</p>
             </div>
             @else
-            <div class="col-lg-3 col-md-3 col-sm-6 imgbottomspacing " >
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 imgbottomspacing " style="display:flex; justify-content: center; ">
                 <img id="myImg{{ $key }}" src="{{ Config::get('DocumentConstant.GALLERY_VIEW') }}{{ $data['fld_gallery_photo'] }}" class="img-fluid img-thumbnail myImg" alt="Certificate Image {{ $key }}">
             </div>
 
@@ -155,6 +154,7 @@
             @endforeach
             @endif
             @endif
+
 
         </div>
     </div>

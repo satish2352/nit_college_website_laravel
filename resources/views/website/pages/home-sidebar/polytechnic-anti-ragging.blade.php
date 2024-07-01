@@ -1,5 +1,13 @@
     @extends('website.layout.master')
     @section('content')
+
+<style>
+    .row>*{
+        padding-right: 0px !important;
+    }
+</style>
+
+
     <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
         <div>
 
@@ -15,8 +23,8 @@
                         <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
                             @include('website.pages.home-sidebar.right-sidebar-home')
                         </div>
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <div class="col-lg-9 col-md-9 col-sm-9 product-type card-shadow p-4" style=" width:100%">
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="col-lg-9 col-md-9 col-sm-12 product-type card-shadow p-4" style=" width:100%">
                                 <div >
                                     <div class="panel-heading">
                                         <center>

@@ -29,7 +29,9 @@
             --bs-navbar-padding-y: 0rem;
         }
 
-
+        .row>*{
+        padding-right: 0px !important;
+    }
 
 
 
@@ -253,6 +255,9 @@
             .dropdown-toggle::after {
                 float: right !important;
             }
+            .padding-right{
+                padding-right: 10px !important;
+            }
         }
 
 
@@ -272,11 +277,17 @@
                 transition: 0.3s ease-in-out;
                 color: black;
             }
+            .navbar-toggler{
+                Top:-84 !important;
+            }
 
             .aaaa .aaab:hover {
                 color: black !important;
                 background-color: white !important;
                 padding: 5px 17px;
+            }
+            .padding-right{
+                padding-right: 10px !important;
             }
 
 
@@ -404,6 +415,9 @@
                 padding-left: 25px !important;
 
             }
+            .padding-right{
+                padding-right: 10px !important;
+            }
 
 
             .mob-display {
@@ -417,7 +431,7 @@
             .navbar-toggler {
                 position: absolute;
                 z-index: 1001;
-                top: -84;
+                top: -84 !important;
                 left: 152px;
                 /* right: 10px; */
                 cursor: pointer;
@@ -428,7 +442,6 @@
             .navbar-collapse {
                 position: fixed;
                 margin-top: 251px;
-
                 left: -100%;
                 width: 50%;
                 height: 100%;
@@ -496,6 +509,7 @@
 
             .mob-width-left {
                 width: 80%;
+                
             }
 
             .mob-width-right {
@@ -567,6 +581,9 @@
 
             .offcanvas-body {
                 background-color: #e6f3ff;
+            }
+            .padding-right{
+                padding-right: 10px !important;
             }
         }
 
@@ -647,14 +664,14 @@
     </script>
     {{-- ======================Start Top Header==================== --}}
     <div class="container-fluid px-3" id="iwtHeaderTopNav">
-        <div class="container px-0">
+        <div class="container-fluid px-0">
 
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6"><a href="{{ route('/') }}">Institute Address : Cannol
                         Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 text-right d-flex flot-end">
-                    <span style="font-size:13px !important;">Email :</span> <a href="mailto:info@nitnasik.com">principal@nitnasik.com</a> |
-                    <span style="font-size:13px !important;">Contact Number : </span>
+                <div class="col-lg-6 col-md-6 col-sm-6 text-right d-flex" style="justify-content: end;">
+                    <span style="font-size:13px !important;">Email: </span> <a href="mailto:info@nitnasik.com">principal@nitnasik.com</a> <span style="padding-left:5px;padding-right:5px;">|</span>
+                    <span style="font-size:13px !important;">Contact Number: </span>
                     <a href="tel:9552551056">9552551056</a>&nbsp;
                     <!-- <a href="tel:8149822404">8149822404</a>&nbsp;
                     <a href="tel:9890269439">9890269439</a> -->
@@ -672,10 +689,10 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 col-3 gunju1 ">
                         <a href="/"><img src="{{ asset('public/assets/Akole_Poly/logo.gif.jpg') }}" class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-3 col-9 text-center ">
-                        <h3 class="heading1 d-flex justify-content-start">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
-                        <h2 class="heading1 d-flex justify-content-start">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
-                        <p class=" d-flex justify-content-star  aff-hide"> Affiliated to MSBTE Mumbai, Approved By Govt.
+                    <div class="col-lg-6 col-md-6 col-sm-3 col-9 text-center" >
+                        <h3 class="heading1 d-flex justify-content-start  padding-right">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
+                        <h2 class="heading1 d-flex justify-content-start  padding-right">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
+                        <p class=" d-flex justify-content-star  aff-hide  padding-right"> Affiliated to MSBTE Mumbai, Approved By Govt.
                             of
                             Maharashtra AICTE</p>
 

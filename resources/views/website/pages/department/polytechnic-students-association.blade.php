@@ -33,7 +33,7 @@
 </div>
 <div class="container-fluid">
     <div class="container card-shadow" style="margin-bottom: 95px;">
-        <div class="row" style="padding:0px">
+        <div class="row" style="padding:0px; margin-left:25px;">
             <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
                 <div class="row outer-white">
                     <div class="col-sm-12">
@@ -77,7 +77,7 @@
                                             <h2></h2>
                                         </div>
                                         <center>
-                                            <div class="table-responsive p-3 ">
+                                            <div class="table-responsive pe-5" >
                                                 <table id="example"
                                                     class="table display responsive nowrap table-striped table-hover table-bordered border-dark"
                                                     style="width:100%">
@@ -131,7 +131,7 @@
 
             </div>
 
-            <div class="col-md-3 hidden-sm right-col-fix" id="iwtRightPannel">
+            <div class="col-md-3 hidden-sm right-col-fix pb-5" id="iwtRightPannel">
                     @include('website.pages.department.right-sidebar-department')
                 </div>
 

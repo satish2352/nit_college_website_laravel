@@ -7,13 +7,28 @@
         color: black;
 
     }
+    /* .col-sm-12{
+        width: 100%;
+    } */
 
     .paused {
         animation-play-state: paused;
     }
+    .row>*{
+        padding-right: 0px !important;
+    }
     .col-height{
         min-height: 300px;
     }
+    
+
+    @media only screen and (max-width:769px) {
+        .margin-right{
+            margin-right: 25px !important;
+        }
+    }
+
+    
 </style>
 
 
@@ -93,7 +108,7 @@
         </div>
     </div>
     <div class="row" style="margin-top:10px;">
-        <div class="col-lg-3 col-md-3">
+        <div class="col-lg-3 col-md-3 col-sm-12">
             <div>
                 <div>
                     <strong>
@@ -102,14 +117,14 @@
                                         News</span></b></h4>
                         </center>
                     </strong>
-                    <marquee direction="up" style="height:170px;" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start()">
-                        <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px;">
+                    <marquee direction="up" style="height:170px; margin-top:10px;" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start()">
+                        <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px; ">
                             <a href="pages/final web quotation advertisement .pdf">
                                 <span style="color:black; font-size:13px">Golden Opportunity for 10th Pass Students, Date Extended for Diploma (Polytechnic) Admission up to 9th July 2024...</span>
                                 <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
                             </a>
                         </p>
-                        <h1 style="border: 1px dotted  black; width:100%; margin-left:25px"></h1>                        
+                        <h1 style="border: 1px dotted  black; width:auto; margin-left:25px;" class="margin-right"></h1>                        
                     </marquee>
 
 
@@ -117,9 +132,9 @@
             </div>
         </div>
 
-        <div class="col-lg-9 col-md-9">
+        <div class="col-lg-9 col-md-9 col-sm-12 ">
             <div class="row" >
-                <div class="col-lg-6 col-md-6" >
+                <div class="col-lg-6 col-md-6 col-sm-12" >
                     <div style="background-color: white;" class="col-height">
                     <div style="background-color:#d8d8d8;; height:55px !important; align-items: center; display: flex; justify-content: center; " align="justify">
                         <center>
@@ -139,7 +154,7 @@
                     
                 </div>
 
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
 
                 <div style="background-color: white;" class="col-height">
 

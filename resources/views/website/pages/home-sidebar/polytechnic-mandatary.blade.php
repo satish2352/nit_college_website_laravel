@@ -1,5 +1,14 @@
 @extends('website.layout.master')
 @section('content')
+
+<style>
+     .row>*{
+        padding-right: 0px !important;
+    }
+
+</style>
+
+
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div>
 

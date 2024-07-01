@@ -98,6 +98,9 @@
         .footer .container {
             text-align: left;
         }
+        .leftspace{
+            margin-left: 10px;
+        }
     }
 </style>
 
@@ -109,7 +112,7 @@
 
 <div class="container-fluid footer" style="background-color:  #015198; border-top: 1px solid #e0e7ed; color: white; padding: 20px 0; padding-bottom:35px;">
     <div>
-        <div class="row" style="margin-top: 20px;">
+        <div class="row leftspace" style="margin-top: 20px;">
 
            <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-2 col-md-2">
