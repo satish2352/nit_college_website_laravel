@@ -2,6 +2,10 @@
 @section('content')
 
 <style>
+  .row>* {
+            padding-right: 0px !important;
+        }
+        
     @media only screen and (max-width:767px) {
         .sidebar-mb {
             display: none;
@@ -54,7 +58,7 @@
                                         <div style="margin-top: 10px;">
                                             <p>{{ strip_tags($data->department_description) }}</p>
                                         </div>
-                                        <img id="english" src="{{ Config::get('DocumentConstant.DEPARTMENT_VIEW_PROFILE') }}{{ $data->photo }}" class="img-fluid img-thumbnail  hidden-sm" height="300px" width="700px">
+                                        <img id="english" src="{{ Config::get('DocumentConstant.DEPARTMENT_VIEW_PROFILE') }}{{ $data->photo }}" class=" img-thumbnail  hidden-sm" height="300px" width="700px">
                                     </div>
                                     @endif
                                     @endforeach
@@ -70,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 hidden-sm right-col-fix sidebar-mb" id="iwtRightPannel">
+            <div class="col-md-3 col-sm-12 right-col-fix " id="iwtRightPannel">
                 @include('website.pages.department.right-sidebar-department')
             </div>
         </div>

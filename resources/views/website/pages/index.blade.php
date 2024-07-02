@@ -124,7 +124,7 @@
                                 <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
                             </a>
                         </p>
-                        <h1 style="border: 1px dotted  black; width:auto; margin-left:25px;" class="margin-right"></h1>                        
+                        <h1 style="border: 1px solid  black; width:auto; margin-left:25px;" class="margin-right"></h1>                        
                     </marquee>
 
 

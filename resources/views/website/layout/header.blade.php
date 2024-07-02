@@ -714,11 +714,11 @@
         <div class="container-fluid px-0">
 
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 "><span>Institute Address : <a class="topoftop" href="{{ route('/') }}">Cannol
+                <div class="col-lg-6 col-md-6 col-sm-6 "><span style="font-size: 13px;">Institute Address : <a class="topoftop" href="{{ route('/') }}">Cannol
                             Road,Behind Hydro-division(MERI),Nashik-422003</a></span></div>
                 <div class="col-lg-6 col-md-6 col-sm-6 text-right d-flex" style="justify-content: end;">
-                    <span style="font-size:13px !important;">Email : <a class="topoftop" href="mailto:info@nitnasik.com"> principal@nitnasik.com</a> </span> <span style="padding-left:5px;padding-right:5px;">|</span>
-                    <span style="font-size:13px !important;">Contact Number : <a class="topoftop" href="tel:9552551056">9552551056</a>&nbsp;</span>
+                    <span style="font-size:11px !important;">Email : <a class="topoftop" href="mailto:info@nitnasik.com"> principal@nitnasik.com</a> </span> <span style="padding-left:5px;padding-right:5px;">|</span>
+                    <span style="font-size:11px !important;">Contact Number : <a class="topoftop" href="tel:9552551056">9552551056</a>&nbsp;</span>
 
                     <!-- <a href="tel:8149822404">8149822404</a>&nbsp;
                     <a href="tel:9890269439">9890269439</a> -->
