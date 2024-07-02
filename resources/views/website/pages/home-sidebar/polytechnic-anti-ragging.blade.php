@@ -44,7 +44,7 @@
                                                     class="table display responsive nowrap table-striped table-hover table-bordered border-dark">
                                                     <thead class="">
                                                         <tr>
-                                                            <th scope="col" class=" justify-content-center">SR.NO</th>
+                                                            <th scope="col" class=" justify-content-center"><center>SR.NO</center></th>
                                                             <th scope="col">
                                                                 <center>Name</center>
                                                             </th>

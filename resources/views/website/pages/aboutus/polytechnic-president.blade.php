@@ -134,7 +134,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
            <div class="col-md-9">
            <div class=" pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
                 <center>
-                    <h2 style="color:green" class="pt-3"><strong>President Desk</strong></h2>
+                    <h2 style="color:green" class="pt-4"><strong>President Desk</strong></h2>
                     <!-- <h3 class="panel-title"><b>President Message</b></h3> -->
                 </center>
                 <br>
@@ -145,7 +145,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
                 </center>
             </div> -->
             <div class="president-msg">
-                <div style="text-align: center;" data-aos="fade-left">
+                <div style="text-align: center;" class="pt-2" data-aos="fade-left">
                     <img style="height: 300px; width:300px;" class="imgborder" src="{{ asset('public/assets/images/img11.jpeg') }}" alt=""><br>
 
                     <br>

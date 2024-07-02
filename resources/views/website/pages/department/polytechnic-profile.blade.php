@@ -51,7 +51,7 @@
                                         <div class="" style="color:#00ae97; font-size:20px;">
                                             <strong> {{ $data->Department }}</strong>
                                         </div>
-                                        <div style="margin-top: 40px;">
+                                        <div style="margin-top: 10px;">
                                             <p>{{ strip_tags($data->department_description) }}</p>
                                         </div>
                                         <img id="english" src="{{ Config::get('DocumentConstant.DEPARTMENT_VIEW_PROFILE') }}{{ $data->photo }}" class="img-fluid img-thumbnail  hidden-sm" height="300px" width="700px">

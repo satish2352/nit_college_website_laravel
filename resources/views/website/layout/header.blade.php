@@ -29,12 +29,13 @@
             --bs-navbar-padding-y: 0rem;
         }
 
-        .row>*{
-        padding-right: 0px !important;
-    }
+        .row>* {
+            padding-right: 0px !important;
+        }
 
-
-
+        .topoftop:hover {
+            color: white !important;
+        }
 
         .nav-link:hover::before,
         .nav-link.active::before {
@@ -53,7 +54,7 @@
         }
 
         .red-watch-bg {
-            width: 100% ;
+            width: 100%;
             background-color: #015198;
             position: relative;
             height: 40px;
@@ -255,7 +256,8 @@
             .dropdown-toggle::after {
                 float: right !important;
             }
-            .padding-right{
+
+            .padding-right {
                 padding-right: 10px !important;
             }
         }
@@ -277,8 +279,9 @@
                 transition: 0.3s ease-in-out;
                 color: black;
             }
-            .navbar-toggler{
-                Top:-84 !important;
+
+            .navbar-toggler {
+                Top: -84 !important;
             }
 
             .aaaa .aaab:hover {
@@ -286,7 +289,8 @@
                 background-color: white !important;
                 padding: 5px 17px;
             }
-            .padding-right{
+
+            .padding-right {
                 padding-right: 10px !important;
             }
 
@@ -415,7 +419,8 @@
                 padding-left: 25px !important;
 
             }
-            .padding-right{
+
+            .padding-right {
                 padding-right: 10px !important;
             }
 
@@ -509,7 +514,7 @@
 
             .mob-width-left {
                 width: 80%;
-                
+
             }
 
             .mob-width-right {
@@ -582,58 +587,100 @@
             .offcanvas-body {
                 background-color: #e6f3ff;
             }
-            .padding-right{
+
+            .padding-right {
                 padding-right: 10px !important;
             }
         }
 
-    
-.admissionbutton {
-  /* background-color: #004A7F; */
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  box-shadow: none !important;
-  border: none;
-  color:white !important;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Arial;
-  font-size: 20px;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  /* -webkit-animation: glowing 1500ms infinite;
+
+        .admissionbutton {
+            /* background-color: #004A7F; */
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            box-shadow: none !important;
+            border: none;
+            /* color:white !important; */
+            cursor: pointer;
+            display: inline-block;
+            font-family: Arial;
+            font-size: 20px;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            /* -webkit-animation: glowing 1500ms infinite;
   -moz-animation: glowing 1500ms infinite;
   -o-animation: glowing 1500ms infinite; */
-  animation: glowing 1500ms infinite;
-}
-@-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-}
+            animation: glowing 1500ms infinite;
+        }
 
-@-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-}
+        @-webkit-keyframes glowing {
+            0% {
+                background-color: #e60000;
+                -webkit-box-shadow: 0 0 3px #e60000;
+            }
 
-@-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
+            50% {
+                background-color: #ff3333;
+                -webkit-box-shadow: 0 0 40px #ff3333;
+            }
 
-@keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
+            100% {
+                background-color: #e60000;
+                -webkit-box-shadow: 0 0 3px #e60000;
+            }
+        }
 
+        @-moz-keyframes glowing {
+            0% {
+                background-color: #e60000;
+                -moz-box-shadow: 0 0 3px #e60000;
+            }
 
+            50% {
+                background-color: #ff3333;
+                -moz-box-shadow: 0 0 40px #ff3333;
+            }
 
+            100% {
+                background-color: #e60000;
+                -moz-box-shadow: 0 0 3px #e60000;
+            }
+        }
 
+        @-o-keyframes glowing {
+            0% {
+                background-color: #e60000;
+                box-shadow: 0 0 3px #e60000;
+            }
+
+            50% {
+                background-color: #ff3333;
+                box-shadow: 0 0 40px #ff3333;
+            }
+
+            100% {
+                background-color: #e60000;
+                box-shadow: 0 0 3px #e60000;
+            }
+        }
+
+        @keyframes glowing {
+            0% {
+                background-color: #e60000;
+                box-shadow: 0 0 3px #e60000;
+            }
+
+            50% {
+                background-color: #ff3333;
+                box-shadow: 0 0 40px #ff3333;
+            }
+
+            100% {
+                background-color: #e60000;
+                box-shadow: 0 0 3px #e60000;
+            }
+        }
     </style>
 </head>
 
@@ -667,12 +714,12 @@
         <div class="container-fluid px-0">
 
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6"><a href="{{ route('/') }}">Institute Address : Cannol
-                        Road,Behind Hydro-division(MERI),Nashik-422003</a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 "><span>Institute Address : <a class="topoftop" href="{{ route('/') }}">Cannol
+                            Road,Behind Hydro-division(MERI),Nashik-422003</a></span></div>
                 <div class="col-lg-6 col-md-6 col-sm-6 text-right d-flex" style="justify-content: end;">
-                    <span style="font-size:13px !important;">Email: </span> <a href="mailto:info@nitnasik.com">principal@nitnasik.com</a> <span style="padding-left:5px;padding-right:5px;">|</span>
-                    <span style="font-size:13px !important;">Contact Number: </span>
-                    <a href="tel:9552551056">9552551056</a>&nbsp;
+                    <span style="font-size:13px !important;">Email : <a class="topoftop" href="mailto:info@nitnasik.com"> principal@nitnasik.com</a> </span> <span style="padding-left:5px;padding-right:5px;">|</span>
+                    <span style="font-size:13px !important;">Contact Number : <a class="topoftop" href="tel:9552551056">9552551056</a>&nbsp;</span>
+
                     <!-- <a href="tel:8149822404">8149822404</a>&nbsp;
                     <a href="tel:9890269439">9890269439</a> -->
                 </div>
@@ -689,7 +736,7 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 col-3 gunju1 ">
                         <a href="/"><img src="{{ asset('public/assets/Akole_Poly/NIT_LOGO.jpg') }}" class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-3 col-9 text-center" >
+                    <div class="col-lg-6 col-md-6 col-sm-3 col-9 text-center">
                         <h3 class="heading1 d-flex justify-content-start  padding-right">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
                         <h2 class="heading1 d-flex justify-content-start  padding-right">LATE ANNASAHEB PATIL POLYTECHNIC</h2>
                         <p class=" d-flex justify-content-star  aff-hide  padding-right"> Affiliated to MSBTE Mumbai, Approved By Govt.
@@ -711,8 +758,8 @@
                     <!-- <div class="col-lg-1 col-md-1 "></div> -->
                     <div class="col-lg-3 col-md-3  col-3 text-center displsy-flex web-display mob-display">
                         <button class="btn  admissionbutton">
-                            <a href="{{ route('enquiry') }}" ><b style="z-index: 100;">Admission
-                                Enquiry</b></a>
+                            <a href="{{ route('enquiry') }}"><b style="z-index: 100; color:#fff">Admission
+                                    Enquiry</b></a>
                         </button>
                         <!-- <b><a href="{{ route('enquiry') }}" style="color:red">Click Here For <br>Admission Enquiry <br>2024-25</a></b> -->
                     </div>
@@ -761,7 +808,7 @@
 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Departments
+                                            Departments
                                         </a>
                                         <ul class="dropdown-menu">
                                             @foreach ($menuDepartment as $menuItemDepartment)
@@ -885,14 +932,14 @@
     <!--======================= iwtBanner =======================-->
     <!-- <img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}" border="0" height="40px"> -->
 
-    <div class="container-fluid red-watch-bg "> 
+    <div class="container-fluid red-watch-bg ">
         <div class="d-flex" style="align-items: center;">
-        <img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}" border="0" height="40px">
-            <marquee >
-                    <h5 style="color: white; font-size:18px"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
+            <img src="{{ asset('public/assets/visitors/hm/design/images/alarm-icon.png') }}" border="0" height="40px">
+            <marquee>
+                <h5 style="color: white; font-size:18px"><b>NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)
                         LATE ANNASAHEB PATIL POLYTECHNIC</b></h5>
-                </marquee>
-       </div>
+            </marquee>
+        </div>
 
         <div class="fl news-text">
         </div>

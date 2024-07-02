@@ -66,8 +66,8 @@ label {
                         @csrf
                         <div class="row"
                             style="display: flex; justify-content: center; background-color:#fff; padding:10px;">
-                            <div class="col-md-9">
-                                <div class="form-group py-2">
+                            <div class="col-md-6">
+                                <div class="form-group py-2 pt-2">
                                     <label for="name"><b>Full Name</b> <i class="required">*</i></label>
                                     <input type="text" class="form-control" name="name" id="name"
                                         placeholder="Enter full name" value="{{ old('name') }}" />
@@ -140,22 +140,18 @@ label {
                                 </div>
 
 
-                                <div class="col-md-12 py-2 captcha_set" style="text-align: left;">
-                                    {!! NoCaptcha::renderJs() !!}
-                                    {!! NoCaptcha::display() !!}
-
-                                    @if ($errors->has('g-recaptcha-response'))
-                                    <span class="help-block">
-                                        <span class="red-text">{{ $errors->first('g-recaptcha-response') }}</span>
-                                    </span>
-                                    @endif
-                                </div>
-
-                                <div class="display:flex; text-align:center; justify-content: center;">
-                                    <button type="submit" name="submit" value="submit" class="btn pull-right"
-                                        id="btnContactUs"
-                                        style="background-color:#015198; color:#fff;">Submit</button>
-                                </div>
+                                <div class="col-md-12 py-2 captcha_set d-flex" style="text-align: right;justify-content: end; ">
+                            {!! NoCaptcha::renderJs() !!}
+                            {!! NoCaptcha::display() !!}
+                            @if ($errors->has('g-recaptcha-response'))
+                            <span class="help-block">
+                                <span class="red-text">{{ $errors->first('g-recaptcha-response') }}</span>
+                            </span>
+                            @endif
+                        </div>
+                        <div class="col-md-12 d-flex" style="float: right;justify-content: end;">
+                            <center><button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs" style=" background-color:  #015198; color:#fff;">Submit</button></center>
+                        </div>
                             </div>
                     </form>
 

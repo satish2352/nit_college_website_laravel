@@ -118,7 +118,7 @@
                         </center>
                     </strong>
                     <marquee direction="up" style="height:170px; margin-top:10px;" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start()">
-                        <p style="font-family: Times New Roman; font-size: 16pt; padding-left:25px; ">
+                        <p style="font-family: 'Open Sans', sans-serif; font-size: 16pt; padding-left:25px; ">
                             <a href="pages/final web quotation advertisement .pdf">
                                 <span style="color:black; font-size:13px">Golden Opportunity for 10th Pass Students, Date Extended for Diploma (Polytechnic) Admission up to 9th July 2024...</span>
                                 <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->

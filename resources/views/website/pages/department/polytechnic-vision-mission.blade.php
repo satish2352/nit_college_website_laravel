@@ -17,9 +17,9 @@
                     </div>
                 </div><!-- /.row -->
                 <div class="row outer-white">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12" style="padding-right:25px;">
                         <div>
-                            <div style="margin-top: 20px;">
+                            <div style="margin-top: 10px;">
                                 @if (isset($error))
                                 <div>
                                     {{ $error }}
@@ -36,7 +36,7 @@
                                     <p class="department-error">Data not available</p>
                                 </div>
                                 @else
-                                <h6 class="pt-2"><strong>Vision :</strong></h6>
+                                <h6 class=""><strong>Vision :</strong></h6>
                                 <p>{{ $data_output->department_vision }}</p>
                             </div>
                             <div>

@@ -142,7 +142,7 @@
             <div class=" col-lg-9">
                 <div class="pt-2 card-shadow"style="padding:0;" data-aos="flip-left">
                     <center>
-                        <h2 style="color:green" class="pt-2 "><strong>Principal Desk</strong></h2>
+                        <h2 style="color:green" class="pt-4 "><strong>Principal Desk</strong></h2>
                         <!-- <h3 class="panel-title pt-2"><b>Principal Message</b></h3> -->
                     </center>
                     <br>
@@ -166,7 +166,7 @@
                             <span style="font-size:18px"><strong>M.Tech., B.E., DAE.</strong></span>
                         </div>
                         <div class="px-5 pt-1 pb-3">
-                            <p class="mt-2" style="color:black;"><strong>Dear Students,</strong></p>
+                            <p class="pt-3" style="color:black;"><strong>Dear Students,</strong></p>
                             <p style="font-size: 15px; text-align:justify; padding-bottom: 80px;">I welcome you to NIT'S Late Annasaheb Patil
                                 Polytechnic, Nashik.
                                 Education taught to teach us not only how to make a living but also how to live, hence

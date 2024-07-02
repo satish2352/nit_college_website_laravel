@@ -441,6 +441,9 @@ p{
   color: black;
 }
 
-
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: .85em;
+  display: flex !important;
+}
 /* ====================================== */
 

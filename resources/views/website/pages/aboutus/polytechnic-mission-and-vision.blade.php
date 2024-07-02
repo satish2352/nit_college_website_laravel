@@ -16,8 +16,10 @@
     }
 
     .product-type {
-        margin-top: 45px;
+        /* margin-top: 45px; */
         padding: 20px;
+        
+        
     }
 
     .product-size {
@@ -30,17 +32,20 @@
     }
 
     .panel-heading span {
-        margin-top: -20px;
+        /* margin-top: -20px; */
         font-size: 15px;
 
+    }
+    .borderMV{
+        border: 1px dotted black;
     }
 
     .panel-primary>.panel-heading {
         color: #000;
-        background-color: #fff;
+        /* background-color: #fff; */
         /* border-bottom: 1px solid #eeeeee; */
-        padding-top: 20px;
-        padding-bottom: 20px;
+        margin-top: 20px;
+        /* padding-bottom: 20px; */
     }
 
     .panel-title {
@@ -87,16 +92,16 @@
             <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
         </div> -->
 
-        <div class="panel_content">
+        <div class="panel_content" >
             <div>
                 <div class="row">
                     <div class="col-md-3 hidden-sm right-col-fix ps-2" id="iwtRightPannel">
                         @include('website.pages.home-sidebar.right-sidebar-home')
                     </div>
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12"  >
+                        <div class="col-lg-12 col-md-12 col-sm-12"style="background-color: #fff;height:96% !important;align-items: center; margin-bottom:55px ">
                             <div class="panel panel-primary product-type ">
-                                <div class="panel-heading">
+                                <div class="panel-heading ">
                                     <h3 class="panel-title" style="color:#00ae97"><b>Mission</b></h3>
                                     {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                                     <div class="panel-body">
@@ -105,7 +110,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-primary product-type" style="margin-top: -45px!important; ">
+                            <h1 style="border: 1px solid  black; width:auto; margin-left:15px; margin-right:15px;"></h1>                        
+                            <div class="panel panel-primary product-type"
                                 <div class="panel-heading">
                                     <h3 class="panel-title" style="color:#00ae97"><b>Vision</b></h3>
                                     {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
