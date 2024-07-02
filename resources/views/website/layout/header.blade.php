@@ -734,7 +734,7 @@
                 <div class="row align-items-center d-flex justify-content-center">
                     <div class="col-lg-1 col-md-1 col-sm-0"></div>
                     <div class="col-lg-1 col-md-1 col-sm-1 col-3 gunju1 ">
-                        <a href="/"><img src="{{ asset('public/assets/Akole_Poly/NIT_LOGO.jpg') }}" class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
+                        <a href="/"><img src="{{ asset('public/assets/Akole_Poly/NIT.jpg') }}" class="img-fluid  mob-width" alt="Logo" style="height:110px; "></a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-3 col-9 text-center">
                         <h3 class="heading1 d-flex justify-content-start  padding-right">NASHIK INSTITUTE OF TECHNOLOGY (NIT'S)</h3>
