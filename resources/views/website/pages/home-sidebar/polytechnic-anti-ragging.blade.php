@@ -28,7 +28,7 @@
                                 <div >
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#00ae97"><b>ANTIRAGGING COMMITTEE</b>
+                                            <h3 class="panel-title" style="color:#494680"><b>ANTIRAGGING COMMITTEE</b>
                                             </h3>
                                         </center>
                                         <span class="pull-right clickable"><i

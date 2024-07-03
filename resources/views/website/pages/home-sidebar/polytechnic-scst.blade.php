@@ -18,7 +18,7 @@
                                 <div >
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#00ae97"><b>SC/ST Cell</b></h3>
+                                            <h3 class="panel-title" style="color:#494680"><b>SC/ST Cell</b></h3>
                                         </center>
                                         <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>

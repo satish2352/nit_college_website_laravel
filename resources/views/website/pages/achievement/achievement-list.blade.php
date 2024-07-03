@@ -33,7 +33,7 @@
                                     <div class="row">
                                         <div class="col-lg-8 col-md-8">
                                             <div>
-                                                <h4 style="color:#00ae97 !important">
+                                                <h4 style="color:#494680 !important">
                                                     {{ $achievement->achievement_title }}</h4>
                                             </div>
                                             <div>
@@ -45,7 +45,7 @@
                                         <div class="col-lg-4 col-md-4">
                                             <img id="english"
                                                 src="{{ Config::get('DocumentConstant.ACHIEVEMENT_VIEW') }}{{ $achievement->photo }}"
-                                                class="img-fluid img-thumbnail" height="300px" width="400px">
+                                                class=" img-thumbnail" height="300px" width="400px">
                                         </div>
                                     </div>
                                     @endif

@@ -15,7 +15,7 @@
                             <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title" style="color:#00ae97"><strong>ACADEMIC CALENDAR</strong></h3>
+                                        <h3 class="panel-title" style="color:#494680"><strong>ACADEMIC CALENDAR</strong></h3>
                                     </center>
                                     <span class="pull-right clickable">
                                         <i class="glyphicon glyphicon-plus-sign collapse-ico"></i>

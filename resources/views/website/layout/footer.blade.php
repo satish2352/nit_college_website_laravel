@@ -1,6 +1,6 @@
 <style>
     .footer-menu ul li {
-        /* color: #00ae97 !important; */
+        /* color: #494680 !important; */
     }
 
     /* col{

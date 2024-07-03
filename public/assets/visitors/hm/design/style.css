@@ -46,7 +46,7 @@ h2{font-size:24px; color:#353535; text-transform:uppercase; font-weight:600;}
 h3{font-size:16px; color:#e1484f; font-weight:600;}
 
 .department .tab-title{font-size:30px; color:#373737; font-weight:300; margin-top: 0px; margin-bottom: 25px; border-bottom:1px #dbdbdb dotted; padding-bottom:15px;}
-.department h3{font-size:16px; color:#00ae97; font-weight:600;} 
+.department h3{font-size:16px; color:#494680; font-weight:600;} 
 
 
 /*------------ Navigation--------------*/
@@ -96,7 +96,7 @@ text-align: center; }
 .department-box a:hover .dept-icon{background:   #015198 no-repeat center center;}
 
 .department-box a .dept-icon
-{margin:auto; border-radius: 50%; border:#ededed solid 8px; background:#00ae97 no-repeat center center; width:120px; height:120px; display:block;
+{margin:auto; border-radius: 50%; border:#ededed solid 8px; background:#494680 no-repeat center center; width:120px; height:120px; display:block;
 -webkit-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 
 .department-box a h3{ color:#353535; font-size:18px; font-family:"Roboto Condensed",sans-serif; font-weight:normal;}
@@ -166,7 +166,7 @@ text-align: center; }
 /*right-col*/
 .right-col-fix{position:relative; top:0px; padding:0;}
 .right-col-fix .list-group {background-color:  #015198; border-radius: 10px;}
-.right-col-fix .list-group-item:first-child { border-top-left-radius: 7px; border-top-right-radius: 7px; background-color:#f5f5f5; color:#00ae97; text-transform:uppercase; font-size: 15px;}
+.right-col-fix .list-group-item:first-child { border-top-left-radius: 7px; border-top-right-radius: 7px; background-color:#f5f5f5; color:#494680; text-transform:uppercase; font-size: 15px;}
 .right-col-fix .list-group-item:last-child { margin-bottom: 8px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
 
 .right-col-fix .list-group-item {margin-bottom: 1px; background-color:   #015198; border:none; border-bottom: 1px solid white;}
@@ -190,7 +190,7 @@ text-align: center; }
 #iwtFooter .contact span{padding:12px 7px 0px 20px;color:#FFFFFF; font-size:13px;}
 
 #footer-links {width: 80%; float: left; }
-#footer-links a{color:#00ae97;font-size:13px; display: block;}
+#footer-links a{color:#494680;font-size:13px; display: block;}
 #footer-links a:hover{color:#1252a6;}
 #footer-links h5{ font-size:14px;color:#3e3d3d; font-weight:600; text-transform:uppercase;width:100%;padding-bottom:5px; margin-top:10px;}
 

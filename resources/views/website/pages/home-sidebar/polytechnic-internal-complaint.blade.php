@@ -20,11 +20,11 @@
                             <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title " style="color:#00ae97"><b>INTERNAL COMPLAINT COMMITTEE</b></h3>
+                                        <h3 class="panel-title " style="color:#494680"><b>INTERNAL COMPLAINT COMMITTEE</b></h3>
                                     </center>
                                    
                                     <center>
-                                        <h3 class="panel-title" style="color:#00ae97"><b>(Sexual Harassment
+                                        <h3 class="panel-title" style="color:#494680"><b>(Sexual Harassment
                                                 Committee)</b></h3>
                                     </center>
                                     <span class="pull-right clickable"><i

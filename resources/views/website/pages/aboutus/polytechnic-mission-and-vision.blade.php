@@ -51,7 +51,7 @@
     .panel-title {
         font-size: 22px;
         font-weight: 400;
-        color: #00ae97 !important;
+        color: #494680 !important;
 
     }
 
@@ -102,7 +102,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12"style="background-color: #fff;height:96% !important;align-items: center; margin-bottom:55px ">
                             <div class="panel panel-primary product-type ">
                                 <div class="panel-heading ">
-                                    <h3 class="panel-title" style="color:#00ae97"><b>Mission</b></h3>
+                                    <h3 class="panel-title" style="color:#494680"><b>Mission</b></h3>
                                     {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                                     <div class="panel-body">
                                         <p align="Justify">To give the quality technical education for empowerment of the
@@ -113,7 +113,7 @@
                             <h1 style="border: 1px solid  black; width:auto; margin-left:15px; margin-right:15px;"></h1>                        
                             <div class="panel panel-primary product-type"
                                 <div class="panel-heading">
-                                    <h3 class="panel-title" style="color:#00ae97"><b>Vision</b></h3>
+                                    <h3 class="panel-title" style="color:#494680"><b>Vision</b></h3>
                                     {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
 
                                     <div class="panel-body">

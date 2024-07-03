@@ -34,7 +34,7 @@
                                 <div class="card" style="width: 300px;">
                                     <img src="{{ Config::get('DocumentConstant.ACTIVITY_VIEW') }}{{ $item->photo }}" class="card-img-top img-fluid img-thumbnail" alt="{{ $item->activities_name }}" style="height: 300px;width:auto; object-fit: cover;">
                                     <!-- <div class="card-body">
-                                                    {{-- <h5 class="card-title" style="color: #00ae97;">{{ $item->activities_name }}</h5> --}}
+                                                    {{-- <h5 class="card-title" style="color: #494680;">{{ $item->activities_name }}</h5> --}}
                                                     <p class="card-text">{{ $item->activity_description }}</p>
                                                 </div> -->
                                 </div>

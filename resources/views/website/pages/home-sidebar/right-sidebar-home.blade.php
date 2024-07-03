@@ -4,11 +4,11 @@
         <div class="list-group">
 
             <div class="list-group-item"><b></b></div>
-            <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf"
-                class="list-group-item active-rp-link" target="_blank">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
+            <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" class="list-group-item active-rp-link" target="_blank">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
 
             <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing Body</a>
             <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item ">Mandatory Disclosure</a>
+            <a href="#" class="list-group-item ">Faculty</a>
             <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item ">AICTE EOA</a>
             <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item ">MSBTE Affiliation</a>
             <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item ">Affiliation
@@ -16,11 +16,17 @@
             {{-- <a href="{{ route('polytechnic-servicerules') }}" class="list-group-item ">Service Rules</a> --}}
             {{-- <a href  ="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item ">Training And Placement</a> --}}
             <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item ">Antiragging Committee</a>
+            <a href="#" class="list-group-item ">Grievance Redressal Cell </a>
             <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item ">Internal Complaint
                 Committee</a>
             {{-- <a class="list-group-item ">Grievance Redressal Committee</a> --}}
             <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item ">SC/ST Cell</a>
             <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic Calender</a>
+            <a href="#" class="list-group-item ">Events</a>
+            <a href="#" class="list-group-item ">Student Section</a>
+            <a href="#" class="list-group-item ">Fees Regulatiion Authority </a>
+            
+
 
             {{-- <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic Calender</a>
             --}}

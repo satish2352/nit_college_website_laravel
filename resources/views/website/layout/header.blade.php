@@ -114,7 +114,7 @@
         } */
 
         li #footer-links {
-            color: #00ae97;
+            color: #494680;
             font-size: 13px;
             display: block;
             font-weight: 600 !important;
@@ -260,6 +260,10 @@
             .padding-right {
                 padding-right: 10px !important;
             }
+
+            .navbar-toggler {
+                Top: -84 !important;
+            }
         }
 
 
@@ -369,7 +373,7 @@
 
 
             li #footer-links {
-                color: #00ae97;
+                color: #494680;
                 font-size: 13px;
                 display: block;
                 font-weight: 600 !important;
@@ -591,6 +595,10 @@
             .padding-right {
                 padding-right: 10px !important;
             }
+
+            .navbar-toggler {
+                Top: -84 !important;
+            }
         }
 
 
@@ -714,7 +722,7 @@
         <div class="container-fluid px-0">
 
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 "><span style="font-size: 13px;">Institute Address : <a class="topoftop" href="{{ route('/') }}">Cannol
+                <div class="col-lg-6 col-md-6 col-sm-6 "><span style="font-size: 13px;">Institute Address : <a class="topoftop" href="https://maps.app.goo.gl/sSqdKCwiLyZYPtup8" target="_blank" >Cannol
                             Road,Behind Hydro-division(MERI),Nashik-422003</a></span></div>
                 <div class="col-lg-6 col-md-6 col-sm-6 text-right d-flex" style="justify-content: end;">
                     <span style="font-size:11px !important;">Email : <a class="topoftop" href="mailto:info@nitnasik.com"> principal@nitnasik.com</a> </span> <span style="padding-left:5px;padding-right:5px;">|</span>
@@ -818,6 +826,7 @@
                                             @endforeach
                                         </ul>
                                     </li>
+
                                     <li class="nav-item dropdown">
                                         <a class="nav-link" href="{{ route('achievement') }}">Achievements</a>
                                     </li>
@@ -835,6 +844,20 @@
                                         </ul>
 
                                     </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Library
+                                        </a>
+                                        <!-- <ul class="dropdown-menu">
+                                            @foreach ($menuDepartment as $menuItemDepartment)
+                                            <li class=" aaaa">
+                                                <a class="dropdown-item aaab " href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
+                                            </li>
+                                            @endforeach
+                                        </ul> -->
+                                    </li>
+
 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

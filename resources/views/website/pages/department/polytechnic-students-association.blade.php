@@ -33,7 +33,7 @@
 </div>
 <div class="container-fluid">
     <div class="container card-shadow" style="margin-bottom: 95px;">
-        <div class="row" style="padding:0px; margin-left:25px;">
+        <div class="row" style="padding:0px; margin-left:10px;">
             <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
                 <div class="row outer-white">
                     <div class="col-sm-12">
@@ -50,7 +50,7 @@
                     <!--panel 1-->
                     <div class="" id="">
                         <div class="">
-                            <p class="">
+                            <p class="" style="margin-right: 10px;">
                                 Student Association is created by the students and for the students. For association
                                 various committees are formed and various activities are conducted such as competitions,
                                 seminars, workshops etc.

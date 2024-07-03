@@ -180,7 +180,7 @@
                             <div class="product-type card-shadow p-4">
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title pb-2" style="color:#00ae97; font-size:20px"><b>GOVERNING BODY</b></h3>
+                                        <h3 class="panel-title pb-2" style="color:#494680; font-size:20px"><b>GOVERNING BODY</b></h3>
                                     </center>
 
                                 </div>

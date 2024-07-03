@@ -20,7 +20,7 @@
                     @foreach ($data_output as $rules_data)
                     <div class="col-sm-12">
                         <div>
-                            <h2 style="color:#00ae97">{{ $rules_data['academics_name'] }}</h2>
+                            <h2 style="color:#494680">{{ $rules_data['academics_name'] }}</h2>
                         </div>
                         <div>
                             <p style="text-align: justify">{{ $rules_data['academics_description'] }}</p>
@@ -54,7 +54,7 @@
 
                     <!-- <div class="col-sm-12">
                             <div>
-                                <h4 style="color:#00ae97">Branches</h4>
+                                <h4 style="color:#494680">Branches</h4>
                             </div>
                             <div>
                                 <p style="text-align: justify;">
@@ -72,7 +72,7 @@
 
                     <div class="col-sm-12">
                         <div>
-                            <h2 style="color:#00ae97">Eligibility for Diploma Admission </h2>
+                            <h2 style="color:#494680">Eligibility for Diploma Admission </h2>
                         </div>
                         <div>
                             <p style="text-align: justify;">
@@ -92,7 +92,7 @@
                     <br>
                     <div class="col-sm-12">
                         <div>
-                            <h2 style="color:#00ae97;margin-top:10px" style="">Direct Second Year </h2>
+                            <h2 style="color:#494680;margin-top:10px" style="">Direct Second Year </h2>
                         </div>
                         <div>
                             <p style="text-align: justify;">
@@ -144,7 +144,7 @@
 
                     <!-- <div class="col-sm-12">
                             <div>
-                                <h4 style="color:#00ae97">Require Documents :</h4>
+                                <h4 style="color:#494680">Require Documents :</h4>
                             </div>
                             <div>
                                 <p>

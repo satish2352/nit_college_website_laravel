@@ -82,7 +82,7 @@ body,
                     <div class="col-sm-12">
                         <div>
                             @if (isset($data_output_category) && isset($data_output_category['id']))
-                            <div style="color:#00ae97;font-size:20px;">
+                            <div style="color:#494680;font-size:20px;">
                                 <strong>{{ $data_output_category->Department }} Activities And Events... </strong>
                             </div>
                             @endif

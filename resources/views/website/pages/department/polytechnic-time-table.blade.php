@@ -41,7 +41,7 @@
                         <div class="col-sm-12">
                             <div>
                                 @if (isset($data_output_category) && isset($data_output_category['id']))
-                                    <div class="" style="color:#00ae97; padding:10px 0px;font-size:20px;padding-left:19px;">
+                                    <div class="" style="color:#494680; padding:10px 0px;font-size:20px;padding-left:19px;">
                                         <strong>{{ $data_output_category->Department }} Download Time Table Here....</strong></div>
                                 @else
                                 @endif

@@ -52,7 +52,7 @@
                                     </div>
                                     @else
                                     <div style="margin-left: 20px;">
-                                        <div class="" style="color:#00ae97; font-size:20px;">
+                                        <div class="" style="color:#494680; font-size:20px;">
                                             <strong> {{ $data->Department }}</strong>
                                         </div>
                                         <div style="margin-top: 10px;">

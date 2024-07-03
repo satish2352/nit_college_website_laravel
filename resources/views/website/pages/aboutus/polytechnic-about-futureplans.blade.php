@@ -12,7 +12,7 @@
             border: 1px solid transparent;
             border-radius: 0;
             padding-top: 20px;
-            color: #00ae97 !important;
+            color: #494680 !important;
             /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);*/
             /*box-shadow: 0 1px 1px rgba(0,0,0,.05);*/
         }
@@ -98,7 +98,7 @@
                                 <div class="card-shadow p-4">
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#00ae97"><b>Future Plans</b></h3>
+                                            <h3 class="panel-title" style="color:#494680"><b>Future Plans</b></h3>
                                         </center>
                                         <hr>
                                         {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}

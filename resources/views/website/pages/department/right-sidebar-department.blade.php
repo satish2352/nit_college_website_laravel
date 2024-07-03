@@ -35,6 +35,8 @@
                     class="list-group-item active-rp-link">Students Association</a>
                 <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}"
                     class="list-group-item active-rp-link">Syllabus</a>
+                    <a href="#"
+                    class="list-group-item active-rp-link">Curriculum </a>
                 @else
                 <p> Data not available</p>
                 @endif

@@ -123,7 +123,7 @@
                     <div class="panel panel-primary product-type">
                         <div class="panel-heading">
                             <center>
-                                <h3 class="panel-title pt-3 pb-1" style="color:#00ae97;"><b>AFFILIATION CERTIFICATES </b></h3>
+                                <h3 class="panel-title pt-3 pb-1" style="color:#494680;"><b>AFFILIATION CERTIFICATES </b></h3>
                             </center>
                             <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                         </div>
@@ -149,15 +149,15 @@
                                                             <p class="department-error">Data not available</p>
                                                         </div>
                                                     @else
-                                                        <div class="col-lg-6 col-md-6 col-sm-6 imghover">
+                                                        <div class="col-lg-6 col-md-6 col-sm-3 pb-3 imghover">
                                                             <!-- Use unique IDs and classes for each image and modal -->
-                                                            <img id="myImg{{ $key }}" src="{{ Config::get('DocumentConstant.AFFILIATION_CERTIFICATES_VIEW') }}{{ $data->fld_affiliation_image }}" class="img-fluid img-thumbnail" alt="Certificate Image {{ $key }}" height="300px" width="700px">
+                                                            <img id="myImg{{ $key }}" src="{{ Config::get('DocumentConstant.AFFILIATION_CERTIFICATES_VIEW') }}{{ $data->fld_affiliation_image }}" class=" img-thumbnail" alt="Certificate Image {{ $key }}" height="300px" width="700px">
                                                         </div>
 
                                                         <div id="myModal{{ $key }}" class="modal">
                                                             <span class="close">&times;</span>
                                                             <img class="modal-content" id="img01{{ $key }}">
-                                                            <div id="caption{{ $key }}"></div>
+                                                            <!-- <div id="caption{{ $key }}"></div> -->
                                                         </div>
                                                     @endif
                                                 @endforeach

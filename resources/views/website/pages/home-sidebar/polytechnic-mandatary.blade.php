@@ -28,7 +28,7 @@
                         <div class="panel panel-primary product-type card-shadow p-4">
                             <div class="panel-heading">
                                 <center>
-                                    <h3 class="panel-title " style="color:#00ae97; font-size: 20px">
+                                    <h3 class="panel-title " style="color:#494680; font-size: 20px">
                                         <b>MANDATORY DISCLOSURE</b>
                                     </h3>
                                 </center>

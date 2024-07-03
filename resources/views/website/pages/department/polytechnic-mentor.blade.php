@@ -50,7 +50,7 @@
                         <div class="col-sm-12" style="padding-left: 27px;">
                             <div>
                                 @if (isset($data_output_category) && isset($data_output_category['id']))
-                                    <div class="" style="color:#00ae97; font-size:20px;"><strong>{{ $data_output_category->Department }}</strong></div>
+                                    <div class="" style="color:#494680; font-size:20px;"><strong>{{ $data_output_category->Department }}</strong></div>
                                 @else
                                 @endif
                             </div>

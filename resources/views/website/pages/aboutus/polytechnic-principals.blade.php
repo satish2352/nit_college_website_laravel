@@ -44,7 +44,7 @@
 .panel-title {
     font-size: 22px;
     font-weight: 400;
-    color: #00ae97;
+    color: #494680;
 }
 
 .panel_product_type {
@@ -69,7 +69,7 @@
 
 
 .president-msg h5 {
-    color: #00ae97;
+    color: #494680;
     margin-top: 2rem;
     font-weight: bold;
 }
@@ -150,7 +150,7 @@
                 <div class="row  principle-row">
                     {{-- <div class="text-center" data-aos="fade-left">
                         <img src="{{ asset('public/assets/up-images/pricipal.png') }}"  alt="" width="50%">
-                        <h1 class="mt-2 fs-1" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h1>
+                        <h1 class="mt-2 fs-1" style="color:#494680;"><strong>Prof.Gopal A. Wadnere</strong></h1>
                         <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                         <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span>
                     </div> --}}
@@ -161,7 +161,7 @@
                             <img src="{{ asset('public/assets/up-images/pricipal.png') }}"alt="" width="40%"><br>
                             
                             <br>
-                            <h6 class="mt-2  fs-3" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6>
+                            <h6 class="mt-2  fs-3" style="color:#494680;"><strong>Prof.Gopal A. Wadnere</strong></h6>
                             <span style="font-size:18px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                             <span style="font-size:18px"><strong>M.Tech., B.E., DAE.</strong></span>
                         </div>
@@ -186,7 +186,7 @@
                                So be the part of NIT Family.<br>
                             </p>
                             <div style="float:right">
-                                <!-- <h6 class="mt-2" style="color:#00ae97;"><strong>Prof.Gopal A. Wadnere</strong></h6> -->
+                                <!-- <h6 class="mt-2" style="color:#494680;"><strong>Prof.Gopal A. Wadnere</strong></h6> -->
                                 <!-- <span style="font-size:15px"><strong>Ph.D (Mechanical Pursuing)</strong></span><br>
                                 <span style="font-size:15px"><strong>M.Tech., B.E., DAE.</strong></span> -->
                             </div>
