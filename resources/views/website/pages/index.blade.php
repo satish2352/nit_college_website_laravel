@@ -284,7 +284,7 @@
     </div>
 </div>
 
-<div class="container mt-5 mb-5">
+<!-- <div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <div style="background-color: white;" class="col-height">
@@ -318,10 +318,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
-<div class="container-fluit bg-white">
+<!-- <div class="container-fluit bg-white">
     <div>
         <h2 class="pt-5 pb-5 ms-5"><b>Academics</b></h2>
     </div>
@@ -401,7 +401,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
 
 
