@@ -67,5 +67,8 @@ Route::get('/marquee', ['as' => 'marquee', 'uses' => 'App\Http\Controllers\Websi
 
 Route::get('/achievement', ['as' => 'achievement', 'uses' => 'App\Http\Controllers\Website\Achievement\AchievementController@getAchievement']);
 
+Route::get('/library-staff', ['as' => 'library-staff', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\LibraryController@getLibraryStaff']);
+
+
 Route::get('/enquiry', ['as' => 'enquiry', 'uses' => 'App\Http\Controllers\Website\Enquiry\EnquiryController@getEnquiry']);
 Route::post('/add-enquiry', ['as' => 'add-enquiry', 'uses' => 'App\Http\Controllers\Website\Enquiry\EnquiryController@addEnquiry']);
