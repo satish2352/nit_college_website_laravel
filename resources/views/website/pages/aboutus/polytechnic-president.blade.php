@@ -134,7 +134,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e) {
            <div class="col-md-9">
            <div class=" pt-2 card-shadow" style="padding:0;" data-aos="flip-left">
                 <center>
-                    <h2 style="color:green" class="pt-4"><strong>President Desk</strong></h2>
+                    <h2 style="color:#494680" class="pt-4"><strong>President Desk</strong></h2>
                     <!-- <h3 class="panel-title"><b>President Message</b></h3> -->
                 </center>
                 <br>

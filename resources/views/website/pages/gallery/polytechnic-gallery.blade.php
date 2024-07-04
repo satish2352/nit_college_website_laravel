@@ -112,7 +112,7 @@
     <div class="container">
         <div class="col-sm-12" style="margin-top:20px;">
             <center>
-                <h2 style="color:green"><strong>Gallery</strong></h2>
+                <h2 style="color:#494680"><strong>Gallery</strong></h2>
             </center>
         </div>
     </div>
