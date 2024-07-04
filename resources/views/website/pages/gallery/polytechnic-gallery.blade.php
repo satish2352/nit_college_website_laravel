@@ -141,7 +141,7 @@
             </div>
             @else
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 imgbottomspacing " style="display:flex; justify-content: center; ">
-                <img id="myImg{{ $key }}" src="{{ Config::get('DocumentConstant.GALLERY_VIEW') }}{{ $data['fld_gallery_photo'] }}" class="img-fluid img-thumbnail myImg" alt="Certificate Image {{ $key }}">
+                <img id="myImg{{ $key }}" src="{{ Config::get('DocumentConstant.GALLERY_VIEW') }}{{ $data['fld_gallery_photo'] }}" class="img-thumbnail myImg" alt="Certificate Image {{ $key }}">
             </div>
 
             <div id="myModal{{ $key }}" class="modal">
