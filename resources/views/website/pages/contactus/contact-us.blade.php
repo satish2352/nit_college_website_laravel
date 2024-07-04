@@ -11,9 +11,24 @@
     .data-con {
         color: #454545 !important;
     }
+   
 
     .data-con:hover {
         color: blue !important;
+    }
+
+    .row>* {
+        padding-right: 0px !important;
+    }
+
+    @media only screen and (max-width:769px){
+        .container{
+        /* margin-left: 0px !important;
+        margin-right: 0px !important; */
+        /* padding-left: 0px !important; */
+        padding-right: 0px !important;
+    }
+
     }
 </style>
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
@@ -29,6 +44,14 @@
 
     </div>
 </div>
+
+<!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="width: 100%; height:100%; ">
+            </div>
+        </div>
+    </div> -->
+
 <div class="container-fluid">
     <div class="container">
         <div class="row d-flex card-shadow">
@@ -118,8 +141,6 @@
                             <center><button type="submit" name="submit" value="submit" class="btn pull-right" id="btnContactUs" style=" background-color:  #015198; color:#fff;">Submit</button></center>
                         </div>
                     </div>
-
-
                 </form>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -133,7 +154,7 @@
                                 </address>
                                 <address>
                                     <span class="glyphicon glyphicon-home" style="color: #454545;"></span><b style="color:green">Address</b> <b style="color: #454545;">:</b>&nbsp;
-                                    <a href="https://maps.app.goo.gl/sSqdKCwiLyZYPtup8" target="_blank" style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</a><br>
+                                    <a href="#" style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</a><br>
                                 </address>
                                 <!-- <address>
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
@@ -144,10 +165,10 @@
                                 <address>
                                     <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b style="color:green">Mobile.</b> <b style="color: #454545;">:</b>&nbsp;
                                     <span class="data-con">
-                                    <a class="data-con" href="tel:{{ $contactusdata[0]['contact_us_mobile'] }}">{{ $contactusdata[0]['contact_us_mobile'] }}</a>
-                                    
-                                    
-                                    &nbsp;</span><br>
+                                        <a class="data-con" href="tel:{{ $contactusdata[0]['contact_us_mobile'] }}">{{ $contactusdata[0]['contact_us_mobile'] }}</a>
+
+
+                                        &nbsp;</span><br>
                                 </address>
                                 <address>
                                     <span class="glyphicon glyphicon-globe" style="color: #454545;"></span><b style="color:green">Website :</b>&nbsp;
@@ -164,6 +185,13 @@
                     </div>
                 </div>
             </div>
+           
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.774391088928!2d73.80388429999999!3d20.0179814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddea4f04aebdd5%3A0x3511df5d5b6650c4!2sNashik%20Institute%20of%20Technology%20(NIT)%20Nashik!5e0!3m2!1sen!2sin!4v1720083483882!5m2!1sen!2sin" height="500px" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
     </div>
 
