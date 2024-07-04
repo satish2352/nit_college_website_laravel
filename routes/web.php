@@ -63,11 +63,14 @@ Route::get('/polytechnic-anti-ragging', ['as' => 'polytechnic-anti-ragging', 'us
 Route::get('/polytechnic-internal-complaint', ['as' => 'polytechnic-internal-complaint', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getInternalComplaint']);
 Route::get('/polytechnic-about-scst', ['as' => 'polytechnic-about-scst', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAboutSCST']);
 Route::get('/polytechnic-academic-calendar', ['as' => 'polytechnic-academic-calendar', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAcademicCalendar']);
+Route::get('/list-events', ['as' => 'list-events', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getEvent']);
+
+
 Route::get('/marquee', ['as' => 'marquee', 'uses' => 'App\Http\Controllers\Website\Marquee\MarqueeController@getMarquee']);
 
 Route::get('/achievement', ['as' => 'achievement', 'uses' => 'App\Http\Controllers\Website\Achievement\AchievementController@getAchievement']);
 
-Route::get('/library-staff', ['as' => 'library-staff', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\LibraryController@getLibraryStaff']);
+Route::get('/library-staff', ['as' => 'library-staff', 'uses' => 'App\Http\Controllers\Website\Library\LibraryController@getLibraryStaff']);
 
 
 Route::get('/enquiry', ['as' => 'enquiry', 'uses' => 'App\Http\Controllers\Website\Enquiry\EnquiryController@getEnquiry']);

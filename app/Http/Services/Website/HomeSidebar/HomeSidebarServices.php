@@ -133,6 +133,15 @@ public function getAcademicCalendar()
     }
 }
 
+public function getEvent()
+{
+    try {
+        $dataOutputCategory = $this->repo->getEvent();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
 
 
 

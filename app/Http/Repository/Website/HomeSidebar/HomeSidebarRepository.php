@@ -11,11 +11,11 @@ use App\Models\ {
     MSBTE,
     AffiliationCertificates,
     ServiceRule,
-
     AntiRagging,
     InternalComplaint,
     AboutSCST,
-    AcademicCalendar
+    AcademicCalendar,
+    Events
     
 };
 
@@ -202,7 +202,17 @@ class HomeSidebarRepository  {
         }
     }
     
-    
+    public function getEvent()
+    {
+        try {
+            $data_output = Events::where('fld_delete', '0')
+                ->orderBy('event_id', 'desc')
+                ->get();
+            return $data_output;
+        } catch (\Exception $e) {
+            return collect(); // return an empty collection in case of error
+        }
+    }
     
     
 }    

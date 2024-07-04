@@ -110,7 +110,7 @@
                     <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic
                         Calender</a>
                     <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
-                    <a href="#" class="list-group-item ">Events</a>
+                    <a href="{{ route('list-events') }}"  class="list-group-item ">Events</a>
                     <a href="#" class="list-group-item ">Student Section</a>
                     <a href="#" class="list-group-item ">Fees Regulatiion Authority </a>
 

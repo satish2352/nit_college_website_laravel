@@ -16,8 +16,8 @@ return [
     'AFFILIATION_MSBTE_VIEW'	         => env("FILE_VIEW").'/documents/affiliationmsbte/',
     'ACADEMICCALENDAR_VIEW'	         => env("FILE_VIEW").'/documents/academiccalendar/',
     
-
-    
+     'EVENTS_DOC_VIEW'	         => env("FILE_VIEW").'/images/event/',
+     
 
     'SLIDER_VIEW'	         => env("FILE_VIEW").'/images/slider_img/', 
     'ACTIVITY_VIEW'	         => env("FILE_VIEW").'/images/activity/', 
@@ -27,7 +27,7 @@ return [
     'FACILITY_VIEW'	         => env("FILE_VIEW").'/images/facility/',
     'ACTIVITIES_VIEW'	         => env("FILE_VIEW").'/images/activities/',
     'EVENTS_VIEW'	         => env("FILE_VIEW").'/images/events/',
-    
+    'LIBRARY_STAFF_VIEW'	         => env("FILE_VIEW").'/images/librarystaff/',
 
     
     

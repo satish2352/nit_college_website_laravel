@@ -174,6 +174,26 @@ class HomeSidebarController extends Controller
             return back()->with('error', 'An error occurred while fetching the academic calendar.');
         }
     }
+
+    public function getEvent()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getEvent();
+    // dd($data_output);
+    // die();
+            // Check if $data_output is not empty
+            if ($data_output && $data_output->isNotEmpty()) {
+                return view('website.pages.home-sidebar.events', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
+            } else {
+                return view('website.pages.home-sidebar.events', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
+            }
+        } catch (\Exception $e) {
+            return back()->with('error', 'An error occurred while fetching the academic calendar.');
+        }
+    }
     
     
 

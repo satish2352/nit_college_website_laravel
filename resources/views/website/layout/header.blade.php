@@ -870,13 +870,12 @@
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Library
                                         </a>
-                                        <!-- <ul class="dropdown-menu">
-                                            @foreach ($menuDepartment as $menuItemDepartment)
+                                      <ul class="dropdown-menu"> 
                                             <li class=" aaaa">
-                                                <a class="dropdown-item aaab " href="{{ route('department-profile', ['id' => $menuItemDepartment['id']]) }}">{{ $menuItemDepartment['Department'] }}</a>
+                                                <a class="dropdown-item aaab " href="{{ route('library-staff')}}">Library Staff</a>
                                             </li>
-                                            @endforeach
-                                        </ul> -->
+                                          
+                                        </ul> 
                                     </li>
 
 

@@ -22,7 +22,7 @@
             {{-- <a class="list-group-item ">Grievance Redressal Committee</a> --}}
             <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item ">SC/ST Cell</a>
             <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic Calender</a>
-            <a href="#" class="list-group-item ">Events</a>
+            <a href="{{ route('list-events') }}" class="list-group-item ">Events</a>
             <a href="#" class="list-group-item ">Student Section</a>
             <a href="#" class="list-group-item ">Fees Regulatiion Authority </a>
             
