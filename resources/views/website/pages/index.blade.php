@@ -22,18 +22,21 @@
     .icon_box_style_7 i {
         font-size: 50px;
     }
+
     .icon_box_style_10 {
         padding: 25px 15px;
     }
+
     .box_icon {
-    position: relative;
-    z-index: 1;
-}
-.box_icon i {
-    font-size: 32px;
-    position: relative;
-    transition: all 0.5s ease-in-out;
-}
+        position: relative;
+        z-index: 1;
+    }
+
+    .box_icon i {
+        font-size: 32px;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
 
 
 
@@ -51,7 +54,7 @@
     }
 
     .row>* {
-        /* padding-right: 0px !important; */
+        padding-right: 0px !important;
         /* padding-left: 0px !important; */
     }
 
@@ -284,7 +287,7 @@
     </div>
 </div>
 
-<!-- <div class="container mt-5 mb-5">
+<div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <div style="background-color: white;" class="col-height">
@@ -318,10 +321,10 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 
-<!-- <div class="container-fluit bg-white">
+<div class="container-fluit bg-white">
     <div>
         <h2 class="pt-5 pb-5 ms-5"><b>Academics</b></h2>
     </div>
@@ -336,72 +339,14 @@
                         </div>
                         <div class="icon_box_content">
                             <h5>Computer<br>
-                            Engineering</h5>
+                                Engineering</h5>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center text-black  pb-2 mt-2">
-                <div class="icon_box icon_box_style_10" style="border: 1px solid black;">
-                    <a href="#" class="text-black">
-                        <div class="box_icon mb-3">
-                            <i class="fa-regular fa-lightbulb">
-                            </i>
-                        </div>
-                        <div class="icon_box_content">
-                            <h5>Electrical<br>
-                            Engineering</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center text-black  pb-2 mt-2">
-                <div class="icon_box icon_box_style_10" style="border: 1px solid black;>
-                    <a href="#" class="text-black">
-                        <div class="box_icon mb-3">
-                        <i class="fa-solid fa-house">
-                            </i>
-                        </div>
-                        <div class="icon_box_content">
-                            <h5>Civil  <br>
-                            Engineering</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center text-black  pb-2 mt-2">
-                <div class="icon_box icon_box_style_10" style="border: 1px solid black;">
-                    <a href="#" class="text-black">
-                        <div class="box_icon mb-3">
-                        <i class="fa-solid fa-basketball">
-                            </i>
-                        </div>
-                        <div class="icon_box_content">
-                            <h5>Automobile <br>
-                            Engineering</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center text-black  pb-2 mt-2">
-                <div class="icon_box icon_box_style_10" style="border: 1px solid black;">
-                    <a href="#" class="text-black">
-                        <div class="box_icon mb-3">
-                        <i class="fa-solid fa-mobile">
-                            </i>
-                        </div>
-                        <div class="icon_box_content">
-                            <h5>E&TC<br>
-                            Engineering</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        
-
         </div>
     </div>
-</div> -->
+</div>
 
 
 

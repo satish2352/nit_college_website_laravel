@@ -32,6 +32,9 @@
         .row>* {
             padding-right: 0px !important;
         }
+        .rowrspace>*{
+            padding-right: 0px !important;
+         }
 
         .topoftop:hover {
             color: white !important;
@@ -262,7 +265,8 @@
             }
 
             .navbar-toggler {
-                Top: -84 !important;
+                /* Top: -84 !important; */
+                margin-top: 200px;
             }
         }
 
@@ -285,7 +289,8 @@
             }
 
             .navbar-toggler {
-                Top: -84 !important;
+                /* Top: -84 !important; */
+                /* margin-top: -180px; */
             }
 
             .aaaa .aaab:hover {
@@ -440,7 +445,8 @@
             .navbar-toggler {
                 position: absolute;
                 z-index: 1001;
-                top: -84 !important;
+                /* top: -84 !important; */
+                /* margin-top: -180px !important; */
                 left: 152px;
                 /* right: 10px; */
                 cursor: pointer;
@@ -504,6 +510,10 @@
                     width: 100%;
                     z-index: 1001;
                 }
+                .shiftright{
+                display: flex;
+                justify-content: end;
+            }
 
             }
 
@@ -546,6 +556,11 @@
                 width: 100%;
                 z-index: 1001;
             }
+            .shiftright{
+                display: flex;
+                justify-content: end;
+            }
+            
         }
 
         @media only screen and (min-width: 768px) {
@@ -560,6 +575,10 @@
                 top: 0 !important;
                 width: 100%;
                 z-index: 1001;
+            }
+            .shiftright{
+                display: flex;
+                justify-content: end;
             }
 
 
@@ -597,8 +616,10 @@
             }
 
             .navbar-toggler {
-                Top: -84 !important;
+                /* Top: -84 !important; */
+                /* margin-top: -180px; */
             }
+           
         }
 
 
@@ -724,7 +745,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 "><span style="font-size: 13px;">Institute Address : <a class="topoftop" href="https://maps.app.goo.gl/sSqdKCwiLyZYPtup8" target="_blank" >Cannol
                             Road,Behind Hydro-division(MERI),Nashik-422003</a></span></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 text-right d-flex" style="justify-content: end;">
+                <div class="col-lg-6 col-md-6 col-sm-6 shiftright" style="justify-content: end;">
                     <span style="font-size:11px !important;">Email : <a class="topoftop" href="mailto:info@nitnasik.com"> principal@nitnasik.com</a> </span> <span style="padding-left:5px;padding-right:5px;">|</span>
                     <span style="font-size:11px !important;">Contact Number : <a class="topoftop" href="tel:9552551056">9552551056</a>&nbsp;</span>
 

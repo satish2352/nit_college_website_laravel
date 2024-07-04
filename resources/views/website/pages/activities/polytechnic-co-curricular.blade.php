@@ -1,5 +1,16 @@
 @extends('website.layout.master')
 @section('content')
+
+<style>
+    .row{
+        margin-left: -5px !important;
+    }
+</style>
+
+
+
+
+
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div>
         <!-- 
@@ -30,6 +41,7 @@
                             </div>
                             @else
                             @foreach ($data_output as $item)
+
                             <div class="col-lg-4 col-md-4 col-sm-12 mb-5" style="display: flex; justify-content:center;">
                                 <div class="card" style="width: 300px;">
                                     <img src="{{ Config::get('DocumentConstant.ACTIVITY_VIEW') }}{{ $item->photo }}" class="card-img-top img-fluid img-thumbnail" alt="{{ $item->activities_name }}" style="height: 300px;width:auto; object-fit: cover;">
