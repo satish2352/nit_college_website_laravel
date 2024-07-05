@@ -35,10 +35,17 @@
     <div class="container card-shadow" style="margin-bottom: 95px;">
         <div class="row" style="padding:0px; margin-left:10px;">
             <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea">
+                @if (isset($data_output_category) && isset($data_output_category['id']))
+                <div class="" style="color:#494680; font-size:20px;">
+                    <strong>{{ $data_output_category->Department }} </strong>
+                </div>
+                @else
+                @endif
+
                 <div class="row outer-white">
                     <div class="col-sm-12">
-                        <div>
-                            <h2> Students Association : </h2>
+                        <div class="pt-2">
+                            <p><strong> Students Association :</strong> </p>
                         </div>
                         <div>
                         </div>

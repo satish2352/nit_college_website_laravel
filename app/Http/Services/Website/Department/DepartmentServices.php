@@ -49,17 +49,16 @@ public function getDepartVisionMission($id){
     }
 }
 
-public function getFaculty($id)
+public function getFaculty()
 {
     try {
-        $dataOutputCategory = $this->repo->getFaculty($id);
-        // dd($dataOutputCategory);
-        // die();
-        return $dataOutputCategory; // This will never be executed due to dd()
+        $dataOutputCategory = $this->repo->getFaculty();
+        return $dataOutputCategory;
     } catch (\Exception $e) {
         return $e;
     }
 }
+
 
 public function getSyllabus($id)
 {
@@ -105,8 +104,7 @@ public function getActivitiesEvents($id)
 {
     try {
         $dataOutputCategory = $this->repo->getActivitiesEvents($id);
-        // dd($dataOutputCategory);
-        // die();
+        
         return $dataOutputCategory; // This will never be executed due to dd()
     } catch (\Exception $e) {
         return $e;
@@ -140,17 +138,26 @@ public function getPlan($id)
         return $e;
     }
 }
-
-
-
-
 public function getDepartmentId($id)
 {
     try {
         $dataOutputCategory = $this->repo->getDepartmentId($id);
+       
         return $dataOutputCategory; // This will never be executed due to dd()
     } catch (\Exception $e) {
         return $e;
     }
 }
+public function getNewsletter($id)
+{
+    try {
+        $dataOutputCategory = $this->repo->getNewsletter($id);
+        // dd($dataOutputCategory);
+        // die();
+        return $dataOutputCategory; // This will never be executed due to dd()
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
+
 }

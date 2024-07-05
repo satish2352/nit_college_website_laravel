@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Events extends Model
+class IndustrialVisitMentor extends Model
 {
     use HasFactory;
-    protected $table = 'tbl_events';
+    protected $table = 'industrial_visit';
     protected $primaryKey = 'id';
     protected $fillable=[];
 }

@@ -894,10 +894,18 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class=" aaaa">
+                                                <a class=" aaab dropdown-item  " href="{{ route('courses-offered') }}">Courses Offered</a>
+                                            </li>
+                                            <li class=" aaaa">
+                                                <a class=" aaab dropdown-item  " href="{{ route('documents-required') }}">Documents Required</a>
+                                            </li>
+                                            <li class=" aaaa">
+                                                <a class=" aaab dropdown-item  " href="{{ route('cap-admission-procedure-steps') }}">CAP admission Procedure Steps</a>
+                                            </li>
+                                            <li class=" aaaa">
                                                 <a class=" aaab dropdown-item  " href="{{ route('polytechnic-rules') }}">Admission Rules And
                                                     Process</a>
                                             </li>
-
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">

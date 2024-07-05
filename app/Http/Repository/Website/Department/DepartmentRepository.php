@@ -17,7 +17,8 @@ use App\Models\ {
     Events,
     Awards,
     Members,
-    Plan
+    Plan,
+    Newsletter
 
 };
 
@@ -96,48 +97,32 @@ class DepartmentRepository  {
         }
     }
 
-    public function getFaculty($id)
+    public function getFaculty()
     {
         try {
-
-            // $dataOutputCategory = Staff::join('department', 'department.id', '=', 'tbl_staff.department_id')
-            // ->join('tbl_staff', 'tbl_staff.Designation_id', '=', 'designation.Designation_id')
-            //     ->select(
-            //         'tbl_staff.fld_staff_id',
-            //         'department.id as department_id',
-            //         'tbl_staff.Designation_id', 
-            //         'tbl_staff.fld_staff_qualification', 
-            //         'tbl_staff.fld_staff_experiance', 
-                    
-            //         // 'tbl_staff.fld_staff_mobile', 
-            //         'tbl_staff.fld_staff_photo', 
-            //         'department.Department',
-            //         'designation.Designation'
-            //     )
-            //     ->where('department.id', $id) // Filter by the provided ID
-            //     // ->orderBy('tbl_staff.fld_staff_id', 'desc')
-            //     ->first(); // Get a single record
-            $dataOutputCategory = Staff::join('department', 'department.id', '=', 'tbl_staff.department_id')
-            ->join('designation', 'tbl_staff.Designation_id', '=', 'designation.Designation_id')
-            ->select(
-                'tbl_staff.fld_staff_id',
-                'tbl_staff.fld_staff_name',
-                'department.id as department_id',
-                'tbl_staff.Designation_id', 
-                'tbl_staff.fld_staff_qualification', 
-                'tbl_staff.fld_staff_experiance', 
-                'tbl_staff.fld_staff_photo', 
-                'department.Department',
-                'designation.Designation'
-            )
-            ->where('department.id', $id) // Filter by the provided ID
-            ->orderBy('tbl_staff.id', 'desc')
-            ->get(); 
+            $dataOutputCategory = Staff::join('department', 'department.id', '=', 'tbl_staff.Department_id')
+                ->join('designation', 'tbl_staff.Designation_id', '=', 'designation.Designation_id')
+                ->select(
+                    'tbl_staff.fld_staff_id',
+                    'tbl_staff.fld_staff_name',
+                    'department.id as Department_id',
+                    'tbl_staff.Designation_id', 
+                    'tbl_staff.fld_staff_qualification', 
+                    'tbl_staff.fld_staff_experiance', 
+                    'tbl_staff.fld_staff_photo', 
+                    'department.Department',
+                    'designation.Designation',
+                    'tbl_staff.is_active' // Make sure this field exists in your table
+                )
+                // ->where('department.id', $id) // Filter by the provided ID
+                ->orderBy('tbl_staff.fld_staff_id', 'desc')
+                ->get(); 
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;
         }
     }
+    
     
     public function getSyllabus($id)
     {
@@ -240,10 +225,9 @@ class DepartmentRepository  {
                     'department.Department',
                     'tbl_events.is_active'
                 )
-                ->where('department.id', $id) // Filter by the provided ID
+                ->where('department.id', $id) 
                 ->orderBy('tbl_events.fld_gallery_id', 'desc')
-                ->first(); // Get a single record
-             
+                ->get(); // Get a single record
             return $dataOutputCategory;
         } catch (\Exception $e) {
             return $e;
@@ -270,32 +254,7 @@ class DepartmentRepository  {
             return $e;
         }
     }
-    
-    // public function getPlan($id)
-    // {
-    //     try {
-    //         $dataOutputCategory = Plan::join('department', 'department.id', '=', 'tbl_plan.department_id')
-    //             ->select(
-    //                 'tbl_plan.fld_bm_id',
-    //                 'department.id as department_id',
-    //                 'tbl_plan.edu_year', 
-    //                 'tbl_plan.semister', 
-    //                 'tbl_plan.plan_name', 
-    //                 'tbl_plan.subject_name',
-    //                 'tbl_plan.file',
-    //                 'department.Department',
-    //                 'tbl_plan.is_active'
-    //             )
-    //             ->where('department.id', $id) // Filter by the provided ID
-    //             ->orderBy('tbl_plan.fld_bm_id', 'desc')
-    //             ->first(); // Get a single record
-             
-    //         return $dataOutputCategory;
-    //     } catch (\Exception $e) {
-    //         return $e;
-    //     }
-    // }
-    public function getDepartmentId($id)
+        public function getDepartmentId($id)
     {
         try {
             $dataOutputCategory = DepartmentCategory::where('is_active', '=', true)
@@ -330,6 +289,27 @@ class DepartmentRepository  {
             ->orderBy('tbl_plan.fld_bm_id', 'desc')
             ->get();
 
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
+
+public function getNewsletter($id)
+{
+    try {
+        $dataOutputCategory = Newsletter::join('department', 'department.id', '=', 'newsletters.department_id')
+            ->select(
+                'newsletters.newsletters_id',
+                'department.id as department_id',
+                'newsletters.file', 
+                'department.Department',
+                'newsletters.is_active'
+            )
+            ->where('department.id', $id) // Filter by the provided ID
+            ->orderBy('newsletters.newsletters_id', 'desc')
+            ->get(); 
+       
         return $dataOutputCategory;
     } catch (\Exception $e) {
         return $e;

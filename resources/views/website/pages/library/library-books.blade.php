@@ -23,6 +23,13 @@
                                         <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                                     </div>
+                                    <div><b>Library Details : </b></div>
+                                    <div>no.Of volumes : 11,842</div>
+                                    <div>no.Of titles : 2202</div>
+                                    <div>no. Of national journals: 18</div>
+                                    <div>total expenditure: rs. 21,40,483</div>
+                                    <div>library area: 376.39 sq-m</div>
+                                    <div>reading room capacity: 150</div>
                                     <div class="panel-body">
                                         <center>
                                             <div class="table-responsive p-3"> <!-- Add this wrapper -->

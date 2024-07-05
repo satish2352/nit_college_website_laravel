@@ -20,6 +20,30 @@ class AcademicsServices
         $this->repo = new AcademicsRepository();
     }
 
+    public function getCoursesOffered()
+    {
+        try {
+            return $this->repo->getCoursesOffered();
+        } catch (\Exception $e) {
+            return $e;
+        }
+    } 
+    public function getDocumentsRequired()
+    {
+        try {
+            return $this->repo->getDocumentsRequired();
+        } catch (\Exception $e) {
+            return $e;
+        }
+    } 
+    public function getCAPAdmissionProcedureSteps()
+    {
+        try {
+            return $this->repo->getCAPAdmissionProcedureSteps();
+        } catch (\Exception $e) {
+            return $e;
+        }
+    } 
     public function getPolytechnicRules()
     {
         try {

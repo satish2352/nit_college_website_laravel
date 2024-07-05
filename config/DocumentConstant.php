@@ -15,9 +15,6 @@ return [
     'AFFILIATION_CERTIFICATES_VIEW'	         => env("FILE_VIEW").'/images/affiliation_certificates/',
     'AFFILIATION_MSBTE_VIEW'	         => env("FILE_VIEW").'/documents/affiliationmsbte/',
     'ACADEMICCALENDAR_VIEW'	         => env("FILE_VIEW").'/documents/academiccalendar/',
-    
-     'EVENTS_DOC_VIEW'	         => env("FILE_VIEW").'/images/event/',
-     
 
     'SLIDER_VIEW'	         => env("FILE_VIEW").'/images/slider_img/', 
     'ACTIVITY_VIEW'	         => env("FILE_VIEW").'/images/activity/', 
@@ -30,6 +27,11 @@ return [
     'LIBRARY_STAFF_VIEW'	         => env("FILE_VIEW").'/images/librarystaff/',
     'JOURNALS_MAGAZINES_VIEW'	         => env("FILE_VIEW").'/images/journalsmagazines/',
     'STUDENT_DOWNLOAD_VIEW'	         => env("FILE_VIEW").'/images/studentDownload/',
+    'EXPERT_LECTURE_VIEW'	         => env("FILE_VIEW").'/images/expertlecture/',
+    'CAP_VIEW'	         => env("FILE_VIEW").'/images/cap/',
+    'FEES_VIEW'	         => env("FILE_VIEW").'/images/fees/',
+    'INDUSTRIAL_VISIT_VIEW'	         => env("FILE_VIEW").'/images/industrialvisit/',
+    'NEWS_LETTERS_VIEW'	         => env("FILE_VIEW").'/images/newsletters/',
     
     
 ];

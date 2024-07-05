@@ -15,7 +15,7 @@
                             <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title" style="color:#494680"><strong>ACADEMIC CALENDAR</strong></h3>
+                                        <h3 class="panel-title" style="color:#494680"><strong>Industrial visit and mentor meeting</strong></h3>
                                     </center>
                                     <span class="pull-right clickable">
                                         <i class="glyphicon glyphicon-plus-sign collapse-ico"></i>
@@ -32,9 +32,6 @@
                                                     <th scope="col" class=" justify-content-center">
                                                         <center>SR.NO</center>
                                                     </th>
-                                                    <th scope="col" class="">
-                                                        <center>Title</center>
-                                                    </th>
                                                     <th scope="col">
                                                         <div class="d-flex justify-content-center">
                                                             Download File
@@ -49,12 +46,8 @@
                                                         <center>{{ $loop->iteration }}</center>
                                                     </td>
                                                     <td>
-                                                        <center>{{ $data->academic_title }}</center>
-                                                    </td>
-                                                    
-                                                    <td>
                                                         <center>
-                                                            <a href="{{ Config::get('DocumentConstant.ACADEMICCALENDAR_VIEW') }}{{ $data->file }}"
+                                                            <a href="{{ Config::get('DocumentConstant.INDUSTRIAL_VISIT_VIEW') }}{{ $data->file }}"
                                                                 target="_blank" class="btn btn-small " style="color:#fff;background-color:  #015198">
                                                                 Download
                                                             </a>

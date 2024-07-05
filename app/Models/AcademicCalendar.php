@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class AcademicCalendar extends Model
 {
     use HasFactory;
-    protected $table = 'academiccalendar';
+    protected $table = 'academic_calendar';
     protected $primaryKey = 'id';
     protected $fillable=[];
 }

@@ -96,7 +96,7 @@
                     <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
                         Body</a>
                     <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
-                    <a href="#" class="list-group-item ">Faculty</a>
+                    <a href="{{ route('department-faculty') }}" class="list-group-item ">Faculty</a>
                     <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
                     <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
                     <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
@@ -116,9 +116,13 @@
                         <a href="{{ route('list-student-section-download') }}" class="list-group-item ">Download</a>
                         <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item ">Scholarship</a>
                     </div>
-                    <a href="#" class="list-group-item ">Fees Regulatiion Authority </a>
-
-
+                    <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>
+                    <div>
+                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">Plan</h5>
+                        <a href="{{ route('list-expert-lecture') }}" class="list-group-item ">Expert Lecture</a>
+                        <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item ">Industrial Visit and Mentor Meeting</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>

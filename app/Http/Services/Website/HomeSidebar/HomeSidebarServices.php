@@ -127,6 +127,7 @@ public function getAcademicCalendar()
 {
     try {
         $dataOutputCategory = $this->repo->getAcademicCalendar();
+       
         return $dataOutputCategory;
     } catch (\Exception $e) {
         return collect(); // return an empty collection in case of error
@@ -160,6 +161,35 @@ public function getStudentSectionScholarship()
         return collect(); // return an empty collection in case of error
     }
 }
+public function getExpertLecture()
+{
+    try {
+        $dataOutputCategory = $this->repo->getExpertLecture();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
+public function getIndustrialVisitMentor()
+{
+    try {
+        $dataOutputCategory = $this->repo->getIndustrialVisitMentor();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
+
+public function getFeesRegulatingAuthority()
+{
+    try {
+        $dataOutputCategory = $this->repo->getFeesRegulatingAuthority();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
+
 
 
 

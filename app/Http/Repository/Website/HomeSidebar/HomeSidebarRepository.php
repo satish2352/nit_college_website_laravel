@@ -17,7 +17,10 @@ use App\Models\ {
     AcademicCalendar,
     Events,
     StudentSectionDownload,
-    StudentSectionScholarship
+    StudentSectionScholarship,
+    ExpertLecture,
+    IndustrialVisitMentor,
+    FeesRegulatingAuthority
     
 };
 
@@ -195,8 +198,8 @@ class HomeSidebarRepository  {
     public function getAcademicCalendar()
     {
         try {
-            $data_output = AcademicCalendar::where('syllabus_delete', '0')
-                ->orderBy('calendar_id', 'desc')
+            $data_output = AcademicCalendar::where('academic_cal_delete', '0')
+                ->orderBy('academic_cal_id', 'desc')
                 ->get();
             return $data_output;
         } catch (\Exception $e) {
@@ -240,6 +243,43 @@ class HomeSidebarRepository  {
             return collect(); // return an empty collection in case of error
         }
     }
+    public function getExpertLecture()
+    {
+        try {
+            $data_output = ExpertLecture::where('expert_lecture_delete', '0')
+            ->where('is_active', '1')
+                ->orderBy('expert_lecture_id', 'desc')
+                ->get();
+            return $data_output;
+        } catch (\Exception $e) {
+            return collect(); // return an empty collection in case of error
+        }
+    }
+    public function getIndustrialVisitMentor()
+    {
+        try {
+            $data_output = IndustrialVisitMentor::where('industrial_visit_delete', '0')
+            ->where('is_active', '1')
+                ->orderBy('industrial_visit_id', 'desc')
+                ->get();
+            return $data_output;
+        } catch (\Exception $e) {
+            return collect(); // return an empty collection in case of error
+        }
+    }
     
+
+    public function getFeesRegulatingAuthority()
+    {
+        try {
+            $data_output = FeesRegulatingAuthority::where('fld_delete', '0')
+            ->where('is_active', '1')
+                ->orderBy('fees_id', 'desc')
+                ->get();
+            return $data_output;
+        } catch (\Exception $e) {
+            return collect(); // return an empty collection in case of error
+        }
+    }
     
 }    

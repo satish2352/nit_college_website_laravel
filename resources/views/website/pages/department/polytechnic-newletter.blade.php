@@ -71,7 +71,7 @@
                                                             <center>SR.NO</center>
                                                         </th>
                                                         <th scope="col" class="">
-                                                            <center>Semister</center>
+                                                            <center>Department</center>
                                                         </th>
                                                         <th scope="col">
                                                             <div class="d-flex justify-content-center">
@@ -90,7 +90,7 @@
                                                        
                                                         </td>
                                                         <td class="text-center">
-                                                            <a href="{{ Config::get('DocumentConstant.CURRICULUM_DOC_VIEW') . $data->file }}"
+                                                            <a href="{{ Config::get('DocumentConstant.NEWS_LETTERS_VIEW') . $data->file }}"
                                                                 target="_blank" class="btn btn-small "style="color:#fff;background-color:  #015198">
                                                                Download
                                                             </a>

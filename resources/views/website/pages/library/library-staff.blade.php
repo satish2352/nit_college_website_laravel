@@ -23,6 +23,7 @@
                                         <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
                                     </div>
+                                  
                                     <div class="panel-body">
                                         <center>
                                             <div class="table-responsive p-3"> <!-- Add this wrapper -->

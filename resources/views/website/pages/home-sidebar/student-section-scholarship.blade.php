@@ -121,7 +121,11 @@
                                                 <p class="department-error">Data not available</p>
                                             </div>
                                             @else
-                                            <p align="Justify"><li>{{ strip_tags($data->rules_regulations) }}</p>
+                                            <a href="{{ $data->link }}"
+                                                target="_blank"
+                                                class="" style="color:#000;">
+                                            <p align="Justify"><li>{{ strip_tags($data->title) }}</p>
+                                            </a>
                                                 @endif
                                                 @endforeach
                                                 @endif
