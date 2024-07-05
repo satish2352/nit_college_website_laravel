@@ -105,6 +105,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
+                                            <p>Downloads</p>
                                             @if (isset($error))
                                             <div>
                                                 {{ $error }}
@@ -121,7 +122,7 @@
                                                 <p class="department-error">Data not available</p>
                                             </div>
                                             @else
-                                            <p>Downloads</p>
+                                           
                                                 <a href="{{ Config::get('DocumentConstant.STUDENT_DOWNLOAD_VIEW') }}{{ $data->file }}"
                                                     target="_blank"
                                                     class="" style="color:#000;">
