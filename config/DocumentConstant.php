@@ -28,8 +28,8 @@ return [
     'ACTIVITIES_VIEW'	         => env("FILE_VIEW").'/images/activities/',
     'EVENTS_VIEW'	         => env("FILE_VIEW").'/images/events/',
     'LIBRARY_STAFF_VIEW'	         => env("FILE_VIEW").'/images/librarystaff/',
-
-    
+    'JOURNALS_MAGAZINES_VIEW'	         => env("FILE_VIEW").'/images/journalsmagazines/',
+    'STUDENT_DOWNLOAD_VIEW'	         => env("FILE_VIEW").'/images/studentDownload/',
     
     
 ];

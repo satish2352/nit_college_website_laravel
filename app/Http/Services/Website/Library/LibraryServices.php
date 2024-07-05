@@ -25,9 +25,34 @@ class LibraryServices
     {
         try {
             $dataOutputCategory = $this->repo->getLibraryStaff();
-            // dd($dataOutputCategory);
-            // die();
-            return $dataOutputCategory; // This will never be executed due to dd()
+            return $dataOutputCategory; 
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+    public function getBooks()
+    {
+        try {
+            $dataOutputCategory = $this->repo->getBooks();
+            return $dataOutputCategory; 
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+    public function getJournalsMagzines()
+    {
+        try {
+            $dataOutputCategory = $this->repo->getJournalsMagzines();
+            return $dataOutputCategory; 
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+    public function getRulesRequlations()
+    {
+        try {
+            $dataOutputCategory = $this->repo->getRulesRequlations();
+            return $dataOutputCategory; 
         } catch (\Exception $e) {
             return $e;
         }

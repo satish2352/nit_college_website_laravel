@@ -15,7 +15,9 @@ use App\Models\ {
     InternalComplaint,
     AboutSCST,
     AcademicCalendar,
-    Events
+    Events,
+    StudentSectionDownload,
+    StudentSectionScholarship
     
 };
 
@@ -207,6 +209,31 @@ class HomeSidebarRepository  {
         try {
             $data_output = Events::where('fld_delete', '0')
                 ->orderBy('event_id', 'desc')
+                ->get();
+            return $data_output;
+        } catch (\Exception $e) {
+            return collect(); // return an empty collection in case of error
+        }
+    }
+
+    public function getStudentSectionDownload()
+    {
+        try {
+            $data_output = StudentSectionDownload::where('fld_delete', '0')
+            ->where('is_active', '1')
+                ->orderBy('student_id', 'desc')
+                ->get();
+            return $data_output;
+        } catch (\Exception $e) {
+            return collect(); // return an empty collection in case of error
+        }
+    }
+    public function getStudentSectionScholarship()
+    {
+        try {
+            $data_output = StudentSectionScholarship::where('fld_delete', '0')
+            ->where('is_active', '1')
+                ->orderBy('scholarship_id', 'desc')
                 ->get();
             return $data_output;
         } catch (\Exception $e) {

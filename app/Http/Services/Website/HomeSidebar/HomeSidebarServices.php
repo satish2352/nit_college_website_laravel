@@ -142,6 +142,24 @@ public function getEvent()
         return collect(); // return an empty collection in case of error
     }
 }
+public function getStudentSectionDownload()
+{
+    try {
+        $dataOutputCategory = $this->repo->getStudentSectionDownload();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
+public function getStudentSectionScholarship()
+{
+    try {
+        $dataOutputCategory = $this->repo->getStudentSectionScholarship();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
 
 
 

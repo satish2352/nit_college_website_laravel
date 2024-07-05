@@ -111,7 +111,11 @@
                         Calender</a>
                     <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
                     <a href="{{ route('list-events') }}"  class="list-group-item ">Events</a>
-                    <a href="#" class="list-group-item ">Student Section</a>
+                    <div>
+                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">Student Section</h5>
+                        <a href="{{ route('list-student-section-download') }}" class="list-group-item ">Download</a>
+                        <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item ">Scholarship</a>
+                    </div>
                     <a href="#" class="list-group-item ">Fees Regulatiion Authority </a>
 
 

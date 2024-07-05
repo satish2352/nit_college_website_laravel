@@ -30,5 +30,42 @@ class LibraryController extends Controller
             return $e;
         }
     } 
+
+    public function getBooks()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getBooks();
+            return view('website.pages.library.library-books', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+    public function getJournalsMagzines()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getJournalsMagzines();
+            return view('website.pages.library.library-journals-magzines', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+    public function getRulesRequlations()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getRulesRequlations();
+            return view('website.pages.library.rules-requlations', compact('data_output','menu', 'menuDepartment', 'menuFacility'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
    
 }

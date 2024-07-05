@@ -874,6 +874,15 @@
                                             <li class=" aaaa">
                                                 <a class="dropdown-item aaab " href="{{ route('library-staff')}}">Library Staff</a>
                                             </li>
+                                            <li class=" aaaa">
+                                                <a class="dropdown-item aaab " href="{{ route('library-books')}}">Books</a>
+                                            </li>
+                                            <li class=" aaaa">
+                                                <a class="dropdown-item aaab " href="{{ route('library-journals-magzines')}}">Journals & Magzines</a>
+                                            </li>
+                                            <li class=" aaaa">
+                                                <a class="dropdown-item aaab " href="{{ route('library-rules-requlations')}}">Rules & Regulations</a>
+                                            </li>
                                           
                                         </ul> 
                                     </li>
