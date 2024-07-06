@@ -255,7 +255,7 @@
     </div>
 
 
-    <div class="row rowleft mt-4">
+    {{-- <div class="row rowleft mt-4">
         <div class="col-lg-4 col-md-4 col-sm-4 text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.1s" style="animation-delay:0.1s; opacity:1;">
             <div class="icon_box icon_box_style_7 bg-dark text-white h-100">
                 <div class="box_icon mb-3">
@@ -263,7 +263,7 @@
                 </div>
                 <div class="icon_box_content">
                     <h5>
-                        Best Academics
+                        <a href="{{ route('polytechnic-academic-calendar') }}" style="color: #fff;"> Best Academics</a>
                     </h5>
                 </div>
             </div>
@@ -275,7 +275,7 @@
                 </div>
                 <div class="icon_box_content">
                     <h5>
-                        Excellent Faculty
+                        <a href="{{ route('department-faculty') }}" style="color: #fff;"> Excellent Faculty </a>
                     </h5>
                 </div>
             </div>
@@ -287,12 +287,12 @@
                 </div>
                 <div class="icon_box_content">
                     <h5>
-                        Placement Assistance
+                        <a href="{{ route('polytechnic-academic-calendar') }}" style="color: #fff;"> Placement Assistance</a>
                     </h5>
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 
 <!-- <div class="container mt-5 mb-5">
