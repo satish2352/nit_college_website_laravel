@@ -108,7 +108,7 @@
                                             <p>Downloads</p>
                                             @if (isset($error))
                                             <div>
-                                                {{ $error }}
+                                                <p class="department-error"> {{ $error }}</p>
                                             </div>
                                             @else
                                             @if ($data_output->isEmpty())
