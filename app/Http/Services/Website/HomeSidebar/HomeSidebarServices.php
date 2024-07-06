@@ -138,6 +138,8 @@ public function getEvent()
 {
     try {
         $dataOutputCategory = $this->repo->getEvent();
+        // dd($dataOutputCategory);
+        // die();
         return $dataOutputCategory;
     } catch (\Exception $e) {
         return collect(); // return an empty collection in case of error

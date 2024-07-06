@@ -211,7 +211,8 @@ class HomeSidebarRepository  {
     {
         try {
             $data_output = Events::where('fld_delete', '0')
-                ->orderBy('event_id', 'desc')
+            ->where('is_active', '1')
+                ->orderBy('fld_gallery_id', 'desc')
                 ->get();
             return $data_output;
         } catch (\Exception $e) {

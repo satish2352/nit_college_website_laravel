@@ -18,7 +18,7 @@
                                 <div >
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#494680"><b>SC/ST Cell</b></h3>
+                                            <h3 class="panel-title" style="color:#494680"><b>Fees Regulating Authority</b></h3>
                                         </center>
                                         <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
@@ -46,25 +46,24 @@
                                                 </thead>
                                                 <tbody>
                                                     @forelse ($data_output as $data)
-                                                    <tr class="">
-                                                        <td>
-                                                            <center>{{ $loop->iteration }}</center>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            {{ $loop->iteration }}
                                                         </td>
                                                         <td>
                                                             <center>{{ $data->title }}</center>
                                                         </td>
-                                                        <td>
-                                                            <center>
-                                                                <a href="{{ Config::get('DocumentConstant.FEES_VIEW') }}{{ $data->file }}"
-                                                                    target="_blank"
-                                                                    class="btn btn-small download-btn1 btn-icon-only icon-ok " style="color:#fff;background-color:  #015198">
-                                                                    Download
-                                                                </a>
-                                                            </center>
+                                                        <td class="text-center">
+                                                            <a href="{{ Config::get('DocumentConstant.FEES_VIEW') }}{{ $data->file }}"
+                                                                target="_blank" class="btn btn-small download-btn1 btn-icon-only icon-ok " style="color:#fff; background-color:  #015198">
+                                                                Download
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                     @empty
-                                                    {{-- <h4>No Data Found</h4> --}}
+                                                    <tr>
+                                                        <td colspan="3" class="text-center">No Data Found</td>
+                                                    </tr>
                                                     @endforelse
                                                 </tbody>
                                             </table>

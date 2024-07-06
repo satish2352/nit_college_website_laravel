@@ -176,23 +176,24 @@ class HomeSidebarController extends Controller
     }
 
     public function getEvent()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $menuFacility = $this->menuFacility;
-            $data_output = $this->service->getEvent();
+{
+    try {
+        $menu = $this->menu;
+        $menuDepartment = $this->menuDepartment;
+        $menuFacility = $this->menuFacility;
+        $data_output = $this->service->getEvent();
    
-            // Check if $data_output is not empty
-            if ($data_output && $data_output->isNotEmpty()) {
-                return view('website.pages.home-sidebar.events', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
-            } else {
-                return view('website.pages.home-sidebar.events', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
-            }
-        } catch (\Exception $e) {
-            return back()->with('error', 'An error occurred while fetching the academic calendar.');
+        // Ensure $data_output is defined
+        if ($data_output && $data_output->isNotEmpty()) {
+            return view('website.pages.home-sidebar.events', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
+        } else {
+            return view('website.pages.home-sidebar.events', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.')->with('data_output', collect());
         }
+    } catch (\Exception $e) {
+        return back()->with('error', 'An error occurred while fetching the academic calendar.');
     }
+}
+
 
     public function getStudentSectionDownload()
     {
@@ -231,41 +232,44 @@ class HomeSidebarController extends Controller
             return back()->with('error', 'An error occurred while fetching the academic calendar.');
         }
     }
+
     public function getExpertLecture()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $menuFacility = $this->menuFacility;
-            $data_output = $this->service->getExpertLecture();
-            // Check if $data_output is not empty
-            if ($data_output && $data_output->isNotEmpty()) {
-                return view('website.pages.home-sidebar.expert-lecture', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
-            } else {
-                return view('website.pages.home-sidebar.expert-lecture', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
-            }
-        } catch (\Exception $e) {
-            return back()->with('error', 'An error occurred while fetching the academic calendar.');
+{
+    try {
+        $menu = $this->menu;
+        $menuDepartment = $this->menuDepartment;
+        $menuFacility = $this->menuFacility;
+        $data_output = $this->service->getExpertLecture();
+   
+        // Ensure $data_output is defined
+        if ($data_output && $data_output->isNotEmpty()) {
+            return view('website.pages.home-sidebar.expert-lecture', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
+        } else {
+            return view('website.pages.home-sidebar.expert-lecture', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.')->with('data_output', collect());
         }
+    } catch (\Exception $e) {
+        return back()->with('error', 'An error occurred while fetching the academic calendar.');
     }
-    public function getIndustrialVisitMentor()
-    {
-        try {
-            $menu = $this->menu;
-            $menuDepartment = $this->menuDepartment;
-            $menuFacility = $this->menuFacility;
-            $data_output = $this->service->getIndustrialVisitMentor();
-            // Check if $data_output is not empty
-            if ($data_output && $data_output->isNotEmpty()) {
-                return view('website.pages.home-sidebar.industrial-visit-mentor', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
-            } else {
-                return view('website.pages.home-sidebar.industrial-visit-mentor', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
-            }
-        } catch (\Exception $e) {
-            return back()->with('error', 'An error occurred while fetching the academic calendar.');
+}
+
+public function getIndustrialVisitMentor()
+{
+    try {
+        $menu = $this->menu;
+        $menuDepartment = $this->menuDepartment;
+        $menuFacility = $this->menuFacility;
+        $data_output = $this->service->getIndustrialVisitMentor();
+   
+        // Ensure $data_output is defined
+        if ($data_output && $data_output->isNotEmpty()) {
+            return view('website.pages.home-sidebar.industrial-visit-mentor', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
+        } else {
+            return view('website.pages.home-sidebar.industrial-visit-mentor', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.')->with('data_output', collect());
         }
+    } catch (\Exception $e) {
+        return back()->with('error', 'An error occurred while fetching the academic calendar.');
     }
-    
+}    
     public function getFeesRegulatingAuthority()
     {
         try {
@@ -273,16 +277,20 @@ class HomeSidebarController extends Controller
             $menuDepartment = $this->menuDepartment;
             $menuFacility = $this->menuFacility;
             $data_output = $this->service->getFeesRegulatingAuthority();
-            // Check if $data_output is not empty
+       
+            // Ensure $data_output is defined
             if ($data_output && $data_output->isNotEmpty()) {
                 return view('website.pages.home-sidebar.fees-regulating-authority', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
             } else {
-                return view('website.pages.home-sidebar.fees-regulating-authority', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.');
+                return view('website.pages.home-sidebar.fees-regulating-authority', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'No data found.')->with('data_output', collect());
             }
         } catch (\Exception $e) {
             return back()->with('error', 'An error occurred while fetching the academic calendar.');
         }
     }
+
+    
+   
     
     
 

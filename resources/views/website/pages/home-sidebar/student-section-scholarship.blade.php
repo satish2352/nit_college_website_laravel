@@ -98,12 +98,13 @@
                                 <div class="card-shadow p-4">
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#494680"><b>Rules & Regulations of Library</b></h3>
+                                            <h3 class="panel-title" style="color:#494680"><b>Scholarship</b></h3>
                                         </center>
                                         <hr>
                                         {{-- <span class="pull-right clickable"><i class="glyphicon glyphicon-plus-sign collapse-ico"></i></span> --}}
                                     </div>
                                     <div class="panel-body">
+                                        <span style="font-size: 18px;color:#000;">To verify your eligibility for scholarship schemes :</span>
                                         <!--<div class="pull-left"><img src="../up-images/annasaheb-patil.gif" alt="" class="img-responsive" height="200" width="200">-->
                                             @if (isset($error))
                                             <div>

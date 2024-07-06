@@ -39,23 +39,24 @@
                                                     </th>
                                                 </tr>
                                             </thead>
+
                                             <tbody>
                                                 @forelse ($data_output as $data)
-                                                <tr class="">
-                                                    <td>
-                                                        <center>{{ $loop->iteration }}</center>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        {{ $loop->iteration }}
                                                     </td>
-                                                    <td>
-                                                        <center>
-                                                            <a href="{{ Config::get('DocumentConstant.EXPERT_LECTURE_VIEW') }}{{ $data->file }}"
-                                                                target="_blank" class="btn btn-small " style="color:#fff;background-color:  #015198">
-                                                                Download
-                                                            </a>
-                                                        </center>
+                                                    <td class="text-center">
+                                                        <a href="{{ Config::get('DocumentConstant.EXPERT_LECTURE_VIEW') }}{{ $data->file }}"
+                                                            target="_blank" class="btn btn-small download-btn1 btn-icon-only icon-ok " style="color:#fff; background-color:  #015198">
+                                                            Download
+                                                        </a>
                                                     </td>
                                                 </tr>
                                                 @empty
-                                                {{-- <h4>No Data Found</h4> --}}
+                                                <tr>
+                                                    <td colspan="3" class="text-center">No Data Found</td>
+                                                </tr>
                                                 @endforelse
                                             </tbody>
                                         </table>
