@@ -20,7 +20,7 @@ class AcademicsRepository  {
     public function getCoursesOffered()
     {
         try {
-            $data_output = CoursesOffered::where('	fld_delete', '0')
+            $data_output = CoursesOffered::where('fld_delete', '0')
             ->where('is_active', '1')
                 ->orderBy('fld_co_id', 'desc')
                 ->get();
