@@ -140,7 +140,7 @@
                                         <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
                                         <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
                                             Certificates</a>
-                                        {{-- <a href="pages/polytechnic-about-t&pcell-IOD.php" class="list-group-item">Training And Placement</a> --}}
+                                        <a href="{{ route('/') }}" class="list-group-item">Training And Placement</a>
                                         <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">Antiragging Committee</a>
                                         {{-- <a href="#" class="list-group-item ">Grievance Redressal Cell </a> --}}
                                         <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">Internal Complaint
