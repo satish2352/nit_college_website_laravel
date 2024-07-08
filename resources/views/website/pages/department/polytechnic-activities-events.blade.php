@@ -23,7 +23,7 @@
             <div class="col-md-9 col-sm-12 text-justify" id="iwtContentArea" >
                 @if (isset($data_output_category) && isset($data_output_category['id']))
                                 <div class="" style="color:#494680; font-size:20px; padding-left:17px;">
-                                    <strong>{{ $data_output_category->Department }} </strong>
+                                    <strong>{{ $data_output_category->Department }}. Activities And Events</strong>
                                 </div>
                                 @else
                                 @endif

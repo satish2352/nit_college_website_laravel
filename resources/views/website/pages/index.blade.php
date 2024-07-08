@@ -110,17 +110,19 @@
                     <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic
                         Calender</a>
                     <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
-                    <a href="{{ route('list-events') }}" class="list-group-item ">Events</a>
-                    <a href="{{ route('list-student-section-download') }}" class="list-group-item ">Download</a>
-                    <a href="#" class="list-group-item ">Student Section</a>
-                    <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item ">Scholarship</a>
+                    <a href="{{ route('list-events') }}"  class="list-group-item ">Events</a>
+                    <div>
+                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">Student Section</h5>
+                        <a href="{{ route('list-student-section-download') }}" class="list-group-item ">Download</a>
+                        <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item ">Scholarship</a>
+                    </div>
                     <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>
-                        <!-- <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">Plan</h5> -->
-                        <a href="#" class="list-group-item ">Plan</a>
+                    <div>
+                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">Plan</h5>
                         <a href="{{ route('list-expert-lecture') }}" class="list-group-item ">Expert Lecture</a>
                         <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item ">Industrial Visit and Mentor Meeting</a>
-                  
-
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -354,7 +356,7 @@
     </div>
 </div> -->
 
-<div class="container-fluit mt-5">
+<div class="container-fluit mt-5" >
     <div class="row" style="display: flex;">
         <div class="col-lg-6 col-md-6 col-sm-12" style="display:flex; justify-content:space-evenly ">
             <img src="{{ asset('public/assets/Akole_Poly/Toppers1.jpeg') }}" class=" mob-width img-thumbnail  " alt="Toppers1" style="width:fit-content;" />
