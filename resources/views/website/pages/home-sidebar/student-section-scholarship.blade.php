@@ -127,7 +127,7 @@
                                             @else
                                             <a href="{{ $data->link }}"
                                                 target="_blank"
-                                                class="" style="color:#000;">
+                                                class="">
                                             <p align="Justify"><li>{{ strip_tags($data->title) }}</p>
                                             </a>
                                                 @endif
