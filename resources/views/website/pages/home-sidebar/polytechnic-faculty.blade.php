@@ -66,6 +66,7 @@
                                             <td>
                                                 <center>{{ $data->fld_staff_experiance }}</center>
                                             </td>
+                                            
                                         </tr>
                                         @empty
                                         <tr>

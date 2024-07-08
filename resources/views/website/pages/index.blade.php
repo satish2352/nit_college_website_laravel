@@ -7,6 +7,12 @@
         color: black;
 
     }
+    .SSP > h5{
+        /* text-align: center; */
+        /* border-bottom:1px solid white; */
+        text-decoration: underline white;
+
+    }
 
     .leftspace {
         line-height: 30px;
@@ -37,10 +43,6 @@
         position: relative;
         transition: all 0.5s ease-in-out;
     }
-
-
-
-
 
     overviewclg {
         padding-top: 8px;
@@ -111,16 +113,17 @@
                         Calender</a>
                     <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
                     <a href="{{ route('list-events') }}"  class="list-group-item ">Events</a>
-                    <div>
-                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">Student Section</h5>
-                        <a href="{{ route('list-student-section-download') }}" class="list-group-item ">Download</a>
-                        <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item ">Scholarship</a>
-                    </div>
                     <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>
-                    <div>
-                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">Plan</h5>
-                        <a href="{{ route('list-expert-lecture') }}" class="list-group-item ">Expert Lecture</a>
-                        <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item ">Industrial Visit and Mentor Meeting</a>
+
+                    <div class="SSP">
+                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">STUDENT SECTION</h5>
+                        <a href="{{ route('list-student-section-download') }}" style="border:none; text-align: center" class="list-group-item ">Download</a>
+                        <a href="{{ route('list-student-section-scholarship') }}" style="text-align: center" class="list-group-item ">Scholarship</a>
+                    </div>
+                    <div class="SSP">
+                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">PLAN</h5>
+                        <a href="{{ route('list-expert-lecture') }}" style="border:none; text-align: center;"  class="list-group-item ">Expert Lecture</a>
+                        <a href="{{ route('list-industrial-visit-mentor') }}" style="text-align: center" class="list-group-item ">Industrial Visit and Mentor Meeting</a>
                     </div>
                     
                 </div>
@@ -263,7 +266,7 @@
                 </div>
                 <div class="icon_box_content">
                     <h5>
-                        <a href="{{ route('polytechnic-academic-calendar') }}" style="color: #fff;"> Best Academics</a>
+                        <a href="{{ route('achievement') }}" style="color: #fff;"> Best Academics</a>
                     </h5>
                 </div>
             </div>
@@ -287,7 +290,7 @@
                 </div>
                 <div class="icon_box_content">
                     <h5>
-                        <a href="{{ route('polytechnic-academic-calendar') }}" style="color: #fff;"> Placement Assistance</a>
+                        <a href="#" style="color: #fff;"> Placement Assistance</a>
                     </h5>
                 </div>
             </div>
