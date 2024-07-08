@@ -255,7 +255,7 @@
     </div>
 
 
-    {{-- <div class="row rowleft mt-4">
+    <div class="row rowleft mt-4">
         <div class="col-lg-4 col-md-4 col-sm-4 text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.1s" style="animation-delay:0.1s; opacity:1;">
             <div class="icon_box icon_box_style_7 bg-dark text-white h-100">
                 <div class="box_icon mb-3">
@@ -292,7 +292,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
 </div>
 
 <!-- <div class="container mt-5 mb-5">
@@ -355,6 +355,19 @@
         </div>
     </div>
 </div> -->
+
+<div class="container-fluit mt-5" >
+    <div class="row" style="display: flex;">
+        <div class="col-lg-6 col-md-6 col-sm-12" style="display:flex; justify-content:space-evenly ">
+            <img src="{{ asset('public/assets/Akole_Poly/Toppers1.jpeg') }}" class=" mob-width img-thumbnail  " alt="Toppers1" style="width:fit-content;" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12" style="display:flex; justify-content:space-evenly ">
+            <img src="{{ asset('public/assets/Akole_Poly/Toppers2.jpeg') }}" class=" mob-width img-thumbnail  " alt="Toppers2" style="width:fit-content;" />
+        </div>
+
+    </div>
+
+</div>
 
 
 
