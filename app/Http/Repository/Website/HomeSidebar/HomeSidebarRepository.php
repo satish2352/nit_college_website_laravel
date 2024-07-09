@@ -20,7 +20,9 @@ use App\Models\ {
     StudentSectionScholarship,
     ExpertLecture,
     IndustrialVisitMentor,
-    FeesRegulatingAuthority
+    FeesRegulatingAuthority,
+    TrainingPlacement,
+    NonTeachingStaff
     
 };
 
@@ -283,4 +285,38 @@ class HomeSidebarRepository  {
         }
     }
     
+    public function getTrainingPlacement()
+    {
+        try {
+            $data_output = TrainingPlacement::where('trainingplacement_delete', '0')
+            ->where('is_active', '1')
+                ->orderBy('trainingplacement_id', 'desc')
+                ->get();
+            return $data_output;
+        } catch (\Exception $e) {
+            return collect(); // return an empty collection in case of error
+        }
+    }
+    public function getNonTeachingFaculty()
+    {
+        try {
+            $dataOutputCategory = NonTeachingStaff::join('designation', 'non_teaching_staff.Designation_id', '=', 'designation.Designation_id')
+                ->select(
+                    'non_teaching_staff.non_teaching_staff_id',
+                    'non_teaching_staff.name',
+                    'non_teaching_staff.Designation_id', 
+                    'non_teaching_staff.qualification', 
+                    'non_teaching_staff.mobile', 
+                    'non_teaching_staff.experiance',
+                    'non_teaching_staff.photo', 
+                    'designation.Designation',
+                    'non_teaching_staff.is_active' 
+                )
+                ->orderBy('non_teaching_staff.non_teaching_staff_id', 'desc')
+                ->get(); 
+            return $dataOutputCategory;
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
 }    

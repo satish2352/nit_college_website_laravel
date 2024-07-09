@@ -23,50 +23,11 @@ class ActivitiesController extends Controller
         $menuDepartment = $this->menuDepartment;
         $menuFacility = $this->menuFacility;
         $data_output = $this->service->getPolytechnicCoCurricular($id);
-        
-        return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'data_output', 'menuDepartment', 'menuFacility'));
+        $data_output_activity = $this->service->getActivityId($id);
+        return view('website.pages.activities.polytechnic-co-curricular', compact('menu', 'data_output', 'menuDepartment', 'menuFacility', 'data_output_activity'));
     } catch (\Exception $e) {
         return $e;
     }
 }
-
-    
-    
-    // public function getPolytechnicCoCurricular($id)
-    // {
-    //     try {
-    //         $menu = $this->menu;  
-    //         $data_output = $this->service->getPolytechnicCoCurricular();
-    //         return view('website.pages.activities.polytechnic-co-curricular',compact('menu','data_output'));
-    //     } catch (\Exception $e) {
-    //         return $e;
-    //     }
-    // } 
-
-    // public function getPolytechnicCulturalDesk()
-    // {
-    //     try {
-    //         return view('website.pages.activities.polytechnic-cultural-desk');
-    //     } catch (\Exception $e) {
-    //         return $e;
-    //     }
-    // } 
-    // public function getPolytechnicCurricular()
-    // {
-    //     try {
-    //         return view('website.pages.activities.polytechnic-curricular');
-    //     } catch (\Exception $e) {
-    //         return $e;
-    //     }
-    // } 
-    // public function getPolytechnicExtraCurricular()
-    // {
-    //     try {
-    //         return view('website.pages.activities.polytechnic-extra-curricular');
-    //     } catch (\Exception $e) {
-    //         return $e;
-    //     }
-    // } 
-    
          
 }

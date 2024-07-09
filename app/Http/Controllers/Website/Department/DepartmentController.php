@@ -69,21 +69,20 @@ class DepartmentController extends Controller
             return $e;
         }
     }
-
-    public function getFaculty()
+    public function getFacultyDepartmentId($id)
     {
         try {
             $menu = $this->menu;
             $menuDepartment = $this->menuDepartment;
             $menuFacility = $this->menuFacility;
-            $dataOutput = $this->service->getFaculty();
-  
-            if ($dataOutput instanceof \Exception) {
-                return view('website.pages.home-sidebar.polytechnic-faculty', compact('dataOutput', 'menu', 'menuDepartment', 'menuFacility'))
-                    ->withErrors(['msg' => $dataOutput->getMessage()]);
+            $data_output = $this->service->getFacultyDepartmentId($id);
+            $data_output_category = $this->service->getDepartmentId($id);
+          
+            if ($data_output instanceof \Exception) {
+                return view('website.pages.department.polytechnic-faculty', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
             }
     
-            return view('website.pages.home-sidebar.polytechnic-faculty', compact('menu', 'dataOutput', 'menuDepartment', 'menuFacility'));
+            return view('website.pages.department.polytechnic-faculty', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
         } catch (\Exception $e) {
             return $e;
         }

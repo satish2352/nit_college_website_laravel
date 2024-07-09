@@ -163,12 +163,12 @@
                                                     <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
                                                         Body</a>
                                                     <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
-                                                    <a href="{{ route('department-faculty') }}" class="list-group-item ">Faculty</a>
+                                                    <a href="{{ route('non-teaching-faculty') }}" class="list-group-item ">Faculty</a>
                                                     <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
                                                     <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
                                                     <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
                                                         Certificates</a>
-                                                    <a href="{{ route('/') }}" class="list-group-item">Training And Placement</a>
+                                                    <a href="{{ route('training-placement') }}" class="list-group-item">Training And Placement</a>
                                                     <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">Antiragging Committee</a>
                                                     {{-- <a href="#" class="list-group-item ">Grievance Redressal Cell </a> --}}
                                                     <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">Internal Complaint
@@ -211,67 +211,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-        <!-- <nav class="navbar navbar-expand-lg ">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar nav ">
-                                <li class="nav-item active">
-                                    <div class="list-group-item"><b></b></div>
-                                    <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" target="_blank" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
-                                    <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
-                                        Body</a>
-                                    <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
-                                    <a href="{{ route('department-faculty') }}" class="list-group-item ">Faculty</a>
-                                    <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
-                                    <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
-                                    <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
-                                        Certificates</a>
-                                    <a href="{{ route('/') }}" class="list-group-item">Training And Placement</a>
-                                    <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">Antiragging Committee</a>
-                                    {{-- <a href="#" class="list-group-item ">Grievance Redressal Cell </a> --}}
-                                    <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">Internal Complaint
-                                        Committee</a>
-                                    <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item">SC/ST Cell</a>
-                                    <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic
-                                        Calender</a>
-                                    <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
-                                    <a href="{{ route('list-events') }}" class="list-group-item ">Events</a>
-                                    <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>      
-                                    
-                                    <div class="list-group-item nav-item dropdown">
-                                    <a style="display: none;"></a>                                        
-                                    <a class="nav-link dropdown-toggle list-group-item " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        STUDENT SECTION
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a style="display: none;"></a>
-                                        <a href="{{ route('list-student-section-download') }}" class="list-group-item "> Download</a>
-                                        <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item "> Scholarship</a>
-                                    </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="list-group-item nav-item dropdown">
-                                    <a style="display: none;"></a>
-                                    <a class="nav-link dropdown-toggle list-group-item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        PLAN
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a style="display: none;"></a>
-                                        <a href="{{ route('list-expert-lecture') }}" class="list-group-item "> Expert Lecture</a>
-                                        <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item "> Industrial Visit and Mentor Meeting</a>
-                                    </div>
-                                    </div>
-                                
-                                </li>
-                            </ul>
-                        </div>
-                    </nav> -->
-
-
         <div class="col-md-9" style="margin-top: 18px;">
 
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -419,7 +358,7 @@
                 </div>
                 <div class="icon_box_content">
                     <h5>
-                        <a href="{{ route('department-faculty') }}" style="color: #fff;"> Excellent Faculty </a>
+                        <a href="{{ route('non-teaching-faculty') }}" style="color: #fff;"> Excellent Faculty </a>
                     </h5>
                 </div>
             </div>
@@ -431,7 +370,7 @@
                 </div>
                 <div class="icon_box_content">
                     <h5>
-                        <a href="#" style="color: #fff;"> Placement Assistance</a>
+                        <a href="{{ route('training-placement') }}" style="color: #fff;"> Placement Assistance</a>
                     </h5>
                 </div>
             </div>

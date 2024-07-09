@@ -288,7 +288,44 @@ public function getIndustrialVisitMentor()
             return back()->with('error', 'An error occurred while fetching the academic calendar.');
         }
     }
+    public function getTrainingPlacement()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getTrainingPlacement();
+       
+            // Ensure $data_output is defined
+            if ($data_output && $data_output->isNotEmpty()) {
+                return view('website.pages.home-sidebar.training-placement', compact('data_output', 'menu', 'menuDepartment', 'menuFacility'));
+            } else {
+                return view('website.pages.home-sidebar.training-placement', compact('menu', 'menuDepartment', 'menuFacility'))->with('error', 'Data not available')->with('data_output', collect());
+            }
+        } catch (\Exception $e) {
+            return back()->with('error', 'An error occurred while fetching the academic calendar.');
+        }
+    }
 
+    public function getNonTeachingFaculty()
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getNonTeachingFaculty();
+            
+            if ($data_output instanceof \Exception) {
+                return view('website.pages.home-sidebar.polytechnic-faculty', compact('menu', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
+            }
+    
+            return view('website.pages.home-sidebar.polytechnic-faculty', compact('menu', 'data_output', 'menuDepartment', 'menuFacility'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
+
+   
     
    
     

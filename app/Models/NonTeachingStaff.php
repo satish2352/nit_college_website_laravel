@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TrainingPlacement extends Model
+class NonTeachingStaff extends Model
 {
     use HasFactory;
-    protected $table = 'trainingplacement';
+    protected $table = 'non_teaching_staff';
     protected $primaryKey = 'id';
     protected $fillable=[];
 }

@@ -191,8 +191,24 @@ public function getFeesRegulatingAuthority()
         return collect(); // return an empty collection in case of error
     }
 }
-
-
+public function getTrainingPlacement()
+{
+    try {
+        $dataOutputCategory = $this->repo->getTrainingPlacement();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
+public function getNonTeachingFaculty()
+{
+    try {
+        $dataOutputCategory = $this->repo->getNonTeachingFaculty();
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return collect(); // return an empty collection in case of error
+    }
+}
 
 
 }

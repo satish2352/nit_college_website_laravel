@@ -122,6 +122,32 @@ class DepartmentRepository  {
             return $e;
         }
     }
+
+    public function getFacultyDepartmentId($id)
+    {
+        try {
+            $dataOutputCategory = Staff::join('department', 'department.id', '=', 'tbl_staff.Department_id')
+                ->join('designation', 'tbl_staff.Designation_id', '=', 'designation.Designation_id')
+                ->select(
+                    'tbl_staff.fld_staff_id',
+                    'tbl_staff.fld_staff_name',
+                    'department.id as Department_id',
+                    'tbl_staff.Designation_id', 
+                    'tbl_staff.fld_staff_qualification', 
+                    'tbl_staff.fld_staff_experiance', 
+                    'tbl_staff.fld_staff_photo', 
+                    'department.Department',
+                    'designation.Designation',
+                    'tbl_staff.is_active' 
+                )
+                ->where('department.id', $id)
+                ->orderBy('tbl_staff.fld_staff_id', 'desc')
+                ->get(); 
+            return $dataOutputCategory;
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
     
     
     public function getSyllabus($id)

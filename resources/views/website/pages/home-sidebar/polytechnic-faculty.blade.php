@@ -49,22 +49,22 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @forelse ($dataOutput as $data)
+                                        @forelse ($data_output as $data)
                                         <tr class="">
                                             <td>
                                                 <center>{{ $loop->iteration }}</center>
                                             </td>
                                             <td>
-                                                <center>{{ $data->fld_staff_name }}</center>
+                                                <center>{{ $data->name }}</center>
                                             </td>
                                             <td>
-                                                <center>{{ $data->fld_staff_qualification }}</center>
+                                                <center>{{ $data->qualification }}</center>
                                             </td>
                                             <td>
                                                 <center>{{ $data->Designation }}</center>
                                             </td>
                                             <td>
-                                                <center>{{ $data->fld_staff_experiance }}</center>
+                                                <center>{{ $data->experiance }}</center>
                                             </td>
                                             
                                         </tr>

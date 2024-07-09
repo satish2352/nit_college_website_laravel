@@ -18,8 +18,8 @@
                     class="list-group-item active-rp-link">Vision Mission</a>
                 {{-- <a href="{{ route('department-curriculum', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">Curriculum</a> --}}
-                {{-- <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">Faculty</a> --}}
+                <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
+                class="list-group-item active-rp-link">Faculty</a>
                 {{-- <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">Syllabus</a> --}}
 
