@@ -5,15 +5,20 @@
         text-decoration: underline white;
 
     }
+
     .hideinlgmd {
         position: absolute;
         height: 25px;
         width: 25px;
     }
 
+    #iwtHeaderNav {
+        border-bottom: none !important;
+    }
+
 
     @media only screen and (max-width:769px) {
-        
+
 
         .navbar-toggler2 {
             margin-top: 60px;
@@ -36,19 +41,18 @@
             right: 21px;
             z-index: 1001;
         }
-        li{
+
+        li {
             margin-left: -13px !important;
         }
 
     }
-
 </style>
 <!--Right col-->
-<div class="col-sm-12 right-col-fix">
-    <div>
-        <div class="right-col-fix" id="iwtRightPannel">
-            <div class=" ">
-
+<div class="col-sm-12 right-col-fix ">
+    <div class="list-group-item">
+        <div class="right-col-fix list-group-item" id="iwtRightPannel">
+            <div class="list-group-item ">
                 <div class="list-group-item"><b></b></div>
                 <div class="container-fluid mob-width-right list-group " id="iwtHeaderNav">
                     <div class="container mob-toggle-left-side ">
@@ -58,12 +62,12 @@
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
 
-                                <div class="offcanvas offcanvas-end itemfromstart" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas offcanvas-end itemfromstart " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel">
                                     <button class="btn-close btn-close1  d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
                                     <div class="offcanvas-body ">
                                         <ul class=" " style="width: 100%;">
-                                            <li class="nav-item ">
+                                            <li class="nav-item list-group-item">
                                                 <div class="list-group-item"><b></b></div>
                                                 <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" target="_blank" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
                                                 <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
@@ -86,25 +90,17 @@
                                                 <a href="{{ route('list-events') }}" class="list-group-item ">Events</a>
                                                 <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>
 
-                                                <div class="nav-item dropdown">
+                                                <div class="list-group-item ">
                                                     <a style="display: none;"></a>
-                                                    <a class="nav-link dropdown-toggle list-group-item " href="#" role="button" data-toggle="dropdown" aria-expanded="false">STUDENT SECTION</a>
-                                                    <div class="dropdown-menu">
-                                                        <a style="display: none;"></a>
-                                                        <a href="{{ route('list-student-section-download') }}" class="list-group-item "> Download</a>
-                                                        <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item "> Scholarship</a>
-                                                    </div>
+                                                    <h6 class="dropdown-toggle" style="font-size: 17px; color:white;"><b>Student Section</b></h6>
+                                                    <a href="{{ route('list-student-section-download') }}" class="list-group-item "> Download</a>
+                                                    <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item "> Scholarship</a>
                                                 </div>
-                                                <div class="nav-item dropdown">
+                                                <div class="list-group-item ">
                                                     <a style="display: none;"></a>
-                                                    <a class="nav-link dropdown-toggle list-group-item " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                        PLAN
-                                                    </a>
-                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <a style="display: none;"></a>
-                                                        <a href="{{ route('list-expert-lecture') }}" class="list-group-item "> Expert Lecture</a>
-                                                        <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item "> Industrial Visit and Mentor Meeting</a>
-                                                    </div>
+                                                    <h6 class="dropdown-toggle" style="font-size: 17px; color:white;"> <b>Plan</b></h6>
+                                                    <a href="{{ route('list-expert-lecture') }}" class="list-group-item "> Expert Lecture</a>
+                                                    <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item "> Industrial Visit and Mentor Meeting</a>
                                                 </div>
                                             </li>
                                         </ul>

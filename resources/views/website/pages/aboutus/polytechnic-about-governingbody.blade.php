@@ -99,17 +99,19 @@
         border: 1px solid rgba(0, 0, 0, 0.3);
         background: linear-gradient(to bottom, rgba(230, 230, 230, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
     }
+
     .hideinlgmd {
         position: absolute;
         height: 25px;
         width: 25px;
     }
+
     #iwtHeaderNav {
         border-bottom: none !important;
     }
 
     @media only screen and (max-width:769px) {
-      
+
 
         .navbar-toggler2 {
             margin-top: 60px;
@@ -131,12 +133,12 @@
             right: 21px;
             z-index: 1001;
         }
-        li{
+
+        li {
             margin-left: -13px !important;
         }
 
     }
-
 </style>
 <script>
     $(document).on('click', '.panel-heading span.clickable', function(e) {
@@ -164,12 +166,12 @@
         <div class="panel_content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-lg-3 col-md-3 col-sm-3 list-group-item">
                         <div class="" id="iwtRightPannel">
                             <!--Right col-->
-                            <div class="col-sm-12 right-col-fix">
+                            <div class="col-sm-12 right-col-fix list-group-item">
                                 <div>
-                                    <div class=" ">
+                                    <div class="list-group-item ">
 
                                         <div class="list-group-item"><b></b></div>
                                         <div class="container-fluid mob-width-right list-group " id="iwtHeaderNav">
@@ -208,25 +210,17 @@
                                                                         <a href="{{ route('list-events') }}" class="list-group-item ">Events</a>
                                                                         <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>
 
-                                                                        <div class="nav-item dropdown">
+                                                                        <div class="list-group-item ">
                                                                             <a style="display: none;"></a>
-                                                                            <a class="nav-link dropdown-toggle list-group-item " href="#" role="button" data-toggle="dropdown" aria-expanded="false">STUDENT SECTION</a>
-                                                                            <div class="dropdown-menu">
-                                                                                <a style="display: none;"></a>
-                                                                                <a href="{{ route('list-student-section-download') }}" class="list-group-item "> Download</a>
-                                                                                <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item "> Scholarship</a>
-                                                                            </div>
+                                                                            <h6 class="dropdown-toggle" style="font-size: 17px; color:white;"><b>Student Section</b></h6>
+                                                                            <a href="{{ route('list-student-section-download') }}" class="list-group-item "> Download</a>
+                                                                            <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item "> Scholarship</a>
                                                                         </div>
-                                                                        <div class="nav-item dropdown">
+                                                                        <div class="list-group-item ">
                                                                             <a style="display: none;"></a>
-                                                                            <a class="nav-link dropdown-toggle list-group-item " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                                                PLAN
-                                                                            </a>
-                                                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                                <a style="display: none;"></a>
-                                                                                <a href="{{ route('list-expert-lecture') }}" class="list-group-item "> Expert Lecture</a>
-                                                                                <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item "> Industrial Visit and Mentor Meeting</a>
-                                                                            </div>
+                                                                            <h6 class="dropdown-toggle" style="font-size: 17px; color:white;"> <b>Plan</b></h6>
+                                                                            <a href="{{ route('list-expert-lecture') }}" class="list-group-item "> Expert Lecture</a>
+                                                                            <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item "> Industrial Visit and Mentor Meeting</a>
                                                                         </div>
                                                                     </li>
                                                                 </ul>
@@ -315,34 +309,34 @@
 
 
     <script>
-    // JavaScript to open modal for each image
-    var modals = document.querySelectorAll('.modal');
-    var images = document.querySelectorAll('.myImg');
-    var modalImages = document.querySelectorAll('.modal-content');
-    var captions = document.querySelectorAll('#caption');
+        // JavaScript to open modal for each image
+        var modals = document.querySelectorAll('.modal');
+        var images = document.querySelectorAll('.myImg');
+        var modalImages = document.querySelectorAll('.modal-content');
+        var captions = document.querySelectorAll('#caption');
 
-    images.forEach(function(image, index) {
-        image.onclick = function() {
-            modals[index].style.display = "block";
-            modalImages[index].src = this.src;
-            captions[index].innerHTML = this.alt;
-        }
-    });
+        images.forEach(function(image, index) {
+            image.onclick = function() {
+                modals[index].style.display = "block";
+                modalImages[index].src = this.src;
+                captions[index].innerHTML = this.alt;
+            }
+        });
 
-    var closeButtons = document.querySelectorAll('.close');
-    closeButtons.forEach(function(button) {
-        button.onclick = function() {
-            var modal = this.parentElement;
-            modal.style.display = "none";
-        }
-    });
-
-    // Close modal on outside click
-    window.onclick = function(event) {
-        modals.forEach(function(modal) {
-            if (event.target == modal) {
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(button) {
+            button.onclick = function() {
+                var modal = this.parentElement;
                 modal.style.display = "none";
             }
         });
-    }
-</script>
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            modals.forEach(function(modal) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
