@@ -7,7 +7,23 @@
         color: black;
 
     }
-    .SSP > h5{
+
+    #iwtHeaderNav {
+        border-bottom: none !important;
+    }
+
+    ul>li {
+        text-decoration: none !important;
+
+    }
+
+    .hideinlgmd {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+    }
+
+    .SSP>h5 {
         /* text-align: center; */
         /* border-bottom:1px solid white; */
         text-decoration: underline white;
@@ -78,57 +94,182 @@
             margin-left: 10px;
         }
 
+        .navbar-toggler2 {
+            margin-top: 60px;
+        }
+
         .overviewclg {
             padding-top: 0px;
             padding-left: 0px;
             position: relative;
         }
 
+        .hideinlgmd {
+            display: block;
+        }
+
+        .btn-close {
+            display: block;
+            position: absolute;
+            background-color: white;
+            color: black;
+            font-size: 30px;
+            height: 20px;
+            width: 20px;
+            top: 0px;
+            right: 21px;
+            z-index: 1001;
+        }
+        li{
+            margin-left: -13px !important;
+        }
+
+    }
+
+    @media only screen and (min-width:770px) {
+        .hideinlgmd {
+            display: none;
+        }
     }
 </style>
 
 
 <div class="container-fluid" id="iwtBanner">
+    <!-- <button class="navbar-toggler hideinlgmd" type="button" data-bs-toggle="offcanvas" onclick="myFunctionNav()" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
     <div class="row">
-        <div class="col-md-3 col-lg-3 col-sm-12">
-            <div class="right-col-fix" id="iwtRightPannel">
-                <div class="list-group">
-                    <div class="list-group-item"><b></b></div>
-                    <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" target="_blank" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
-                    <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
-                        Body</a>
-                    <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
-                    <a href="{{ route('department-faculty') }}" class="list-group-item ">Faculty</a>
-                    <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
-                    <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
-                    <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
-                        Certificates</a>
-                    <a href="{{ route('/') }}" class="list-group-item">Training And Placement</a>
-                    <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">Antiragging Committee</a>
-                    {{-- <a href="#" class="list-group-item ">Grievance Redressal Cell </a> --}}
-                    <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">Internal Complaint
-                        Committee</a>
-                    <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item">SC/ST Cell</a>
-                    <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic
-                        Calender</a>
-                    <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
-                    <a href="{{ route('list-events') }}"  class="list-group-item ">Events</a>
-                    <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>
+        <div class="col-md-3 col-lg-3 col-sm-12" id="rightsliderdd">
 
-                    <div class="SSP">
-                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">STUDENT SECTION</h5>
-                        <a href="{{ route('list-student-section-download') }}" style="border:none; text-align: center" class="list-group-item ">Download</a>
-                        <a href="{{ route('list-student-section-scholarship') }}" style="text-align: center" class="list-group-item ">Scholarship</a>
+            <div class="right-col-fix" id="iwtRightPannel">
+                <div class=" ">
+                    <div class="list-group-item"><b></b></div>
+                    <div class="container-fluid mob-width-right list-group " id="iwtHeaderNav">
+                        <div class="container mob-toggle-left-side ">
+                            <nav class=" navbar navbar-expand-lg flex-column ">
+                                <div class="container-fluid ">
+                                    <button class="navbar-toggler navbar-toggler2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="offcanvas offcanvas-end itemfromstart" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel">
+                                        <button class="btn-close btn-close1  d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                        <div class="offcanvas-body ">
+                                            <ul class=" " style="width: 100%;">
+                                                <li class="nav-item ">
+                                                    <div class="list-group-item"><b></b></div>
+                                                    <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" target="_blank" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
+                                                    <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
+                                                        Body</a>
+                                                    <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
+                                                    <a href="{{ route('department-faculty') }}" class="list-group-item ">Faculty</a>
+                                                    <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
+                                                    <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
+                                                    <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
+                                                        Certificates</a>
+                                                    <a href="{{ route('/') }}" class="list-group-item">Training And Placement</a>
+                                                    <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">Antiragging Committee</a>
+                                                    {{-- <a href="#" class="list-group-item ">Grievance Redressal Cell </a> --}}
+                                                    <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">Internal Complaint
+                                                        Committee</a>
+                                                    <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item">SC/ST Cell</a>
+                                                    <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic
+                                                        Calender</a>
+                                                    <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
+                                                    <a href="{{ route('list-events') }}" class="list-group-item ">Events</a>
+                                                    <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>
+
+                                                    <div class="nav-item dropdown">
+                                                        <a style="display: none;"></a>
+                                                        <a class="nav-link dropdown-toggle list-group-item " href="#" role="button" data-toggle="dropdown" aria-expanded="false">STUDENT SECTION</a>
+                                                        <div class="dropdown-menu">
+                                                            <a style="display: none;"></a>
+                                                            <a href="{{ route('list-student-section-download') }}" class="list-group-item "> Download</a>
+                                                            <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item "> Scholarship</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-item dropdown">
+                                                        <a style="display: none;"></a>
+                                                        <a class="nav-link dropdown-toggle list-group-item " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                            PLAN
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <a style="display: none;"></a>
+                                                            <a href="{{ route('list-expert-lecture') }}" class="list-group-item "> Expert Lecture</a>
+                                                            <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item "> Industrial Visit and Mentor Meeting</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
                     </div>
-                    <div class="SSP">
-                        <h5 style="color:#fff; padding:15px 0px 0px 15px; font-size:16px;">PLAN</h5>
-                        <a href="{{ route('list-expert-lecture') }}" style="border:none; text-align: center;"  class="list-group-item ">Expert Lecture</a>
-                        <a href="{{ route('list-industrial-visit-mentor') }}" style="text-align: center" class="list-group-item ">Industrial Visit and Mentor Meeting</a>
-                    </div>
-                    
                 </div>
             </div>
         </div>
+
+
+
+
+        <!-- <nav class="navbar navbar-expand-lg ">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar nav ">
+                                <li class="nav-item active">
+                                    <div class="list-group-item"><b></b></div>
+                                    <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" target="_blank" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
+                                    <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
+                                        Body</a>
+                                    <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
+                                    <a href="{{ route('department-faculty') }}" class="list-group-item ">Faculty</a>
+                                    <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
+                                    <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
+                                    <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
+                                        Certificates</a>
+                                    <a href="{{ route('/') }}" class="list-group-item">Training And Placement</a>
+                                    <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">Antiragging Committee</a>
+                                    {{-- <a href="#" class="list-group-item ">Grievance Redressal Cell </a> --}}
+                                    <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">Internal Complaint
+                                        Committee</a>
+                                    <a href="{{ route('polytechnic-about-scst') }}" class="list-group-item">SC/ST Cell</a>
+                                    <a href="{{ route('polytechnic-academic-calendar') }}" class="list-group-item ">Academic
+                                        Calender</a>
+                                    <a href="{{ route('aluminiregister') }}" class="list-group-item">Alumni Registration</a>
+                                    <a href="{{ route('list-events') }}" class="list-group-item ">Events</a>
+                                    <a href="{{ route('list-fees-regulating-authority') }}" class="list-group-item ">Fees Regulatiion Authority </a>      
+                                    
+                                    <div class="list-group-item nav-item dropdown">
+                                    <a style="display: none;"></a>                                        
+                                    <a class="nav-link dropdown-toggle list-group-item " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        STUDENT SECTION
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a style="display: none;"></a>
+                                        <a href="{{ route('list-student-section-download') }}" class="list-group-item "> Download</a>
+                                        <a href="{{ route('list-student-section-scholarship') }}" class="list-group-item "> Scholarship</a>
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="list-group-item nav-item dropdown">
+                                    <a style="display: none;"></a>
+                                    <a class="nav-link dropdown-toggle list-group-item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        PLAN
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a style="display: none;"></a>
+                                        <a href="{{ route('list-expert-lecture') }}" class="list-group-item "> Expert Lecture</a>
+                                        <a href="{{ route('list-industrial-visit-mentor') }}" class="list-group-item "> Industrial Visit and Mentor Meeting</a>
+                                    </div>
+                                    </div>
+                                
+                                </li>
+                            </ul>
+                        </div>
+                    </nav> -->
 
 
         <div class="col-md-9" style="margin-top: 18px;">
@@ -137,7 +278,7 @@
                 <div class="carousel-inner">
                     @foreach($data_output as $index => $slider)
                     <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                        <img style="" src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $slider['fld_slider_image'] }}" class="d-block w-100" alt="{{ $slider['fld_slider_title'] }}">
+                        <img style="" src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $slider['fld_slider_image'] }}" class="d-block w-100 " " alt=" {{ $slider['fld_slider_title'] }}">
                     </div>
                     @endforeach
                 </div>
@@ -156,7 +297,7 @@
                     <h2>
                         <span style="font-family: georgia,palatino; ">
                             <strong>
-                                <span style="font-size: large; color: brown">
+                                <span class="leftspace" style="font-size: large; color: brown">
                                     <span style="border:4px solid   #015198;color:White;background-color:  #015198">Overview of Institute </span>
                                 </span>
                             </strong>
@@ -166,7 +307,7 @@
                         <span style="font-family: georgia,palatino;">
 
                             <span style="font-size: 16px; color: black;display:flex;">
-                                <h6 class="leftspace">Nashik Institute of Technology
+                                <h6 class="leftspace m-4" align="justify">Nashik Institute of Technology
                                     (NIT), Nashik. A versatile personality of the Nashik District. Having a vast experience
                                     in various fields including Education, Construction, Industrial, Banking & Social. <br>The institute offers Diploma courses including After 10th programs. These programs are offered in full-time mode. Candidate can pursue multiple ranges of courses like After 10th Diploma in the stream of Engineering. Over the period, NIT's Late Annasaheb Patil Polytechnic has gained expertise through its trained and experienced faculty in the fields of Automobile Engineering, Civil Engineering, Computer Science Engineering, Electrical Engineering, Mechanical Engineering. These courses offered by the institute are recognised by approving bodies like AICTE. NIT's Late Annasaheb Patil Polytechnic offers courses distributed over 300 seats in total. The institute provides good facilities all around the campus
                                     Etc.<a style="font-size:smaller;" class="overviewclg" href="{{ route('polytechnic-president') }}">Read More</a></h6>
@@ -193,7 +334,7 @@
                     <marquee direction="up" style="height:170px; margin-top:10px;" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start()">
                         <p style="font-family: 'Open Sans', sans-serif; font-size: 16pt; padding-left:25px; ">
                             <a href="pages/final web quotation advertisement .pdf">
-                                <span style="color:black; font-size:13px">Golden Opportunity for 10th Pass Students, Date Extended for Diploma (Polytechnic) Admission up to 9th July 2024...</span>
+                                <span style="color:black; font-size:13px" align="justify">Golden Opportunity for 10th Pass Students, Date Extended for Diploma (Polytechnic) Admission up to 9th July 2024...</span>
                                 <!-- <span style="background-color:  #015198;color:white;border-radius: 20%; border:1px solid   #015198; font-size:15px">Download</span> -->
                             </a>
                         </p>
@@ -217,7 +358,7 @@
                         <p align="justify">
 
                             <span style="font-size: 16px; color: black;">
-                                <p style="margin-top:15px;padding-left: 10px; padding-right:10px" class="leftspace">Dedicated to promote the quality technical
+                                <p style="margin-top:15px;padding-left: 10px; padding-right:10px" class="leftspace" align="justify">Dedicated to promote the quality technical
                                     education through advanced teaching and learning process, high quality research and
                                     extension to serve the human society for sustainable development by developing
                                     community, the ability and passion to work wisely, creatively and effectively, for the
@@ -242,7 +383,7 @@
 
 
                             <span style="font-size:16px; color: black;">
-                                <p style="margin-top:15px;padding-left: 10px; padding-right:10px" class="leftspace">To give the quality technical
+                                <p style="margin-top:15px;padding-left: 10px; padding-right:10px" align="justify" class="leftspace">To give the quality technical
                                     education for empowerment of the common masses.</p>
                             </span>
 
@@ -359,7 +500,7 @@
     </div>
 </div> -->
 
-<div class="container-fluit mt-5" >
+<!-- <div class="container-fluit mt-5" >
     <div class="row" style="display: flex;">
         <div class="col-lg-6 col-md-6 col-sm-12" style="display:flex; justify-content:space-evenly ">
             <img src="{{ asset('public/assets/Akole_Poly/Toppers1.jpeg') }}" class=" mob-width img-thumbnail  " alt="Toppers1" style="width:fit-content;" />
@@ -370,7 +511,7 @@
 
     </div>
 
-</div>
+</div> -->
 
 
 
@@ -396,4 +537,46 @@
             marquee.classList.remove('marquee-stopped');
         });
     });
+</script>
+<script>
+    function myFunctionNav() {
+        var x = document.getElementById("rightsliderdd");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<script>
+    // JavaScript to open modal for each image
+    var modals = document.querySelectorAll('.modal');
+    var images = document.querySelectorAll('.myImg');
+    var modalImages = document.querySelectorAll('.modal-content');
+    var captions = document.querySelectorAll('#caption');
+
+    images.forEach(function(image, index) {
+        image.onclick = function() {
+            modals[index].style.display = "block";
+            modalImages[index].src = this.src;
+            captions[index].innerHTML = this.alt;
+        }
+    });
+
+    var closeButtons = document.querySelectorAll('.close');
+    closeButtons.forEach(function(button) {
+        button.onclick = function() {
+            var modal = this.parentElement;
+            modal.style.display = "none";
+        }
+    });
+
+    // Close modal on outside click
+    window.onclick = function(event) {
+        modals.forEach(function(modal) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
 </script>

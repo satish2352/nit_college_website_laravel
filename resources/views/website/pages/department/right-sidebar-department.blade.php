@@ -36,6 +36,8 @@
                 <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}" class="list-group-item active-rp-link">Syllabus</a>
                 <a href="{{ route('department-curriculum', ['id' => $data_output_category['id']]) }}" class="list-group-item active-rp-link">Curriculum</a>
                 <a href="{{ route('department-newsletter', ['id' => $data_output_category['id']]) }}" class="list-group-item active-rp-link">Newsletter</a>
+                <a href="#" class="list-group-item active-rp-link">Faculty</a>
+
 
                 
                 @else

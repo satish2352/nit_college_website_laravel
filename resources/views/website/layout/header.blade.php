@@ -76,19 +76,13 @@
 
         }
 
-        /* .abcd {
-        width: 300px !important;
-    } */
+      
 
         .spaceacademic {
             width: 280px !important;
         }
 
-        /* .aaaa .aaab:hover {
-            color: #fff !important;
-            background-color:   #015198;
-            padding: 5px 17px;
-        } */
+       
 
         .alumnispace {
             width: 200px !important;
@@ -111,10 +105,7 @@
             color: #fff;
         }
 
-        /* .dropdown-item:hover{
-            color: white !important;
-            background-color:   #015198;
-        } */
+        
 
         li #footer-links {
             color: #494680;
@@ -131,7 +122,7 @@
             color: #1b2834 !important;
         }
 
-        .nav-link::before {
+        .nav-link1::before {
             content: "";
             position: absolute;
             width: 0;
@@ -264,9 +255,9 @@
                 padding-right: 10px !important;
             }
 
-            .navbar-toggler {
+            .navbar-toggler1 {
                 /* Top: -84 !important; */
-                margin-top: 200px;
+                margin-bottom: 400px;
             }
         }
 
@@ -274,7 +265,7 @@
 
         @media only screen and (max-width: 767px) {
 
-            .nav-link::before {
+            .nav-link1::before {
                 content: "";
                 position: absolute;
                 width: 0;
@@ -288,10 +279,7 @@
                 color: black;
             }
 
-            .navbar-toggler {
-                /* Top: -84 !important; */
-                /* margin-top: -180px; */
-            }
+          
 
             .aaaa .aaab:hover {
                 color: black !important;
@@ -445,10 +433,7 @@
             .navbar-toggler {
                 position: absolute;
                 z-index: 1001;
-                /* top: -84 !important; */
-                /* margin-top: -180px !important; */
-                left: 152px;
-                /* right: 10px; */
+                left: 155px;
                 cursor: pointer;
                 background-color: white;
                 box-shadow: 0 0 20px black;
@@ -587,7 +572,7 @@
         @media only screen and (max-width: 767px) {
 
             /* Show close button on mobile devices */
-            .btn-close {
+            .btn-close1 {
                 display: block;
                 position: absolute;
                 background-color: #e6f3ff;
@@ -595,18 +580,12 @@
                 font-size: 30px;
                 height: 15px;
                 width: 10px;
-                top: 25px;
-                /* Adjust top position as needed */
-                right: 21px;
-                /* Adjust right position as needed */
+                top: 25px;      
+                right: 21px;               
                 z-index: 1001;
-                /* Ensure it's above the offcanvas content */
-            }
+                }
 
-            /* .gunju1 {
-                margin-left: 0px !important;
-            } */
-
+           
             .offcanvas-body {
                 background-color: #e6f3ff;
             }
@@ -615,10 +594,6 @@
                 padding-right: 10px !important;
             }
 
-            .navbar-toggler {
-                /* Top: -84 !important; */
-                /* margin-top: -180px; */
-            }
            
         }
 
@@ -802,19 +777,19 @@
             <div class="container mob-toggle-left-side ">
                 <nav class=" navbar  navbar-expand-lg navbar-light  ">
                     <div class="container-fluid ">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <button class="navbar-toggler navbar-toggler1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="offcanvas offcanvas-end d-flex justify-contend-center itemfromstart" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <button class="btn-close  d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button class="btn-close btn-close1  d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             <div class="offcanvas-body ">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link " aria-current="page" href="{{ route('/') }}">Home</a>
+                                        <a class="nav-link nav-link1 " aria-current="page" href="{{ route('/') }}">Home</a>
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             About Us
                                         </a>
                                         <ul class="dropdown-menu">
@@ -836,7 +811,7 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Departments
                                         </a>
                                         <ul class="dropdown-menu">
@@ -849,10 +824,10 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="{{ route('achievement') }}">Achievements</a>
+                                        <a class="nav-link nav-link1" href="{{ route('achievement') }}">Achievements</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Facilities
                                         </a>
                                         <ul class="dropdown-menu">
@@ -867,7 +842,7 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Library
                                         </a>
                                       <ul class="dropdown-menu"> 
@@ -889,7 +864,7 @@
 
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Admission
                                         </a>
                                         <ul class="dropdown-menu">
@@ -909,12 +884,12 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" style="width: 110px;" href="{{ route('contact-us') }}">Contact Us</a>
+                                        <a class="nav-link nav-link1" style="width: 110px;" href="{{ route('contact-us') }}">Contact Us</a>
                                     </li>
 
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Alumni
                                         </a>
                                         <ul class="dropdown-menu">
@@ -922,13 +897,13 @@
                                         </ul>
                                     </li>
 
-                                    <li class="nav-item dropdown"><a class="nav-link" href="{{ route('polytechnic-gallery') }}">Gallery</a>
+                                    <li class="nav-item dropdown"><a class="nav-link nav-link1" href="{{ route('polytechnic-gallery') }}">Gallery</a>
                                     </li>
 
 
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Activities
                                         </a>
                                         <ul class="dropdown-menu">
@@ -941,7 +916,7 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Quick Links
                                         </a>
                                         <ul class="dropdown-menu">
