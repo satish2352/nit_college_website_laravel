@@ -11,6 +11,9 @@
         height: 25px;
         width: 25px;
     }
+    .hidden{
+        display: none;
+    }
 
     #iwtHeaderNav {
         border-bottom: none !important;
@@ -50,15 +53,14 @@
 </style>
 <!--Right col-->
 <div class="col-sm-12 right-col-fix ">
-<div class="list-group-item" style="display: none;"><b></b></div>
-    <div class="list-group-item">
-        <div class="right-col-fix list-group-item" id="iwtRightPannel">
-            <div class="list-group-item ">
-                <div class="list-group-item"><b></b></div>
+
+    <div class="">
+        <div class="right-col-fix " id="iwtRightPannel">
+            <div class="">
                 <div class="container-fluid mob-width-right list-group " id="iwtHeaderNav">
                     <div class="container mob-toggle-left-side ">
                         <nav class=" navbar navbar-expand-lg flex-column ">
-                            <div class="container-fluid ">
+                            <div class="container-fluid">
                                 <button class="navbar-toggler navbar-toggler2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -66,10 +68,10 @@
                                 <div class="offcanvas offcanvas-end itemfromstart " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel">
                                     <button class="btn-close btn-close1  d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
-                                    <div class="offcanvas-body ">
+                                    <div class="offcanvas-body  ">
                                         <ul class=" " style="width: 100%;">
                                             <li class="nav-item list-group-item">
-                                            <div class="list-group-item" style="display: none;"><b></b></div>
+                                               <div class="list-group-item" style="display: none;"><b></b></div>
                                                 <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" target="_blank" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
                                                 <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
                                                     Body</a>
