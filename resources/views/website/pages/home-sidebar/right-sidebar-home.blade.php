@@ -50,6 +50,7 @@
 </style>
 <!--Right col-->
 <div class="col-sm-12 right-col-fix ">
+<div class="list-group-item" style="display: none;"><b></b></div>
     <div class="list-group-item">
         <div class="right-col-fix list-group-item" id="iwtRightPannel">
             <div class="list-group-item ">
@@ -68,7 +69,7 @@
                                     <div class="offcanvas-body ">
                                         <ul class=" " style="width: 100%;">
                                             <li class="nav-item list-group-item">
-                                                <div class="list-group-item"><b></b></div>
+                                            <div class="list-group-item" style="display: none;"><b></b></div>
                                                 <a href="https://msbte.org.in/file/DiplomaAdmissionPresentationWebsite_200220201250.pdf" target="_blank" class="list-group-item active-rp-link">तंत्रशिक्षण पदविका प्रवेश – थोडक्यात</a>
                                                 <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
                                                     Body</a>
