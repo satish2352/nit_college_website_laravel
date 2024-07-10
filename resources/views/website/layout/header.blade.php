@@ -379,6 +379,9 @@
             a:hover:active {
                 color: #1b2834 !important;
             }
+            /* .shiftright{
+                margin-top: 10px;
+            } */
 
         }
 
@@ -416,6 +419,9 @@
                 padding-left: 25px !important;
 
             }
+            /* .shiftright{
+                margin-top: 10px;
+            } */
 
             .padding-right {
                 padding-right: 10px !important;
@@ -433,7 +439,7 @@
             .navbar-toggler {
                 position: absolute;
                 z-index: 1001;
-                left: 155px;
+                left: 147px;
                 cursor: pointer;
                 background-color: white;
                 box-shadow: 0 0 20px black;
@@ -483,7 +489,7 @@
             }
 
 
-            @media only screen and (min-width: 767px) and (max-width: 19000px) {
+            @media only screen and (min-width: 768px) and (max-width: 19000px) {
 
                 .alumnispace {
                     width: 200px !important;
@@ -593,6 +599,9 @@
             .padding-right {
                 padding-right: 10px !important;
             }
+            /* .shiftright{
+                margin-top: 10px;
+            } */
 
            
         }
@@ -718,7 +727,7 @@
         <div class="container-fluid px-0">
 
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 "><span style="font-size: 13px;">Institute Address : <a class="topoftop" href="https://maps.app.goo.gl/sSqdKCwiLyZYPtup8" target="_blank" >Cannol
+                <div class="col-lg-6 col-md-6 col-sm-6 " style="line-height: 25px;"><span style="font-size: 13px;">Institute Address : <a class="topoftop" href="https://maps.app.goo.gl/sSqdKCwiLyZYPtup8" target="_blank" >Cannol
                             Road,Behind Hydro-division(MERI),Nashik-422003</a></span></div>
                 <div class="col-lg-6 col-md-6 col-sm-6 shiftright" style="justify-content: end;">
                     <span style="font-size:11px !important;">Email : <a class="topoftop" href="mailto:info@nitnasik.com"> principal@nitnasik.com</a> </span> <span style="padding-left:5px;padding-right:5px;">|</span>

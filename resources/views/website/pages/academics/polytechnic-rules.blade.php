@@ -1,5 +1,16 @@
 @extends('website.layout.master')
 @section('content')
+
+
+<style>
+     @media only screen and (max-width: 767px){
+        .mobilefontsize{
+            font-size: 20px;
+        }
+     }
+</style>
+
+
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div class="container">
 
@@ -20,7 +31,7 @@
                     @foreach ($data_output as $rules_data)
                     <div class="col-sm-12">
                         <div>
-                            <h2 style="color:#494680">{{ $rules_data['academics_name'] }}</h2>
+                            <h2 class="mobilefontsize" style="color:#494680">{{ $rules_data['academics_name'] }}</h2>
                         </div>
                         <div>
                             <p style="text-align: justify">{{ $rules_data['academics_description'] }}</p>
@@ -72,7 +83,7 @@
 
                     <div class="col-sm-12">
                         <div>
-                            <h2 style="color:#494680">Eligibility for Diploma Admission </h2>
+                            <h2 class="mobilefontsize" style="color:#494680">Eligibility for Diploma Admission </h2>
                         </div>
                         <div>
                             <p style="text-align: justify;">
@@ -92,7 +103,7 @@
                     <br>
                     <div class="col-sm-12">
                         <div>
-                            <h2 style="color:#494680;margin-top:10px" style="">Direct Second Year </h2>
+                            <h2 class="mobilefontsize" style="color:#494680;margin-top:10px" >Direct Second Year </h2>
                         </div>
                         <div>
                             <p style="text-align: justify;">

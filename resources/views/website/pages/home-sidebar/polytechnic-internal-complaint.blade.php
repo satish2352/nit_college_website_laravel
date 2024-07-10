@@ -1,5 +1,15 @@
 @extends('website.layout.master')
 @section('content')
+
+<style>
+     @media only screen and (max-width: 767px){
+        .mobilefontsize{
+            font-size: 20px;
+        }
+     }
+</style>
+
+
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div >
 
@@ -20,7 +30,7 @@
                             <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title " style="color:#494680"><b>INTERNAL COMPLAINT COMMITTEE</b></h3>
+                                        <h3 class="panel-title mobilefontsize" style="color:#494680"><b>INTERNAL COMPLAINT COMMITTEE</b></h3>
                                     </center>
                                    
                                     <center>
