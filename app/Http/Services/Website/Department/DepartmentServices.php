@@ -58,6 +58,15 @@ public function getFaculty()
         return $e;
     }
 }
+public function getFacultyDepartmentId($id)
+{
+    try {
+        $dataOutputCategory = $this->repo->getFacultyDepartmentId($id);
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
 
 
 public function getSyllabus($id)

@@ -18,7 +18,8 @@
                 <h2><strong></strong></h2>
                 <div class="pull-right"><img src="../up-images/index.php" alt="" class="img-responsive"></div>
             </div> -->
-
+           
+            
     </div>
 </div>
 <div class="container-fluid">
@@ -32,7 +33,13 @@
 
                     <div class="container" >
                         <div class="row">
-
+                            <div>
+                                @if (isset($data_output_activity) && isset($data_output_activity['id']))
+                                    <div class="" style="color:#494680; padding:10px 0px;font-size:20px; text-align:center;">
+                                        <strong>{{ $data_output_activity->activities }} </strong></div>
+                                @else
+                                @endif
+                            </div>
                             @if ($data_output->isEmpty())
                             <div class="col-sm-12 d-flex justify-content-center">
                                 <div>

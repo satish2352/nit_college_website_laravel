@@ -44,7 +44,7 @@ Route::get('/polytechnic-cultural-desk', ['as' => 'polytechnic-cultural-desk', '
 Route::get('/department-profile/{id}', ['as' => 'department-profile', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getProfile']);
 Route::get('/department-vision-mission/{id}', ['as' => 'department-vision-mission', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getDepartVisionMission']);
 Route::get('/department-curriculum/{id}', ['as' => 'department-curriculum', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getCurriculum']);
-Route::get('/department-faculty', ['as' => 'department-faculty', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getFaculty']);
+Route::get('/department-faculty/{id}', ['as' => 'department-faculty', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getFacultyDepartmentId']);
 Route::get('/department-syllabus/{id}', ['as' => 'department-syllabus', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getSyllabus']);
 Route::get('/department-time-table/{id}', ['as' => 'department-time-table', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getTimeTable']);
 Route::get('/department-mentor/{id}', ['as' => 'department-mentor', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getMentor']);
@@ -71,6 +71,8 @@ Route::get('/list-student-section-scholarship', ['as' => 'list-student-section-s
 Route::get('/list-expert-lecture', ['as' => 'list-expert-lecture', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getExpertLecture']);
 Route::get('/list-industrial-visit-mentor', ['as' => 'list-industrial-visit-mentor', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getIndustrialVisitMentor']);
 Route::get('/list-fees-regulating-authority', ['as' => 'list-fees-regulating-authority', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getFeesRegulatingAuthority']);
+Route::get('/training-placement', ['as' => 'training-placement', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getTrainingPlacement']);
+Route::get('/non-teaching-faculty', ['as' => 'non-teaching-faculty', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getNonTeachingFaculty']);
 
 
 

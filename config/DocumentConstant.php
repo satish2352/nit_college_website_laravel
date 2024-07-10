@@ -15,6 +15,7 @@ return [
     'AFFILIATION_CERTIFICATES_VIEW'	         => env("FILE_VIEW").'/images/affiliation_certificates/',
     'AFFILIATION_MSBTE_VIEW'	         => env("FILE_VIEW").'/documents/affiliationmsbte/',
     'ACADEMICCALENDAR_VIEW'	         => env("FILE_VIEW").'/documents/academiccalendar/',
+    'TRAINING_PLACEMENT'	         => env("FILE_VIEW").'/documents/trainingplacement/',
 
     'SLIDER_VIEW'	         => env("FILE_VIEW").'/images/slider_img/', 
     'ACTIVITY_VIEW'	         => env("FILE_VIEW").'/images/activity/', 

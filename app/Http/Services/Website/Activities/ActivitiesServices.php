@@ -29,6 +29,15 @@ class ActivitiesServices
         return $e;
     }
 }
- 
+public function getActivityId($id)
+{
+    try {
+        $dataOutputCategory = $this->repo->getActivityId($id);
+       
+        return $dataOutputCategory; // This will never be executed due to dd()
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
 
 }

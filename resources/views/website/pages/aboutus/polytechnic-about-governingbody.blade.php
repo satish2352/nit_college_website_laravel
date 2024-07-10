@@ -193,12 +193,12 @@
                                                                         <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
                                                                             Body</a>
                                                                         <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
-                                                                        <a href="{{ route('department-faculty') }}" class="list-group-item ">Faculty</a>
+                                                                        <a href="{{ route('non-teaching-faculty') }}" class="list-group-item ">Faculty</a>
                                                                         <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
                                                                         <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
                                                                         <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation
                                                                             Certificates</a>
-                                                                        <a href="{{ route('/') }}" class="list-group-item">Training And Placement</a>
+                                                                        <a href="{{ route('training-placement') }}" class="list-group-item">Training And Placement</a>
                                                                         <a href="{{ route('polytechnic-anti-ragging') }}" class="list-group-item">Antiragging Committee</a>
                                                                         {{-- <a href="#" class="list-group-item ">Grievance Redressal Cell </a> --}}
                                                                         <a href="{{ route('polytechnic-internal-complaint') }}" class="list-group-item">Internal Complaint

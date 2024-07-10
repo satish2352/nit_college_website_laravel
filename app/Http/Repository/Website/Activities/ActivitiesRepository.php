@@ -60,7 +60,21 @@ class ActivitiesRepository  {
             throw $e; // Throw the exception to be caught by the calling function
         }
     }
-    
+    public function getActivityId($id)
+    {
+        try {
+            $dataOutputCategory = ActivitiesCategory::where('is_active', '=', true)
+            ->where('is_delete', 0)
+            ->select('activities.activities', 'activities.id')
+            ->where('id', $id) // Filter by the provided ID
+            ->orderBy('id', 'desc')
+            ->first();
+             
+            return $dataOutputCategory;
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
 
     
     
