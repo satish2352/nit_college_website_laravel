@@ -12,6 +12,7 @@
                
                     </div>
                 @if (isset($data_output_category) && isset($data_output_category['id']))
+                
                 <a href="{{ route('department-profile', ['id' => $data_output_category['id']]) }}"
                     class="list-group-item ">Profile</a>
                 <a href="{{ route('department-vision-mission', ['id' => $data_output_category['id']]) }}"
@@ -36,7 +37,7 @@
                 <a href="{{ route('department-plan', ['id' => $data_output_category['id']]) }}" class="list-group-item active-rp-link">Syllabus</a>
                 <a href="{{ route('department-curriculum', ['id' => $data_output_category['id']]) }}" class="list-group-item active-rp-link">Curriculum</a>
                 <a href="{{ route('department-newsletter', ['id' => $data_output_category['id']]) }}" class="list-group-item active-rp-link">Newsletter</a>
-                <a href="#" class="list-group-item active-rp-link">Faculty</a>
+                
 
 
                 

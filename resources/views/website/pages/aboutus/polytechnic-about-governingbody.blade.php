@@ -193,7 +193,7 @@
                                                                         <a href="{{ route('about-governingbody') }}" class="list-group-item active-rp-link">Governing
                                                                             Body</a>
                                                                         <a href="{{ route('polytechnic-mandatary') }}" class="list-group-item">Mandatory Disclosure</a>
-                                                                        <a href="{{ route('non-teaching-faculty') }}" class="list-group-item ">Faculty</a>
+                                                                        <a href="{{ route('non-teaching-faculty') }}" class="list-group-item ">Non Teaching Staff</a>
                                                                         <a href="{{ route('polytechnic-aicte-extension') }}" class="list-group-item">AICTE EOA</a>
                                                                         <a href="{{ route('polytechnic-affiliation') }}" class="list-group-item">MSBTE Affiliation</a>
                                                                         <a href="{{ route('polytechnic-affiliation_certificates') }}" class="list-group-item">Affiliation

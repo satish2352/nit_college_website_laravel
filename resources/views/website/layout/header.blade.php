@@ -32,9 +32,10 @@
         .row>* {
             padding-right: 0px !important;
         }
-        .rowrspace>*{
+
+        .rowrspace>* {
             padding-right: 0px !important;
-         }
+        }
 
         .topoftop:hover {
             color: white !important;
@@ -76,13 +77,13 @@
 
         }
 
-      
+
 
         .spaceacademic {
             width: 280px !important;
         }
 
-       
+
 
         .alumnispace {
             width: 200px !important;
@@ -105,7 +106,7 @@
             color: #fff;
         }
 
-        
+
 
         li #footer-links {
             color: #494680;
@@ -279,7 +280,7 @@
                 color: black;
             }
 
-          
+
 
             .aaaa .aaab:hover {
                 color: black !important;
@@ -380,6 +381,10 @@
                 color: #1b2834 !important;
             }
 
+            /* .shiftright{
+                margin-top: 10px;
+            } */
+
         }
 
 
@@ -417,6 +422,10 @@
 
             }
 
+            /* .shiftright{
+                margin-top: 10px;
+            } */
+
             .padding-right {
                 padding-right: 10px !important;
             }
@@ -433,7 +442,7 @@
             .navbar-toggler {
                 position: absolute;
                 z-index: 1001;
-                left: 155px;
+                left: 147px;
                 cursor: pointer;
                 background-color: white;
                 box-shadow: 0 0 20px black;
@@ -483,7 +492,7 @@
             }
 
 
-            @media only screen and (min-width: 767px) and (max-width: 19000px) {
+            @media only screen and (min-width: 768px) and (max-width: 19000px) {
 
                 .alumnispace {
                     width: 200px !important;
@@ -495,10 +504,11 @@
                     width: 100%;
                     z-index: 1001;
                 }
-                .shiftright{
-                display: flex;
-                justify-content: end;
-            }
+
+                .shiftright {
+                    display: flex;
+                    justify-content: end;
+                }
 
             }
 
@@ -541,11 +551,12 @@
                 width: 100%;
                 z-index: 1001;
             }
-            .shiftright{
+
+            .shiftright {
                 display: flex;
                 justify-content: end;
             }
-            
+
         }
 
         @media only screen and (min-width: 768px) {
@@ -561,7 +572,8 @@
                 width: 100%;
                 z-index: 1001;
             }
-            .shiftright{
+
+            .shiftright {
                 display: flex;
                 justify-content: end;
             }
@@ -580,12 +592,12 @@
                 font-size: 30px;
                 height: 15px;
                 width: 10px;
-                top: 25px;      
-                right: 21px;               
+                top: 25px;
+                right: 21px;
                 z-index: 1001;
-                }
+            }
 
-           
+
             .offcanvas-body {
                 background-color: #e6f3ff;
             }
@@ -594,7 +606,11 @@
                 padding-right: 10px !important;
             }
 
-           
+            /* .shiftright{
+                margin-top: 10px;
+            } */
+
+
         }
 
 
@@ -715,11 +731,17 @@
     </script>
     {{-- ======================Start Top Header==================== --}}
     <div class="container-fluid px-3" id="iwtHeaderTopNav">
-        <div class="container-fluid px-0">
-
+      
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 "><span style="font-size: 13px;">Institute Address : <a class="topoftop" href="https://maps.app.goo.gl/sSqdKCwiLyZYPtup8" target="_blank" >Cannol
-                            Road,Behind Hydro-division(MERI),Nashik-422003</a></span></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 " style="line-height: 25px;">
+                    <div class="col-lg-12 col-md-12 col-sm-8">
+                        <span style="font-size: 13px;">Institute Address : <a class="topoftop" href="https://maps.app.goo.gl/sSqdKCwiLyZYPtup8" target="_blank">Cannol
+                                Road,Behind Hydro-division(MERI),Nashik-422003</a></span>
+                    </div>
+                    <div class="col-sm-4">
+                        
+                    </div>
+                </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 shiftright" style="justify-content: end;">
                     <span style="font-size:11px !important;">Email : <a class="topoftop" href="mailto:info@nitnasik.com"> principal@nitnasik.com</a> </span> <span style="padding-left:5px;padding-right:5px;">|</span>
                     <span style="font-size:11px !important;">Contact Number : <a class="topoftop" href="tel:9552551056">9552551056</a>&nbsp;</span>
@@ -727,9 +749,9 @@
                     <!-- <a href="tel:8149822404">8149822404</a>&nbsp;
                     <a href="tel:9890269439">9890269439</a> -->
                 </div>
+                
             </div>
         </div>
-    </div>
     {{-- =========================End Top Header======================== --}}
     {{-- ======================Start Sub Header==================== --}}
     <div class="mob-toggle-right-side" id="iwtHeaderNav">
@@ -845,7 +867,7 @@
                                         <a class="nav-link nav-link1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Library
                                         </a>
-                                      <ul class="dropdown-menu"> 
+                                        <ul class="dropdown-menu">
                                             <li class=" aaaa">
                                                 <a class="dropdown-item aaab " href="{{ route('library-staff')}}">Library Staff</a>
                                             </li>
@@ -858,8 +880,8 @@
                                             <li class=" aaaa">
                                                 <a class="dropdown-item aaab " href="{{ route('library-rules-requlations')}}">Rules & Regulations</a>
                                             </li>
-                                          
-                                        </ul> 
+
+                                        </ul>
                                     </li>
 
 
