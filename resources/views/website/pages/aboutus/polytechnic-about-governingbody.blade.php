@@ -292,7 +292,7 @@
                                                     <center>{{ $data->gov_address }}</center>
                                                 </td> --}}
                                                 <td>
-                                                    <center>{{ $data->Education }}</center>
+                                                    <center>{{ $data->education }}</center>
                                                 </td>
 
                                             </tr>

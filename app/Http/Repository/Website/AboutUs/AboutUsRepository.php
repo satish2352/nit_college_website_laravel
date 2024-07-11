@@ -43,6 +43,7 @@ public function getPolytechnicAboutGoverningbody()
                 'designation.Designation_id as Designation_id',
                 'tbl_board_members.fld_bm_name', 
                 'tbl_board_members.gov_address', 
+                'tbl_board_members.education', 
                 'designation.Designation',
                 'tbl_board_members.is_active'
             )
