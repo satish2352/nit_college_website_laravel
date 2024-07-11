@@ -18,7 +18,7 @@
                                 <div >
                                     <div class="panel-heading">
                                         <center>
-                                            <h3 class="panel-title" style="color:#494680"><b>Faculty and Staff</b></h3>
+                                            <h3 class="panel-title" style="color:#494680"><b>Non Teaching Staff</b></h3>
                                         </center>
                                         <span class="pull-right clickable"><i
                                                 class="glyphicon glyphicon-plus-sign collapse-ico"></i></span>
