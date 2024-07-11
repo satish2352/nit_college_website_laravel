@@ -159,6 +159,7 @@ class HomeSidebarRepository  {
                     'tbl_complaint_members.fld_bm_name', 
                     'tbl_complaint_members.mobilenumber', 
                     'tbl_complaint_members.email',
+                    'tbl_complaint_members.work_as',
                     'tbl_complaint_members.is_active'
                 )
                 ->orderBy('tbl_complaint_members.fld_bm_id', 'desc')
