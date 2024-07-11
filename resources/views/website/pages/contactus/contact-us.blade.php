@@ -120,6 +120,7 @@
                                 @endif
                             </div>
                         </div>
+                        
 
                         <div class="col-md-12">
                             <div class="form-group">
@@ -156,12 +157,12 @@
                                     <span class="glyphicon glyphicon-home" style="color: #454545;"></span><b style="color:green">Address</b> <b style="color: #454545;">:</b>&nbsp;
                                     <a href="#" style="color: #454545;">{{ $contactusdata[0]['contact_us_address'] }}</a><br>
                                 </address>
-                                <!-- <address>
+                                <address>
                                 <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b
                                         style="color:green">Tel.</b> <b style="color: #454545;">:</b>
                                     <span
                                     class="data-con">{{ $contactusdata[0]['contact_us_telephone'] }}</span><br>
-                            </address> -->
+                            </address>
                                 <address>
                                     <span class="glyphicon glyphicon-phone" style="color: #454545;"></span><b style="color:green">Mobile.</b> <b style="color: #454545;">:</b>&nbsp;
                                     <span class="data-con">

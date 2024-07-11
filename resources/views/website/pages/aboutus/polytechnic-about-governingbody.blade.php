@@ -269,6 +269,11 @@
                                                     Address
                                                 </div>
                                             </th> --}}
+                                            <th scope="col">
+                                                    <div class="d-flex justify-content-center">
+                                                        Education
+                                                    </div>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -286,6 +291,9 @@
                                                 {{-- <td>
                                                     <center>{{ $data->gov_address }}</center>
                                                 </td> --}}
+                                                <td>
+                                                    <center>{{ $data->Education }}</center>
+                                                </td>
 
                                             </tr>
                                             @empty
