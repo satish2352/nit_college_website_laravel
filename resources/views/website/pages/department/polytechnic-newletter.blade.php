@@ -81,7 +81,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    @forelse ($data_output as $data)
+                                                    @forelse ($data_output as   $data)
                                                     <tr class="">
                                                         <td>
                                                             <center>{{ $loop->iteration }}</center>
@@ -96,6 +96,7 @@
                                                             </a>
                                                         </td>
                                                     </tr>
+                                                    
                                                     @empty
                                                     {{-- <h4>No Data Found</h4> --}}
                                                     @endforelse
