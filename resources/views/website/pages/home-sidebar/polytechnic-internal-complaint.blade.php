@@ -1,5 +1,15 @@
 @extends('website.layout.master')
 @section('content')
+
+<style>
+     @media only screen and (max-width: 767px){
+        .mobilefontsize{
+            font-size: 20px;
+        }
+     }
+</style>
+
+
 <div class="container-fluid pageHeading-bg" id="iwtPageHeading">
     <div >
 
@@ -20,7 +30,7 @@
                             <div >
                                 <div class="panel-heading">
                                     <center>
-                                        <h3 class="panel-title " style="color:#494680"><b>INTERNAL COMPLAINT COMMITTEE</b></h3>
+                                        <h3 class="panel-title mobilefontsize" style="color:#494680"><b>INTERNAL COMPLAINT COMMITTEE</b></h3>
                                     </center>
                                    
                                     <center>
@@ -49,13 +59,16 @@
                                                         <th scope="col">
                                                             <div class="d-flex justify-content-center">Designation</div>
                                                         </th>
-                                                        {{-- <th scope="col">
+                                                        <th scope="col">
                                                             <div class="d-flex justify-content-center">Mobile Number
                                                             </div>
                                                         </th>
                                                         <th scope="col">
                                                             <div class="d-flex justify-content-center">Email</div>
-                                                        </th> --}}
+                                                        </th> 
+                                                        <th scope="col">
+                                                            <div class="d-flex justify-content-center">Work As</div>
+                                                        </th> 
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -70,12 +83,15 @@
                                                         <td>
                                                             <center>{{ $data->designation_name }}</center>
                                                         </td>
-                                                        {{-- <td>
+                                                         <td>
                                                             <center>{{ $data->mobilenumber }}</center>
                                                         </td>
                                                         <td>
                                                             <center>{{ $data->email }}</center>
-                                                        </td> --}}
+                                                        </td> 
+                                                        <td>
+                                                            <center>{{ $data->work_as }}</center>
+                                                        </td> 
                                                     </tr>
                                                     @empty
                                                     <tr>
