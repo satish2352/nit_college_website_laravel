@@ -185,6 +185,7 @@ class DepartmentRepository  {
                 'department.Department',
                 'timetable.is_active'
             )
+            ->where('syllabus_delete.fld_delete', 0) 
             ->where('department.id', $id)
             ->orderBy('timetable.timetable_id', 'desc')
             ->get(); // Use get() to fetch multiple records
@@ -209,6 +210,7 @@ class DepartmentRepository  {
                     'tbl_mentors.is_active'
                 )
                 ->where('department.id', $id) // Filter by the provided ID
+                ->where('tbl_mentors.fld_delete', '0')
                 ->orderBy('tbl_mentors.fld_bm_id', 'desc')
                 ->get(); // Get a single record
              
@@ -252,6 +254,7 @@ class DepartmentRepository  {
                     'tbl_events.is_active'
                 )
                 ->where('department.id', $id) 
+                ->where('tbl_events.fld_delete', '0')
                 ->orderBy('tbl_events.fld_gallery_id', 'desc')
                 ->get(); // Get a single record
             return $dataOutputCategory;
