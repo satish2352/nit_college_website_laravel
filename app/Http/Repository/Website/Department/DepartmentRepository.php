@@ -79,7 +79,7 @@ class DepartmentRepository  {
         try {
             $dataOutputCategory = Curriculum::join('department', 'department.id', '=', 'curriculum.department_id')
                 ->select(
-                    'curriculum.id',
+                    'curriculum.curriculum_id',
                     'department.id as department_id',
                     'curriculum.year', 
                     'curriculum.semister', 
