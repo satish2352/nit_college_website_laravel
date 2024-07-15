@@ -85,9 +85,10 @@ class DepartmentRepository  {
                     'curriculum.semister', 
                     'curriculum.file', 
                     'department.Department',
-                    'curriculum.is_active'
+                    'curriculum.is_active',
                 )
                 ->where('department.id', $id) // Filter by the provided ID
+                ->where('curriculum.syllabus_delete ', 0) 
                 ->orderBy('curriculum.id', 'desc')
                 ->get(); 
              
