@@ -116,6 +116,7 @@ class DepartmentRepository  {
                     'tbl_staff.is_active' // Make sure this field exists in your table
                 )
                 // ->where('department.id', $id) // Filter by the provided ID
+                ->where('tbl_staff.fld_delete', '0')
                 ->orderBy('tbl_staff.fld_staff_id', 'desc')
                 ->get(); 
             return $dataOutputCategory;
@@ -142,6 +143,7 @@ class DepartmentRepository  {
                     'tbl_staff.is_active' 
                 )
                 ->where('department.id', $id)
+                ->where('tbl_staff.fld_delete', '0')
                 ->orderBy('tbl_staff.fld_staff_id', 'desc')
                 ->get(); 
             return $dataOutputCategory;
