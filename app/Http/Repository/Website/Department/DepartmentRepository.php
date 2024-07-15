@@ -88,7 +88,7 @@ class DepartmentRepository  {
                     'curriculum.is_active',
                 )
                 ->where('department.id', $id) // Filter by the provided ID
-                ->where('curriculum.syllabus_delete ', 0) 
+                ->where('curriculum.syllabus_delete', 0) 
                 ->orderBy('curriculum.id', 'desc')
                 ->get(); 
              
