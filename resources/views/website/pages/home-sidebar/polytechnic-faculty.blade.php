@@ -46,6 +46,9 @@
                                             <th scope="col">
                                                 <div class="d-flex justify-content-center">Experiance</div>
                                             </th>
+                                            <th scope="col">
+                                                <div class="d-flex justify-content-center">Photo</div>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -66,7 +69,11 @@
                                             <td>
                                                 <center>{{ $data->experiance }}</center>
                                             </td>
-                                            
+                                            <td>
+                                                <center>
+                                                    <img id="english" src="{{ Config::get('DocumentConstant.NON_TEACHING_STAFF_VIEW') }}{{ $data->photo }}" class=" img-thumbnail  hidden-sm" height="100px" width="100px">
+                                                 </center>
+                                            </td>
                                         </tr>
                                         @empty
                                         <tr>

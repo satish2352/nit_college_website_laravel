@@ -33,6 +33,7 @@ return [
     'FEES_VIEW'	         => env("FILE_VIEW").'/images/fees/',
     'INDUSTRIAL_VISIT_VIEW'	         => env("FILE_VIEW").'/images/industrialvisit/',
     'NEWS_LETTERS_VIEW'	         => env("FILE_VIEW").'/images/newsletters/',
+    'NON_TEACHING_STAFF_VIEW'	         => env("FILE_VIEW").'/images/non_teaching_staff/',
     
     
 ];

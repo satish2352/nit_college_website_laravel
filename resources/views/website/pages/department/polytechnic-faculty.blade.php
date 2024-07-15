@@ -82,6 +82,9 @@
                                             <th scope="col">
                                                 <div class="d-flex justify-content-center">Experiance</div>
                                             </th>
+                                            <th scope="col">
+                                                <div class="d-flex justify-content-center">Photo</div>
+                                            </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -102,7 +105,11 @@
                                                         <td>
                                                             <center>{{ $data->fld_staff_experiance }}</center>
                                                         </td>
-                                                        
+                                                        <td>
+                                                            <center>
+                                                                <img id="english" src="{{ Config::get('DocumentConstant.FACILITY_VIEW') }}{{ $data->fld_staff_photo }}" class=" img-thumbnail  hidden-sm" height="100px" width="100px">
+                                                             </center>
+                                                        </td>
                                                     </tr>
                                                     @empty
                                                     <tr>
