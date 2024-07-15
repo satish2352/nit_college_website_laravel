@@ -185,7 +185,7 @@ class DepartmentRepository  {
                 'department.Department',
                 'timetable.is_active'
             )
-            ->where('syllabus_delete.fld_delete', 0) 
+            ->where('timetable.syllabus_delete', 0) 
             ->where('department.id', $id)
             ->orderBy('timetable.timetable_id', 'desc')
             ->get(); // Use get() to fetch multiple records
