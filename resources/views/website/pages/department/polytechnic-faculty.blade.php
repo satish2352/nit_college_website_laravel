@@ -107,7 +107,7 @@
                                                         </td>
                                                         <td>
                                                             <center>
-                                                                <img id="english" src="{{ Config::get('DocumentConstant.FACILITY_VIEW') }}{{ $data->fld_staff_photo }}" class=" img-thumbnail  hidden-sm" height="100px" width="100px">
+                                                                <img id="english" src="{{ Config::get('DocumentConstant.STAFF_VIEW') }}{{ $data->fld_staff_photo }}" class=" img-thumbnail  hidden-sm" height="100px" width="100px">
                                                              </center>
                                                         </td>
                                                     </tr>
