@@ -89,7 +89,7 @@ class DepartmentRepository  {
                 )
                 ->where('department.id', $id) // Filter by the provided ID
                 ->where('curriculum.syllabus_delete', 0) 
-                ->orderBy('curriculum.id', 'desc')
+                ->orderBy('curriculum.curriculum_id', 'desc')
                 ->get(); 
              
             return $dataOutputCategory;
