@@ -167,6 +167,7 @@ class DepartmentRepository  {
                     'syllabus.is_active'
                 )
                 ->where('department.id', $id) // Filter by the provided ID
+                ->where('syllabus.syllabus_delete', '0')
                 ->orderBy('syllabus.syllabus_id', 'desc')
                 ->first(); // Get a single record
              
