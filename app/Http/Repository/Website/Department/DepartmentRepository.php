@@ -319,6 +319,7 @@ class DepartmentRepository  {
                 'tbl_plan.is_active'
             )
             ->where('tbl_plan.department_id', $id)
+               ->where('tbl_plan.fld_delete', '0')
             ->orderBy('tbl_plan.fld_bm_id', 'desc')
             ->get();
 
