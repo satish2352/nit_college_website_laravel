@@ -168,5 +168,16 @@ public function getNewsletter($id)
         return $e;
     }
 }
+public function getLaboratoriesInformation($id)
+{
+    try {
+        $dataOutputCategory = $this->repo->getLaboratoriesInformation($id);
+        // dd($dataOutputCategory);
+        // die();
+        return $dataOutputCategory; // This will never be executed due to dd()
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
 
 }

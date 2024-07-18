@@ -18,7 +18,8 @@ use App\Models\ {
     Awards,
     Members,
     Plan,
-    Newsletter
+    Newsletter,
+    Laboratories
 
 };
 
@@ -344,6 +345,29 @@ public function getNewsletter($id)
             ->orderBy('newsletters.newsletters_id', 'desc')
             ->get(); 
        
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
+
+public function getLaboratoriesInformation($id)
+{
+    try {
+        $dataOutputCategory = Laboratories::join('department', 'department.id', '=', 'tbl_laboratories.Department_id')
+            ->select(
+                'tbl_laboratories.fld_laboratories_id',
+                'department.id as department_id',
+                'tbl_laboratories.laboratories_description', 
+                'tbl_laboratories.photo', 
+                'department.Department',
+                'tbl_laboratories.is_active'
+            )
+            ->where('department.id', $id) // Filter by the provided ID
+            ->where('tbl_laboratories.fld_delete', '0')
+            ->orderBy('tbl_laboratories.fld_laboratories_id', 'desc')
+            ->get(); 
+     
         return $dataOutputCategory;
     } catch (\Exception $e) {
         return $e;

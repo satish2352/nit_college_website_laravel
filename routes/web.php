@@ -53,6 +53,7 @@ Route::get('/department-activities-events/{id}', ['as' => 'department-activities
 Route::get('/department-students-association/{id}', ['as' => 'department-students-association', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getStudentsAssociation']);
 Route::get('/department-plan/{id}', ['as' => 'department-plan', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getPlan']);
 Route::get('/department-newsletter/{id}', ['as' => 'department-newsletter', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getNewsletter']);
+Route::get('/department-laboratories-information/{id}', ['as' => 'department-laboratories-information', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getLaboratoriesInformation']);
 
 Route::get('/polytechnic-mandatary', ['as' => 'polytechnic-mandatary', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getMandataryDisclosure']);
 Route::get('/polytechnic-aicte-extension', ['as' => 'polytechnic-aicte-extension', 'uses' => 'App\Http\Controllers\Website\HomeSidebar\HomeSidebarController@getAICTEExtension']);

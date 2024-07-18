@@ -239,5 +239,24 @@ class DepartmentController extends Controller
             return $e;
         }
     }
+
+    public function getLaboratoriesInformation($id)
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getLaboratoriesInformation($id);
+            $data_output_category = $this->service->getDepartmentId($id);
+          
+            if ($data_output instanceof \Exception) {
+                return view('website.pages.department.polytechnic-laboratories-information', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
+            }
+    
+            return view('website.pages.department.polytechnic-laboratories-information', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
     
 }
