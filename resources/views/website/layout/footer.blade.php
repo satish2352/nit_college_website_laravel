@@ -262,13 +262,16 @@
         $('#example').DataTable({
             responsive: true,
             showNEntries: false,
-            lengthChange: false
+            lengthChange: false,
+            ordering: false,
+            "ordering": false
         });
 
         var table2 = $('#example1').DataTable({
             "columnDefs": [{
                 "targets": [1, 2],
-                "orderable": true
+                "orderable": true,
+                
             }]
         });
 
@@ -276,7 +279,8 @@
             searching: true,
             ordering: true,
             lengthChange: false,
-            showNEntries: false
+            showNEntries: false,
+            ordering: false
         });
 
         $(document).on('click', '.panel-heading span.clickable', function(e) {

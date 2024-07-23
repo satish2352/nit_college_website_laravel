@@ -45,6 +45,8 @@ Route::get('/department-profile/{id}', ['as' => 'department-profile', 'uses' => 
 Route::get('/department-vision-mission/{id}', ['as' => 'department-vision-mission', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getDepartVisionMission']);
 Route::get('/department-curriculum/{id}', ['as' => 'department-curriculum', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getCurriculum']);
 Route::get('/department-faculty/{id}', ['as' => 'department-faculty', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getFacultyDepartmentId']);
+Route::get('/department-nonteaching-faculty/{id}', ['as' => 'department-nonteaching-faculty', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getNonTeachingFacultyDepartmentId']);
+
 Route::get('/department-syllabus/{id}', ['as' => 'department-syllabus', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getSyllabus']);
 Route::get('/department-time-table/{id}', ['as' => 'department-time-table', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getTimeTable']);
 Route::get('/department-mentor/{id}', ['as' => 'department-mentor', 'uses' => 'App\Http\Controllers\Website\Department\DepartmentController@getMentor']);

@@ -53,6 +53,8 @@ public function getFaculty()
 {
     try {
         $dataOutputCategory = $this->repo->getFaculty();
+        dd($dataOutputCategory);
+        die();
         return $dataOutputCategory;
     } catch (\Exception $e) {
         return $e;
@@ -62,6 +64,15 @@ public function getFacultyDepartmentId($id)
 {
     try {
         $dataOutputCategory = $this->repo->getFacultyDepartmentId($id);
+        return $dataOutputCategory;
+    } catch (\Exception $e) {
+        return $e;
+    }
+}
+public function getNonTeachingFacultyDepartmentId($id)
+{
+    try {
+        $dataOutputCategory = $this->repo->getNonTeachingFacultyDepartmentId($id);
         return $dataOutputCategory;
     } catch (\Exception $e) {
         return $e;

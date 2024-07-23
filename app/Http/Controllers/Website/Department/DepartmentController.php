@@ -87,6 +87,24 @@ class DepartmentController extends Controller
             return $e;
         }
     }
+    public function getNonTeachingFacultyDepartmentId($id)
+    {
+        try {
+            $menu = $this->menu;
+            $menuDepartment = $this->menuDepartment;
+            $menuFacility = $this->menuFacility;
+            $data_output = $this->service->getNonTeachingFacultyDepartmentId($id);
+            $data_output_category = $this->service->getDepartmentId($id);
+          
+            if ($data_output instanceof \Exception) {
+                return view('website.pages.department.polytechnic-non-teachning-faculty', compact('menu','data_output_category', 'menuDepartment', 'menuFacility'))->withErrors(['msg' => $data_output->getMessage()]);
+            }
+    
+            return view('website.pages.department.polytechnic-non-teachning-faculty', compact('menu','data_output_category', 'data_output', 'menuDepartment', 'menuFacility'));
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
     
     public function getSyllabus($id)
     {
