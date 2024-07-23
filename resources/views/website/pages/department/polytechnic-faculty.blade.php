@@ -160,7 +160,7 @@
                                                 </thead>
                                                 <tbody>
                                                     @forelse ($data_output as $data)
-                                                    @if ($data->fld_staff == 1)
+                                                    @if ($data->fld_staff == 2)
                                                     <tr class="">
                                                         <td>
                                                             <center>{{ $loop->iteration }}</center>
