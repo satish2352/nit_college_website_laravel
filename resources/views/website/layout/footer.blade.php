@@ -266,6 +266,13 @@
             ordering: false,
             "ordering": false
         });
+        $('#example11').DataTable({
+            responsive: true,
+            showNEntries: false,
+            lengthChange: false,
+            ordering: false,
+            "ordering": false
+        });
 
         var table2 = $('#example1').DataTable({
             "columnDefs": [{

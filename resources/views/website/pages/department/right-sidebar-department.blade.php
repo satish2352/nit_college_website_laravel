@@ -19,15 +19,15 @@
                     class="list-group-item active-rp-link">Vision Mission</a>
                 <a href="{{ route('department-laboratories-information', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">Laboratories Information</a>
-                {{-- <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
-                class="list-group-item active-rp-link">Faculty</a> --}}
+                <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}"
+                class="list-group-item active-rp-link">Faculty</a>
 
-                <div class="list-group-item ">
+                {{-- <div class="list-group-item ">
                     <a style="display: none;"></a>
                     <h6 class="dropdown-toggle" style="font-size: 17px; color:white;">Faculty</h6>
                     <a href="{{ route('department-faculty', ['id' => $data_output_category['id']]) }}" class="list-group-item "> Teaching</a>
                     <a href="{{ route('department-nonteaching-faculty', ['id' => $data_output_category['id']]) }}" class="list-group-item "> Non - Teaching</a>
-                </div>
+                </div> --}}
                 {{-- <a href="{{ route('department-syllabus', ['id' => $data_output_category['id']]) }}"
                 class="list-group-item active-rp-link">Syllabus</a> --}}
 
