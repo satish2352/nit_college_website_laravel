@@ -43,7 +43,7 @@
                                                             <center>SR.NO</center>
                                                         </th>
                                                         <th scope="col" class="">
-                                                            <center>Name</center>
+                                                           Name
                                                         </th>
                                                         <th scope="col">
                                                             <div class="d-flex justify-content-center">

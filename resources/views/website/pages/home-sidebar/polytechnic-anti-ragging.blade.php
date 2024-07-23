@@ -68,16 +68,16 @@
                                                                 <center>{{ $loop->iteration }}</center>
                                                             </td>
                                                             <td>
-                                                                <center>{{ $data->fld_bm_name }}</center>
+                                                               {{ $data->fld_bm_name }}
                                                             </td>
                                                             <td>
-                                                                <center>{{ $data->designation_name }}</center>
+                                                               {{ $data->designation_name }}
                                                             </td>
                                                             <td>
-                                                                <center>{{ $data->mobilenumber }}</center>
+                                                               {{ $data->mobilenumber }}
                                                             </td>
                                                             <td>
-                                                                <center>{{ $data->email }}</center>
+                                                               {{ $data->email }}
                                                             </td>
                                                         </tr>
                                                         @empty

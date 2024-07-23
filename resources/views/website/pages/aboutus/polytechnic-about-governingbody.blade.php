@@ -283,16 +283,16 @@
                                                     <center>{{ $data->fld_bm_id }}</center>
                                                 </td>
                                                 <td>
-                                                    <center>{{ $data->fld_bm_name }}</center>
+                                                    {{ $data->fld_bm_name }}
                                                 </td>
                                                 <td>
-                                                    <center>{{ $data->Designation }}</center>
+                                                   {{ $data->Designation }}
                                                 </td>
                                                 {{-- <td>
                                                     <center>{{ $data->gov_address }}</center>
                                                 </td> --}}
                                                 <td>
-                                                    <center>{{ $data->education }}</center>
+                                                  {{ $data->education }}
                                                 </td>
 
                                             </tr>
